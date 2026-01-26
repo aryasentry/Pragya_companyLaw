@@ -1,0 +1,51 @@
+(1) No company shall, either by itself or through its nominees, hold any in its holding company and no shall allot or transfer its shares to any of its and any such allotment or transfer of shares of a company to its subsidiary company shall be void: Provided that nothing in this sub-section shall apply to a case— ( a ) where the subsidiary company holds such shares as the legal representative of a deceased of the holding company; or ( b ) where the subsidiary company holds such shares as a trustee; or ( c ) where the subsidiary company is a shareholder even before it became a subsidiary company of the holding company: Provided further that the subsidiary company referred to in the preceding proviso shall have a right to vote at a meeting of the holding company only in respect of the shares held by it as a legal representative or as a trustee, as referred to in clause ( a ) or clause ( b ) of the said proviso. (2) The reference in this section to the shares of a holding company which is a or an , not having a share capital, shall be construed as a reference to the interest of its members, whatever be the form of interest. 2(84) Share means a share in the share capital of a company and includes stock 2(46) Holding Company , in relation to one or more other companies, means a company of which such companies are subsidiary companies. Explanation.- For the purposes of this clause, the expression “company” includes any body corporate; 2(87) Subsidiary Company or Subsidiary , in relation to any other company (that is to say the holding company), means a company in which the holding company— (i) controls the composition of the Board of Directors; or (ii) exercises or controls more than one-half of the total voting power either at its own or together with one or more of its subsidiary companies: Provided that such class or classes of holding companies as may be prescribed shall not have layers of subsidiaries beyond such numbers  as may be prescribed. Explanation.—For the purposes of this clause,— (a) a company shall be deemed to be a subsidiary company of the holding company even if the control referred to in sub-clause (i) or sub-clause (ii) is of another subsidiary company of the holding company; (b) the composition of a company’s Board of Directors shall be deemed to be controlled by another company if that other company by exercise of some power exercisable by it at its discretion can appoint or remove all or a majority of the directors; (c) the expression “company” includes any body corporate; (d) “layer” in relation to a holding company means its subsidiary or subsidiaries. 2(55) Member , in relation to a company, means— ( i ) the subscriber to the memorandum of the company who shall be deemed to have agreed to become member of the company, and on its registration, shall be entered as member in its register of members; ( ii ) every other person who agrees in writing to become a member of the company and whose name is entered in the register of members of the company; ( iii ) every person holding shares of the company and whose name is entered as a beneficial owner in the records of a depository 2(21) Company limited by guarantee means a company having the liability of its members limited by the memorandum to such amount as the members may respectively undertake to contribute to the assets of the company in the event of its being wound up 2(92) Unlimited Company means a company not having any limit on the liability of its members
+
+(1) No company shall, either by itself or through its nominees, hold any in its holding company and no shall allot or transfer its shares to any of its and any such allotment or transfer of shares of a company to its subsidiary company shall be void:
+
+Provided that nothing in this sub-section shall apply to a case—
+
+( a ) where the subsidiary company holds such shares as the legal representative of a deceased of the holding company; or
+
+( b ) where the subsidiary company holds such shares as a trustee; or
+
+( c ) where the subsidiary company is a shareholder even before it became a subsidiary company of the holding company:
+
+Provided further that the subsidiary company referred to in the preceding proviso shall have a right to vote at a meeting of the holding company only in respect of the shares held by it as a legal representative or as a trustee, as referred to in clause ( a ) or clause ( b ) of the said proviso.
+
+(2) The reference in this section to the shares of a holding company which is a or an , not having a share capital, shall be construed as a reference to the interest of its members, whatever be the form of interest.
+
+2(84) Share means a share in the share capital of a company and includes stock
+
+2(46) Holding Company , in relation to one or more other companies, means a company of which such companies are subsidiary companies. Explanation.- For the purposes of this clause, the expression “company” includes any body corporate;
+
+Explanation.- For the purposes of this clause, the expression “company” includes any body corporate;
+
+2(87) Subsidiary Company or Subsidiary , in relation to any other company (that is to say the holding company), means a company in which the holding company— (i) controls the composition of the Board of Directors; or (ii) exercises or controls more than one-half of the total voting power either at its own or together with one or more of its subsidiary companies: Provided that such class or classes of holding companies as may be prescribed shall not have layers of subsidiaries beyond such numbers  as may be prescribed. Explanation.—For the purposes of this clause,— (a) a company shall be deemed to be a subsidiary company of the holding company even if the control referred to in sub-clause (i) or sub-clause (ii) is of another subsidiary company of the holding company; (b) the composition of a company’s Board of Directors shall be deemed to be controlled by another company if that other company by exercise of some power exercisable by it at its discretion can appoint or remove all or a majority of the directors; (c) the expression “company” includes any body corporate; (d) “layer” in relation to a holding company means its subsidiary or subsidiaries.
+
+(i) controls the composition of the Board of Directors; or
+
+(ii) exercises or controls more than one-half of the total voting power either at its own or together with one or more of its subsidiary companies:
+
+Provided that such class or classes of holding companies as may be prescribed shall not have layers of subsidiaries beyond such numbers  as may be prescribed.
+
+Explanation.—For the purposes of this clause,—
+
+(a) a company shall be deemed to be a subsidiary company of the holding company even if the control referred to in sub-clause (i) or sub-clause (ii) is of another subsidiary company of the holding company;
+
+(b) the composition of a company’s Board of Directors shall be deemed to be controlled by another company if that other company by exercise of some power exercisable by it at its discretion can appoint or remove all or a majority of the directors;
+
+(c) the expression “company” includes any body corporate;
+
+(d) “layer” in relation to a holding company means its subsidiary or subsidiaries.
+
+2(55) Member , in relation to a company, means— ( i ) the subscriber to the memorandum of the company who shall be deemed to have agreed to become member of the company, and on its registration, shall be entered as member in its register of members; ( ii ) every other person who agrees in writing to become a member of the company and whose name is entered in the register of members of the company; ( iii ) every person holding shares of the company and whose name is entered as a beneficial owner in the records of a depository
+
+( i ) the subscriber to the memorandum of the company who shall be deemed to have agreed to become member of the company, and on its registration, shall be entered as member in its register of members;
+
+( ii ) every other person who agrees in writing to become a member of the company and whose name is entered in the register of members of the company;
+
+( iii ) every person holding shares of the company and whose name is entered as a beneficial owner in the records of a depository
+
+2(21) Company limited by guarantee means a company having the liability of its members limited by the memorandum to such amount as the members may respectively undertake to contribute to the assets of the company in the event of its being wound up
+
+2(92) Unlimited Company means a company not having any limit on the liability of its members

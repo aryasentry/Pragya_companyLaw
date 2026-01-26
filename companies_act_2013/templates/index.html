@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragya - Company Law CompanyGPT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .main-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .query-section {
+            padding: 30px;
+            background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .query-input-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        #queryInput {
+            flex: 1;
+            padding: 15px 20px;
+            font-size: 16px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        #queryInput:focus {
+            outline: none;
+            border-color: #2a5298;
+            box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+        }
+
+        #submitBtn {
+            padding: 15px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        #submitBtn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+        }
+
+        #submitBtn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .example-queries {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .example-chip {
+            padding: 8px 16px;
+            background: #e9ecef;
+            border-radius: 20px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .example-chip:hover {
+            background: #2a5298;
+            color: white;
+            border-color: #2a5298;
+        }
+
+        .results-section {
+            padding: 30px;
+            display: none;
+        }
+
+        .results-section.show {
+            display: block;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+
+        .loading.show {
+            display: block;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #2a5298;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .synthesized-answer {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(30, 60, 114, 0.3);
+        }
+
+        .synthesized-answer h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 10px;
+        }
+
+        .answer-text {
+            line-height: 1.8;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+        }
+
+        .answer-citations {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .answer-citations h4 {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .answer-citations ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .answer-citations li {
+            padding: 5px 0;
+            font-size: 0.9em;
+            opacity: 0.95;
+        }
+
+        .answer-citations li:before {
+            content: "📋 ";
+            margin-right: 8px;
+        }
+
+        .section-result {
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 20px;
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+
+        .primary-chunk {
+            background: #f8f9fa;
+            padding: 25px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .chunk-label {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .citation {
+            font-size: 0.95em;
+            color: #495057;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid #2a5298;
+            border-radius: 5px;
+        }
+
+        .citation-icon {
+            font-weight: bold;
+            color: #2a5298;
+            margin-right: 5px;
+        }
+
+        .chunk-text {
+            line-height: 1.8;
+            color: #212529;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        .supporting-chunks {
+            padding: 25px;
+            background: white;
+        }
+
+        .supporting-header {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #495057;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .supporting-chunk {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .supporting-chunk .chunk-label {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .llm-summary {
+            margin-top: 15px;
+            padding: 15px;
+            background: #fff3cd;
+            border-radius: 5px;
+            border-left: 4px solid #ffc107;
+        }
+
+        .llm-summary-label {
+            font-weight: 600;
+            color: #856404;
+            margin-bottom: 8px;
+            font-size: 0.9em;
+        }
+
+        .llm-summary-text {
+            color: #856404;
+            line-height: 1.6;
+            font-size: 0.9em;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #f5c6cb;
+            margin: 20px 0;
+        }
+
+        .error-message strong {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+        }
+
+        .no-results i {
+            font-size: 3em;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .query-input-group {
+                flex-direction: column;
+            }
+
+            #submitBtn {
+                width: 100%;
+            }
+
+            .example-queries {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚖️ Pragya - Company Law</h1>
+            <p>CompanyGPT | Governance-Grade Legal RAG System</p>
+        </div>
+
+        <div class="main-card">
+            <div class="query-section">
+                <div class="query-input-group">
+                    <input 
+                        type="text" 
+                        id="queryInput" 
+                        placeholder="Ask a question about the Companies Act 2013..."
+                        autocomplete="off"
+                    >
+                    <button id="submitBtn">Search</button>
+                </div>
+
+                <div class="example-queries">
+                    <div class="example-chip" data-query="What is the process for incorporation of a company?">
+                        Incorporation process
+                    </div>
+                    <div class="example-chip" data-query="What are the requirements for registered office?">
+                        Registered office requirements
+                    </div>
+                    <div class="example-chip" data-query="What forms are required for company registration?">
+                        Registration forms
+                    </div>
+                    <div class="example-chip" data-query="What are the requirements for directors?">
+                        Director requirements
+                    </div>
+                </div>
+            </div>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Searching legal database...</p>
+            </div>
+
+            <div class="results-section" id="results">
+                <!-- Results will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const queryInput = document.getElementById('queryInput');
+        const submitBtn = document.getElementById('submitBtn');
+        const loading = document.getElementById('loading');
+        const results = document.getElementById('results');
+
+        // Simple markdown to HTML converter
+        function markdownToHtml(text) {
+            if (!text) return '';
+            
+            // Replace newlines with <br> first to preserve line breaks
+            let html = text;
+            
+            // Headers (### )
+            html = html.replace(/^### (.+)$/gm, '<h3 style="margin-top: 15px; margin-bottom: 10px; font-size: 1.1em;">$1</h3>');
+            
+            // Bold (**text** or __text__)
+            html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+            html = html.replace(/__(.+?)__/g, '<strong>$1</strong>');
+            
+            // Italic (*text* or _text_)
+            html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+            html = html.replace(/_(.+?)_/g, '<em>$1</em>');
+            
+            // Code blocks (```code```)
+            html = html.replace(/```(.+?)```/gs, '<code style="display: block; background: rgba(255,255,255,0.2); padding: 10px; border-radius: 5px; margin: 10px 0;">$1</code>');
+            
+            // Inline code (`code`)
+            html = html.replace(/`(.+?)`/g, '<code style="background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 3px;">$1</code>');
+            
+            // Blockquotes (> text)
+            html = html.replace(/^> (.+)$/gm, '<blockquote style="border-left: 3px solid rgba(255,255,255,0.5); padding-left: 15px; margin: 10px 0; font-style: italic;">$1</blockquote>');
+            
+            // Unordered lists (- item or * item)
+            html = html.replace(/^- (.+)$/gm, '<li style="margin-left: 20px;">$1</li>');
+            html = html.replace(/^\\* (.+)$/gm, '<li style="margin-left: 20px;">$1</li>');
+            
+            // Ordered lists (1. item)
+            html = html.replace(/^\d+\. (.+)$/gm, '<li style="margin-left: 20px;">$1</li>');
+            
+            // Wrap consecutive <li> in <ul>
+            html = html.replace(/(<li[^>]*>.*?<\/li>\s*)+/gs, '<ul style="margin: 10px 0;">$&</ul>');
+            
+            // Paragraphs (double newline creates paragraph breaks)
+            html = html.replace(/\n\n/g, '</p><p style="margin: 15px 0;">');
+            html = '<p style="margin: 15px 0;">' + html + '</p>';
+            
+            // Single newlines become <br>
+            html = html.replace(/\n/g, '<br>');
+            
+            return html;
+        }
+
+        // Handle example chips
+        document.querySelectorAll('.example-chip').forEach(chip => {
+            chip.addEventListener('click', () => {
+                queryInput.value = chip.dataset.query;
+                performSearch();
+            });
+        });
+
+        // Handle Enter key
+        queryInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                performSearch();
+            }
+        });
+
+        // Handle submit button
+        submitBtn.addEventListener('click', performSearch);
+
+        async function performSearch() {
+            const query = queryInput.value.trim();
+            
+            if (!query) {
+                alert('Please enter a query');
+                return;
+            }
+
+            // Show loading
+            loading.classList.add('show');
+            results.classList.remove('show');
+            results.innerHTML = '';
+            submitBtn.disabled = true;
+
+            try {
+                const response = await fetch('/api/query', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ query })
+                });
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || 'Search failed');
+                }
+
+                displayResults(data.result);
+            } catch (error) {
+                displayError(error.message);
+            } finally {
+                loading.classList.remove('show');
+                submitBtn.disabled = false;
+            }
+        }
+
+        function displayResults(result) {
+            if (!result.retrieved_sections || result.retrieved_sections.length === 0) {
+                results.innerHTML = `
+                    <div class="no-results">
+                        <div style="font-size: 3em; margin-bottom: 20px;">📭</div>
+                        <h3>No results found</h3>
+                        <p>Try rephrasing your query or use different keywords</p>
+                    </div>
+                `;
+                results.classList.add('show');
+                return;
+            }
+
+            let html = '';
+
+            // Display synthesized answer first
+            if (result.synthesized_answer) {
+                html += `
+                    <div class="synthesized-answer">
+                        <h3> Synthesized Answer</h3>
+                        <div class="answer-text">${markdownToHtml(result.synthesized_answer)}</div>
+                        ${result.answer_citations && result.answer_citations.length > 0 ? `
+                            <div class="answer-citations">
+                                <h4>Citations:</h4>
+                                <ul>
+                                    ${result.answer_citations.map(citation => 
+                                        `<li>${escapeHtml(citation)}</li>`
+                                    ).join('')}
+                                </ul>
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }
+
+            // Add section header for source documents
+            if (result.retrieved_sections.length > 0) {
+                html += '<h2 style="margin: 30px 0 20px; color: #495057; font-size: 1.2em; border-bottom: 2px solid #dee2e6; padding-bottom: 10px;">📚 Source Documents</h2>';
+            }
+
+            result.retrieved_sections.forEach(section => {
+                html += `
+                    <div class="section-result">
+                        <div class="section-header">
+                            Section ${section.section}${section.primary_chunk.sub_section ? ` (${section.primary_chunk.sub_section})` : ''}
+                        </div>
+
+                        <div class="primary-chunk">
+                            <span class="chunk-label">PRIMARY ACT TEXT</span>
+                            <div class="citation">
+                                <span class="citation-icon">📖</span>
+                                ${escapeHtml(section.primary_chunk.citation)}
+                            </div>
+                            <div class="chunk-text">${escapeHtml(section.primary_chunk.text)}</div>
+                        </div>
+
+                        ${section.supporting_chunks.length > 0 ? `
+                            <div class="supporting-chunks">
+                                <div class="supporting-header">Supporting Documents</div>
+                                ${section.supporting_chunks.map((chunk, idx) => `
+                                    <div class="supporting-chunk">
+                                        <span class="chunk-label">${chunk.document_type.toUpperCase()}</span>
+                                        <div class="citation">
+                                            <span class="citation-icon">📄</span>
+                                            ${escapeHtml(chunk.citation)}
+                                        </div>
+                                        ${chunk.llm_summary ? `
+                                            <div class="llm-summary">
+                                                <div class="llm-summary-label">AI Summary:</div>
+                                                <div class="llm-summary-text">${escapeHtml(chunk.llm_summary)}</div>
+                                            </div>
+                                        ` : `
+                                            <div class="chunk-text">${escapeHtml(chunk.text.substring(0, 500))}${chunk.text.length > 500 ? '...' : ''}</div>
+                                        `}
+                                    </div>
+                                `).join('')}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            });
+
+            results.innerHTML = html;
+            results.classList.add('show');
+        }
+
+        function displayError(message) {
+            results.innerHTML = `
+                <div class="error-message">
+                    <strong>⚠️ Error</strong>
+                    <p>${escapeHtml(message)}</p>
+                </div>
+            `;
+            results.classList.add('show');
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+    </script>
+</body>
+</html>

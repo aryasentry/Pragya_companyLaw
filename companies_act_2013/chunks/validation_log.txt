@@ -1,0 +1,1972 @@
+[08:55:46] INFO: ================================================================================
+[08:55:46] INFO: GOVERNANCE-GRADE VALIDATION & CLEANING
+[08:55:46] INFO: ================================================================================
+[08:55:46] INFO: Loading chunks from chunks\final_chunks.json...
+[08:55:46] INFO: Loaded 1016 chunks
+[08:55:46] INFO: Processing 573 Act chunks
+[08:55:46] CLEAN: Removed leaked definitions from Section 1
+[08:55:46] CLEAN: REMOVED all 2 relationships from ca2013_act_s001 (awaiting justification verification)
+[08:55:46] INFO: Regenerating summary for ca2013_act_s001...
+[08:55:58] INFO: Completed Section 1 (1 chunks)
+[08:55:58] WARN: WARNING: Section 2 text reduced by >50% - manual review needed
+[08:55:58] CLEAN: REMOVED all 1 relationships from ca2013_act_s002 (awaiting justification verification)
+[08:55:58] INFO: Regenerating summary for ca2013_act_s002...
+[08:56:04] INFO: 
+💾 Saving progress (Section 2)...
+[08:56:04] INFO:    Saved 2 chunks
+[08:56:04] INFO: Completed Section 2 (1 chunks)
+[08:56:04] CLEAN: Removed leaked definitions from Section 3
+[08:56:04] CLEAN: Removed placeholder from ca2013_act_s003
+[08:56:04] CLEAN: REMOVED all 15 relationships from ca2013_act_s003 (awaiting justification verification)
+[08:56:04] CLEAN: Removed leaked definitions from Section 3
+[08:56:04] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx1 (awaiting justification verification)
+[08:56:04] INFO: Regenerating summary for ca2013_act_s003_ss1_idx1...
+[08:56:09] CLEAN: Removed leaked definitions from Section 3
+[08:56:09] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx2 (awaiting justification verification)
+[08:56:09] INFO: Regenerating summary for ca2013_act_s003_ss1_idx2...
+[08:56:15] CLEAN: Removed leaked definitions from Section 3
+[08:56:15] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx3 (awaiting justification verification)
+[08:56:15] INFO: Regenerating summary for ca2013_act_s003_ss1_idx3...
+[08:56:21] CLEAN: Removed leaked definitions from Section 3
+[08:56:21] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx4 (awaiting justification verification)
+[08:56:21] INFO: Regenerating summary for ca2013_act_s003_ss1_idx4...
+[08:56:27] WARN: Invalid compliance area 'One Person Company Incorporation' in ca2013_act_s003_ss1_idx4
+[08:56:27] CLEAN:   → Mapped to: Company Incorporation
+[08:56:27] CLEAN: Removed leaked definitions from Section 3
+[08:56:27] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx5 (awaiting justification verification)
+[08:56:27] INFO: Regenerating summary for ca2013_act_s003_ss1_idx5...
+[08:56:32] CLEAN: Removed leaked definitions from Section 3
+[08:56:32] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx6 (awaiting justification verification)
+[08:56:32] INFO: Regenerating summary for ca2013_act_s003_ss1_idx6...
+[08:56:38] CLEAN: Removed leaked definitions from Section 3
+[08:56:38] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx7 (awaiting justification verification)
+[08:56:38] INFO: Regenerating summary for ca2013_act_s003_ss1_idx7...
+[08:56:45] CLEAN: Removed leaked definitions from Section 3
+[08:56:45] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx8 (awaiting justification verification)
+[08:56:45] INFO: Regenerating summary for ca2013_act_s003_ss1_idx8...
+[08:56:50] CLEAN: Removed leaked definitions from Section 3
+[08:56:50] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx9 (awaiting justification verification)
+[08:56:50] INFO: Regenerating summary for ca2013_act_s003_ss1_idx9...
+[08:56:56] CLEAN: Removed leaked definitions from Section 3
+[08:56:56] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx10 (awaiting justification verification)
+[08:56:56] INFO: Regenerating summary for ca2013_act_s003_ss1_idx10...
+[08:57:02] CLEAN: Removed leaked definitions from Section 3
+[08:57:02] WARN: WARNING: Section 3 text reduced by >50% - manual review needed
+[08:57:02] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1_idx11 (awaiting justification verification)
+[08:57:02] INFO: Regenerating summary for ca2013_act_s003_ss1_idx11...
+[08:57:08] CLEAN: Removed leaked definitions from Section 3
+[08:57:08] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss1 (awaiting justification verification)
+[08:57:08] INFO: Regenerating summary for ca2013_act_s003_ss1...
+[08:57:14] CLEAN: Removed leaked definitions from Section 3
+[08:57:14] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx1 (awaiting justification verification)
+[08:57:14] INFO: Regenerating summary for ca2013_act_s003_ss2_idx1...
+[08:57:20] CLEAN: Removed leaked definitions from Section 3
+[08:57:20] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx2 (awaiting justification verification)
+[08:57:20] INFO: Regenerating summary for ca2013_act_s003_ss2_idx2...
+[08:57:25] CLEAN: Removed leaked definitions from Section 3
+[08:57:25] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx3 (awaiting justification verification)
+[08:57:25] INFO: Regenerating summary for ca2013_act_s003_ss2_idx3...
+[08:57:31] CLEAN: Removed leaked definitions from Section 3
+[08:57:31] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx4 (awaiting justification verification)
+[08:57:31] INFO: Regenerating summary for ca2013_act_s003_ss2_idx4...
+[08:57:37] CLEAN: Removed leaked definitions from Section 3
+[08:57:37] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx5 (awaiting justification verification)
+[08:57:37] INFO: Regenerating summary for ca2013_act_s003_ss2_idx5...
+[08:57:43] CLEAN: Removed leaked definitions from Section 3
+[08:57:43] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx6 (awaiting justification verification)
+[08:57:43] INFO: Regenerating summary for ca2013_act_s003_ss2_idx6...
+[08:57:49] CLEAN: Removed leaked definitions from Section 3
+[08:57:49] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx7 (awaiting justification verification)
+[08:57:49] INFO: Regenerating summary for ca2013_act_s003_ss2_idx7...
+[08:57:54] CLEAN: Removed leaked definitions from Section 3
+[08:57:54] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx8 (awaiting justification verification)
+[08:57:54] INFO: Regenerating summary for ca2013_act_s003_ss2_idx8...
+[08:58:00] CLEAN: Removed leaked definitions from Section 3
+[08:58:00] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx9 (awaiting justification verification)
+[08:58:00] INFO: Regenerating summary for ca2013_act_s003_ss2_idx9...
+[08:58:06] CLEAN: Removed leaked definitions from Section 3
+[08:58:06] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx10 (awaiting justification verification)
+[08:58:06] INFO: Regenerating summary for ca2013_act_s003_ss2_idx10...
+[08:58:12] CLEAN: Removed leaked definitions from Section 3
+[08:58:12] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx11 (awaiting justification verification)
+[08:58:12] INFO: Regenerating summary for ca2013_act_s003_ss2_idx11...
+[08:58:18] CLEAN: Removed leaked definitions from Section 3
+[08:58:18] CLEAN: REMOVED all 15 relationships from ca2013_act_s003_ss2_idx12 (awaiting justification verification)
+[08:58:18] INFO: Regenerating summary for ca2013_act_s003_ss2_idx12...
+[08:58:24] INFO: Completed Section 3 (25 chunks)
+[08:58:24] CLEAN: Removed leaked definitions from Section 4
+[08:58:24] CLEAN: Removed placeholder from ca2013_act_s004
+[08:58:24] CLEAN: REMOVED all 49 relationships from ca2013_act_s004 (awaiting justification verification)
+[08:58:24] INFO: 
+💾 Saving progress (Section 4)...
+[08:58:24] INFO:    Saved 28 chunks
+[08:58:24] CLEAN: Removed leaked definitions from Section 4
+[08:58:24] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx1 (awaiting justification verification)
+[08:58:24] INFO: Regenerating summary for ca2013_act_s004_ss1_idx1...
+[08:58:30] CLEAN: Removed leaked definitions from Section 4
+[08:58:30] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx2 (awaiting justification verification)
+[08:58:30] INFO: Regenerating summary for ca2013_act_s004_ss1_idx2...
+[08:58:36] CLEAN: Removed leaked definitions from Section 4
+[08:58:36] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx3 (awaiting justification verification)
+[08:58:36] INFO: Regenerating summary for ca2013_act_s004_ss1_idx3...
+[08:58:41] CLEAN: Removed leaked definitions from Section 4
+[08:58:41] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx4 (awaiting justification verification)
+[08:58:41] INFO: Regenerating summary for ca2013_act_s004_ss1_idx4...
+[08:58:48] CLEAN: Removed leaked definitions from Section 4
+[08:58:48] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx5 (awaiting justification verification)
+[08:58:48] INFO: Regenerating summary for ca2013_act_s004_ss1_idx5...
+[08:58:53] CLEAN: Removed leaked definitions from Section 4
+[08:58:53] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx6 (awaiting justification verification)
+[08:58:53] INFO: Regenerating summary for ca2013_act_s004_ss1_idx6...
+[08:58:59] CLEAN: Removed leaked definitions from Section 4
+[08:58:59] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx7 (awaiting justification verification)
+[08:58:59] INFO: Regenerating summary for ca2013_act_s004_ss1_idx7...
+[08:59:04] CLEAN: Removed leaked definitions from Section 4
+[08:59:04] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx8 (awaiting justification verification)
+[08:59:04] INFO: Regenerating summary for ca2013_act_s004_ss1_idx8...
+[08:59:10] CLEAN: Removed leaked definitions from Section 4
+[08:59:10] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx9 (awaiting justification verification)
+[08:59:10] INFO: Regenerating summary for ca2013_act_s004_ss1_idx9...
+[08:59:17] CLEAN: Removed leaked definitions from Section 4
+[08:59:17] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx10 (awaiting justification verification)
+[08:59:17] INFO: Regenerating summary for ca2013_act_s004_ss1_idx10...
+[08:59:23] CLEAN: Removed leaked definitions from Section 4
+[08:59:23] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx11 (awaiting justification verification)
+[08:59:23] INFO: Regenerating summary for ca2013_act_s004_ss1_idx11...
+[08:59:28] CLEAN: Removed leaked definitions from Section 4
+[08:59:28] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx12 (awaiting justification verification)
+[08:59:28] INFO: Regenerating summary for ca2013_act_s004_ss1_idx12...
+[08:59:34] CLEAN: Removed leaked definitions from Section 4
+[08:59:34] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx13 (awaiting justification verification)
+[08:59:34] INFO: Regenerating summary for ca2013_act_s004_ss1_idx13...
+[08:59:36] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s004_ss1_idx13
+[08:59:39] CLEAN: Removed leaked definitions from Section 4
+[08:59:39] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx14 (awaiting justification verification)
+[08:59:39] INFO: Regenerating summary for ca2013_act_s004_ss1_idx14...
+[08:59:45] CLEAN: Removed leaked definitions from Section 4
+[08:59:45] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx15 (awaiting justification verification)
+[08:59:45] INFO: Regenerating summary for ca2013_act_s004_ss1_idx15...
+[08:59:50] CLEAN: Removed leaked definitions from Section 4
+[08:59:50] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx16 (awaiting justification verification)
+[08:59:50] INFO: Regenerating summary for ca2013_act_s004_ss1_idx16...
+[08:59:56] CLEAN: Removed leaked definitions from Section 4
+[08:59:56] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx17 (awaiting justification verification)
+[08:59:56] INFO: Regenerating summary for ca2013_act_s004_ss1_idx17...
+[09:00:02] CLEAN: Removed leaked definitions from Section 4
+[09:00:02] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx18 (awaiting justification verification)
+[09:00:02] INFO: Regenerating summary for ca2013_act_s004_ss1_idx18...
+[09:00:07] CLEAN: Removed leaked definitions from Section 4
+[09:00:07] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx19 (awaiting justification verification)
+[09:00:07] INFO: Regenerating summary for ca2013_act_s004_ss1_idx19...
+[09:00:13] CLEAN: Removed leaked definitions from Section 4
+[09:00:13] WARN: WARNING: Section 4 text reduced by >50% - manual review needed
+[09:00:13] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx20 (awaiting justification verification)
+[09:00:13] INFO: Regenerating summary for ca2013_act_s004_ss1_idx20...
+[09:00:19] CLEAN: Removed leaked definitions from Section 4
+[09:00:19] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx21 (awaiting justification verification)
+[09:00:19] INFO: Regenerating summary for ca2013_act_s004_ss1_idx21...
+[09:00:24] WARN: Invalid compliance area 'NOT PROVIDED' in ca2013_act_s004_ss1_idx21
+[09:00:24] CLEAN: Removed leaked definitions from Section 4
+[09:00:24] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx22 (awaiting justification verification)
+[09:00:24] INFO: Regenerating summary for ca2013_act_s004_ss1_idx22...
+[09:00:30] CLEAN: Removed leaked definitions from Section 4
+[09:00:30] WARN: WARNING: Section 4 text reduced by >50% - manual review needed
+[09:00:30] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx23 (awaiting justification verification)
+[09:00:30] INFO: Regenerating summary for ca2013_act_s004_ss1_idx23...
+[09:00:36] CLEAN: Removed leaked definitions from Section 4
+[09:00:36] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx24 (awaiting justification verification)
+[09:00:36] INFO: Regenerating summary for ca2013_act_s004_ss1_idx24...
+[09:00:41] CLEAN: Removed leaked definitions from Section 4
+[09:00:41] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1_idx25 (awaiting justification verification)
+[09:00:41] INFO: Regenerating summary for ca2013_act_s004_ss1_idx25...
+[09:00:47] CLEAN: Removed leaked definitions from Section 4
+[09:00:47] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss1 (awaiting justification verification)
+[09:00:47] INFO: Regenerating summary for ca2013_act_s004_ss1...
+[09:00:54] CLEAN: Removed leaked definitions from Section 4
+[09:00:54] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss2 (awaiting justification verification)
+[09:00:54] INFO: Regenerating summary for ca2013_act_s004_ss2...
+[09:00:59] CLEAN: Removed leaked definitions from Section 4
+[09:00:59] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss3 (awaiting justification verification)
+[09:00:59] INFO: Regenerating summary for ca2013_act_s004_ss3...
+[09:01:02] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s004_ss3
+[09:01:05] CLEAN: Removed leaked definitions from Section 4
+[09:01:05] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss4 (awaiting justification verification)
+[09:01:05] INFO: Regenerating summary for ca2013_act_s004_ss4...
+[09:01:10] CLEAN: Removed leaked definitions from Section 4
+[09:01:10] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss5 (awaiting justification verification)
+[09:01:10] INFO: Regenerating summary for ca2013_act_s004_ss5...
+[09:01:16] CLEAN: Removed leaked definitions from Section 4
+[09:01:16] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss6 (awaiting justification verification)
+[09:01:16] INFO: Regenerating summary for ca2013_act_s004_ss6...
+[09:01:22] CLEAN: Removed leaked definitions from Section 4
+[09:01:22] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx1 (awaiting justification verification)
+[09:01:22] INFO: Regenerating summary for ca2013_act_s004_ss7_idx1...
+[09:01:24] WARN: WARNING: Forbidden verb 'guarantee' in summary for ca2013_act_s004_ss7_idx1
+[09:01:28] CLEAN: Removed leaked definitions from Section 4
+[09:01:28] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx2 (awaiting justification verification)
+[09:01:28] INFO: Regenerating summary for ca2013_act_s004_ss7_idx2...
+[09:01:33] CLEAN: Removed leaked definitions from Section 4
+[09:01:33] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx3 (awaiting justification verification)
+[09:01:33] INFO: Regenerating summary for ca2013_act_s004_ss7_idx3...
+[09:01:39] CLEAN: Removed leaked definitions from Section 4
+[09:01:39] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx4 (awaiting justification verification)
+[09:01:39] INFO: Regenerating summary for ca2013_act_s004_ss7_idx4...
+[09:01:44] CLEAN: Removed leaked definitions from Section 4
+[09:01:44] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx5 (awaiting justification verification)
+[09:01:44] INFO: Regenerating summary for ca2013_act_s004_ss7_idx5...
+[09:01:50] CLEAN: Removed leaked definitions from Section 4
+[09:01:50] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx6 (awaiting justification verification)
+[09:01:50] INFO: Regenerating summary for ca2013_act_s004_ss7_idx6...
+[09:01:56] CLEAN: Removed leaked definitions from Section 4
+[09:01:56] WARN: WARNING: Section 4 text reduced by >50% - manual review needed
+[09:01:56] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx7 (awaiting justification verification)
+[09:01:56] INFO: Regenerating summary for ca2013_act_s004_ss7_idx7...
+[09:02:01] CLEAN: Removed leaked definitions from Section 4
+[09:02:01] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx8 (awaiting justification verification)
+[09:02:01] INFO: Regenerating summary for ca2013_act_s004_ss7_idx8...
+[09:02:07] CLEAN: Removed leaked definitions from Section 4
+[09:02:07] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx9 (awaiting justification verification)
+[09:02:07] INFO: Regenerating summary for ca2013_act_s004_ss7_idx9...
+[09:02:13] CLEAN: Removed leaked definitions from Section 4
+[09:02:13] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx10 (awaiting justification verification)
+[09:02:13] INFO: Regenerating summary for ca2013_act_s004_ss7_idx10...
+[09:02:19] WARN: Invalid compliance area 'All aspects of company law' in ca2013_act_s004_ss7_idx10
+[09:02:19] CLEAN: Removed leaked definitions from Section 4
+[09:02:19] CLEAN: REMOVED all 49 relationships from ca2013_act_s004_ss7_idx11 (awaiting justification verification)
+[09:02:19] INFO: Regenerating summary for ca2013_act_s004_ss7_idx11...
+[09:02:25] INFO: Completed Section 4 (43 chunks)
+[09:02:25] CLEAN: Removed leaked definitions from Section 5
+[09:02:25] CLEAN: Removed placeholder from ca2013_act_s005
+[09:02:25] CLEAN: REMOVED all 26 relationships from ca2013_act_s005 (awaiting justification verification)
+[09:02:25] CLEAN: Removed leaked definitions from Section 5
+[09:02:25] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx1 (awaiting justification verification)
+[09:02:25] INFO: Regenerating summary for ca2013_act_s005_ss1_idx1...
+[09:02:31] CLEAN: Removed leaked definitions from Section 5
+[09:02:31] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx2 (awaiting justification verification)
+[09:02:31] INFO: Regenerating summary for ca2013_act_s005_ss1_idx2...
+[09:02:37] CLEAN: Removed leaked definitions from Section 5
+[09:02:37] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx3 (awaiting justification verification)
+[09:02:37] INFO: Regenerating summary for ca2013_act_s005_ss1_idx3...
+[09:02:42] CLEAN: Removed leaked definitions from Section 5
+[09:02:42] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx4 (awaiting justification verification)
+[09:02:42] INFO: Regenerating summary for ca2013_act_s005_ss1_idx4...
+[09:02:48] CLEAN: Removed leaked definitions from Section 5
+[09:02:48] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx5 (awaiting justification verification)
+[09:02:48] INFO: Regenerating summary for ca2013_act_s005_ss1_idx5...
+[09:02:54] CLEAN: Removed leaked definitions from Section 5
+[09:02:54] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx6 (awaiting justification verification)
+[09:02:54] INFO: Regenerating summary for ca2013_act_s005_ss1_idx6...
+[09:02:59] CLEAN: Removed leaked definitions from Section 5
+[09:02:59] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1_idx7 (awaiting justification verification)
+[09:02:59] INFO: Regenerating summary for ca2013_act_s005_ss1_idx7...
+[09:03:05] CLEAN: Removed leaked definitions from Section 5
+[09:03:05] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss1 (awaiting justification verification)
+[09:03:05] INFO: Regenerating summary for ca2013_act_s005_ss1...
+[09:03:11] CLEAN: Removed leaked definitions from Section 5
+[09:03:11] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss2 (awaiting justification verification)
+[09:03:11] INFO: Regenerating summary for ca2013_act_s005_ss2...
+[09:03:16] CLEAN: Removed leaked definitions from Section 5
+[09:03:16] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss3 (awaiting justification verification)
+[09:03:16] INFO: Regenerating summary for ca2013_act_s005_ss3...
+[09:03:22] CLEAN: Removed leaked definitions from Section 5
+[09:03:22] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss4 (awaiting justification verification)
+[09:03:22] INFO: Regenerating summary for ca2013_act_s005_ss4...
+[09:03:25] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s005_ss4
+[09:03:27] CLEAN: Removed leaked definitions from Section 5
+[09:03:27] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss5 (awaiting justification verification)
+[09:03:27] INFO: Regenerating summary for ca2013_act_s005_ss5...
+[09:03:33] CLEAN: Removed leaked definitions from Section 5
+[09:03:33] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss6 (awaiting justification verification)
+[09:03:33] INFO: Regenerating summary for ca2013_act_s005_ss6...
+[09:03:39] CLEAN: Removed leaked definitions from Section 5
+[09:03:39] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss7 (awaiting justification verification)
+[09:03:39] INFO: Regenerating summary for ca2013_act_s005_ss7...
+[09:03:44] CLEAN: Removed leaked definitions from Section 5
+[09:03:44] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss8 (awaiting justification verification)
+[09:03:44] INFO: Regenerating summary for ca2013_act_s005_ss8...
+[09:03:50] CLEAN: Removed leaked definitions from Section 5
+[09:03:50] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx1 (awaiting justification verification)
+[09:03:50] INFO: Regenerating summary for ca2013_act_s005_ss9_idx1...
+[09:03:56] CLEAN: Removed leaked definitions from Section 5
+[09:03:56] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx2 (awaiting justification verification)
+[09:03:56] INFO: Regenerating summary for ca2013_act_s005_ss9_idx2...
+[09:04:01] CLEAN: Removed leaked definitions from Section 5
+[09:04:01] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx3 (awaiting justification verification)
+[09:04:01] INFO: Regenerating summary for ca2013_act_s005_ss9_idx3...
+[09:04:07] CLEAN: Removed leaked definitions from Section 5
+[09:04:07] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx4 (awaiting justification verification)
+[09:04:07] INFO: Regenerating summary for ca2013_act_s005_ss9_idx4...
+[09:04:12] CLEAN: Removed leaked definitions from Section 5
+[09:04:12] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx5 (awaiting justification verification)
+[09:04:12] INFO: Regenerating summary for ca2013_act_s005_ss9_idx5...
+[09:04:18] CLEAN: Removed leaked definitions from Section 5
+[09:04:18] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx6 (awaiting justification verification)
+[09:04:18] INFO: Regenerating summary for ca2013_act_s005_ss9_idx6...
+[09:04:24] CLEAN: Removed leaked definitions from Section 5
+[09:04:24] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx7 (awaiting justification verification)
+[09:04:24] INFO: Regenerating summary for ca2013_act_s005_ss9_idx7...
+[09:04:29] CLEAN: Removed leaked definitions from Section 5
+[09:04:29] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx8 (awaiting justification verification)
+[09:04:29] INFO: Regenerating summary for ca2013_act_s005_ss9_idx8...
+[09:04:35] CLEAN: Removed leaked definitions from Section 5
+[09:04:35] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx9 (awaiting justification verification)
+[09:04:35] INFO: Regenerating summary for ca2013_act_s005_ss9_idx9...
+[09:04:41] CLEAN: Removed leaked definitions from Section 5
+[09:04:41] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx10 (awaiting justification verification)
+[09:04:41] INFO: Regenerating summary for ca2013_act_s005_ss9_idx10...
+[09:04:46] CLEAN: Removed leaked definitions from Section 5
+[09:04:46] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx11 (awaiting justification verification)
+[09:04:46] INFO: Regenerating summary for ca2013_act_s005_ss9_idx11...
+[09:04:52] CLEAN: Removed leaked definitions from Section 5
+[09:04:52] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx12 (awaiting justification verification)
+[09:04:52] INFO: Regenerating summary for ca2013_act_s005_ss9_idx12...
+[09:04:58] WARN: Invalid compliance area 'Compliance with legal changes' in ca2013_act_s005_ss9_idx12
+[09:04:58] CLEAN: Removed leaked definitions from Section 5
+[09:04:58] CLEAN: REMOVED all 26 relationships from ca2013_act_s005_ss9_idx13 (awaiting justification verification)
+[09:04:58] INFO: Regenerating summary for ca2013_act_s005_ss9_idx13...
+[09:05:04] INFO: Completed Section 5 (29 chunks)
+[09:05:04] CLEAN: Removed leaked definitions from Section 6
+[09:05:04] CLEAN: REMOVED all 1 relationships from ca2013_act_s006 (awaiting justification verification)
+[09:05:04] INFO: Regenerating summary for ca2013_act_s006...
+[09:05:10] INFO: 
+💾 Saving progress (Section 6)...
+[09:05:10] INFO:    Saved 100 chunks
+[09:05:10] INFO: Completed Section 6 (1 chunks)
+[09:05:10] CLEAN: Removed leaked definitions from Section 7
+[09:05:10] CLEAN: Removed placeholder from ca2013_act_s007
+[09:05:10] CLEAN: REMOVED all 65 relationships from ca2013_act_s007 (awaiting justification verification)
+[09:05:10] CLEAN: Removed leaked definitions from Section 7
+[09:05:10] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx1 (awaiting justification verification)
+[09:05:10] INFO: Regenerating summary for ca2013_act_s007_ss1_idx1...
+[09:05:15] CLEAN: Removed leaked definitions from Section 7
+[09:05:15] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx2 (awaiting justification verification)
+[09:05:15] INFO: Regenerating summary for ca2013_act_s007_ss1_idx2...
+[09:05:21] CLEAN: Removed leaked definitions from Section 7
+[09:05:21] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx3 (awaiting justification verification)
+[09:05:21] INFO: Regenerating summary for ca2013_act_s007_ss1_idx3...
+[09:05:26] CLEAN: Removed leaked definitions from Section 7
+[09:05:26] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx4 (awaiting justification verification)
+[09:05:26] INFO: Regenerating summary for ca2013_act_s007_ss1_idx4...
+[09:05:29] WARN: WARNING: Forbidden verb 'ensure' in summary for ca2013_act_s007_ss1_idx4
+[09:05:32] CLEAN: Removed leaked definitions from Section 7
+[09:05:32] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx5 (awaiting justification verification)
+[09:05:32] INFO: Regenerating summary for ca2013_act_s007_ss1_idx5...
+[09:05:34] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s007_ss1_idx5
+[09:05:38] CLEAN: Removed leaked definitions from Section 7
+[09:05:38] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx6 (awaiting justification verification)
+[09:05:38] INFO: Regenerating summary for ca2013_act_s007_ss1_idx6...
+[09:05:43] CLEAN: Removed leaked definitions from Section 7
+[09:05:43] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx7 (awaiting justification verification)
+[09:05:43] INFO: Regenerating summary for ca2013_act_s007_ss1_idx7...
+[09:05:49] CLEAN: Removed leaked definitions from Section 7
+[09:05:49] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx8 (awaiting justification verification)
+[09:05:49] INFO: Regenerating summary for ca2013_act_s007_ss1_idx8...
+[09:05:55] CLEAN: Removed leaked definitions from Section 7
+[09:05:55] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx9 (awaiting justification verification)
+[09:05:55] INFO: Regenerating summary for ca2013_act_s007_ss1_idx9...
+[09:06:01] CLEAN: Removed leaked definitions from Section 7
+[09:06:01] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx10 (awaiting justification verification)
+[09:06:01] INFO: Regenerating summary for ca2013_act_s007_ss1_idx10...
+[09:06:07] CLEAN: Removed leaked definitions from Section 7
+[09:06:07] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx11 (awaiting justification verification)
+[09:06:07] INFO: Regenerating summary for ca2013_act_s007_ss1_idx11...
+[09:06:12] CLEAN: Removed leaked definitions from Section 7
+[09:06:12] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx12 (awaiting justification verification)
+[09:06:12] INFO: Regenerating summary for ca2013_act_s007_ss1_idx12...
+[09:06:18] CLEAN: Removed leaked definitions from Section 7
+[09:06:18] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx13 (awaiting justification verification)
+[09:06:18] INFO: Regenerating summary for ca2013_act_s007_ss1_idx13...
+[09:06:23] CLEAN: Removed leaked definitions from Section 7
+[09:06:23] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx14 (awaiting justification verification)
+[09:06:23] INFO: Regenerating summary for ca2013_act_s007_ss1_idx14...
+[09:06:26] WARN: WARNING: Forbidden verb 'ensure' in summary for ca2013_act_s007_ss1_idx14
+[09:06:29] CLEAN: Removed leaked definitions from Section 7
+[09:06:29] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:06:29] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx15 (awaiting justification verification)
+[09:06:29] INFO: Regenerating summary for ca2013_act_s007_ss1_idx15...
+[09:06:35] CLEAN: Removed leaked definitions from Section 7
+[09:06:35] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx16 (awaiting justification verification)
+[09:06:35] INFO: Regenerating summary for ca2013_act_s007_ss1_idx16...
+[09:06:41] CLEAN: Removed leaked definitions from Section 7
+[09:06:41] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:06:41] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx17 (awaiting justification verification)
+[09:06:41] INFO: Regenerating summary for ca2013_act_s007_ss1_idx17...
+[09:06:46] CLEAN: Removed leaked definitions from Section 7
+[09:06:46] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx18 (awaiting justification verification)
+[09:06:46] INFO: Regenerating summary for ca2013_act_s007_ss1_idx18...
+[09:06:52] CLEAN: Removed leaked definitions from Section 7
+[09:06:52] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx19 (awaiting justification verification)
+[09:06:52] INFO: Regenerating summary for ca2013_act_s007_ss1_idx19...
+[09:06:58] CLEAN: Removed leaked definitions from Section 7
+[09:06:58] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx20 (awaiting justification verification)
+[09:06:58] INFO: Regenerating summary for ca2013_act_s007_ss1_idx20...
+[09:07:04] CLEAN: Removed leaked definitions from Section 7
+[09:07:04] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx21 (awaiting justification verification)
+[09:07:04] INFO: Regenerating summary for ca2013_act_s007_ss1_idx21...
+[09:07:09] CLEAN: Removed leaked definitions from Section 7
+[09:07:09] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx22 (awaiting justification verification)
+[09:07:09] INFO: Regenerating summary for ca2013_act_s007_ss1_idx22...
+[09:07:15] CLEAN: Removed leaked definitions from Section 7
+[09:07:15] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx23 (awaiting justification verification)
+[09:07:15] INFO: Regenerating summary for ca2013_act_s007_ss1_idx23...
+[09:07:21] CLEAN: Removed leaked definitions from Section 7
+[09:07:21] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:07:21] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx24 (awaiting justification verification)
+[09:07:21] INFO: Regenerating summary for ca2013_act_s007_ss1_idx24...
+[09:07:26] CLEAN: Removed leaked definitions from Section 7
+[09:07:26] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1_idx25 (awaiting justification verification)
+[09:07:26] INFO: Regenerating summary for ca2013_act_s007_ss1_idx25...
+[09:07:32] CLEAN: Removed leaked definitions from Section 7
+[09:07:32] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss1 (awaiting justification verification)
+[09:07:32] INFO: Regenerating summary for ca2013_act_s007_ss1...
+[09:07:38] CLEAN: Removed leaked definitions from Section 7
+[09:07:38] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss2 (awaiting justification verification)
+[09:07:38] INFO: Regenerating summary for ca2013_act_s007_ss2...
+[09:07:44] CLEAN: Removed leaked definitions from Section 7
+[09:07:44] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss3 (awaiting justification verification)
+[09:07:44] INFO: Regenerating summary for ca2013_act_s007_ss3...
+[09:07:49] CLEAN: Removed leaked definitions from Section 7
+[09:07:49] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss4 (awaiting justification verification)
+[09:07:49] INFO: Regenerating summary for ca2013_act_s007_ss4...
+[09:07:55] CLEAN: Removed leaked definitions from Section 7
+[09:07:55] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss5 (awaiting justification verification)
+[09:07:55] INFO: Regenerating summary for ca2013_act_s007_ss5...
+[09:08:01] CLEAN: Removed leaked definitions from Section 7
+[09:08:01] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss6 (awaiting justification verification)
+[09:08:01] INFO: Regenerating summary for ca2013_act_s007_ss6...
+[09:08:06] CLEAN: Removed leaked definitions from Section 7
+[09:08:06] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx1 (awaiting justification verification)
+[09:08:06] INFO: Regenerating summary for ca2013_act_s007_ss7_idx1...
+[09:08:12] CLEAN: Removed leaked definitions from Section 7
+[09:08:12] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx2 (awaiting justification verification)
+[09:08:12] INFO: Regenerating summary for ca2013_act_s007_ss7_idx2...
+[09:08:18] CLEAN: Removed leaked definitions from Section 7
+[09:08:18] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx3 (awaiting justification verification)
+[09:08:18] INFO: Regenerating summary for ca2013_act_s007_ss7_idx3...
+[09:08:23] CLEAN: Removed leaked definitions from Section 7
+[09:08:23] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx4 (awaiting justification verification)
+[09:08:23] INFO: Regenerating summary for ca2013_act_s007_ss7_idx4...
+[09:08:29] CLEAN: Removed leaked definitions from Section 7
+[09:08:29] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx5 (awaiting justification verification)
+[09:08:29] INFO: Regenerating summary for ca2013_act_s007_ss7_idx5...
+[09:08:34] CLEAN: Removed leaked definitions from Section 7
+[09:08:34] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx6 (awaiting justification verification)
+[09:08:34] INFO: Regenerating summary for ca2013_act_s007_ss7_idx6...
+[09:08:40] CLEAN: Removed leaked definitions from Section 7
+[09:08:40] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:08:40] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx7 (awaiting justification verification)
+[09:08:40] INFO: Regenerating summary for ca2013_act_s007_ss7_idx7...
+[09:08:46] CLEAN: Removed leaked definitions from Section 7
+[09:08:46] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx8 (awaiting justification verification)
+[09:08:46] INFO: Regenerating summary for ca2013_act_s007_ss7_idx8...
+[09:08:52] CLEAN: Removed leaked definitions from Section 7
+[09:08:52] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:08:52] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx9 (awaiting justification verification)
+[09:08:52] INFO: Regenerating summary for ca2013_act_s007_ss7_idx9...
+[09:08:58] CLEAN: Removed leaked definitions from Section 7
+[09:08:58] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx10 (awaiting justification verification)
+[09:08:58] INFO: Regenerating summary for ca2013_act_s007_ss7_idx10...
+[09:09:00] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s007_ss7_idx10
+[09:09:03] CLEAN: Removed leaked definitions from Section 7
+[09:09:03] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx11 (awaiting justification verification)
+[09:09:03] INFO: Regenerating summary for ca2013_act_s007_ss7_idx11...
+[09:09:09] CLEAN: Removed leaked definitions from Section 7
+[09:09:09] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx12 (awaiting justification verification)
+[09:09:09] INFO: Regenerating summary for ca2013_act_s007_ss7_idx12...
+[09:09:15] CLEAN: Removed leaked definitions from Section 7
+[09:09:15] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx13 (awaiting justification verification)
+[09:09:15] INFO: Regenerating summary for ca2013_act_s007_ss7_idx13...
+[09:09:21] CLEAN: Removed leaked definitions from Section 7
+[09:09:21] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx14 (awaiting justification verification)
+[09:09:21] INFO: Regenerating summary for ca2013_act_s007_ss7_idx14...
+[09:09:26] WARN: Invalid compliance area 'Member & Shareholders' in ca2013_act_s007_ss7_idx14
+[09:09:26] CLEAN: Removed leaked definitions from Section 7
+[09:09:26] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx15 (awaiting justification verification)
+[09:09:26] INFO: Regenerating summary for ca2013_act_s007_ss7_idx15...
+[09:09:32] CLEAN: Removed leaked definitions from Section 7
+[09:09:32] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:09:32] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx16 (awaiting justification verification)
+[09:09:32] INFO: Regenerating summary for ca2013_act_s007_ss7_idx16...
+[09:09:37] CLEAN: Removed leaked definitions from Section 7
+[09:09:37] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:09:37] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx17 (awaiting justification verification)
+[09:09:37] INFO: Regenerating summary for ca2013_act_s007_ss7_idx17...
+[09:09:43] CLEAN: Removed leaked definitions from Section 7
+[09:09:43] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx18 (awaiting justification verification)
+[09:09:43] INFO: Regenerating summary for ca2013_act_s007_ss7_idx18...
+[09:09:49] CLEAN: Removed leaked definitions from Section 7
+[09:09:49] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:09:49] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx19 (awaiting justification verification)
+[09:09:49] INFO: Regenerating summary for ca2013_act_s007_ss7_idx19...
+[09:09:55] CLEAN: Removed leaked definitions from Section 7
+[09:09:55] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx20 (awaiting justification verification)
+[09:09:55] INFO: Regenerating summary for ca2013_act_s007_ss7_idx20...
+[09:10:01] CLEAN: Removed leaked definitions from Section 7
+[09:10:01] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx21 (awaiting justification verification)
+[09:10:01] INFO: Regenerating summary for ca2013_act_s007_ss7_idx21...
+[09:10:07] CLEAN: Removed leaked definitions from Section 7
+[09:10:07] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx22 (awaiting justification verification)
+[09:10:07] INFO: Regenerating summary for ca2013_act_s007_ss7_idx22...
+[09:10:10] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s007_ss7_idx22
+[09:10:13] CLEAN: Removed leaked definitions from Section 7
+[09:10:13] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx23 (awaiting justification verification)
+[09:10:13] INFO: Regenerating summary for ca2013_act_s007_ss7_idx23...
+[09:10:19] CLEAN: Removed leaked definitions from Section 7
+[09:10:19] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx24 (awaiting justification verification)
+[09:10:19] INFO: Regenerating summary for ca2013_act_s007_ss7_idx24...
+[09:10:25] CLEAN: Removed leaked definitions from Section 7
+[09:10:25] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx25 (awaiting justification verification)
+[09:10:25] INFO: Regenerating summary for ca2013_act_s007_ss7_idx25...
+[09:10:31] CLEAN: Removed leaked definitions from Section 7
+[09:10:31] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx26 (awaiting justification verification)
+[09:10:31] INFO: Regenerating summary for ca2013_act_s007_ss7_idx26...
+[09:10:36] CLEAN: Removed leaked definitions from Section 7
+[09:10:36] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx27 (awaiting justification verification)
+[09:10:36] INFO: Regenerating summary for ca2013_act_s007_ss7_idx27...
+[09:10:42] CLEAN: Removed leaked definitions from Section 7
+[09:10:42] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx28 (awaiting justification verification)
+[09:10:42] INFO: Regenerating summary for ca2013_act_s007_ss7_idx28...
+[09:10:47] CLEAN: Removed leaked definitions from Section 7
+[09:10:47] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx29 (awaiting justification verification)
+[09:10:47] INFO: Regenerating summary for ca2013_act_s007_ss7_idx29...
+[09:10:52] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s007_ss7_idx29
+[09:10:52] CLEAN: Removed leaked definitions from Section 7
+[09:10:52] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx30 (awaiting justification verification)
+[09:10:52] INFO: Regenerating summary for ca2013_act_s007_ss7_idx30...
+[09:10:58] CLEAN: Removed leaked definitions from Section 7
+[09:10:58] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx31 (awaiting justification verification)
+[09:10:58] INFO: Regenerating summary for ca2013_act_s007_ss7_idx31...
+[09:11:03] CLEAN: Removed leaked definitions from Section 7
+[09:11:03] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx32 (awaiting justification verification)
+[09:11:03] INFO: Regenerating summary for ca2013_act_s007_ss7_idx32...
+[09:11:09] CLEAN: Removed leaked definitions from Section 7
+[09:11:09] WARN: WARNING: Section 7 text reduced by >50% - manual review needed
+[09:11:09] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx33 (awaiting justification verification)
+[09:11:09] INFO: Regenerating summary for ca2013_act_s007_ss7_idx33...
+[09:11:15] CLEAN: Removed leaked definitions from Section 7
+[09:11:15] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx34 (awaiting justification verification)
+[09:11:15] INFO: Regenerating summary for ca2013_act_s007_ss7_idx34...
+[09:11:20] CLEAN: Removed leaked definitions from Section 7
+[09:11:20] CLEAN: REMOVED all 65 relationships from ca2013_act_s007_ss7_idx35 (awaiting justification verification)
+[09:11:20] INFO: Regenerating summary for ca2013_act_s007_ss7_idx35...
+[09:11:26] INFO: Completed Section 7 (67 chunks)
+[09:11:26] CLEAN: Removed leaked definitions from Section 8
+[09:11:26] CLEAN: Removed placeholder from ca2013_act_s008
+[09:11:26] CLEAN: REMOVED all 37 relationships from ca2013_act_s008 (awaiting justification verification)
+[09:11:26] INFO: 
+💾 Saving progress (Section 8)...
+[09:11:26] INFO:    Saved 168 chunks
+[09:11:26] CLEAN: Removed leaked definitions from Section 8
+[09:11:26] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx1 (awaiting justification verification)
+[09:11:26] INFO: Regenerating summary for ca2013_act_s008_ss1_idx1...
+[09:11:32] CLEAN: Removed leaked definitions from Section 8
+[09:11:32] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx2 (awaiting justification verification)
+[09:11:32] INFO: Regenerating summary for ca2013_act_s008_ss1_idx2...
+[09:11:37] CLEAN: Removed leaked definitions from Section 8
+[09:11:37] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx3 (awaiting justification verification)
+[09:11:37] INFO: Regenerating summary for ca2013_act_s008_ss1_idx3...
+[09:11:43] WARN: Invalid compliance area 'Charity Law' in ca2013_act_s008_ss1_idx3
+[09:11:43] CLEAN: Removed leaked definitions from Section 8
+[09:11:43] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx4 (awaiting justification verification)
+[09:11:43] INFO: Regenerating summary for ca2013_act_s008_ss1_idx4...
+[09:11:49] CLEAN: Removed leaked definitions from Section 8
+[09:11:49] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx5 (awaiting justification verification)
+[09:11:49] INFO: Regenerating summary for ca2013_act_s008_ss1_idx5...
+[09:11:51] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss1_idx5
+[09:11:54] CLEAN: Removed leaked definitions from Section 8
+[09:11:54] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx6 (awaiting justification verification)
+[09:11:54] INFO: Regenerating summary for ca2013_act_s008_ss1_idx6...
+[09:12:00] CLEAN: Removed leaked definitions from Section 8
+[09:12:00] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx7 (awaiting justification verification)
+[09:12:00] INFO: Regenerating summary for ca2013_act_s008_ss1_idx7...
+[09:12:06] CLEAN: Removed leaked definitions from Section 8
+[09:12:06] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx8 (awaiting justification verification)
+[09:12:06] INFO: Regenerating summary for ca2013_act_s008_ss1_idx8...
+[09:12:12] CLEAN: Removed leaked definitions from Section 8
+[09:12:12] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:12:12] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx9 (awaiting justification verification)
+[09:12:12] INFO: Regenerating summary for ca2013_act_s008_ss1_idx9...
+[09:12:18] CLEAN: Removed leaked definitions from Section 8
+[09:12:18] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx10 (awaiting justification verification)
+[09:12:18] INFO: Regenerating summary for ca2013_act_s008_ss1_idx10...
+[09:12:21] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss1_idx10
+[09:12:24] CLEAN: Removed leaked definitions from Section 8
+[09:12:24] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx11 (awaiting justification verification)
+[09:12:24] INFO: Regenerating summary for ca2013_act_s008_ss1_idx11...
+[09:12:30] CLEAN: Removed leaked definitions from Section 8
+[09:12:30] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx1 (awaiting justification verification)
+[09:12:30] INFO: Regenerating summary for ca2013_act_s008_ss1_idx1...
+[09:12:36] CLEAN: Removed leaked definitions from Section 8
+[09:12:36] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx2 (awaiting justification verification)
+[09:12:36] INFO: Regenerating summary for ca2013_act_s008_ss1_idx2...
+[09:12:42] CLEAN: Removed leaked definitions from Section 8
+[09:12:42] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx3 (awaiting justification verification)
+[09:12:42] INFO: Regenerating summary for ca2013_act_s008_ss1_idx3...
+[09:12:47] CLEAN: Removed leaked definitions from Section 8
+[09:12:47] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx4 (awaiting justification verification)
+[09:12:47] INFO: Regenerating summary for ca2013_act_s008_ss1_idx4...
+[09:12:53] CLEAN: Removed leaked definitions from Section 8
+[09:12:53] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx5 (awaiting justification verification)
+[09:12:53] INFO: Regenerating summary for ca2013_act_s008_ss1_idx5...
+[09:12:55] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss1_idx5
+[09:12:59] CLEAN: Removed leaked definitions from Section 8
+[09:12:59] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx6 (awaiting justification verification)
+[09:12:59] INFO: Regenerating summary for ca2013_act_s008_ss1_idx6...
+[09:13:04] CLEAN: Removed leaked definitions from Section 8
+[09:13:04] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx7 (awaiting justification verification)
+[09:13:04] INFO: Regenerating summary for ca2013_act_s008_ss1_idx7...
+[09:13:09] CLEAN: Removed leaked definitions from Section 8
+[09:13:09] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx8 (awaiting justification verification)
+[09:13:09] INFO: Regenerating summary for ca2013_act_s008_ss1_idx8...
+[09:13:16] CLEAN: Removed leaked definitions from Section 8
+[09:13:16] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:13:16] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx9 (awaiting justification verification)
+[09:13:16] INFO: Regenerating summary for ca2013_act_s008_ss1_idx9...
+[09:13:22] CLEAN: Removed leaked definitions from Section 8
+[09:13:22] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx10 (awaiting justification verification)
+[09:13:22] INFO: Regenerating summary for ca2013_act_s008_ss1_idx10...
+[09:13:27] CLEAN: Removed leaked definitions from Section 8
+[09:13:27] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss1_idx11 (awaiting justification verification)
+[09:13:27] INFO: Regenerating summary for ca2013_act_s008_ss1_idx11...
+[09:13:34] CLEAN: Removed leaked definitions from Section 8
+[09:13:34] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss2 (awaiting justification verification)
+[09:13:34] INFO: Regenerating summary for ca2013_act_s008_ss2...
+[09:13:39] CLEAN: Removed leaked definitions from Section 8
+[09:13:39] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss3 (awaiting justification verification)
+[09:13:39] INFO: Regenerating summary for ca2013_act_s008_ss3...
+[09:13:45] CLEAN: Removed leaked definitions from Section 8
+[09:13:45] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx1 (awaiting justification verification)
+[09:13:45] INFO: Regenerating summary for ca2013_act_s008_ss4_idx1...
+[09:13:50] CLEAN: Removed leaked definitions from Section 8
+[09:13:50] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx2 (awaiting justification verification)
+[09:13:50] INFO: Regenerating summary for ca2013_act_s008_ss4_idx2...
+[09:13:53] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss4_idx2
+[09:13:56] CLEAN: Removed leaked definitions from Section 8
+[09:13:56] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx3 (awaiting justification verification)
+[09:13:56] INFO: Regenerating summary for ca2013_act_s008_ss4_idx3...
+[09:14:01] CLEAN: Removed leaked definitions from Section 8
+[09:14:01] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx4 (awaiting justification verification)
+[09:14:01] INFO: Regenerating summary for ca2013_act_s008_ss4_idx4...
+[09:14:07] CLEAN: Removed leaked definitions from Section 8
+[09:14:07] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx5 (awaiting justification verification)
+[09:14:07] INFO: Regenerating summary for ca2013_act_s008_ss4_idx5...
+[09:14:13] CLEAN: Removed leaked definitions from Section 8
+[09:14:13] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:14:13] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx6 (awaiting justification verification)
+[09:14:13] INFO: Regenerating summary for ca2013_act_s008_ss4_idx6...
+[09:14:19] WARN: Invalid compliance area 'Company Incorporation & Constitutional Documents' in ca2013_act_s008_ss4_idx6
+[09:14:19] CLEAN:   → Mapped to: Company Incorporation
+[09:14:19] CLEAN: Removed leaked definitions from Section 8
+[09:14:19] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx7 (awaiting justification verification)
+[09:14:19] INFO: Regenerating summary for ca2013_act_s008_ss4_idx7...
+[09:14:25] CLEAN: Removed leaked definitions from Section 8
+[09:14:25] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss4_idx8 (awaiting justification verification)
+[09:14:25] INFO: Regenerating summary for ca2013_act_s008_ss4_idx8...
+[09:14:31] CLEAN: Removed leaked definitions from Section 8
+[09:14:31] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx1 (awaiting justification verification)
+[09:14:31] INFO: Regenerating summary for ca2013_act_s008_ss5_idx1...
+[09:14:34] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss5_idx1
+[09:14:37] CLEAN: Removed leaked definitions from Section 8
+[09:14:37] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx2 (awaiting justification verification)
+[09:14:37] INFO: Regenerating summary for ca2013_act_s008_ss5_idx2...
+[09:14:42] CLEAN: Removed leaked definitions from Section 8
+[09:14:42] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx3 (awaiting justification verification)
+[09:14:42] INFO: Regenerating summary for ca2013_act_s008_ss5_idx3...
+[09:14:48] WARN: Invalid compliance area 'Company Incorporation, Constitutional Documents (MOA & AOA), Members & Shareholders' in ca2013_act_s008_ss5_idx3
+[09:14:48] CLEAN:   → Mapped to: Company Incorporation
+[09:14:48] CLEAN: Removed leaked definitions from Section 8
+[09:14:48] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx4 (awaiting justification verification)
+[09:14:48] INFO: Regenerating summary for ca2013_act_s008_ss5_idx4...
+[09:14:55] CLEAN: Removed leaked definitions from Section 8
+[09:14:55] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:14:55] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx5 (awaiting justification verification)
+[09:14:55] INFO: Regenerating summary for ca2013_act_s008_ss5_idx5...
+[09:15:00] CLEAN: Removed leaked definitions from Section 8
+[09:15:00] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx6 (awaiting justification verification)
+[09:15:00] INFO: Regenerating summary for ca2013_act_s008_ss5_idx6...
+[09:15:06] CLEAN: Removed leaked definitions from Section 8
+[09:15:06] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss5_idx7 (awaiting justification verification)
+[09:15:06] INFO: Regenerating summary for ca2013_act_s008_ss5_idx7...
+[09:15:12] CLEAN: Removed leaked definitions from Section 8
+[09:15:12] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss6_idx1 (awaiting justification verification)
+[09:15:12] INFO: Regenerating summary for ca2013_act_s008_ss6_idx1...
+[09:15:19] CLEAN: Removed leaked definitions from Section 8
+[09:15:19] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:15:19] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss6_idx2 (awaiting justification verification)
+[09:15:19] INFO: Regenerating summary for ca2013_act_s008_ss6_idx2...
+[09:15:24] CLEAN: Removed leaked definitions from Section 8
+[09:15:24] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss6_idx3 (awaiting justification verification)
+[09:15:24] INFO: Regenerating summary for ca2013_act_s008_ss6_idx3...
+[09:15:30] WARN: Invalid compliance area 'Member Rights' in ca2013_act_s008_ss6_idx3
+[09:15:30] CLEAN: Removed leaked definitions from Section 8
+[09:15:30] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss6_idx4 (awaiting justification verification)
+[09:15:30] INFO: Regenerating summary for ca2013_act_s008_ss6_idx4...
+[09:15:37] CLEAN: Removed leaked definitions from Section 8
+[09:15:37] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss7 (awaiting justification verification)
+[09:15:37] INFO: Regenerating summary for ca2013_act_s008_ss7...
+[09:15:43] CLEAN: Removed leaked definitions from Section 8
+[09:15:43] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss8 (awaiting justification verification)
+[09:15:43] INFO: Regenerating summary for ca2013_act_s008_ss8...
+[09:15:48] CLEAN: Removed leaked definitions from Section 8
+[09:15:48] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss9 (awaiting justification verification)
+[09:15:48] INFO: Regenerating summary for ca2013_act_s008_ss9...
+[09:15:51] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss9
+[09:15:54] CLEAN: Removed leaked definitions from Section 8
+[09:15:54] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss10 (awaiting justification verification)
+[09:15:54] INFO: Regenerating summary for ca2013_act_s008_ss10...
+[09:15:59] CLEAN: Removed leaked definitions from Section 8
+[09:15:59] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx1 (awaiting justification verification)
+[09:15:59] INFO: Regenerating summary for ca2013_act_s008_ss11_idx1...
+[09:16:05] CLEAN: Removed leaked definitions from Section 8
+[09:16:05] WARN: WARNING: Section 8 text reduced by >50% - manual review needed
+[09:16:05] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx2 (awaiting justification verification)
+[09:16:05] INFO: Regenerating summary for ca2013_act_s008_ss11_idx2...
+[09:16:11] CLEAN: Removed leaked definitions from Section 8
+[09:16:11] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx3 (awaiting justification verification)
+[09:16:11] INFO: Regenerating summary for ca2013_act_s008_ss11_idx3...
+[09:16:17] CLEAN: Removed leaked definitions from Section 8
+[09:16:17] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx4 (awaiting justification verification)
+[09:16:17] INFO: Regenerating summary for ca2013_act_s008_ss11_idx4...
+[09:16:23] CLEAN: Removed leaked definitions from Section 8
+[09:16:23] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx5 (awaiting justification verification)
+[09:16:23] INFO: Regenerating summary for ca2013_act_s008_ss11_idx5...
+[09:16:29] CLEAN: Removed leaked definitions from Section 8
+[09:16:29] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx6 (awaiting justification verification)
+[09:16:29] INFO: Regenerating summary for ca2013_act_s008_ss11_idx6...
+[09:16:36] CLEAN: Removed leaked definitions from Section 8
+[09:16:36] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx7 (awaiting justification verification)
+[09:16:36] INFO: Regenerating summary for ca2013_act_s008_ss11_idx7...
+[09:16:38] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s008_ss11_idx7
+[09:16:41] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s008_ss11_idx7
+[09:16:41] CLEAN: Removed leaked definitions from Section 8
+[09:16:41] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx8 (awaiting justification verification)
+[09:16:41] INFO: Regenerating summary for ca2013_act_s008_ss11_idx8...
+[09:16:47] WARN: Invalid compliance area 'Extent' in ca2013_act_s008_ss11_idx8
+[09:16:47] CLEAN:   → Mapped to: Extent, Commencement & Overrides
+[09:16:47] CLEAN: Removed leaked definitions from Section 8
+[09:16:47] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx9 (awaiting justification verification)
+[09:16:47] INFO: Regenerating summary for ca2013_act_s008_ss11_idx9...
+[09:16:53] CLEAN: Removed leaked definitions from Section 8
+[09:16:53] CLEAN: REMOVED all 37 relationships from ca2013_act_s008_ss11_idx10 (awaiting justification verification)
+[09:16:53] INFO: Regenerating summary for ca2013_act_s008_ss11_idx10...
+[09:17:00] INFO: Completed Section 8 (58 chunks)
+[09:17:00] CLEAN: Removed leaked definitions from Section 9
+[09:17:00] WARN: WARNING: Section 9 text reduced by >50% - manual review needed
+[09:17:00] CLEAN: REMOVED all 3 relationships from ca2013_act_s009 (awaiting justification verification)
+[09:17:00] INFO: Regenerating summary for ca2013_act_s009...
+[09:17:06] INFO: Completed Section 9 (1 chunks)
+[09:17:06] CLEAN: Removed leaked definitions from Section 10
+[09:17:06] CLEAN: Removed placeholder from ca2013_act_s010
+[09:17:06] CLEAN: REMOVED all 13 relationships from ca2013_act_s010 (awaiting justification verification)
+[09:17:06] INFO: 
+💾 Saving progress (Section 10)...
+[09:17:06] INFO:    Saved 227 chunks
+[09:17:06] CLEAN: Removed leaked definitions from Section 10
+[09:17:06] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx1 (awaiting justification verification)
+[09:17:06] INFO: Regenerating summary for ca2013_act_s010_ss1_idx1...
+[09:17:12] CLEAN: Removed leaked definitions from Section 10
+[09:17:12] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx2 (awaiting justification verification)
+[09:17:12] INFO: Regenerating summary for ca2013_act_s010_ss1_idx2...
+[09:17:17] CLEAN: Removed leaked definitions from Section 10
+[09:17:17] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx3 (awaiting justification verification)
+[09:17:17] INFO: Regenerating summary for ca2013_act_s010_ss1_idx3...
+[09:17:23] CLEAN: Removed leaked definitions from Section 10
+[09:17:23] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx4 (awaiting justification verification)
+[09:17:23] INFO: Regenerating summary for ca2013_act_s010_ss1_idx4...
+[09:17:29] CLEAN: Removed leaked definitions from Section 10
+[09:17:29] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx5 (awaiting justification verification)
+[09:17:29] INFO: Regenerating summary for ca2013_act_s010_ss1_idx5...
+[09:17:35] CLEAN: Removed leaked definitions from Section 10
+[09:17:35] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx6 (awaiting justification verification)
+[09:17:35] INFO: Regenerating summary for ca2013_act_s010_ss1_idx6...
+[09:17:41] CLEAN: Removed leaked definitions from Section 10
+[09:17:41] WARN: WARNING: Section 10 text reduced by >50% - manual review needed
+[09:17:41] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx7 (awaiting justification verification)
+[09:17:41] INFO: Regenerating summary for ca2013_act_s010_ss1_idx7...
+[09:17:43] WARN: WARNING: Forbidden verb 'override' in summary for ca2013_act_s010_ss1_idx7
+[09:17:47] CLEAN: Removed leaked definitions from Section 10
+[09:17:47] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1_idx8 (awaiting justification verification)
+[09:17:47] INFO: Regenerating summary for ca2013_act_s010_ss1_idx8...
+[09:17:53] CLEAN: Removed leaked definitions from Section 10
+[09:17:53] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1 (awaiting justification verification)
+[09:17:53] INFO: Regenerating summary for ca2013_act_s010_ss1...
+[09:17:59] CLEAN: Removed leaked definitions from Section 10
+[09:17:59] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss2 (awaiting justification verification)
+[09:17:59] INFO: Regenerating summary for ca2013_act_s010_ss2...
+[09:18:04] CLEAN: Removed leaked definitions from Section 10
+[09:18:04] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1 (awaiting justification verification)
+[09:18:04] INFO: Regenerating summary for ca2013_act_s010_ss1...
+[09:18:10] CLEAN: Removed leaked definitions from Section 10
+[09:18:10] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss2 (awaiting justification verification)
+[09:18:10] INFO: Regenerating summary for ca2013_act_s010_ss2...
+[09:18:16] CLEAN: Removed leaked definitions from Section 10
+[09:18:16] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss3 (awaiting justification verification)
+[09:18:16] INFO: Regenerating summary for ca2013_act_s010_ss3...
+[09:18:22] CLEAN: Removed leaked definitions from Section 10
+[09:18:22] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss1 (awaiting justification verification)
+[09:18:22] INFO: Regenerating summary for ca2013_act_s010_ss1...
+[09:18:28] CLEAN: Removed leaked definitions from Section 10
+[09:18:28] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss2 (awaiting justification verification)
+[09:18:28] INFO: Regenerating summary for ca2013_act_s010_ss2...
+[09:18:34] CLEAN: Removed leaked definitions from Section 10
+[09:18:34] CLEAN: REMOVED all 13 relationships from ca2013_act_s010_ss3 (awaiting justification verification)
+[09:18:34] INFO: Regenerating summary for ca2013_act_s010_ss3...
+[09:18:40] INFO: Completed Section 10 (17 chunks)
+[09:18:40] CLEAN: Removed leaked definitions from Section 11
+[09:18:40] CLEAN: REMOVED all 5 relationships from ca2013_act_s011 (awaiting justification verification)
+[09:18:40] INFO: Regenerating summary for ca2013_act_s011...
+[09:18:47] INFO: Completed Section 11 (1 chunks)
+[09:18:47] CLEAN: Removed leaked definitions from Section 12
+[09:18:47] CLEAN: Removed placeholder from ca2013_act_s012
+[09:18:47] CLEAN: REMOVED all 22 relationships from ca2013_act_s012 (awaiting justification verification)
+[09:18:47] INFO: 
+💾 Saving progress (Section 12)...
+[09:18:47] INFO:    Saved 245 chunks
+[09:18:47] CLEAN: Removed leaked definitions from Section 12
+[09:18:47] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx1 (awaiting justification verification)
+[09:18:47] INFO: Regenerating summary for ca2013_act_s012_ss1_idx1...
+[09:18:53] CLEAN: Removed leaked definitions from Section 12
+[09:18:53] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx2 (awaiting justification verification)
+[09:18:53] INFO: Regenerating summary for ca2013_act_s012_ss1_idx2...
+[09:18:59] CLEAN: Removed leaked definitions from Section 12
+[09:18:59] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx3 (awaiting justification verification)
+[09:18:59] INFO: Regenerating summary for ca2013_act_s012_ss1_idx3...
+[09:19:04] CLEAN: Removed leaked definitions from Section 12
+[09:19:04] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx4 (awaiting justification verification)
+[09:19:04] INFO: Regenerating summary for ca2013_act_s012_ss1_idx4...
+[09:19:10] CLEAN: Removed leaked definitions from Section 12
+[09:19:10] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx5 (awaiting justification verification)
+[09:19:10] INFO: Regenerating summary for ca2013_act_s012_ss1_idx5...
+[09:19:16] CLEAN: Removed leaked definitions from Section 12
+[09:19:16] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx6 (awaiting justification verification)
+[09:19:16] INFO: Regenerating summary for ca2013_act_s012_ss1_idx6...
+[09:19:22] CLEAN: Removed leaked definitions from Section 12
+[09:19:22] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx7 (awaiting justification verification)
+[09:19:22] INFO: Regenerating summary for ca2013_act_s012_ss1_idx7...
+[09:19:28] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s012_ss1_idx7
+[09:19:28] CLEAN: Removed leaked definitions from Section 12
+[09:19:28] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx8 (awaiting justification verification)
+[09:19:28] INFO: Regenerating summary for ca2013_act_s012_ss1_idx8...
+[09:19:34] CLEAN: Removed leaked definitions from Section 12
+[09:19:34] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx9 (awaiting justification verification)
+[09:19:34] INFO: Regenerating summary for ca2013_act_s012_ss1_idx9...
+[09:19:39] CLEAN: Removed leaked definitions from Section 12
+[09:19:39] WARN: WARNING: Section 12 text reduced by >50% - manual review needed
+[09:19:39] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx10 (awaiting justification verification)
+[09:19:39] INFO: Regenerating summary for ca2013_act_s012_ss1_idx10...
+[09:19:45] CLEAN: Removed leaked definitions from Section 12
+[09:19:45] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx11 (awaiting justification verification)
+[09:19:45] INFO: Regenerating summary for ca2013_act_s012_ss1_idx11...
+[09:19:51] CLEAN: Removed leaked definitions from Section 12
+[09:19:51] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1_idx12 (awaiting justification verification)
+[09:19:51] INFO: Regenerating summary for ca2013_act_s012_ss1_idx12...
+[09:19:57] CLEAN: Removed leaked definitions from Section 12
+[09:19:57] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss1 (awaiting justification verification)
+[09:19:57] INFO: Regenerating summary for ca2013_act_s012_ss1...
+[09:20:04] CLEAN: Removed leaked definitions from Section 12
+[09:20:04] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx1 (awaiting justification verification)
+[09:20:04] INFO: Regenerating summary for ca2013_act_s012_ss2_idx1...
+[09:20:09] CLEAN: Removed leaked definitions from Section 12
+[09:20:09] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx2 (awaiting justification verification)
+[09:20:09] INFO: Regenerating summary for ca2013_act_s012_ss2_idx2...
+[09:20:15] CLEAN: Removed leaked definitions from Section 12
+[09:20:15] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx3 (awaiting justification verification)
+[09:20:15] INFO: Regenerating summary for ca2013_act_s012_ss2_idx3...
+[09:20:20] CLEAN: Removed leaked definitions from Section 12
+[09:20:20] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx4 (awaiting justification verification)
+[09:20:20] INFO: Regenerating summary for ca2013_act_s012_ss2_idx4...
+[09:20:26] CLEAN: Removed leaked definitions from Section 12
+[09:20:26] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx5 (awaiting justification verification)
+[09:20:26] INFO: Regenerating summary for ca2013_act_s012_ss2_idx5...
+[09:20:32] CLEAN: Removed leaked definitions from Section 12
+[09:20:32] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx6 (awaiting justification verification)
+[09:20:32] INFO: Regenerating summary for ca2013_act_s012_ss2_idx6...
+[09:20:38] CLEAN: Removed leaked definitions from Section 12
+[09:20:38] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx7 (awaiting justification verification)
+[09:20:38] INFO: Regenerating summary for ca2013_act_s012_ss2_idx7...
+[09:20:43] CLEAN: Removed leaked definitions from Section 12
+[09:20:43] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx8 (awaiting justification verification)
+[09:20:43] INFO: Regenerating summary for ca2013_act_s012_ss2_idx8...
+[09:20:50] CLEAN: Removed leaked definitions from Section 12
+[09:20:50] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx9 (awaiting justification verification)
+[09:20:50] INFO: Regenerating summary for ca2013_act_s012_ss2_idx9...
+[09:20:55] CLEAN: Removed leaked definitions from Section 12
+[09:20:55] WARN: WARNING: Section 12 text reduced by >50% - manual review needed
+[09:20:55] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx10 (awaiting justification verification)
+[09:20:55] INFO: Regenerating summary for ca2013_act_s012_ss2_idx10...
+[09:21:01] CLEAN: Removed leaked definitions from Section 12
+[09:21:01] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx11 (awaiting justification verification)
+[09:21:01] INFO: Regenerating summary for ca2013_act_s012_ss2_idx11...
+[09:21:07] CLEAN: Removed leaked definitions from Section 12
+[09:21:07] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss2_idx12 (awaiting justification verification)
+[09:21:07] INFO: Regenerating summary for ca2013_act_s012_ss2_idx12...
+[09:21:13] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s012_ss2_idx12
+[09:21:13] CLEAN: Removed leaked definitions from Section 12
+[09:21:13] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss3 (awaiting justification verification)
+[09:21:13] INFO: Regenerating summary for ca2013_act_s012_ss3...
+[09:21:20] CLEAN: Removed leaked definitions from Section 12
+[09:21:20] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx1 (awaiting justification verification)
+[09:21:20] INFO: Regenerating summary for ca2013_act_s012_ss4_idx1...
+[09:21:25] CLEAN: Removed leaked definitions from Section 12
+[09:21:25] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx2 (awaiting justification verification)
+[09:21:25] INFO: Regenerating summary for ca2013_act_s012_ss4_idx2...
+[09:21:28] WARN: WARNING: Forbidden verb 'establish' in summary for ca2013_act_s012_ss4_idx2
+[09:21:31] CLEAN: Removed leaked definitions from Section 12
+[09:21:31] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx3 (awaiting justification verification)
+[09:21:31] INFO: Regenerating summary for ca2013_act_s012_ss4_idx3...
+[09:21:37] CLEAN: Removed leaked definitions from Section 12
+[09:21:37] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx4 (awaiting justification verification)
+[09:21:37] INFO: Regenerating summary for ca2013_act_s012_ss4_idx4...
+[09:21:43] CLEAN: Removed leaked definitions from Section 12
+[09:21:43] WARN: WARNING: Section 12 text reduced by >50% - manual review needed
+[09:21:43] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx5 (awaiting justification verification)
+[09:21:43] INFO: Regenerating summary for ca2013_act_s012_ss4_idx5...
+[09:21:49] CLEAN: Removed leaked definitions from Section 12
+[09:21:49] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx6 (awaiting justification verification)
+[09:21:49] INFO: Regenerating summary for ca2013_act_s012_ss4_idx6...
+[09:21:54] CLEAN: Removed leaked definitions from Section 12
+[09:21:54] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss4_idx7 (awaiting justification verification)
+[09:21:54] INFO: Regenerating summary for ca2013_act_s012_ss4_idx7...
+[09:22:01] CLEAN: Removed leaked definitions from Section 12
+[09:22:01] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss6 (awaiting justification verification)
+[09:22:01] INFO: Regenerating summary for ca2013_act_s012_ss6...
+[09:22:06] CLEAN: Removed leaked definitions from Section 12
+[09:22:06] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss7 (awaiting justification verification)
+[09:22:06] INFO: Regenerating summary for ca2013_act_s012_ss7...
+[09:22:12] CLEAN: Removed leaked definitions from Section 12
+[09:22:12] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss8_idx1 (awaiting justification verification)
+[09:22:12] INFO: Regenerating summary for ca2013_act_s012_ss8_idx1...
+[09:22:18] CLEAN: Removed leaked definitions from Section 12
+[09:22:18] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss8_idx2 (awaiting justification verification)
+[09:22:18] INFO: Regenerating summary for ca2013_act_s012_ss8_idx2...
+[09:22:24] CLEAN: Removed leaked definitions from Section 12
+[09:22:24] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss8_idx3 (awaiting justification verification)
+[09:22:24] INFO: Regenerating summary for ca2013_act_s012_ss8_idx3...
+[09:22:29] CLEAN: Removed leaked definitions from Section 12
+[09:22:29] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss8_idx4 (awaiting justification verification)
+[09:22:29] INFO: Regenerating summary for ca2013_act_s012_ss8_idx4...
+[09:22:35] CLEAN: Removed leaked definitions from Section 12
+[09:22:35] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss8_idx5 (awaiting justification verification)
+[09:22:35] INFO: Regenerating summary for ca2013_act_s012_ss8_idx5...
+[09:22:41] CLEAN: Removed leaked definitions from Section 12
+[09:22:41] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5 (awaiting justification verification)
+[09:22:41] INFO: Regenerating summary for ca2013_act_s012_ss5...
+[09:22:47] CLEAN: Removed leaked definitions from Section 12
+[09:22:47] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5_idx1 (awaiting justification verification)
+[09:22:47] INFO: Regenerating summary for ca2013_act_s012_ss5_idx1...
+[09:22:53] CLEAN: Removed leaked definitions from Section 12
+[09:22:53] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5_idx2 (awaiting justification verification)
+[09:22:53] INFO: Regenerating summary for ca2013_act_s012_ss5_idx2...
+[09:22:59] CLEAN: Removed leaked definitions from Section 12
+[09:22:59] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5_idx3 (awaiting justification verification)
+[09:22:59] INFO: Regenerating summary for ca2013_act_s012_ss5_idx3...
+[09:23:05] CLEAN: Removed leaked definitions from Section 12
+[09:23:05] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5_idx4 (awaiting justification verification)
+[09:23:05] INFO: Regenerating summary for ca2013_act_s012_ss5_idx4...
+[09:23:11] CLEAN: Removed leaked definitions from Section 12
+[09:23:11] CLEAN: REMOVED all 22 relationships from ca2013_act_s012_ss5_idx5 (awaiting justification verification)
+[09:23:11] INFO: Regenerating summary for ca2013_act_s012_ss5_idx5...
+[09:23:17] INFO: Completed Section 12 (47 chunks)
+[09:23:17] CLEAN: Removed leaked definitions from Section 13
+[09:23:17] CLEAN: Removed placeholder from ca2013_act_s013
+[09:23:17] CLEAN: REMOVED all 19 relationships from ca2013_act_s013 (awaiting justification verification)
+[09:23:17] CLEAN: Removed leaked definitions from Section 13
+[09:23:17] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx1 (awaiting justification verification)
+[09:23:17] INFO: Regenerating summary for ca2013_act_s013_ss1_idx1...
+[09:23:23] CLEAN: Removed leaked definitions from Section 13
+[09:23:23] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx2 (awaiting justification verification)
+[09:23:23] INFO: Regenerating summary for ca2013_act_s013_ss1_idx2...
+[09:23:29] CLEAN: Removed leaked definitions from Section 13
+[09:23:29] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx3 (awaiting justification verification)
+[09:23:29] INFO: Regenerating summary for ca2013_act_s013_ss1_idx3...
+[09:23:35] CLEAN: Removed leaked definitions from Section 13
+[09:23:35] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx4 (awaiting justification verification)
+[09:23:35] INFO: Regenerating summary for ca2013_act_s013_ss1_idx4...
+[09:23:41] CLEAN: Removed leaked definitions from Section 13
+[09:23:41] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:23:41] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx5 (awaiting justification verification)
+[09:23:41] INFO: Regenerating summary for ca2013_act_s013_ss1_idx5...
+[09:23:46] WARN: Invalid compliance area 'Company Incorporation & Constitutional Documents (MOA/AAO)' in ca2013_act_s013_ss1_idx5
+[09:23:46] CLEAN:   → Mapped to: Company Incorporation
+[09:23:46] CLEAN: Removed leaked definitions from Section 13
+[09:23:46] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx6 (awaiting justification verification)
+[09:23:46] INFO: Regenerating summary for ca2013_act_s013_ss1_idx6...
+[09:23:52] CLEAN: Removed leaked definitions from Section 13
+[09:23:52] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx7 (awaiting justification verification)
+[09:23:52] INFO: Regenerating summary for ca2013_act_s013_ss1_idx7...
+[09:23:58] CLEAN: Removed leaked definitions from Section 13
+[09:23:58] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx8 (awaiting justification verification)
+[09:23:58] INFO: Regenerating summary for ca2013_act_s013_ss1_idx8...
+[09:24:04] CLEAN: Removed leaked definitions from Section 13
+[09:24:04] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx9 (awaiting justification verification)
+[09:24:04] INFO: Regenerating summary for ca2013_act_s013_ss1_idx9...
+[09:24:09] CLEAN: Removed leaked definitions from Section 13
+[09:24:09] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx10 (awaiting justification verification)
+[09:24:09] INFO: Regenerating summary for ca2013_act_s013_ss1_idx10...
+[09:24:15] CLEAN: Removed leaked definitions from Section 13
+[09:24:15] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:24:15] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx11 (awaiting justification verification)
+[09:24:15] INFO: Regenerating summary for ca2013_act_s013_ss1_idx11...
+[09:24:20] CLEAN: Removed leaked definitions from Section 13
+[09:24:20] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1_idx12 (awaiting justification verification)
+[09:24:20] INFO: Regenerating summary for ca2013_act_s013_ss1_idx12...
+[09:24:26] CLEAN: Removed leaked definitions from Section 13
+[09:24:26] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss1 (awaiting justification verification)
+[09:24:26] INFO: Regenerating summary for ca2013_act_s013_ss1...
+[09:24:32] CLEAN: Removed leaked definitions from Section 13
+[09:24:32] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx1 (awaiting justification verification)
+[09:24:32] INFO: Regenerating summary for ca2013_act_s013_ss2_idx1...
+[09:24:38] CLEAN: Removed leaked definitions from Section 13
+[09:24:38] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx2 (awaiting justification verification)
+[09:24:38] INFO: Regenerating summary for ca2013_act_s013_ss2_idx2...
+[09:24:43] CLEAN: Removed leaked definitions from Section 13
+[09:24:43] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx3 (awaiting justification verification)
+[09:24:43] INFO: Regenerating summary for ca2013_act_s013_ss2_idx3...
+[09:24:49] CLEAN: Removed leaked definitions from Section 13
+[09:24:49] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx4 (awaiting justification verification)
+[09:24:49] INFO: Regenerating summary for ca2013_act_s013_ss2_idx4...
+[09:24:55] CLEAN: Removed leaked definitions from Section 13
+[09:24:55] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:24:55] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx5 (awaiting justification verification)
+[09:24:55] INFO: Regenerating summary for ca2013_act_s013_ss2_idx5...
+[09:25:00] CLEAN: Removed leaked definitions from Section 13
+[09:25:00] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx6 (awaiting justification verification)
+[09:25:00] INFO: Regenerating summary for ca2013_act_s013_ss2_idx6...
+[09:25:06] CLEAN: Removed leaked definitions from Section 13
+[09:25:06] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx7 (awaiting justification verification)
+[09:25:06] INFO: Regenerating summary for ca2013_act_s013_ss2_idx7...
+[09:25:12] CLEAN: Removed leaked definitions from Section 13
+[09:25:12] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx8 (awaiting justification verification)
+[09:25:12] INFO: Regenerating summary for ca2013_act_s013_ss2_idx8...
+[09:25:18] CLEAN: Removed leaked definitions from Section 13
+[09:25:18] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx9 (awaiting justification verification)
+[09:25:18] INFO: Regenerating summary for ca2013_act_s013_ss2_idx9...
+[09:25:23] CLEAN: Removed leaked definitions from Section 13
+[09:25:23] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx10 (awaiting justification verification)
+[09:25:23] INFO: Regenerating summary for ca2013_act_s013_ss2_idx10...
+[09:25:29] CLEAN: Removed leaked definitions from Section 13
+[09:25:29] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:25:29] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx11 (awaiting justification verification)
+[09:25:29] INFO: Regenerating summary for ca2013_act_s013_ss2_idx11...
+[09:25:34] CLEAN: Removed leaked definitions from Section 13
+[09:25:34] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss2_idx12 (awaiting justification verification)
+[09:25:34] INFO: Regenerating summary for ca2013_act_s013_ss2_idx12...
+[09:25:40] CLEAN: Removed leaked definitions from Section 13
+[09:25:40] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss3 (awaiting justification verification)
+[09:25:40] INFO: Regenerating summary for ca2013_act_s013_ss3...
+[09:25:46] CLEAN: Removed leaked definitions from Section 13
+[09:25:46] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx1 (awaiting justification verification)
+[09:25:46] INFO: Regenerating summary for ca2013_act_s013_ss4_idx1...
+[09:25:49] WARN: WARNING: Forbidden verb 'ensure' in summary for ca2013_act_s013_ss4_idx1
+[09:25:52] CLEAN: Removed leaked definitions from Section 13
+[09:25:52] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx2 (awaiting justification verification)
+[09:25:52] INFO: Regenerating summary for ca2013_act_s013_ss4_idx2...
+[09:25:57] CLEAN: Removed leaked definitions from Section 13
+[09:25:57] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx3 (awaiting justification verification)
+[09:25:57] INFO: Regenerating summary for ca2013_act_s013_ss4_idx3...
+[09:26:03] CLEAN: Removed leaked definitions from Section 13
+[09:26:03] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx4 (awaiting justification verification)
+[09:26:03] INFO: Regenerating summary for ca2013_act_s013_ss4_idx4...
+[09:26:09] CLEAN: Removed leaked definitions from Section 13
+[09:26:09] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:26:09] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx5 (awaiting justification verification)
+[09:26:09] INFO: Regenerating summary for ca2013_act_s013_ss4_idx5...
+[09:26:14] CLEAN: Removed leaked definitions from Section 13
+[09:26:14] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx6 (awaiting justification verification)
+[09:26:14] INFO: Regenerating summary for ca2013_act_s013_ss4_idx6...
+[09:26:20] CLEAN: Removed leaked definitions from Section 13
+[09:26:20] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx7 (awaiting justification verification)
+[09:26:20] INFO: Regenerating summary for ca2013_act_s013_ss4_idx7...
+[09:26:26] CLEAN: Removed leaked definitions from Section 13
+[09:26:26] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx8 (awaiting justification verification)
+[09:26:26] INFO: Regenerating summary for ca2013_act_s013_ss4_idx8...
+[09:26:32] CLEAN: Removed leaked definitions from Section 13
+[09:26:32] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx9 (awaiting justification verification)
+[09:26:32] INFO: Regenerating summary for ca2013_act_s013_ss4_idx9...
+[09:26:37] CLEAN: Removed leaked definitions from Section 13
+[09:26:37] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx10 (awaiting justification verification)
+[09:26:37] INFO: Regenerating summary for ca2013_act_s013_ss4_idx10...
+[09:26:43] CLEAN: Removed leaked definitions from Section 13
+[09:26:43] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:26:43] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx11 (awaiting justification verification)
+[09:26:43] INFO: Regenerating summary for ca2013_act_s013_ss4_idx11...
+[09:26:48] CLEAN: Removed leaked definitions from Section 13
+[09:26:48] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss4_idx12 (awaiting justification verification)
+[09:26:48] INFO: Regenerating summary for ca2013_act_s013_ss4_idx12...
+[09:26:54] CLEAN: Removed leaked definitions from Section 13
+[09:26:54] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss5 (awaiting justification verification)
+[09:26:54] INFO: Regenerating summary for ca2013_act_s013_ss5...
+[09:26:56] WARN: WARNING: Forbidden verb 'ensure' in summary for ca2013_act_s013_ss5
+[09:26:59] CLEAN: Removed leaked definitions from Section 13
+[09:26:59] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss6 (awaiting justification verification)
+[09:26:59] INFO: Regenerating summary for ca2013_act_s013_ss6...
+[09:27:05] CLEAN: Removed leaked definitions from Section 13
+[09:27:05] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx1 (awaiting justification verification)
+[09:27:05] INFO: Regenerating summary for ca2013_act_s013_ss7_idx1...
+[09:27:11] CLEAN: Removed leaked definitions from Section 13
+[09:27:11] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx2 (awaiting justification verification)
+[09:27:11] INFO: Regenerating summary for ca2013_act_s013_ss7_idx2...
+[09:27:17] CLEAN: Removed leaked definitions from Section 13
+[09:27:17] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:27:17] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx3 (awaiting justification verification)
+[09:27:17] INFO: Regenerating summary for ca2013_act_s013_ss7_idx3...
+[09:27:23] CLEAN: Removed leaked definitions from Section 13
+[09:27:23] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx4 (awaiting justification verification)
+[09:27:23] INFO: Regenerating summary for ca2013_act_s013_ss7_idx4...
+[09:27:28] CLEAN: Removed leaked definitions from Section 13
+[09:27:28] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx5 (awaiting justification verification)
+[09:27:28] INFO: Regenerating summary for ca2013_act_s013_ss7_idx5...
+[09:27:34] CLEAN: Removed leaked definitions from Section 13
+[09:27:34] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx6 (awaiting justification verification)
+[09:27:34] INFO: Regenerating summary for ca2013_act_s013_ss7_idx6...
+[09:27:40] WARN: Invalid compliance area 'Regulatory Reporting' in ca2013_act_s013_ss7_idx6
+[09:27:40] CLEAN: Removed leaked definitions from Section 13
+[09:27:40] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx7 (awaiting justification verification)
+[09:27:40] INFO: Regenerating summary for ca2013_act_s013_ss7_idx7...
+[09:27:46] CLEAN: Removed leaked definitions from Section 13
+[09:27:46] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx8 (awaiting justification verification)
+[09:27:46] INFO: Regenerating summary for ca2013_act_s013_ss7_idx8...
+[09:27:51] CLEAN: Removed leaked definitions from Section 13
+[09:27:51] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:27:51] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx9 (awaiting justification verification)
+[09:27:51] INFO: Regenerating summary for ca2013_act_s013_ss7_idx9...
+[09:27:57] CLEAN: Removed leaked definitions from Section 13
+[09:27:57] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss7_idx10 (awaiting justification verification)
+[09:27:57] INFO: Regenerating summary for ca2013_act_s013_ss7_idx10...
+[09:28:03] CLEAN: Removed leaked definitions from Section 13
+[09:28:03] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss8 (awaiting justification verification)
+[09:28:03] INFO: Regenerating summary for ca2013_act_s013_ss8...
+[09:28:09] CLEAN: Removed leaked definitions from Section 13
+[09:28:09] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss9 (awaiting justification verification)
+[09:28:09] INFO: Regenerating summary for ca2013_act_s013_ss9...
+[09:28:11] WARN: WARNING: Forbidden verb 'ensuring' in summary for ca2013_act_s013_ss9
+[09:28:15] CLEAN: Removed leaked definitions from Section 13
+[09:28:15] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss10 (awaiting justification verification)
+[09:28:15] INFO: Regenerating summary for ca2013_act_s013_ss10...
+[09:28:20] CLEAN: Removed leaked definitions from Section 13
+[09:28:20] WARN: WARNING: Section 13 text reduced by >50% - manual review needed
+[09:28:20] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx1 (awaiting justification verification)
+[09:28:20] INFO: Regenerating summary for ca2013_act_s013_ss11_idx1...
+[09:28:26] CLEAN: Removed leaked definitions from Section 13
+[09:28:26] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx2 (awaiting justification verification)
+[09:28:26] INFO: Regenerating summary for ca2013_act_s013_ss11_idx2...
+[09:28:32] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s013_ss11_idx2
+[09:28:32] CLEAN: Removed leaked definitions from Section 13
+[09:28:32] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx3 (awaiting justification verification)
+[09:28:32] INFO: Regenerating summary for ca2013_act_s013_ss11_idx3...
+[09:28:37] CLEAN: Removed leaked definitions from Section 13
+[09:28:37] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx4 (awaiting justification verification)
+[09:28:37] INFO: Regenerating summary for ca2013_act_s013_ss11_idx4...
+[09:28:43] WARN: Invalid compliance area 'Banking Regulations' in ca2013_act_s013_ss11_idx4
+[09:28:43] CLEAN: Removed leaked definitions from Section 13
+[09:28:43] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx5 (awaiting justification verification)
+[09:28:43] INFO: Regenerating summary for ca2013_act_s013_ss11_idx5...
+[09:28:49] CLEAN: Removed leaked definitions from Section 13
+[09:28:49] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx6 (awaiting justification verification)
+[09:28:49] INFO: Regenerating summary for ca2013_act_s013_ss11_idx6...
+[09:28:55] CLEAN: Removed leaked definitions from Section 13
+[09:28:55] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx7 (awaiting justification verification)
+[09:28:55] INFO: Regenerating summary for ca2013_act_s013_ss11_idx7...
+[09:29:00] CLEAN: Removed leaked definitions from Section 13
+[09:29:00] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx8 (awaiting justification verification)
+[09:29:00] INFO: Regenerating summary for ca2013_act_s013_ss11_idx8...
+[09:29:05] CLEAN: Removed leaked definitions from Section 13
+[09:29:05] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx9 (awaiting justification verification)
+[09:29:05] INFO: Regenerating summary for ca2013_act_s013_ss11_idx9...
+[09:29:11] CLEAN: Removed leaked definitions from Section 13
+[09:29:11] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx10 (awaiting justification verification)
+[09:29:11] INFO: Regenerating summary for ca2013_act_s013_ss11_idx10...
+[09:29:16] CLEAN: Removed leaked definitions from Section 13
+[09:29:16] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx11 (awaiting justification verification)
+[09:29:16] INFO: Regenerating summary for ca2013_act_s013_ss11_idx11...
+[09:29:21] CLEAN: Removed leaked definitions from Section 13
+[09:29:21] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx12 (awaiting justification verification)
+[09:29:21] INFO: Regenerating summary for ca2013_act_s013_ss11_idx12...
+[09:29:27] CLEAN: Removed leaked definitions from Section 13
+[09:29:27] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx13 (awaiting justification verification)
+[09:29:27] INFO: Regenerating summary for ca2013_act_s013_ss11_idx13...
+[09:29:30] WARN: WARNING: Forbidden verb 'guarantee' in summary for ca2013_act_s013_ss11_idx13
+[09:29:33] CLEAN: Removed leaked definitions from Section 13
+[09:29:33] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx14 (awaiting justification verification)
+[09:29:33] INFO: Regenerating summary for ca2013_act_s013_ss11_idx14...
+[09:29:38] CLEAN: Removed leaked definitions from Section 13
+[09:29:38] CLEAN: REMOVED all 19 relationships from ca2013_act_s013_ss11_idx15 (awaiting justification verification)
+[09:29:38] INFO: Regenerating summary for ca2013_act_s013_ss11_idx15...
+[09:29:44] INFO: Completed Section 13 (69 chunks)
+[09:29:44] CLEAN: Removed leaked definitions from Section 14
+[09:29:44] CLEAN: Removed placeholder from ca2013_act_s014
+[09:29:44] CLEAN: REMOVED all 25 relationships from ca2013_act_s014 (awaiting justification verification)
+[09:29:44] INFO: 
+💾 Saving progress (Section 14)...
+[09:29:44] INFO:    Saved 361 chunks
+[09:29:44] CLEAN: Removed leaked definitions from Section 14
+[09:29:44] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx1 (awaiting justification verification)
+[09:29:44] INFO: Regenerating summary for ca2013_act_s014_ss1_idx1...
+[09:29:50] CLEAN: Removed leaked definitions from Section 14
+[09:29:50] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx2 (awaiting justification verification)
+[09:29:50] INFO: Regenerating summary for ca2013_act_s014_ss1_idx2...
+[09:29:55] CLEAN: Removed leaked definitions from Section 14
+[09:29:55] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx3 (awaiting justification verification)
+[09:29:55] INFO: Regenerating summary for ca2013_act_s014_ss1_idx3...
+[09:30:01] CLEAN: Removed leaked definitions from Section 14
+[09:30:01] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx4 (awaiting justification verification)
+[09:30:01] INFO: Regenerating summary for ca2013_act_s014_ss1_idx4...
+[09:30:07] CLEAN: Removed leaked definitions from Section 14
+[09:30:07] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx5 (awaiting justification verification)
+[09:30:07] INFO: Regenerating summary for ca2013_act_s014_ss1_idx5...
+[09:30:12] CLEAN: Removed leaked definitions from Section 14
+[09:30:12] WARN: WARNING: Section 14 text reduced by >50% - manual review needed
+[09:30:12] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1_idx6 (awaiting justification verification)
+[09:30:12] INFO: Regenerating summary for ca2013_act_s014_ss1_idx6...
+[09:30:19] CLEAN: Removed leaked definitions from Section 14
+[09:30:19] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss1 (awaiting justification verification)
+[09:30:19] INFO: Regenerating summary for ca2013_act_s014_ss1...
+[09:30:24] CLEAN: Removed leaked definitions from Section 14
+[09:30:24] WARN: WARNING: Section 14 text reduced by >50% - manual review needed
+[09:30:24] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss2 (awaiting justification verification)
+[09:30:24] INFO: Regenerating summary for ca2013_act_s014_ss2...
+[09:30:30] CLEAN: Removed leaked definitions from Section 14
+[09:30:30] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx1 (awaiting justification verification)
+[09:30:30] INFO: Regenerating summary for ca2013_act_s014_ss3_idx1...
+[09:30:36] CLEAN: Removed leaked definitions from Section 14
+[09:30:36] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx2 (awaiting justification verification)
+[09:30:36] INFO: Regenerating summary for ca2013_act_s014_ss3_idx2...
+[09:30:42] CLEAN: Removed leaked definitions from Section 14
+[09:30:42] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx3 (awaiting justification verification)
+[09:30:42] INFO: Regenerating summary for ca2013_act_s014_ss3_idx3...
+[09:30:47] CLEAN: Removed leaked definitions from Section 14
+[09:30:47] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx4 (awaiting justification verification)
+[09:30:47] INFO: Regenerating summary for ca2013_act_s014_ss3_idx4...
+[09:30:53] CLEAN: Removed leaked definitions from Section 14
+[09:30:53] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx5 (awaiting justification verification)
+[09:30:53] INFO: Regenerating summary for ca2013_act_s014_ss3_idx5...
+[09:30:59] CLEAN: Removed leaked definitions from Section 14
+[09:30:59] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx6 (awaiting justification verification)
+[09:30:59] INFO: Regenerating summary for ca2013_act_s014_ss3_idx6...
+[09:31:04] CLEAN: Removed leaked definitions from Section 14
+[09:31:04] CLEAN: REMOVED all 25 relationships from ca2013_act_s014_ss3_idx7 (awaiting justification verification)
+[09:31:04] INFO: Regenerating summary for ca2013_act_s014_ss3_idx7...
+[09:31:11] INFO: Completed Section 14 (16 chunks)
+[09:31:11] CLEAN: Removed leaked definitions from Section 15
+[09:31:11] WARN: WARNING: Section 15 text reduced by >50% - manual review needed
+[09:31:11] CLEAN: REMOVED all 1 relationships from ca2013_act_s015 (awaiting justification verification)
+[09:31:11] INFO: Regenerating summary for ca2013_act_s015...
+[09:31:17] INFO: Completed Section 15 (1 chunks)
+[09:31:17] CLEAN: Removed leaked definitions from Section 16
+[09:31:17] CLEAN: Removed placeholder from ca2013_act_s016
+[09:31:17] CLEAN: REMOVED all 10 relationships from ca2013_act_s016 (awaiting justification verification)
+[09:31:17] INFO: 
+💾 Saving progress (Section 16)...
+[09:31:17] INFO:    Saved 378 chunks
+[09:31:17] CLEAN: Removed leaked definitions from Section 16
+[09:31:17] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss1 (awaiting justification verification)
+[09:31:17] INFO: Regenerating summary for ca2013_act_s016_ss1...
+[09:31:23] CLEAN: Removed leaked definitions from Section 16
+[09:31:23] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss2 (awaiting justification verification)
+[09:31:23] INFO: Regenerating summary for ca2013_act_s016_ss2...
+[09:31:29] CLEAN: Removed leaked definitions from Section 16
+[09:31:29] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx1 (awaiting justification verification)
+[09:31:29] INFO: Regenerating summary for ca2013_act_s016_ss3_idx1...
+[09:31:36] WARN: Invalid compliance area 'Regulation' in ca2013_act_s016_ss3_idx1
+[09:31:36] CLEAN: Removed leaked definitions from Section 16
+[09:31:36] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx2 (awaiting justification verification)
+[09:31:36] INFO: Regenerating summary for ca2013_act_s016_ss3_idx2...
+[09:31:41] CLEAN: Removed leaked definitions from Section 16
+[09:31:41] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx3 (awaiting justification verification)
+[09:31:41] INFO: Regenerating summary for ca2013_act_s016_ss3_idx3...
+[09:31:47] CLEAN: Removed leaked definitions from Section 16
+[09:31:47] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx4 (awaiting justification verification)
+[09:31:47] INFO: Regenerating summary for ca2013_act_s016_ss3_idx4...
+[09:31:53] CLEAN: Removed leaked definitions from Section 16
+[09:31:53] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx5 (awaiting justification verification)
+[09:31:53] INFO: Regenerating summary for ca2013_act_s016_ss3_idx5...
+[09:32:00] CLEAN: Removed leaked definitions from Section 16
+[09:32:00] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx6 (awaiting justification verification)
+[09:32:00] INFO: Regenerating summary for ca2013_act_s016_ss3_idx6...
+[09:32:06] WARN: Invalid compliance area 'General Provisions' in ca2013_act_s016_ss3_idx6
+[09:32:06] CLEAN: Removed leaked definitions from Section 16
+[09:32:06] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx7 (awaiting justification verification)
+[09:32:06] INFO: Regenerating summary for ca2013_act_s016_ss3_idx7...
+[09:32:11] CLEAN: Removed leaked definitions from Section 16
+[09:32:11] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx8 (awaiting justification verification)
+[09:32:11] INFO: Regenerating summary for ca2013_act_s016_ss3_idx8...
+[09:32:17] WARN: Invalid compliance area 'Membership & Shareholder Rights' in ca2013_act_s016_ss3_idx8
+[09:32:17] CLEAN: Removed leaked definitions from Section 16
+[09:32:17] CLEAN: REMOVED all 10 relationships from ca2013_act_s016_ss3_idx9 (awaiting justification verification)
+[09:32:17] INFO: Regenerating summary for ca2013_act_s016_ss3_idx9...
+[09:32:23] INFO: Completed Section 16 (12 chunks)
+[09:32:23] CLEAN: Removed leaked definitions from Section 17
+[09:32:23] WARN: WARNING: Section 17 text reduced by >50% - manual review needed
+[09:32:23] CLEAN: REMOVED all 10 relationships from ca2013_act_s017 (awaiting justification verification)
+[09:32:23] INFO: Regenerating summary for ca2013_act_s017...
+[09:32:29] WARN: Invalid compliance area 'ONE most relevant compliance area from the list below' in ca2013_act_s017
+[09:32:29] INFO: Completed Section 17 (1 chunks)
+[09:32:29] CLEAN: Removed leaked definitions from Section 18
+[09:32:29] WARN: WARNING: Section 18 text reduced by >50% - manual review needed
+[09:32:29] CLEAN: REMOVED all 31 relationships from ca2013_act_s018 (awaiting justification verification)
+[09:32:29] INFO: Regenerating summary for ca2013_act_s018...
+[09:32:35] INFO: 
+💾 Saving progress (Section 18)...
+[09:32:35] INFO:    Saved 391 chunks
+[09:32:35] INFO: Completed Section 18 (1 chunks)
+[09:32:35] CLEAN: Removed leaked definitions from Section 19
+[09:32:35] CLEAN: Removed placeholder from ca2013_act_s019
+[09:32:35] CLEAN: REMOVED all 1 relationships from ca2013_act_s019 (awaiting justification verification)
+[09:32:35] CLEAN: Removed leaked definitions from Section 19
+[09:32:35] WARN: WARNING: Section 19 text reduced by >50% - manual review needed
+[09:32:35] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss1 (awaiting justification verification)
+[09:32:35] INFO: Regenerating summary for ca2013_act_s019_ss1...
+[09:32:41] CLEAN: Removed leaked definitions from Section 19
+[09:32:41] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss1 (awaiting justification verification)
+[09:32:41] INFO: Regenerating summary for ca2013_act_s019_ss1...
+[09:32:47] CLEAN: Removed leaked definitions from Section 19
+[09:32:47] WARN: WARNING: Section 19 text reduced by >50% - manual review needed
+[09:32:47] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx1 (awaiting justification verification)
+[09:32:47] INFO: Regenerating summary for ca2013_act_s019_ss2_idx1...
+[09:32:53] CLEAN: Removed leaked definitions from Section 19
+[09:32:53] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx2 (awaiting justification verification)
+[09:32:53] INFO: Regenerating summary for ca2013_act_s019_ss2_idx2...
+[09:32:58] CLEAN: Removed leaked definitions from Section 19
+[09:32:58] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx3 (awaiting justification verification)
+[09:32:58] INFO: Regenerating summary for ca2013_act_s019_ss2_idx3...
+[09:33:04] CLEAN: Removed leaked definitions from Section 19
+[09:33:04] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx4 (awaiting justification verification)
+[09:33:04] INFO: Regenerating summary for ca2013_act_s019_ss2_idx4...
+[09:33:09] CLEAN: Removed leaked definitions from Section 19
+[09:33:09] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx5 (awaiting justification verification)
+[09:33:09] INFO: Regenerating summary for ca2013_act_s019_ss2_idx5...
+[09:33:15] CLEAN: Removed leaked definitions from Section 19
+[09:33:15] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx6 (awaiting justification verification)
+[09:33:15] INFO: Regenerating summary for ca2013_act_s019_ss2_idx6...
+[09:33:20] CLEAN: Removed leaked definitions from Section 19
+[09:33:20] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx7 (awaiting justification verification)
+[09:33:20] INFO: Regenerating summary for ca2013_act_s019_ss2_idx7...
+[09:33:26] CLEAN: Removed leaked definitions from Section 19
+[09:33:26] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx8 (awaiting justification verification)
+[09:33:26] INFO: Regenerating summary for ca2013_act_s019_ss2_idx8...
+[09:33:31] CLEAN: Removed leaked definitions from Section 19
+[09:33:31] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx9 (awaiting justification verification)
+[09:33:31] INFO: Regenerating summary for ca2013_act_s019_ss2_idx9...
+[09:33:37] CLEAN: Removed leaked definitions from Section 19
+[09:33:37] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx10 (awaiting justification verification)
+[09:33:37] INFO: Regenerating summary for ca2013_act_s019_ss2_idx10...
+[09:33:42] CLEAN: Removed leaked definitions from Section 19
+[09:33:42] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx11 (awaiting justification verification)
+[09:33:42] INFO: Regenerating summary for ca2013_act_s019_ss2_idx11...
+[09:33:48] CLEAN: Removed leaked definitions from Section 19
+[09:33:48] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx12 (awaiting justification verification)
+[09:33:48] INFO: Regenerating summary for ca2013_act_s019_ss2_idx12...
+[09:33:53] CLEAN: Removed leaked definitions from Section 19
+[09:33:53] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx13 (awaiting justification verification)
+[09:33:53] INFO: Regenerating summary for ca2013_act_s019_ss2_idx13...
+[09:33:59] CLEAN: Removed leaked definitions from Section 19
+[09:33:59] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx14 (awaiting justification verification)
+[09:33:59] INFO: Regenerating summary for ca2013_act_s019_ss2_idx14...
+[09:34:05] CLEAN: Removed leaked definitions from Section 19
+[09:34:05] CLEAN: REMOVED all 1 relationships from ca2013_act_s019_ss2_idx15 (awaiting justification verification)
+[09:34:05] INFO: Regenerating summary for ca2013_act_s019_ss2_idx15...
+[09:34:11] INFO: Completed Section 19 (18 chunks)
+[09:34:11] CLEAN: Removed leaked definitions from Section 20
+[09:34:11] WARN: WARNING: Section 20 text reduced by >50% - manual review needed
+[09:34:11] CLEAN: REMOVED all 2 relationships from ca2013_act_s020 (awaiting justification verification)
+[09:34:11] INFO: Regenerating summary for ca2013_act_s020...
+[09:34:17] INFO: 
+💾 Saving progress (Section 20)...
+[09:34:17] INFO:    Saved 410 chunks
+[09:34:17] INFO: Completed Section 20 (1 chunks)
+[09:34:17] CLEAN: Removed leaked definitions from Section 21
+[09:34:17] WARN: WARNING: Section 21 text reduced by >50% - manual review needed
+[09:34:17] CLEAN: REMOVED all 5 relationships from ca2013_act_s021 (awaiting justification verification)
+[09:34:17] INFO: Regenerating summary for ca2013_act_s021...
+[09:34:23] INFO: Completed Section 21 (1 chunks)
+[09:34:23] CLEAN: Removed leaked definitions from Section 22
+[09:34:23] CLEAN: REMOVED all 3 relationships from ca2013_act_s022 (awaiting justification verification)
+[09:34:23] INFO: Regenerating summary for ca2013_act_s022...
+[09:34:29] INFO: 
+💾 Saving progress (Section 22)...
+[09:34:29] INFO:    Saved 412 chunks
+[09:34:29] INFO: Completed Section 22 (1 chunks)
+[09:34:29] CLEAN: Removed leaked definitions from Section 23
+[09:34:29] CLEAN: Removed placeholder from ca2013_act_s023
+[09:34:29] CLEAN: REMOVED all 5 relationships from ca2013_act_s023 (awaiting justification verification)
+[09:34:29] CLEAN: Removed leaked definitions from Section 23
+[09:34:29] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss1 (awaiting justification verification)
+[09:34:29] INFO: Regenerating summary for ca2013_act_s023_ss1...
+[09:34:35] CLEAN: Removed leaked definitions from Section 23
+[09:34:35] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx1 (awaiting justification verification)
+[09:34:35] INFO: Regenerating summary for ca2013_act_s023_ss2_idx1...
+[09:34:40] CLEAN: Removed leaked definitions from Section 23
+[09:34:40] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx2 (awaiting justification verification)
+[09:34:40] INFO: Regenerating summary for ca2013_act_s023_ss2_idx2...
+[09:34:46] CLEAN: Removed leaked definitions from Section 23
+[09:34:46] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx3 (awaiting justification verification)
+[09:34:46] INFO: Regenerating summary for ca2013_act_s023_ss2_idx3...
+[09:34:52] CLEAN: Removed leaked definitions from Section 23
+[09:34:52] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx4 (awaiting justification verification)
+[09:34:52] INFO: Regenerating summary for ca2013_act_s023_ss2_idx4...
+[09:34:57] CLEAN: Removed leaked definitions from Section 23
+[09:34:57] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx5 (awaiting justification verification)
+[09:34:57] INFO: Regenerating summary for ca2013_act_s023_ss2_idx5...
+[09:35:03] CLEAN: Removed leaked definitions from Section 23
+[09:35:03] WARN: WARNING: Section 23 text reduced by >50% - manual review needed
+[09:35:03] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx6 (awaiting justification verification)
+[09:35:03] INFO: Regenerating summary for ca2013_act_s023_ss2_idx6...
+[09:35:08] CLEAN: Removed leaked definitions from Section 23
+[09:35:08] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx7 (awaiting justification verification)
+[09:35:08] INFO: Regenerating summary for ca2013_act_s023_ss2_idx7...
+[09:35:14] WARN: Invalid compliance area 'Public Offering & Member Count' in ca2013_act_s023_ss2_idx7
+[09:35:14] CLEAN: Removed leaked definitions from Section 23
+[09:35:14] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx8 (awaiting justification verification)
+[09:35:14] INFO: Regenerating summary for ca2013_act_s023_ss2_idx8...
+[09:35:20] CLEAN: Removed leaked definitions from Section 23
+[09:35:20] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx9 (awaiting justification verification)
+[09:35:20] INFO: Regenerating summary for ca2013_act_s023_ss2_idx9...
+[09:35:26] CLEAN: Removed leaked definitions from Section 23
+[09:35:26] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx10 (awaiting justification verification)
+[09:35:26] INFO: Regenerating summary for ca2013_act_s023_ss2_idx10...
+[09:35:31] CLEAN: Removed leaked definitions from Section 23
+[09:35:31] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx11 (awaiting justification verification)
+[09:35:31] INFO: Regenerating summary for ca2013_act_s023_ss2_idx11...
+[09:35:37] CLEAN: Removed leaked definitions from Section 23
+[09:35:37] WARN: WARNING: Section 23 text reduced by >50% - manual review needed
+[09:35:37] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx12 (awaiting justification verification)
+[09:35:37] INFO: Regenerating summary for ca2013_act_s023_ss2_idx12...
+[09:35:42] CLEAN: Removed leaked definitions from Section 23
+[09:35:42] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx13 (awaiting justification verification)
+[09:35:42] INFO: Regenerating summary for ca2013_act_s023_ss2_idx13...
+[09:35:48] CLEAN: Removed leaked definitions from Section 23
+[09:35:48] CLEAN: REMOVED all 5 relationships from ca2013_act_s023_ss2_idx14 (awaiting justification verification)
+[09:35:48] INFO: Regenerating summary for ca2013_act_s023_ss2_idx14...
+[09:35:54] INFO: Completed Section 23 (16 chunks)
+[09:35:54] CLEAN: Removed leaked definitions from Section 24
+[09:35:54] WARN: WARNING: Section 24 text reduced by >50% - manual review needed
+[09:35:54] CLEAN: REMOVED all 2 relationships from ca2013_act_s024 (awaiting justification verification)
+[09:35:54] INFO: Regenerating summary for ca2013_act_s024...
+[09:36:00] WARN: Invalid compliance area 'Regulatory Compliance' in ca2013_act_s024
+[09:36:00] INFO: 
+💾 Saving progress (Section 24)...
+[09:36:00] INFO:    Saved 429 chunks
+[09:36:00] INFO: Completed Section 24 (1 chunks)
+[09:36:00] CLEAN: Removed leaked definitions from Section 25
+[09:36:00] CLEAN: REMOVED all 2 relationships from ca2013_act_s025 (awaiting justification verification)
+[09:36:00] INFO: Regenerating summary for ca2013_act_s025...
+[09:36:06] INFO: Completed Section 25 (1 chunks)
+[09:36:06] CLEAN: Removed leaked definitions from Section 26
+[09:36:06] CLEAN: Removed placeholder from ca2013_act_s026
+[09:36:06] CLEAN: REMOVED all 10 relationships from ca2013_act_s026 (awaiting justification verification)
+[09:36:06] INFO: 
+💾 Saving progress (Section 26)...
+[09:36:06] INFO:    Saved 431 chunks
+[09:36:06] CLEAN: Removed leaked definitions from Section 26
+[09:36:06] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx1 (awaiting justification verification)
+[09:36:06] INFO: Regenerating summary for ca2013_act_s026_ss1_idx1...
+[09:36:11] CLEAN: Removed leaked definitions from Section 26
+[09:36:11] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx2 (awaiting justification verification)
+[09:36:11] INFO: Regenerating summary for ca2013_act_s026_ss1_idx2...
+[09:36:17] CLEAN: Removed leaked definitions from Section 26
+[09:36:17] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx3 (awaiting justification verification)
+[09:36:17] INFO: Regenerating summary for ca2013_act_s026_ss1_idx3...
+[09:36:23] CLEAN: Removed leaked definitions from Section 26
+[09:36:23] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx4 (awaiting justification verification)
+[09:36:23] INFO: Regenerating summary for ca2013_act_s026_ss1_idx4...
+[09:36:29] CLEAN: Removed leaked definitions from Section 26
+[09:36:29] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx5 (awaiting justification verification)
+[09:36:29] INFO: Regenerating summary for ca2013_act_s026_ss1_idx5...
+[09:36:35] CLEAN: Removed leaked definitions from Section 26
+[09:36:35] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx6 (awaiting justification verification)
+[09:36:35] INFO: Regenerating summary for ca2013_act_s026_ss1_idx6...
+[09:36:41] CLEAN: Removed leaked definitions from Section 26
+[09:36:41] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx7 (awaiting justification verification)
+[09:36:41] INFO: Regenerating summary for ca2013_act_s026_ss1_idx7...
+[09:36:46] CLEAN: Removed leaked definitions from Section 26
+[09:36:46] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx8 (awaiting justification verification)
+[09:36:46] INFO: Regenerating summary for ca2013_act_s026_ss1_idx8...
+[09:36:52] CLEAN: Removed leaked definitions from Section 26
+[09:36:52] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx9 (awaiting justification verification)
+[09:36:52] INFO: Regenerating summary for ca2013_act_s026_ss1_idx9...
+[09:36:58] CLEAN: Removed leaked definitions from Section 26
+[09:36:58] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx10 (awaiting justification verification)
+[09:36:58] INFO: Regenerating summary for ca2013_act_s026_ss1_idx10...
+[09:37:03] CLEAN: Removed leaked definitions from Section 26
+[09:37:03] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx11 (awaiting justification verification)
+[09:37:03] INFO: Regenerating summary for ca2013_act_s026_ss1_idx11...
+[09:37:09] CLEAN: Removed leaked definitions from Section 26
+[09:37:09] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx12 (awaiting justification verification)
+[09:37:09] INFO: Regenerating summary for ca2013_act_s026_ss1_idx12...
+[09:37:15] WARN: Invalid compliance area '' in ca2013_act_s026_ss1_idx12
+[09:37:15] CLEAN: Removed leaked definitions from Section 26
+[09:37:15] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx13 (awaiting justification verification)
+[09:37:15] INFO: Regenerating summary for ca2013_act_s026_ss1_idx13...
+[09:37:21] CLEAN: Removed leaked definitions from Section 26
+[09:37:21] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx14 (awaiting justification verification)
+[09:37:21] INFO: Regenerating summary for ca2013_act_s026_ss1_idx14...
+[09:37:26] WARN: Invalid compliance area 'Prospectus & Allotment' in ca2013_act_s026_ss1_idx14
+[09:37:26] CLEAN: Removed leaked definitions from Section 26
+[09:37:26] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx15 (awaiting justification verification)
+[09:37:26] INFO: Regenerating summary for ca2013_act_s026_ss1_idx15...
+[09:37:32] CLEAN: Removed leaked definitions from Section 26
+[09:37:32] WARN: WARNING: Section 26 text reduced by >50% - manual review needed
+[09:37:32] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx16 (awaiting justification verification)
+[09:37:32] INFO: Regenerating summary for ca2013_act_s026_ss1_idx16...
+[09:37:37] CLEAN: Removed leaked definitions from Section 26
+[09:37:37] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx17 (awaiting justification verification)
+[09:37:37] INFO: Regenerating summary for ca2013_act_s026_ss1_idx17...
+[09:37:43] CLEAN: Removed leaked definitions from Section 26
+[09:37:43] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx18 (awaiting justification verification)
+[09:37:43] INFO: Regenerating summary for ca2013_act_s026_ss1_idx18...
+[09:37:49] CLEAN: Removed leaked definitions from Section 26
+[09:37:49] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx19 (awaiting justification verification)
+[09:37:49] INFO: Regenerating summary for ca2013_act_s026_ss1_idx19...
+[09:37:54] CLEAN: Removed leaked definitions from Section 26
+[09:37:54] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx20 (awaiting justification verification)
+[09:37:54] INFO: Regenerating summary for ca2013_act_s026_ss1_idx20...
+[09:38:00] CLEAN: Removed leaked definitions from Section 26
+[09:38:00] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx21 (awaiting justification verification)
+[09:38:00] INFO: Regenerating summary for ca2013_act_s026_ss1_idx21...
+[09:38:05] CLEAN: Removed leaked definitions from Section 26
+[09:38:05] WARN: WARNING: Section 26 text reduced by >50% - manual review needed
+[09:38:05] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx22 (awaiting justification verification)
+[09:38:05] INFO: Regenerating summary for ca2013_act_s026_ss1_idx22...
+[09:38:11] WARN: Invalid compliance area 'Companies (Prospectus and Allotment of Securities) Rules, 2014' in ca2013_act_s026_ss1_idx22
+[09:38:11] CLEAN: Removed leaked definitions from Section 26
+[09:38:11] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx23 (awaiting justification verification)
+[09:38:11] INFO: Regenerating summary for ca2013_act_s026_ss1_idx23...
+[09:38:16] CLEAN: Removed leaked definitions from Section 26
+[09:38:16] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx24 (awaiting justification verification)
+[09:38:16] INFO: Regenerating summary for ca2013_act_s026_ss1_idx24...
+[09:38:22] CLEAN: Removed leaked definitions from Section 26
+[09:38:22] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx25 (awaiting justification verification)
+[09:38:22] INFO: Regenerating summary for ca2013_act_s026_ss1_idx25...
+[09:38:27] CLEAN: Removed leaked definitions from Section 26
+[09:38:27] WARN: WARNING: Section 26 text reduced by >50% - manual review needed
+[09:38:27] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx26 (awaiting justification verification)
+[09:38:27] INFO: Regenerating summary for ca2013_act_s026_ss1_idx26...
+[09:38:33] CLEAN: Removed leaked definitions from Section 26
+[09:38:33] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx1 (awaiting justification verification)
+[09:38:33] INFO: Regenerating summary for ca2013_act_s026_ss1_idx1...
+[09:38:38] CLEAN: Removed leaked definitions from Section 26
+[09:38:38] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx2 (awaiting justification verification)
+[09:38:38] INFO: Regenerating summary for ca2013_act_s026_ss1_idx2...
+[09:38:45] CLEAN: Removed leaked definitions from Section 26
+[09:38:45] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx3 (awaiting justification verification)
+[09:38:45] INFO: Regenerating summary for ca2013_act_s026_ss1_idx3...
+[09:38:51] CLEAN: Removed leaked definitions from Section 26
+[09:38:51] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx4 (awaiting justification verification)
+[09:38:51] INFO: Regenerating summary for ca2013_act_s026_ss1_idx4...
+[09:38:57] CLEAN: Removed leaked definitions from Section 26
+[09:38:57] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx5 (awaiting justification verification)
+[09:38:57] INFO: Regenerating summary for ca2013_act_s026_ss1_idx5...
+[09:39:03] CLEAN: Removed leaked definitions from Section 26
+[09:39:03] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss1_idx6 (awaiting justification verification)
+[09:39:03] INFO: Regenerating summary for ca2013_act_s026_ss1_idx6...
+[09:39:09] CLEAN: Removed leaked definitions from Section 26
+[09:39:09] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss2 (awaiting justification verification)
+[09:39:09] INFO: Regenerating summary for ca2013_act_s026_ss2...
+[09:39:15] CLEAN: Removed leaked definitions from Section 26
+[09:39:15] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss3 (awaiting justification verification)
+[09:39:15] INFO: Regenerating summary for ca2013_act_s026_ss3...
+[09:39:20] CLEAN: Removed leaked definitions from Section 26
+[09:39:20] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss4 (awaiting justification verification)
+[09:39:20] INFO: Regenerating summary for ca2013_act_s026_ss4...
+[09:39:26] CLEAN: Removed leaked definitions from Section 26
+[09:39:26] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss5 (awaiting justification verification)
+[09:39:26] INFO: Regenerating summary for ca2013_act_s026_ss5...
+[09:39:32] CLEAN: Removed leaked definitions from Section 26
+[09:39:32] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss6 (awaiting justification verification)
+[09:39:32] INFO: Regenerating summary for ca2013_act_s026_ss6...
+[09:39:37] CLEAN: Removed leaked definitions from Section 26
+[09:39:37] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss8 (awaiting justification verification)
+[09:39:37] INFO: Regenerating summary for ca2013_act_s026_ss8...
+[09:39:43] CLEAN: Removed leaked definitions from Section 26
+[09:39:43] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx1 (awaiting justification verification)
+[09:39:43] INFO: Regenerating summary for ca2013_act_s026_ss9_idx1...
+[09:39:49] CLEAN: Removed leaked definitions from Section 26
+[09:39:49] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx2 (awaiting justification verification)
+[09:39:49] INFO: Regenerating summary for ca2013_act_s026_ss9_idx2...
+[09:39:54] CLEAN: Removed leaked definitions from Section 26
+[09:39:54] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx3 (awaiting justification verification)
+[09:39:54] INFO: Regenerating summary for ca2013_act_s026_ss9_idx3...
+[09:40:00] CLEAN: Removed leaked definitions from Section 26
+[09:40:00] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx4 (awaiting justification verification)
+[09:40:00] INFO: Regenerating summary for ca2013_act_s026_ss9_idx4...
+[09:40:05] CLEAN: Removed leaked definitions from Section 26
+[09:40:05] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx5 (awaiting justification verification)
+[09:40:05] INFO: Regenerating summary for ca2013_act_s026_ss9_idx5...
+[09:40:11] CLEAN: Removed leaked definitions from Section 26
+[09:40:11] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx6 (awaiting justification verification)
+[09:40:11] INFO: Regenerating summary for ca2013_act_s026_ss9_idx6...
+[09:40:17] CLEAN: Removed leaked definitions from Section 26
+[09:40:17] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx7 (awaiting justification verification)
+[09:40:17] INFO: Regenerating summary for ca2013_act_s026_ss9_idx7...
+[09:40:22] CLEAN: Removed leaked definitions from Section 26
+[09:40:22] WARN: WARNING: Section 26 text reduced by >50% - manual review needed
+[09:40:22] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx8 (awaiting justification verification)
+[09:40:22] INFO: Regenerating summary for ca2013_act_s026_ss9_idx8...
+[09:40:28] CLEAN: Removed leaked definitions from Section 26
+[09:40:28] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx9 (awaiting justification verification)
+[09:40:28] INFO: Regenerating summary for ca2013_act_s026_ss9_idx9...
+[09:40:34] CLEAN: Removed leaked definitions from Section 26
+[09:40:34] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx10 (awaiting justification verification)
+[09:40:34] INFO: Regenerating summary for ca2013_act_s026_ss9_idx10...
+[09:40:40] CLEAN: Removed leaked definitions from Section 26
+[09:40:40] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx11 (awaiting justification verification)
+[09:40:40] INFO: Regenerating summary for ca2013_act_s026_ss9_idx11...
+[09:40:45] CLEAN: Removed leaked definitions from Section 26
+[09:40:45] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx12 (awaiting justification verification)
+[09:40:45] INFO: Regenerating summary for ca2013_act_s026_ss9_idx12...
+[09:40:51] CLEAN: Removed leaked definitions from Section 26
+[09:40:51] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx13 (awaiting justification verification)
+[09:40:51] INFO: Regenerating summary for ca2013_act_s026_ss9_idx13...
+[09:40:56] CLEAN: Removed leaked definitions from Section 26
+[09:40:56] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx14 (awaiting justification verification)
+[09:40:56] INFO: Regenerating summary for ca2013_act_s026_ss9_idx14...
+[09:41:01] CLEAN: Removed leaked definitions from Section 26
+[09:41:01] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx15 (awaiting justification verification)
+[09:41:01] INFO: Regenerating summary for ca2013_act_s026_ss9_idx15...
+[09:41:07] CLEAN: Removed leaked definitions from Section 26
+[09:41:07] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx16 (awaiting justification verification)
+[09:41:07] INFO: Regenerating summary for ca2013_act_s026_ss9_idx16...
+[09:41:13] CLEAN: Removed leaked definitions from Section 26
+[09:41:13] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx17 (awaiting justification verification)
+[09:41:13] INFO: Regenerating summary for ca2013_act_s026_ss9_idx17...
+[09:41:18] CLEAN: Removed leaked definitions from Section 26
+[09:41:18] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx18 (awaiting justification verification)
+[09:41:18] INFO: Regenerating summary for ca2013_act_s026_ss9_idx18...
+[09:41:24] CLEAN: Removed leaked definitions from Section 26
+[09:41:24] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx19 (awaiting justification verification)
+[09:41:24] INFO: Regenerating summary for ca2013_act_s026_ss9_idx19...
+[09:41:29] CLEAN: Removed leaked definitions from Section 26
+[09:41:29] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx20 (awaiting justification verification)
+[09:41:29] INFO: Regenerating summary for ca2013_act_s026_ss9_idx20...
+[09:41:35] CLEAN: Removed leaked definitions from Section 26
+[09:41:35] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx21 (awaiting justification verification)
+[09:41:35] INFO: Regenerating summary for ca2013_act_s026_ss9_idx21...
+[09:41:41] CLEAN: Removed leaked definitions from Section 26
+[09:41:41] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx22 (awaiting justification verification)
+[09:41:41] INFO: Regenerating summary for ca2013_act_s026_ss9_idx22...
+[09:41:47] CLEAN: Removed leaked definitions from Section 26
+[09:41:47] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx23 (awaiting justification verification)
+[09:41:47] INFO: Regenerating summary for ca2013_act_s026_ss9_idx23...
+[09:41:53] CLEAN: Removed leaked definitions from Section 26
+[09:41:53] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx24 (awaiting justification verification)
+[09:41:53] INFO: Regenerating summary for ca2013_act_s026_ss9_idx24...
+[09:41:58] CLEAN: Removed leaked definitions from Section 26
+[09:41:58] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx25 (awaiting justification verification)
+[09:41:58] INFO: Regenerating summary for ca2013_act_s026_ss9_idx25...
+[09:42:04] CLEAN: Removed leaked definitions from Section 26
+[09:42:04] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx26 (awaiting justification verification)
+[09:42:04] INFO: Regenerating summary for ca2013_act_s026_ss9_idx26...
+[09:42:10] CLEAN: Removed leaked definitions from Section 26
+[09:42:10] WARN: WARNING: Section 26 text reduced by >50% - manual review needed
+[09:42:10] CLEAN: REMOVED all 10 relationships from ca2013_act_s026_ss9_idx27 (awaiting justification verification)
+[09:42:10] INFO: Regenerating summary for ca2013_act_s026_ss9_idx27...
+[09:42:16] INFO: Completed Section 26 (66 chunks)
+[09:42:16] CLEAN: Removed leaked definitions from Section 27
+[09:42:16] WARN: WARNING: Section 27 text reduced by >50% - manual review needed
+[09:42:16] CLEAN: REMOVED all 4 relationships from ca2013_act_s027 (awaiting justification verification)
+[09:42:16] INFO: Regenerating summary for ca2013_act_s027...
+[09:42:21] INFO: Completed Section 27 (1 chunks)
+[09:42:21] CLEAN: Removed leaked definitions from Section 28
+[09:42:21] WARN: WARNING: Section 28 text reduced by >50% - manual review needed
+[09:42:21] CLEAN: REMOVED all 3 relationships from ca2013_act_s028 (awaiting justification verification)
+[09:42:21] INFO: Regenerating summary for ca2013_act_s028...
+[09:42:27] INFO: 
+💾 Saving progress (Section 28)...
+[09:42:27] INFO:    Saved 498 chunks
+[09:42:27] INFO: Completed Section 28 (1 chunks)
+[09:42:27] CLEAN: Removed leaked definitions from Section 29
+[09:42:27] CLEAN: REMOVED all 10 relationships from ca2013_act_s029 (awaiting justification verification)
+[09:42:27] INFO: Regenerating summary for ca2013_act_s029...
+[09:42:33] INFO: Completed Section 29 (1 chunks)
+[09:42:33] CLEAN: Removed leaked definitions from Section 30
+[09:42:33] WARN: WARNING: Section 30 text reduced by >50% - manual review needed
+[09:42:33] CLEAN: REMOVED all 1 relationships from ca2013_act_s030 (awaiting justification verification)
+[09:42:33] INFO: Regenerating summary for ca2013_act_s030...
+[09:42:39] INFO: 
+💾 Saving progress (Section 30)...
+[09:42:39] INFO:    Saved 500 chunks
+[09:42:39] INFO: Completed Section 30 (1 chunks)
+[09:42:39] CLEAN: Removed leaked definitions from Section 31
+[09:42:39] CLEAN: REMOVED all 6 relationships from ca2013_act_s031 (awaiting justification verification)
+[09:42:39] INFO: Regenerating summary for ca2013_act_s031...
+[09:42:45] INFO: Completed Section 31 (1 chunks)
+[09:42:45] CLEAN: Removed leaked definitions from Section 32
+[09:42:45] CLEAN: REMOVED all 1 relationships from ca2013_act_s032 (awaiting justification verification)
+[09:42:45] INFO: Regenerating summary for ca2013_act_s032...
+[09:42:51] INFO: 
+💾 Saving progress (Section 32)...
+[09:42:51] INFO:    Saved 502 chunks
+[09:42:51] INFO: Completed Section 32 (1 chunks)
+[09:42:51] CLEAN: Removed leaked definitions from Section 33
+[09:42:51] CLEAN: REMOVED all 2 relationships from ca2013_act_s033 (awaiting justification verification)
+[09:42:51] INFO: Regenerating summary for ca2013_act_s033...
+[09:42:57] INFO: Completed Section 33 (1 chunks)
+[09:42:57] CLEAN: Removed leaked definitions from Section 34
+[09:42:57] CLEAN: REMOVED all 1 relationships from ca2013_act_s034 (awaiting justification verification)
+[09:42:57] INFO: Regenerating summary for ca2013_act_s034...
+[09:43:04] INFO: 
+💾 Saving progress (Section 34)...
+[09:43:04] INFO:    Saved 504 chunks
+[09:43:04] INFO: Completed Section 34 (1 chunks)
+[09:43:04] CLEAN: Removed leaked definitions from Section 35
+[09:43:04] CLEAN: Removed placeholder from ca2013_act_s035
+[09:43:04] CLEAN: REMOVED all 6 relationships from ca2013_act_s035 (awaiting justification verification)
+[09:43:04] CLEAN: Removed leaked definitions from Section 35
+[09:43:04] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx1 (awaiting justification verification)
+[09:43:04] INFO: Regenerating summary for ca2013_act_s035_ss1_idx1...
+[09:43:10] CLEAN: Removed leaked definitions from Section 35
+[09:43:10] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx2 (awaiting justification verification)
+[09:43:10] INFO: Regenerating summary for ca2013_act_s035_ss1_idx2...
+[09:43:15] CLEAN: Removed leaked definitions from Section 35
+[09:43:15] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx3 (awaiting justification verification)
+[09:43:15] INFO: Regenerating summary for ca2013_act_s035_ss1_idx3...
+[09:43:21] CLEAN: Removed leaked definitions from Section 35
+[09:43:21] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx4 (awaiting justification verification)
+[09:43:21] INFO: Regenerating summary for ca2013_act_s035_ss1_idx4...
+[09:43:27] CLEAN: Removed leaked definitions from Section 35
+[09:43:27] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx5 (awaiting justification verification)
+[09:43:27] INFO: Regenerating summary for ca2013_act_s035_ss1_idx5...
+[09:43:32] CLEAN: Removed leaked definitions from Section 35
+[09:43:32] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx6 (awaiting justification verification)
+[09:43:32] INFO: Regenerating summary for ca2013_act_s035_ss1_idx6...
+[09:43:39] CLEAN: Removed leaked definitions from Section 35
+[09:43:39] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx7 (awaiting justification verification)
+[09:43:39] INFO: Regenerating summary for ca2013_act_s035_ss1_idx7...
+[09:43:45] CLEAN: Removed leaked definitions from Section 35
+[09:43:45] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx8 (awaiting justification verification)
+[09:43:45] INFO: Regenerating summary for ca2013_act_s035_ss1_idx8...
+[09:43:51] CLEAN: Removed leaked definitions from Section 35
+[09:43:51] WARN: WARNING: Section 35 text reduced by >50% - manual review needed
+[09:43:51] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx9 (awaiting justification verification)
+[09:43:51] INFO: Regenerating summary for ca2013_act_s035_ss1_idx9...
+[09:43:57] WARN: Invalid compliance area 'Compliance with Legislation' in ca2013_act_s035_ss1_idx9
+[09:43:57] CLEAN: Removed leaked definitions from Section 35
+[09:43:57] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx10 (awaiting justification verification)
+[09:43:57] INFO: Regenerating summary for ca2013_act_s035_ss1_idx10...
+[09:44:03] CLEAN: Removed leaked definitions from Section 35
+[09:44:03] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx11 (awaiting justification verification)
+[09:44:03] INFO: Regenerating summary for ca2013_act_s035_ss1_idx11...
+[09:44:09] WARN: Invalid compliance area 'Membership & Shareholders' in ca2013_act_s035_ss1_idx11
+[09:44:09] CLEAN: Removed leaked definitions from Section 35
+[09:44:09] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx12 (awaiting justification verification)
+[09:44:09] INFO: Regenerating summary for ca2013_act_s035_ss1_idx12...
+[09:44:14] CLEAN: Removed leaked definitions from Section 35
+[09:44:14] WARN: WARNING: Section 35 text reduced by >50% - manual review needed
+[09:44:14] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1_idx13 (awaiting justification verification)
+[09:44:14] INFO: Regenerating summary for ca2013_act_s035_ss1_idx13...
+[09:44:20] CLEAN: Removed leaked definitions from Section 35
+[09:44:20] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss1 (awaiting justification verification)
+[09:44:20] INFO: Regenerating summary for ca2013_act_s035_ss1...
+[09:44:27] CLEAN: Removed leaked definitions from Section 35
+[09:44:27] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss2 (awaiting justification verification)
+[09:44:27] INFO: Regenerating summary for ca2013_act_s035_ss2...
+[09:44:34] CLEAN: Removed leaked definitions from Section 35
+[09:44:34] WARN: WARNING: Section 35 text reduced by >50% - manual review needed
+[09:44:34] CLEAN: REMOVED all 6 relationships from ca2013_act_s035_ss3 (awaiting justification verification)
+[09:44:34] INFO: Regenerating summary for ca2013_act_s035_ss3...
+[09:44:40] INFO: Completed Section 35 (17 chunks)
+[09:44:40] CLEAN: Removed leaked definitions from Section 36
+[09:44:40] CLEAN: REMOVED all 1 relationships from ca2013_act_s036 (awaiting justification verification)
+[09:44:40] INFO: Regenerating summary for ca2013_act_s036...
+[09:44:46] INFO: 
+💾 Saving progress (Section 36)...
+[09:44:46] INFO:    Saved 522 chunks
+[09:44:46] INFO: Completed Section 36 (1 chunks)
+[09:44:46] CLEAN: Removed leaked definitions from Section 37
+[09:44:46] WARN: WARNING: Section 37 text reduced by >50% - manual review needed
+[09:44:46] CLEAN: REMOVED all 1 relationships from ca2013_act_s037 (awaiting justification verification)
+[09:44:46] INFO: Regenerating summary for ca2013_act_s037...
+[09:44:52] INFO: Completed Section 37 (1 chunks)
+[09:44:52] CLEAN: Removed leaked definitions from Section 38
+[09:44:52] CLEAN: REMOVED all 1 relationships from ca2013_act_s038 (awaiting justification verification)
+[09:44:52] INFO: Regenerating summary for ca2013_act_s038...
+[09:44:59] INFO: 
+💾 Saving progress (Section 38)...
+[09:44:59] INFO:    Saved 524 chunks
+[09:44:59] INFO: Completed Section 38 (1 chunks)
+[09:44:59] CLEAN: Removed leaked definitions from Section 39
+[09:44:59] CLEAN: Removed placeholder from ca2013_act_s039
+[09:44:59] CLEAN: REMOVED all 16 relationships from ca2013_act_s039 (awaiting justification verification)
+[09:44:59] CLEAN: Removed leaked definitions from Section 39
+[09:44:59] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss1_idx1 (awaiting justification verification)
+[09:44:59] INFO: Regenerating summary for ca2013_act_s039_ss1_idx1...
+[09:45:05] CLEAN: Removed leaked definitions from Section 39
+[09:45:05] WARN: WARNING: Section 39 text reduced by >50% - manual review needed
+[09:45:05] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss1_idx2 (awaiting justification verification)
+[09:45:05] INFO: Regenerating summary for ca2013_act_s039_ss1_idx2...
+[09:45:11] WARN: Invalid compliance area 'Allotted Securities' in ca2013_act_s039_ss1_idx2
+[09:45:11] CLEAN: Removed leaked definitions from Section 39
+[09:45:11] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss1_idx3 (awaiting justification verification)
+[09:45:11] INFO: Regenerating summary for ca2013_act_s039_ss1_idx3...
+[09:45:17] CLEAN: Removed leaked definitions from Section 39
+[09:45:17] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss1_idx4 (awaiting justification verification)
+[09:45:17] INFO: Regenerating summary for ca2013_act_s039_ss1_idx4...
+[09:45:24] WARN: Invalid compliance area 'Member & Shareholders' in ca2013_act_s039_ss1_idx4
+[09:45:24] CLEAN: Removed leaked definitions from Section 39
+[09:45:24] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss1 (awaiting justification verification)
+[09:45:24] INFO: Regenerating summary for ca2013_act_s039_ss1...
+[09:45:30] CLEAN: Removed leaked definitions from Section 39
+[09:45:30] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss2 (awaiting justification verification)
+[09:45:30] INFO: Regenerating summary for ca2013_act_s039_ss2...
+[09:45:35] CLEAN: Removed leaked definitions from Section 39
+[09:45:35] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss3 (awaiting justification verification)
+[09:45:35] INFO: Regenerating summary for ca2013_act_s039_ss3...
+[09:45:42] CLEAN: Removed leaked definitions from Section 39
+[09:45:42] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss4 (awaiting justification verification)
+[09:45:42] INFO: Regenerating summary for ca2013_act_s039_ss4...
+[09:45:47] CLEAN: Removed leaked definitions from Section 39
+[09:45:47] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx1 (awaiting justification verification)
+[09:45:47] INFO: Regenerating summary for ca2013_act_s039_ss5_idx1...
+[09:45:53] CLEAN: Removed leaked definitions from Section 39
+[09:45:53] WARN: WARNING: Section 39 text reduced by >50% - manual review needed
+[09:45:53] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx2 (awaiting justification verification)
+[09:45:53] INFO: Regenerating summary for ca2013_act_s039_ss5_idx2...
+[09:45:59] WARN: Invalid compliance area 'SECURITIES' in ca2013_act_s039_ss5_idx2
+[09:45:59] CLEAN:   → Mapped to: Allotment & Transfer of Securities
+[09:45:59] CLEAN: Removed leaked definitions from Section 39
+[09:45:59] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx3 (awaiting justification verification)
+[09:45:59] INFO: Regenerating summary for ca2013_act_s039_ss5_idx3...
+[09:46:06] CLEAN: Removed leaked definitions from Section 39
+[09:46:06] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx4 (awaiting justification verification)
+[09:46:06] INFO: Regenerating summary for ca2013_act_s039_ss5_idx4...
+[09:46:12] CLEAN: Removed leaked definitions from Section 39
+[09:46:12] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx5 (awaiting justification verification)
+[09:46:12] INFO: Regenerating summary for ca2013_act_s039_ss5_idx5...
+[09:46:18] CLEAN: Removed leaked definitions from Section 39
+[09:46:18] CLEAN: REMOVED all 16 relationships from ca2013_act_s039_ss5_idx6 (awaiting justification verification)
+[09:46:18] INFO: Regenerating summary for ca2013_act_s039_ss5_idx6...
+[09:46:24] INFO: Completed Section 39 (15 chunks)
+[09:46:24] CLEAN: Removed leaked definitions from Section 40
+[09:46:24] CLEAN: REMOVED all 6 relationships from ca2013_act_s040 (awaiting justification verification)
+[09:46:24] INFO: Regenerating summary for ca2013_act_s040...
+[09:46:31] INFO: 
+💾 Saving progress (Section 40)...
+[09:46:31] INFO:    Saved 540 chunks
+[09:46:31] INFO: Completed Section 40 (1 chunks)
+[09:46:31] CLEAN: Removed leaked definitions from Section 41
+[09:46:31] CLEAN: REMOVED all 3 relationships from ca2013_act_s041 (awaiting justification verification)
+[09:46:31] INFO: Regenerating summary for ca2013_act_s041...
+[09:46:37] INFO: Completed Section 41 (1 chunks)
+[09:46:37] CLEAN: Removed leaked definitions from Section 42
+[09:46:37] CLEAN: Removed placeholder from ca2013_act_s042
+[09:46:37] CLEAN: REMOVED all 16 relationships from ca2013_act_s042 (awaiting justification verification)
+[09:46:37] INFO: 
+💾 Saving progress (Section 42)...
+[09:46:37] INFO:    Saved 542 chunks
+[09:46:37] CLEAN: Removed leaked definitions from Section 42
+[09:46:37] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss1 (awaiting justification verification)
+[09:46:37] INFO: Regenerating summary for ca2013_act_s042_ss1...
+[09:46:42] CLEAN: Removed leaked definitions from Section 42
+[09:46:42] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss2 (awaiting justification verification)
+[09:46:42] INFO: Regenerating summary for ca2013_act_s042_ss2...
+[09:46:49] CLEAN: Removed leaked definitions from Section 42
+[09:46:49] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss3 (awaiting justification verification)
+[09:46:49] INFO: Regenerating summary for ca2013_act_s042_ss3...
+[09:46:55] CLEAN: Removed leaked definitions from Section 42
+[09:46:55] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss4 (awaiting justification verification)
+[09:46:55] INFO: Regenerating summary for ca2013_act_s042_ss4...
+[09:47:01] CLEAN: Removed leaked definitions from Section 42
+[09:47:01] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss5 (awaiting justification verification)
+[09:47:01] INFO: Regenerating summary for ca2013_act_s042_ss5...
+[09:47:07] CLEAN: Removed leaked definitions from Section 42
+[09:47:07] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss6 (awaiting justification verification)
+[09:47:07] INFO: Regenerating summary for ca2013_act_s042_ss6...
+[09:47:13] CLEAN: Removed leaked definitions from Section 42
+[09:47:13] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss7 (awaiting justification verification)
+[09:47:13] INFO: Regenerating summary for ca2013_act_s042_ss7...
+[09:47:19] CLEAN: Removed leaked definitions from Section 42
+[09:47:19] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss8 (awaiting justification verification)
+[09:47:19] INFO: Regenerating summary for ca2013_act_s042_ss8...
+[09:47:25] CLEAN: Removed leaked definitions from Section 42
+[09:47:25] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss9 (awaiting justification verification)
+[09:47:25] INFO: Regenerating summary for ca2013_act_s042_ss9...
+[09:47:32] CLEAN: Removed leaked definitions from Section 42
+[09:47:32] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10 (awaiting justification verification)
+[09:47:32] INFO: Regenerating summary for ca2013_act_s042_ss10...
+[09:47:38] CLEAN: Removed leaked definitions from Section 42
+[09:47:38] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss11 (awaiting justification verification)
+[09:47:38] INFO: Regenerating summary for ca2013_act_s042_ss11...
+[09:47:44] CLEAN: Removed leaked definitions from Section 42
+[09:47:44] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss2 (awaiting justification verification)
+[09:47:44] INFO: Regenerating summary for ca2013_act_s042_ss2...
+[09:47:50] CLEAN: Removed leaked definitions from Section 42
+[09:47:50] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss4 (awaiting justification verification)
+[09:47:50] INFO: Regenerating summary for ca2013_act_s042_ss4...
+[09:47:56] CLEAN: Removed leaked definitions from Section 42
+[09:47:56] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss5 (awaiting justification verification)
+[09:47:56] INFO: Regenerating summary for ca2013_act_s042_ss5...
+[09:48:02] CLEAN: Removed leaked definitions from Section 42
+[09:48:02] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss6 (awaiting justification verification)
+[09:48:02] INFO: Regenerating summary for ca2013_act_s042_ss6...
+[09:48:08] CLEAN: Removed leaked definitions from Section 42
+[09:48:08] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss8 (awaiting justification verification)
+[09:48:08] INFO: Regenerating summary for ca2013_act_s042_ss8...
+[09:48:14] CLEAN: Removed leaked definitions from Section 42
+[09:48:14] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss9 (awaiting justification verification)
+[09:48:14] INFO: Regenerating summary for ca2013_act_s042_ss9...
+[09:48:20] CLEAN: Removed leaked definitions from Section 42
+[09:48:20] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx1 (awaiting justification verification)
+[09:48:20] INFO: Regenerating summary for ca2013_act_s042_ss10_idx1...
+[09:48:26] CLEAN: Removed leaked definitions from Section 42
+[09:48:26] WARN: WARNING: Section 42 text reduced by >50% - manual review needed
+[09:48:26] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx2 (awaiting justification verification)
+[09:48:26] INFO: Regenerating summary for ca2013_act_s042_ss10_idx2...
+[09:48:32] WARN: Invalid compliance area 'Compliance Area: Constitutional Documents (MOA & AOA)' in ca2013_act_s042_ss10_idx2
+[09:48:32] CLEAN:   → Mapped to: Constitutional Documents (MOA & AOA)
+[09:48:32] CLEAN: Removed leaked definitions from Section 42
+[09:48:32] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx3 (awaiting justification verification)
+[09:48:32] INFO: Regenerating summary for ca2013_act_s042_ss10_idx3...
+[09:48:39] CLEAN: Removed leaked definitions from Section 42
+[09:48:39] WARN: WARNING: Section 42 text reduced by >50% - manual review needed
+[09:48:39] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx4 (awaiting justification verification)
+[09:48:39] INFO: Regenerating summary for ca2013_act_s042_ss10_idx4...
+[09:48:45] WARN: Invalid compliance area 'Compliance Area: Definitions & Interpretation' in ca2013_act_s042_ss10_idx4
+[09:48:45] CLEAN:   → Mapped to: Definitions & Interpretation
+[09:48:45] CLEAN: Removed leaked definitions from Section 42
+[09:48:45] WARN: WARNING: Section 42 text reduced by >50% - manual review needed
+[09:48:45] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx5 (awaiting justification verification)
+[09:48:45] INFO: Regenerating summary for ca2013_act_s042_ss10_idx5...
+[09:48:51] CLEAN: Removed leaked definitions from Section 42
+[09:48:51] WARN: WARNING: Section 42 text reduced by >50% - manual review needed
+[09:48:51] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx6 (awaiting justification verification)
+[09:48:51] INFO: Regenerating summary for ca2013_act_s042_ss10_idx6...
+[09:48:58] CLEAN: Removed leaked definitions from Section 42
+[09:48:58] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx7 (awaiting justification verification)
+[09:48:58] INFO: Regenerating summary for ca2013_act_s042_ss10_idx7...
+[09:49:03] CLEAN: Removed leaked definitions from Section 42
+[09:49:03] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx8 (awaiting justification verification)
+[09:49:03] INFO: Regenerating summary for ca2013_act_s042_ss10_idx8...
+[09:49:09] CLEAN: Removed leaked definitions from Section 42
+[09:49:09] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx9 (awaiting justification verification)
+[09:49:09] INFO: Regenerating summary for ca2013_act_s042_ss10_idx9...
+[09:49:15] CLEAN: Removed leaked definitions from Section 42
+[09:49:15] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx10 (awaiting justification verification)
+[09:49:15] INFO: Regenerating summary for ca2013_act_s042_ss10_idx10...
+[09:49:20] CLEAN: Removed leaked definitions from Section 42
+[09:49:20] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx11 (awaiting justification verification)
+[09:49:20] INFO: Regenerating summary for ca2013_act_s042_ss10_idx11...
+[09:49:26] CLEAN: Removed leaked definitions from Section 42
+[09:49:26] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx12 (awaiting justification verification)
+[09:49:26] INFO: Regenerating summary for ca2013_act_s042_ss10_idx12...
+[09:49:32] CLEAN: Removed leaked definitions from Section 42
+[09:49:32] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx13 (awaiting justification verification)
+[09:49:32] INFO: Regenerating summary for ca2013_act_s042_ss10_idx13...
+[09:49:37] CLEAN: Removed leaked definitions from Section 42
+[09:49:37] CLEAN: REMOVED all 16 relationships from ca2013_act_s042_ss10_idx14 (awaiting justification verification)
+[09:49:37] INFO: Regenerating summary for ca2013_act_s042_ss10_idx14...
+[09:49:43] INFO: 
+Saving cleaned chunks to chunks\final_chunks_cleaned.json...
+
+================================================================================
+FINAL STATISTICS
+================================================================================
+total_chunks: 1016
+act_chunks_cleaned: 557
+placeholders_removed: 16
+relationships_removed: 14543
+relationships_total: 0
+summaries_regenerated: 557
+keywords_regenerated: 557
+citations_fixed: 0
+validation_failures: 0
+text_purity_violations: 64

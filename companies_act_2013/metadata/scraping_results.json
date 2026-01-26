@@ -1,0 +1,4099 @@
+[
+  {
+    "section": 1,
+    "title": "Short title, extent, commencement and application",
+    "url": "https://ca2013.com/short-title-extent-commencement-and-application/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_001/act/section_001_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 1
+      },
+      "act_text": {
+        "path": "raw/section_001/act/section_001_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 1
+      },
+      "circulars": [
+        {
+          "path": "raw/section_001/circulars/General-Circular-No.-16-20131.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 1,
+          "filename": "General-Circular-No.-16-20131.pdf"
+        },
+        {
+          "path": "raw/section_001/circulars/General-Circular-No.-32-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 1,
+          "filename": "General-Circular-No.-32-20141.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 2,
+    "title": "abridged prospectus",
+    "url": "https://ca2013.com/section-21-abridged-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_002/act/section_002_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 2
+      },
+      "act_text": {
+        "path": "raw/section_002/act/section_002_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 2
+      },
+      "notifications": [
+        {
+          "path": "raw/section_002/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 2,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 3,
+    "title": "Formation of company",
+    "url": "https://ca2013.com/formation-of-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_003/act/section_003_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 3
+      },
+      "act_text": {
+        "path": "raw/section_003/act/section_003_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 3
+      },
+      "notifications": [
+        {
+          "path": "raw/section_003/notifications/Commencementnotification.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "Commencementnotification.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/inc-138-228.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "inc-138-228.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/Inc-Rules-02022021.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "Inc-Rules-02022021.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/GSR-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "GSR-9.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/GSR-8.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "GSR-8.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_003/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 3,
+          "filename": "181439.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_003/return/Form-INC-4.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "Form-INC-4.pdf"
+        },
+        {
+          "path": "raw/section_003/return/INC-6.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "INC-6.pdf"
+        },
+        {
+          "path": "raw/section_003/return/Form_INC-2-09-12-2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "Form_INC-2-09-12-2015.pdf"
+        },
+        {
+          "path": "raw/section_003/return/Form-INC-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "Form-INC-3.pdf"
+        },
+        {
+          "path": "raw/section_003/return/Form-INC-4.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "Form-INC-4.pdf"
+        },
+        {
+          "path": "raw/section_003/return/Form-RUN.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 3,
+          "filename": "Form-RUN.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 4,
+    "title": "Memorandum",
+    "url": "https://ca2013.com/memorandum/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_004/act/section_004_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 4
+      },
+      "act_text": {
+        "path": "raw/section_004/act/section_004_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 4
+      },
+      "notifications": [
+        {
+          "path": "raw/section_004/notifications/inc-138-228.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "inc-138-228.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Amendement_Rules_220120161.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Amendement_Rules_220120161.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Companies-Incorporation-Amendment-Rules-2024_16.07.2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Companies-Incorporation-Amendment-Rules-2024_16.07.2024.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/5th_Amendment_Rules_29122016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "5th_Amendment_Rules_29122016.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/CompaniesIncorporationFifthAmendmentRules_12052019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "CompaniesIncorporationFifthAmendmentRules_12052019.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Incorporation-Rules-24122020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Incorporation-Rules-24122020.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Notification-MCA-06.02.2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Notification-MCA-06.02.2020.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/18.-NotificationComapniesAct_23012018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "18.-NotificationComapniesAct_23012018.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Exemption-to-Govt-Companies-G.S.R.-463E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Exemption-to-Govt-Companies-G.S.R.-463E.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/GSR-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "GSR-9.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/GSR-8.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "GSR-8.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/ExemptionGovernmentCompanies_14062017.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "ExemptionGovernmentCompanies_14062017.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/Notification-to-amend-Mega-Exemption-Notification-02032020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "Notification-to-amend-Mega-Exemption-Notification-02032020.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "181439.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/incorp.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "incorp.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/RUN.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "RUN.pdf"
+        },
+        {
+          "path": "raw/section_004/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 4,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_004/circulars/General_Circular_2_2014.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General_Circular_2_2014.pdf"
+        },
+        {
+          "path": "raw/section_004/circulars/General-Circular-No.-11-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General-Circular-No.-11-20141.pdf"
+        },
+        {
+          "path": "raw/section_004/circulars/General-Circular-13-20142.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General-Circular-13-20142.pdf"
+        },
+        {
+          "path": "raw/section_004/circulars/General-Circular-No.-26-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General-Circular-No.-26-20141.pdf"
+        },
+        {
+          "path": "raw/section_004/circulars/General-Circular-No.-29-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General-Circular-No.-29-20141.pdf"
+        },
+        {
+          "path": "raw/section_004/circulars/General-Circular-No.-31-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 4,
+          "filename": "General-Circular-No.-31-20141.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_004/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 4,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Form-INC-33.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Form-INC-33.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Spice.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Spice.pdf"
+        },
+        {
+          "path": "raw/section_004/return/INC-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "INC-1.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Form-INC-13.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Form-INC-13.pdf"
+        },
+        {
+          "path": "raw/section_004/return/INC-35.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "INC-35.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Form_GNL-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Form_GNL-2.pdf"
+        },
+        {
+          "path": "raw/section_004/return/gnl-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "gnl-3.pdf"
+        },
+        {
+          "path": "raw/section_004/return/GNL-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "GNL-1.pdf"
+        },
+        {
+          "path": "raw/section_004/return/inc-32.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "inc-32.pdf"
+        },
+        {
+          "path": "raw/section_004/return/INC-1-27-01-2016.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "INC-1-27-01-2016.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Form-INC-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Form-INC-3.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Form-RUN.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "Form-RUN.pdf"
+        },
+        {
+          "path": "raw/section_004/return/RUN-form.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "RUN-form.pdf"
+        },
+        {
+          "path": "raw/section_004/return/RUN-Form.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "RUN-Form.pdf"
+        },
+        {
+          "path": "raw/section_004/return/SPICe-Part-A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 4,
+          "filename": "SPICe-Part-A.pdf"
+        },
+        {
+          "path": "raw/section_004/return/Incorporation-Rules-24122020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 4,
+          "filename": "Incorporation-Rules-24122020.pdf"
+        }
+      ],
+      "schedule_text": {
+        "path": "raw/section_004/schedule/section_004_schedule.txt",
+        "authority_level": "Statutory",
+        "tab": "schedule",
+        "section": 4
+      }
+    }
+  },
+  {
+    "section": 5,
+    "title": "Articles",
+    "url": "https://ca2013.com/articles/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_005/act/section_005_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 5
+      },
+      "act_text": {
+        "path": "raw/section_005/act/section_005_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 5
+      },
+      "notifications": [
+        {
+          "path": "raw/section_005/notifications/Commencement-Notification-Section-56-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "Commencement-Notification-Section-56-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/Commencement-Notification-Section-80-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "Commencement-Notification-Section-80-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/5th_Amendment_Rules_29122016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "5th_Amendment_Rules_29122016.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/Notification-MCA-06.02.2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "Notification-MCA-06.02.2020.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/Companies-Fees-Rules-2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "Companies-Fees-Rules-2022.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/Schedule-I.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "Schedule-I.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf"
+        },
+        {
+          "path": "raw/section_005/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 5,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_005/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 5,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form-INC-33.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form-INC-33.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Spice.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Spice.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form-INC-31.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form-INC-31.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form-INC-34.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form-INC-34.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form_GNL-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form_GNL-2.pdf"
+        },
+        {
+          "path": "raw/section_005/return/gnl-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "gnl-3.pdf"
+        },
+        {
+          "path": "raw/section_005/return/GNL-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "GNL-1.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form_INC-2-09-12-2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form_INC-2-09-12-2015.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form_INC-7-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form_INC-7-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_005/return/Form_MGT-14-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "Form_MGT-14-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_005/return/INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 5,
+          "filename": "INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf"
+        }
+      ],
+      "schedule_text": {
+        "path": "raw/section_005/schedule/section_005_schedule.txt",
+        "authority_level": "Statutory",
+        "tab": "schedule",
+        "section": 5
+      }
+    }
+  },
+  {
+    "section": 6,
+    "title": "Act to over-ride memorandum, articles, etc.",
+    "url": "https://ca2013.com/act-to-override-memorandum-articles-etc/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_006/act/section_006_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 6
+      },
+      "act_text": {
+        "path": "raw/section_006/act/section_006_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 6
+      },
+      "notifications": [
+        {
+          "path": "raw/section_006/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 6,
+          "filename": "SO-902E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 7,
+    "title": "Incorporation of company",
+    "url": "https://ca2013.com/incorporation-of-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_007/act/section_007_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 7
+      },
+      "act_text": {
+        "path": "raw/section_007/act/section_007_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 7
+      },
+      "rules": [
+        {
+          "path": "raw/section_007/rules/MCA-Notification_20.05.2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 7,
+          "filename": "MCA-Notification_20.05.2022.pdf"
+        },
+        {
+          "path": "raw/section_007/rules/MCA-Notification_20.05.2022_INC-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 7,
+          "filename": "MCA-Notification_20.05.2022_INC-9.pdf"
+        }
+      ],
+      "notifications": [
+        {
+          "path": "raw/section_007/notifications/Commencement-Notification-dated-27.07.2018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Commencement-Notification-dated-27.07.2018.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Commencement-Notification-Section-56-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Commencement-Notification-Section-56-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Commencement-Notification-Section-80-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Commencement-Notification-Section-80-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/inc-138-228.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "inc-138-228.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Amendement_Rules_220120161.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Amendement_Rules_220120161.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/5th_Amendment_Rules_29122016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "5th_Amendment_Rules_29122016.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Rules_31052015_3.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Rules_31052015_3.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/MCA-Notification_20.05.2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "MCA-Notification_20.05.2022.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Notification-MCA-06.02.2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Notification-MCA-06.02.2020.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Companies-Fees-Rules-2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Companies-Fees-Rules-2022.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/ii-50-107.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "ii-50-107.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/merged_document_3-1.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "merged_document_3-1.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Commencement-Notification-07.12.2016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Commencement-Notification-07.12.2016.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/MCA-Notification_20.01.2023_Appointment-and-Qualification-of-Directors.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "MCA-Notification_20.01.2023_Appointment-and-Qualification-of-Directors.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Notification_23032016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Notification_23032016.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "181439.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/IncorporatinRules_27012017.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "IncorporatinRules_27012017.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/rule_22022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "rule_22022020.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Incorp.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Incorp.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_007/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 7,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_007/circulars/General-circular-No.-12-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "General-circular-No.-12-20141.pdf"
+        },
+        {
+          "path": "raw/section_007/circulars/General-Circular-No.-16-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "General-Circular-No.-16-20141.pdf"
+        },
+        {
+          "path": "raw/section_007/circulars/Extension_22042020-21052020.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "Extension_22042020-21052020.pdf"
+        },
+        {
+          "path": "raw/section_007/circulars/Extension_22042020.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "Extension_22042020.pdf"
+        },
+        {
+          "path": "raw/section_007/circulars/Extension_22042020_23062020.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "Extension_22042020_23062020.pdf"
+        },
+        {
+          "path": "raw/section_007/circulars/Extension_22042020_29062020.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 7,
+          "filename": "Extension_22042020_29062020.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_007/return/DIR-12.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "DIR-12.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_DIR-12-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_DIR-12-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_007/return/D-I-R-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "D-I-R-2.pdf"
+        },
+        {
+          "path": "raw/section_007/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 7,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form-INC-11.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form-INC-11.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-32.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-32.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Spice.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Spice.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form-INC-9.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form-INC-9.pdf"
+        },
+        {
+          "path": "raw/section_007/return/NCLT-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "NCLT-1.pdf"
+        },
+        {
+          "path": "raw/section_007/return/CHG-8.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "CHG-8.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_GNL-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_GNL-2.pdf"
+        },
+        {
+          "path": "raw/section_007/return/gnl-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "gnl-3.pdf"
+        },
+        {
+          "path": "raw/section_007/return/GNL-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "GNL-1.pdf"
+        },
+        {
+          "path": "raw/section_007/return/inc-32.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "inc-32.pdf"
+        },
+        {
+          "path": "raw/section_007/return/inc-33.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "inc-33.pdf"
+        },
+        {
+          "path": "raw/section_007/return/inc-34.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "inc-34.pdf"
+        },
+        {
+          "path": "raw/section_007/return/inc-13.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "inc-13.pdf"
+        },
+        {
+          "path": "raw/section_007/return/inc-14.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "inc-14.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_INC-29-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_INC-29-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-8.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-8.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-9-w.e.f.-23-02-2020.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-9-w.e.f.-23-02-2020.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_INC-2-09-12-2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_INC-2-09-12-2015.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_INC-22-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_INC-22-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_007/return/Form_INC-7-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "Form_INC-7-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-31-e-AOA.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-31-e-AOA.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-11-w.e.f-01.01.2017.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-11-w.e.f-01.01.2017.pdf"
+        },
+        {
+          "path": "raw/section_007/return/INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 7,
+          "filename": "INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf"
+        },
+        {
+          "path": "raw/section_007/return/MCA-Notification_20.05.2022_INC-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 7,
+          "filename": "MCA-Notification_20.05.2022_INC-9.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 8,
+    "title": "Formation of companies with charitable objects, etc",
+    "url": "https://ca2013.com/formation-of-companies-with-charitable-objects-etc/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_008/act/section_008_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 8
+      },
+      "act_text": {
+        "path": "raw/section_008/act/section_008_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 8
+      },
+      "rules": [
+        {
+          "path": "raw/section_008/rules/AmendmentRules_01052015.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 8,
+          "filename": "AmendmentRules_01052015.pdf"
+        }
+      ],
+      "notifications": [
+        {
+          "path": "raw/section_008/notifications/Commencement-Notification-Section-56-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Commencement-Notification-Section-56-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Commencement-Notification-Section-80-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Commencement-Notification-Section-80-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Commencement-Notification-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Commencement-Notification-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Companies-Amendment-Act-2020-28092020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Companies-Amendment-Act-2020-28092020.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Notification-MCA-06.02.2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Notification-MCA-06.02.2020.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Companies-Fees-Rules-2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Companies-Fees-Rules-2022.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/173166.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "173166.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Commencement-Notification-07.12.2016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Commencement-Notification-07.12.2016.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Notification_23032016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Notification_23032016.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/SO-1352-E1.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "SO-1352-E1.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_008/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 8,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_008/return/Spice.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Spice.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form-INC-12.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form-INC-12.pdf"
+        },
+        {
+          "path": "raw/section_008/return/INC-12.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "INC-12.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form-INC-13.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form-INC-13.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form-INC-18.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form-INC-18.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form-INC-20.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form-INC-20.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-26.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-26.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form-INC-12.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form-INC-12.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-13.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-13.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-14.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-14.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-15.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-15.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-16.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-16.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-17.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-17.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-19.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-19.pdf"
+        },
+        {
+          "path": "raw/section_008/return/INC-12.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "INC-12.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-18.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-18.pdf"
+        },
+        {
+          "path": "raw/section_008/return/inc-20.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "inc-20.pdf"
+        },
+        {
+          "path": "raw/section_008/return/Form_MGT-14-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 8,
+          "filename": "Form_MGT-14-02.12.2015.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 9,
+    "title": "Effect of registration",
+    "url": "https://ca2013.com/effect-of-registration/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_009/act/section_009_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 9
+      },
+      "act_text": {
+        "path": "raw/section_009/act/section_009_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 9
+      },
+      "notifications": [
+        {
+          "path": "raw/section_009/notifications/Notification_31052015.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 9,
+          "filename": "Notification_31052015.pdf"
+        },
+        {
+          "path": "raw/section_009/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 9,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_009/notifications/201521.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 9,
+          "filename": "201521.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 10,
+    "title": "Effect of memorandum and articles",
+    "url": "https://ca2013.com/effect-of-memorandum-and-articles/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_010/act/section_010_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 10
+      },
+      "act_text": {
+        "path": "raw/section_010/act/section_010_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 10
+      },
+      "notifications": [
+        {
+          "path": "raw/section_010/notifications/Nidhi-Companies.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "Nidhi-Companies.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/5th_Amendment_Rules_29122016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "5th_Amendment_Rules_29122016.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "Amendment-Act-2019.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/CA-ordinance.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "CA-ordinance.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/Ordinance-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "Ordinance-2019.pdf"
+        },
+        {
+          "path": "raw/section_010/notifications/CompaniesFourthAmendmentRules_19122018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 10,
+          "filename": "CompaniesFourthAmendmentRules_19122018.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_010/circulars/Relaxation-Circular-24032020.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 10,
+          "filename": "Relaxation-Circular-24032020.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_010/return/Return-INC-20-A-Nidhi.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 10,
+          "filename": "Return-INC-20-A-Nidhi.pdf"
+        },
+        {
+          "path": "raw/section_010/return/INC-20A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 10,
+          "filename": "INC-20A.pdf"
+        },
+        {
+          "path": "raw/section_010/return/Form-INC-20A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 10,
+          "filename": "Form-INC-20A.pdf"
+        },
+        {
+          "path": "raw/section_010/return/inc-32.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 10,
+          "filename": "inc-32.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 11,
+    "title": "Commencement of business, etc. -Omitted",
+    "url": "https://ca2013.com/commencement-of-business-etc/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_011/act/section_011_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 11
+      },
+      "act_text": {
+        "path": "raw/section_011/act/section_011_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 11
+      },
+      "rules": [
+        {
+          "path": "raw/section_011/rules/Rules_31052015_3.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 11,
+          "filename": "Rules_31052015_3.pdf"
+        }
+      ],
+      "notifications": [
+        {
+          "path": "raw/section_011/notifications/Notification_31052015.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 11,
+          "filename": "Notification_31052015.pdf"
+        },
+        {
+          "path": "raw/section_011/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 11,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_011/notifications/201521.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 11,
+          "filename": "201521.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_011/return/inc-21.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 11,
+          "filename": "inc-21.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 12,
+    "title": "Registered office of company",
+    "url": "https://ca2013.com/registered-office-of-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_012/act/section_012_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 12
+      },
+      "act_text": {
+        "path": "raw/section_012/act/section_012_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 12
+      },
+      "notifications": [
+        {
+          "path": "raw/section_012/notifications/Commencement-Notification-dated-27.07.2018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Commencement-Notification-dated-27.07.2018.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/CompaniesIncorporationSecondAmendmentRules2017.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "CompaniesIncorporationSecondAmendmentRules2017.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/Notification_31052015.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Notification_31052015.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/GSR-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "GSR-9.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/GSR-8.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "GSR-8.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "181439.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Amendment-Act-2019.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/201521.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "201521.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/CA-ordinance.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "CA-ordinance.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/Ordinance-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Ordinance-2019.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/incorp.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "incorp.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/Incorporation-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Incorporation-Rules.pdf"
+        },
+        {
+          "path": "raw/section_012/notifications/Registration-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 12,
+          "filename": "Registration-Rules.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_012/return/Form-INC-28.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "Form-INC-28.pdf"
+        },
+        {
+          "path": "raw/section_012/return/inc-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "inc-23.pdf"
+        },
+        {
+          "path": "raw/section_012/return/Form-INC-22.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "Form-INC-22.pdf"
+        },
+        {
+          "path": "raw/section_012/return/Form-INC-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "Form-INC-23.pdf"
+        },
+        {
+          "path": "raw/section_012/return/Form_INC-22-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "Form_INC-22-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_012/return/inc-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 12,
+          "filename": "inc-23.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 13,
+    "title": "Alteration of memorandum",
+    "url": "https://ca2013.com/alteration-of-memorandum/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_013/act/section_013_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 13
+      },
+      "act_text": {
+        "path": "raw/section_013/act/section_013_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 13
+      },
+      "notifications": [
+        {
+          "path": "raw/section_013/notifications/CompaniesIncorporationSecondAmendmentRules2017.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "CompaniesIncorporationSecondAmendmentRules2017.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/MCA-Companies-Incorporation-Second-Amendment-Rules-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "MCA-Companies-Incorporation-Second-Amendment-Rules-2020.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/173166.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "173166.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf"
+        },
+        {
+          "path": "raw/section_013/notifications/SO-1352-E1.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 13,
+          "filename": "SO-1352-E1.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_013/return/Form-INC-28.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "Form-INC-28.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-23.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-26.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-26.pdf"
+        },
+        {
+          "path": "raw/section_013/return/Form-INC-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "Form-INC-23.pdf"
+        },
+        {
+          "path": "raw/section_013/return/Form-INC-24.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "Form-INC-24.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-26.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-26.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-25.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-25.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-23.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-23.pdf"
+        },
+        {
+          "path": "raw/section_013/return/inc-24.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "inc-24.pdf"
+        },
+        {
+          "path": "raw/section_013/return/Form_INC-28-09-12-2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "Form_INC-28-09-12-2015.pdf"
+        },
+        {
+          "path": "raw/section_013/return/Form-RUN.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 13,
+          "filename": "Form-RUN.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 14,
+    "title": "Alteration of articles",
+    "url": "https://ca2013.com/alteration-of-articles/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_014/act/section_014_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 14
+      },
+      "act_text": {
+        "path": "raw/section_014/act/section_014_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 14
+      },
+      "notifications": [
+        {
+          "path": "raw/section_014/notifications/Incorporation-Amendment-Rules-25012021.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "Incorporation-Amendment-Rules-25012021.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/228419.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "228419.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/ii-50-107.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "ii-50-107.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/Notification-on-RD.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "Notification-on-RD.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/merged_document_3-1.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "merged_document_3-1.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/173200.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "173200.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "Amendment-Act-2019.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/CA-ordinance.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "CA-ordinance.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/Ordinance-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "Ordinance-2019.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/CompaniesFourthAmendmentRules_19122018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "CompaniesFourthAmendmentRules_19122018.pdf"
+        },
+        {
+          "path": "raw/section_014/notifications/SeventhAmendmentRules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 14,
+          "filename": "SeventhAmendmentRules.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_014/circulars/GeneralCircularNo3-rd1_11032019.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 14,
+          "filename": "GeneralCircularNo3-rd1_11032019.pdf"
+        },
+        {
+          "path": "raw/section_014/circulars/General-Circular-No.-18-20141.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 14,
+          "filename": "General-Circular-No.-18-20141.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_014/return/Form-INC-27.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "Form-INC-27.pdf"
+        },
+        {
+          "path": "raw/section_014/return/228419-4.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "228419-4.pdf"
+        },
+        {
+          "path": "raw/section_014/return/NCLT-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "NCLT-1.pdf"
+        },
+        {
+          "path": "raw/section_014/return/NCLT-3B.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "NCLT-3B.pdf"
+        },
+        {
+          "path": "raw/section_014/return/inc-27.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "inc-27.pdf"
+        },
+        {
+          "path": "raw/section_014/return/INC-25A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "INC-25A.pdf"
+        },
+        {
+          "path": "raw/section_014/return/Form-GNL-5.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "Form-GNL-5.pdf"
+        },
+        {
+          "path": "raw/section_014/return/Form-RD-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "Form-RD-1.pdf"
+        },
+        {
+          "path": "raw/section_014/return/GNL-5.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "GNL-5.pdf"
+        },
+        {
+          "path": "raw/section_014/return/RD-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 14,
+          "filename": "RD-1.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 15,
+    "title": "Alteration of memorandum or articles to be noted in every copy",
+    "url": "https://ca2013.com/alteration-of-memorandum-or-articles-to-be-noted-in-every-copy/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_015/act/section_015_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 15
+      },
+      "act_text": {
+        "path": "raw/section_015/act/section_015_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 15
+      },
+      "notifications": [
+        {
+          "path": "raw/section_015/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 15,
+          "filename": "SO-902E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 16,
+    "title": "Rectification of name of company",
+    "url": "https://ca2013.com/rectification-of-name-of-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_016/act/section_016_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 16
+      },
+      "act_text": {
+        "path": "raw/section_016/act/section_016_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 16
+      },
+      "notifications": [
+        {
+          "path": "raw/section_016/notifications/228417.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "228417.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/Companies-Amendment-Act-2020-28092020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "Companies-Amendment-Act-2020-28092020.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/173166.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "173166.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/MCA_Notification-02.08.2023.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "MCA_Notification-02.08.2023.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_016/notifications/SO-1352-E1.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 16,
+          "filename": "SO-1352-E1.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_016/circulars/Circular04_2017_17052017.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 16,
+          "filename": "Circular04_2017_17052017.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_016/return/Form-RD-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 16,
+          "filename": "Form-RD-1.pdf"
+        },
+        {
+          "path": "raw/section_016/return/Form-RD-1_02.08.2023.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 16,
+          "filename": "Form-RD-1_02.08.2023.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 17,
+    "title": "Copies of memorandum, articles, etc., to be given to members",
+    "url": "https://ca2013.com/copies-of-memorandum-articles-etc-to-be-given-to-members/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_017/act/section_017_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 17
+      },
+      "act_text": {
+        "path": "raw/section_017/act/section_017_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 17
+      },
+      "notifications": [
+        {
+          "path": "raw/section_017/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_017/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_017/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_017/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_017/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_017/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 17,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_017/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 17,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_017/return/Form_GNL-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 17,
+          "filename": "Form_GNL-2.pdf"
+        },
+        {
+          "path": "raw/section_017/return/gnl-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 17,
+          "filename": "gnl-3.pdf"
+        },
+        {
+          "path": "raw/section_017/return/GNL-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 17,
+          "filename": "GNL-1.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 18,
+    "title": "Conversion of companies already registered",
+    "url": "https://ca2013.com/conversion-of-companies-already-registered/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_018/act/section_018_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 18
+      },
+      "act_text": {
+        "path": "raw/section_018/act/section_018_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 18
+      },
+      "rules": [
+        {
+          "path": "raw/section_018/rules/CompaniesIncorporationFourthAmendmentRules_01102016.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 18,
+          "filename": "CompaniesIncorporationFourthAmendmentRules_01102016.pdf"
+        }
+      ],
+      "notifications": [
+        {
+          "path": "raw/section_018/notifications/Commencement-Notification-Section-56-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "Commencement-Notification-Section-56-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/Commencement-Notification-Section-80-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "Commencement-Notification-Section-80-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/inc-138-228.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "inc-138-228.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/Inc-Rules-02022021.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "Inc-Rules-02022021.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/incor.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "incor.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/Companies-Fees-Rules-2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "Companies-Fees-Rules-2022.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/ii-50-107.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "ii-50-107.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "MCA-Notification_19.01.2023-Incorporation-rules.pdf"
+        },
+        {
+          "path": "raw/section_018/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 18,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_018/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 18,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form-INC-27.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form-INC-27.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form-INC-11A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form-INC-11A.pdf"
+        },
+        {
+          "path": "raw/section_018/return/INC-27A.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "INC-27A.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form-INC-6.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form-INC-6.pdf"
+        },
+        {
+          "path": "raw/section_018/return/INC-6.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "INC-6.pdf"
+        },
+        {
+          "path": "raw/section_018/return/form-inc-5.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "form-inc-5.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form_GNL-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form_GNL-2.pdf"
+        },
+        {
+          "path": "raw/section_018/return/gnl-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "gnl-3.pdf"
+        },
+        {
+          "path": "raw/section_018/return/GNL-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "GNL-1.pdf"
+        },
+        {
+          "path": "raw/section_018/return/INC-11-B.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "INC-11-B.pdf"
+        },
+        {
+          "path": "raw/section_018/return/inc-27.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "inc-27.pdf"
+        },
+        {
+          "path": "raw/section_018/return/inc-6.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "inc-6.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form_MGT-14-02.12.2015.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form_MGT-14-02.12.2015.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form-RD-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form-RD-1.pdf"
+        },
+        {
+          "path": "raw/section_018/return/Form-RD-1_02.08.2023.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 18,
+          "filename": "Form-RD-1_02.08.2023.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 19,
+    "title": "Subsidiary company not to hold shares in its holding company",
+    "url": "https://ca2013.com/subsidiary-company-not-to-hold-shares-in-its-holding-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_019/act/section_019_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 19
+      },
+      "act_text": {
+        "path": "raw/section_019/act/section_019_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 19
+      },
+      "notifications": [
+        {
+          "path": "raw/section_019/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 19,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 20,
+    "title": "Service of documents",
+    "url": "https://ca2013.com/service-of-documents/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_020/act/section_020_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 20
+      },
+      "act_text": {
+        "path": "raw/section_020/act/section_020_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 20
+      },
+      "notifications": [
+        {
+          "path": "raw/section_020/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 20,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_020/notifications/Exemption-to-Nidhi-Companies-G.S.R-465E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 20,
+          "filename": "Exemption-to-Nidhi-Companies-G.S.R-465E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 21,
+    "title": "Authentication of documents, proceedings and contracts",
+    "url": "https://ca2013.com/authentication-of-documents-proceedings-and-contracts/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_021/act/section_021_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 21
+      },
+      "act_text": {
+        "path": "raw/section_021/act/section_021_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 21
+      },
+      "notifications": [
+        {
+          "path": "raw/section_021/notifications/Commencementnotification.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 21,
+          "filename": "Commencementnotification.pdf"
+        },
+        {
+          "path": "raw/section_021/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 21,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_021/notifications/GSR-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 21,
+          "filename": "GSR-9.pdf"
+        },
+        {
+          "path": "raw/section_021/notifications/GSR-8.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 21,
+          "filename": "GSR-8.pdf"
+        },
+        {
+          "path": "raw/section_021/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 21,
+          "filename": "181439.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 22,
+    "title": "Execution of bills of exchange, etc.",
+    "url": "https://ca2013.com/execution-of-bills-of-exchange-etc/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_022/act/section_022_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 22
+      },
+      "act_text": {
+        "path": "raw/section_022/act/section_022_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 22
+      },
+      "notifications": [
+        {
+          "path": "raw/section_022/notifications/Notification_31052015.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 22,
+          "filename": "Notification_31052015.pdf"
+        },
+        {
+          "path": "raw/section_022/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 22,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_022/notifications/201521.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 22,
+          "filename": "201521.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 23,
+    "title": "Public offer and private placement",
+    "url": "https://ca2013.com/public-offer-and-private-placement/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_023/act/section_023_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 23
+      },
+      "act_text": {
+        "path": "raw/section_023/act/section_023_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 23
+      },
+      "notifications": [
+        {
+          "path": "raw/section_023/notifications/Companies-Amendment-Act-2020-28092020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 23,
+          "filename": "Companies-Amendment-Act-2020-28092020.pdf"
+        },
+        {
+          "path": "raw/section_023/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 23,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_023/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 23,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_023/notifications/MCA-Notification2_30.10.2023.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 23,
+          "filename": "MCA-Notification2_30.10.2023.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_023/circulars/General-Circular-No.-43-2014.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 23,
+          "filename": "General-Circular-No.-43-2014.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 24,
+    "title": "Power of Securities and Exchange Board to regulate issue and transfer of securities, etc.",
+    "url": "https://ca2013.com/power-of-securities-and-exchange-board-to-regulate-issue-and-transfer-of-securities-etc/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_024/act/section_024_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 24
+      },
+      "act_text": {
+        "path": "raw/section_024/act/section_024_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 24
+      },
+      "notifications": [
+        {
+          "path": "raw/section_024/notifications/SO-1459-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 24,
+          "filename": "SO-1459-E.pdf"
+        },
+        {
+          "path": "raw/section_024/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 24,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 25,
+    "title": "Document containing offer of securities for sale to be deemed prospectus",
+    "url": "https://ca2013.com/document-containing-offer-of-securities-for-sale-to-be-deemed-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_025/act/section_025_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 25
+      },
+      "act_text": {
+        "path": "raw/section_025/act/section_025_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 25
+      },
+      "notifications": [
+        {
+          "path": "raw/section_025/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 25,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_025/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 25,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 26,
+    "title": "Matters to be stated in prospectus",
+    "url": "https://ca2013.com/matters-to-be-stated-in-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_026/act/section_026_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 26
+      },
+      "act_text": {
+        "path": "raw/section_026/act/section_026_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 26
+      },
+      "rules": [
+        {
+          "path": "raw/section_026/rules/Prospectus-and-Allotment.pdf",
+          "authority_level": "Subordinate",
+          "tab": "rules",
+          "section": 26,
+          "filename": "Prospectus-and-Allotment.pdf"
+        }
+      ],
+      "notifications": [
+        {
+          "path": "raw/section_026/notifications/CompaniesAmendmentNoti_07052018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "CompaniesAmendmentNoti_07052018.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/Commencement-Notification-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "Commencement-Notification-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/Companies-Amendment-Act-2020-28092020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "Companies-Amendment-Act-2020-28092020.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/Prospectus-and-Allotment.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "Prospectus-and-Allotment.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/CommencemntNotification_14082019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "CommencemntNotification_14082019.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "181439.pdf"
+        },
+        {
+          "path": "raw/section_026/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 26,
+          "filename": "Amendment-Act-2019.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 27,
+    "title": "Variation in terms of contract or objects in prospectus",
+    "url": "https://ca2013.com/variation-in-terms-of-contract-or-objects-in-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_027/act/section_027_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 27
+      },
+      "act_text": {
+        "path": "raw/section_027/act/section_027_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 27
+      },
+      "notifications": [
+        {
+          "path": "raw/section_027/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 27,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_027/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 27,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_027/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 27,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_027/return/pas-1.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 27,
+          "filename": "pas-1.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 28,
+    "title": "Offer of sale of shares by certain members of company",
+    "url": "https://ca2013.com/offer-of-sale-of-shares-by-certain-members-of-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_028/act/section_028_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 28
+      },
+      "act_text": {
+        "path": "raw/section_028/act/section_028_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 28
+      },
+      "notifications": [
+        {
+          "path": "raw/section_028/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 28,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_028/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 28,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_028/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 28,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 29,
+    "title": "Public offer of securities to be in dematerialised form",
+    "url": "https://ca2013.com/public-offer-of-securities-to-be-in-dematerialised-form/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_029/act/section_029_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 29
+      },
+      "act_text": {
+        "path": "raw/section_029/act/section_029_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 29
+      },
+      "notifications": [
+        {
+          "path": "raw/section_029/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/CommencemntNotification_14082019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "CommencemntNotification_14082019.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "Amendment-Act-2019.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/CompaniesProspectus3amdRule_10092018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "CompaniesProspectus3amdRule_10092018.pdf"
+        },
+        {
+          "path": "raw/section_029/notifications/Prospectus-rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 29,
+          "filename": "Prospectus-rules.pdf"
+        }
+      ],
+      "circulars": [
+        {
+          "path": "raw/section_029/circulars/FormPAS6_28112019.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 29,
+          "filename": "FormPAS6_28112019.pdf"
+        },
+        {
+          "path": "raw/section_029/circulars/MCA-Circular_06.07.2024.pdf",
+          "authority_level": "Clarificatory",
+          "tab": "circulars",
+          "section": 29,
+          "filename": "MCA-Circular_06.07.2024.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_029/return/PAS-6.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 29,
+          "filename": "PAS-6.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 30,
+    "title": "Advertisement of prospectus",
+    "url": "https://ca2013.com/advertisement-of-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_030/act/section_030_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 30
+      },
+      "act_text": {
+        "path": "raw/section_030/act/section_030_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 30
+      },
+      "notifications": [
+        {
+          "path": "raw/section_030/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 30,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 31,
+    "title": "Shelf prospectus",
+    "url": "https://ca2013.com/shelf-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_031/act/section_031_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 31
+      },
+      "act_text": {
+        "path": "raw/section_031/act/section_031_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 31
+      },
+      "notifications": [
+        {
+          "path": "raw/section_031/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 31,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_031/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 31,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_031/notifications/MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 31,
+          "filename": "MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf"
+        },
+        {
+          "path": "raw/section_031/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 31,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_031/return/pas-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 31,
+          "filename": "pas-2.pdf"
+        },
+        {
+          "path": "raw/section_031/return/PAS-2.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 31,
+          "filename": "PAS-2.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 32,
+    "title": "Red herring prospectus",
+    "url": "https://ca2013.com/red-herring-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_032/act/section_032_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 32
+      },
+      "act_text": {
+        "path": "raw/section_032/act/section_032_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 32
+      },
+      "notifications": [
+        {
+          "path": "raw/section_032/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 32,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 33,
+    "title": "Issue of application forms for securities",
+    "url": "https://ca2013.com/issue-of-application-forms-for-securities/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_033/act/section_033_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 33
+      },
+      "act_text": {
+        "path": "raw/section_033/act/section_033_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 33
+      },
+      "notifications": [
+        {
+          "path": "raw/section_033/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 33,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_033/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 33,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 34,
+    "title": "Criminal liability for mis-statements in prospectus",
+    "url": "https://ca2013.com/criminal-liability-for-mis-statements-in-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_034/act/section_034_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 34
+      },
+      "act_text": {
+        "path": "raw/section_034/act/section_034_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 34
+      },
+      "notifications": [
+        {
+          "path": "raw/section_034/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 34,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 35,
+    "title": "Civil liability for mis-statements in prospectus",
+    "url": "https://ca2013.com/civil-liability-for-mis-statements-in-prospectus/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_035/act/section_035_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 35
+      },
+      "act_text": {
+        "path": "raw/section_035/act/section_035_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 35
+      },
+      "notifications": [
+        {
+          "path": "raw/section_035/notifications/Commencementnotification.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "Commencementnotification.pdf"
+        },
+        {
+          "path": "raw/section_035/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_035/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_035/notifications/CommencemntNotification_14082019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "CommencemntNotification_14082019.pdf"
+        },
+        {
+          "path": "raw/section_035/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "181439.pdf"
+        },
+        {
+          "path": "raw/section_035/notifications/Amendment-Act-2019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 35,
+          "filename": "Amendment-Act-2019.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 36,
+    "title": "Punishment for fraudulently inducing persons to invest money",
+    "url": "https://ca2013.com/punishment-for-fraudulently-inducing-persons-to-invest-money/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_036/act/section_036_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 36
+      },
+      "act_text": {
+        "path": "raw/section_036/act/section_036_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 36
+      },
+      "notifications": [
+        {
+          "path": "raw/section_036/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 36,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 37,
+    "title": "Action by affected persons",
+    "url": "https://ca2013.com/action-by-affected-persons/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_037/act/section_037_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 37
+      },
+      "act_text": {
+        "path": "raw/section_037/act/section_037_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 37
+      },
+      "notifications": [
+        {
+          "path": "raw/section_037/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 37,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 38,
+    "title": "Punishment for personation for acquisition, etc., of securities",
+    "url": "https://ca2013.com/punishment-for-personation-for-acquisition-etc-of-securities/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_038/act/section_038_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 38
+      },
+      "act_text": {
+        "path": "raw/section_038/act/section_038_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 38
+      },
+      "notifications": [
+        {
+          "path": "raw/section_038/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 38,
+          "filename": "S.O.2754-E.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 39,
+    "title": "Allotment of securities by company",
+    "url": "https://ca2013.com/allotment-of-securities-by-company/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_039/act/section_039_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 39
+      },
+      "act_text": {
+        "path": "raw/section_039/act/section_039_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 39
+      },
+      "notifications": [
+        {
+          "path": "raw/section_039/notifications/Commencement-Notification-Section-56-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "Commencement-Notification-Section-56-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/Commencement-Notification-Section-80-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "Commencement-Notification-Section-80-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/MCA-Notification-19022020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "MCA-Notification-19022020.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/Companies-Fees-Rules-2022.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "Companies-Fees-Rules-2022.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "MCA-Registration-of-Office-Second-Amendment-Rules.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/gSR-1049E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "gSR-1049E.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        },
+        {
+          "path": "raw/section_039/notifications/2.-Fees.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 39,
+          "filename": "2.-Fees.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_039/return/MCA-Notification-19022020-Return.pdf",
+          "authority_level": "Subordinate",
+          "tab": "return",
+          "section": 39,
+          "filename": "MCA-Notification-19022020-Return.pdf"
+        },
+        {
+          "path": "raw/section_039/return/pas-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 39,
+          "filename": "pas-3.pdf"
+        },
+        {
+          "path": "raw/section_039/return/PAS-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 39,
+          "filename": "PAS-3.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 40,
+    "title": "Securities to be dealt with in stock exchanges",
+    "url": "https://ca2013.com/securities-to-be-dealt-with-in-stock-exchanges/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_040/act/section_040_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 40
+      },
+      "act_text": {
+        "path": "raw/section_040/act/section_040_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 40
+      },
+      "notifications": [
+        {
+          "path": "raw/section_040/notifications/Commencement-Notification-CA-2020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "Commencement-Notification-CA-2020.pdf"
+        },
+        {
+          "path": "raw/section_040/notifications/Companies-Amendment-Act-2020-28092020.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "Companies-Amendment-Act-2020-28092020.pdf"
+        },
+        {
+          "path": "raw/section_040/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_040/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_040/notifications/S.O.2754-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "S.O.2754-E.pdf"
+        },
+        {
+          "path": "raw/section_040/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 40,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 41,
+    "title": "Global depository receipt",
+    "url": "https://ca2013.com/global-depository-receipt/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_041/act/section_041_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 41
+      },
+      "act_text": {
+        "path": "raw/section_041/act/section_041_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 41
+      },
+      "notifications": [
+        {
+          "path": "raw/section_041/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 41,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_041/notifications/SEBI-_-Framework-for-issue-of-Depository-Receipts10102019.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 41,
+          "filename": "SEBI-_-Framework-for-issue-of-Depository-Receipts10102019.pdf"
+        },
+        {
+          "path": "raw/section_041/notifications/SEBI-_-Framework-for-issue-of-Depository-Receipts.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 41,
+          "filename": "SEBI-_-Framework-for-issue-of-Depository-Receipts.pdf"
+        }
+      ]
+    }
+  },
+  {
+    "section": 42,
+    "title": "Offer or invitation for subscription of securities on private placement",
+    "url": "https://ca2013.com/offer-or-invitation-for-subscription-of-securities-on-private-placement/",
+    "status": "success",
+    "files": {
+      "act": {
+        "path": "raw/section_042/act/section_042_act.html",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 42
+      },
+      "act_text": {
+        "path": "raw/section_042/act/section_042_act.txt",
+        "authority_level": "Statutory",
+        "tab": "act",
+        "section": 42
+      },
+      "notifications": [
+        {
+          "path": "raw/section_042/notifications/CommencementNoti07_08082018.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "CommencementNoti07_08082018.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/G-S-R-424-E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "G-S-R-424-E.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/Prospectus-Rules.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "Prospectus-Rules.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/PAS-Notification.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "PAS-Notification.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/SO-902E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "SO-902E.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/Exemption-to-Nidhi-Companies-G.S.R-465E.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "Exemption-to-Nidhi-Companies-G.S.R-465E.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/GSR-9.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "GSR-9.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/GSR-8.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "GSR-8.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/MCA-Notification_12.02.2025.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "MCA-Notification_12.02.2025.pdf"
+        },
+        {
+          "path": "raw/section_042/notifications/181439.pdf",
+          "authority_level": "Subordinate",
+          "tab": "notifications",
+          "section": 42,
+          "filename": "181439.pdf"
+        }
+      ],
+      "return": [
+        {
+          "path": "raw/section_042/return/Form_PAS-4.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 42,
+          "filename": "Form_PAS-4.pdf"
+        },
+        {
+          "path": "raw/section_042/return/PAS-5.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 42,
+          "filename": "PAS-5.pdf"
+        },
+        {
+          "path": "raw/section_042/return/pas-3.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 42,
+          "filename": "pas-3.pdf"
+        },
+        {
+          "path": "raw/section_042/return/PAS-4-Subsituted-w.e.f.-05.05.2022.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 42,
+          "filename": "PAS-4-Subsituted-w.e.f.-05.05.2022.pdf"
+        },
+        {
+          "path": "raw/section_042/return/PAS-4.pdf",
+          "authority_level": "Procedural",
+          "tab": "return",
+          "section": 42,
+          "filename": "PAS-4.pdf"
+        }
+      ]
+    }
+  }
+]

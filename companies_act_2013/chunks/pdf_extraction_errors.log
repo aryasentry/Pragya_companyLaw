@@ -1,0 +1,721 @@
+PDF Extraction Error Log
+================================================================================
+
+Loading chunks...
+Total chunks: 1016
+PDF chunks to process: 443
+
+[1/443] Processing: General-Circular-No.-16-20131.pdf
+  ✓ Extracted 1072 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs issued a circular clarifying that provisions of the Companies Act,...
+
+[2/443] Processing: General-Circular-No.-32-20141.pdf
+  ✓ Extracted 2019 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Government is clarifying that resolutions passed under the Companies Act, 1956 (Old Act) during ...
+
+[3/443] Processing: S.O.2754-E.pdf
+  ✓ Extracted 2587 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 3 column 14 (char 1941)
+  ✓ Enhanced with summary: Legal notification document for Section 2 of Companies Act 2013...
+
+[4/443] Processing: Commencementnotification.pdf
+  ✓ Extracted 1091 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has appointed February 6, 2018 as the effective date for certain provisions o...
+
+[5/443] Processing: inc-138-228.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[5/443] Processing: Inc-Rules-02022021.pdf
+  ✓ Extracted 13025 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 3 column 14 (char 3643)
+  ✓ Enhanced with summary: Legal notification document for Section 3 of Companies Act 2013...
+
+[6/443] Processing: incor.pdf
+  ✓ Extracted 40982 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 3 of Companies Act 2013...
+
+[7/443] Processing: SO-902E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[7/443] Processing: GSR-9.pdf
+  ✓ Extracted 23793 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Gazette of India: Extraordinary (Part II - Section 3(i))...
+
+[8/443] Processing: GSR-8.pdf
+  ✓ Extracted 14556 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 3 of Companies Act 2013...
+
+[9/443] Processing: MCA-Notification_19.01.2023-Incorporation-rules.pdf
+  ✓ Extracted 280425 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1246 (char 1247)
+  ✓ Enhanced with summary: Legal notification document for Section 3 of Companies Act 2013...
+
+[10/443] Processing: 181439.pdf
+  ✓ Extracted 82718 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This amendment act amends various sections of the Companies Act, 2013, including adding a new Explan...
+
+[11/443] Processing: Form-INC-4.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[11/443] Processing: INC-6.pdf
+  ✓ Extracted 10026 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal form document for Section 3 of Companies Act 2013...
+
+[12/443] Processing: Form_INC-2-09-12-2015.pdf
+  ✓ Extracted 7079 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The document outlines the requirements for filing a One Person Company application under the Compani...
+
+[13/443] Processing: Form-INC-3.pdf
+  ✓ Extracted 4146 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a nominee consent form for One Person Companies (OPCs) and Small Business Enterprises (SBEs)...
+
+[14/443] Processing: Form-INC-4.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[14/443] Processing: Form-RUN.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[14/443] Processing: inc-138-228.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[14/443] Processing: Amendement_Rules_220120161.pdf
+  ✓ Extracted 22015 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies (Incorporation) Rules, 2014 by making rules to amen...
+
+[15/443] Processing: Companies-Incorporation-Amendment-Rules-2024_16.07.2024.pdf
+  ✓ Extracted 2779 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has issued a notification to amend the Companies (Incorporation) Rules, 2014 ...
+
+[16/443] Processing: 5th_Amendment_Rules_29122016.pdf
+  ✓ Extracted 10637 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1467 (char 1468)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[17/443] Processing: CompaniesIncorporationFifthAmendmentRules_12052019.pdf
+  ✓ Extracted 29502 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[18/443] Processing: incor.pdf
+  ✓ Extracted 40982 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[19/443] Processing: Incorporation-Rules-24122020.pdf
+  ✓ Extracted 3225 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies (Incorporation) Rules, 2014 to extend the period fo...
+
+[20/443] Processing: Notification-MCA-06.02.2020.pdf
+  ✓ Extracted 27092 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies Incorporation Rules, 2014, by making new rules that...
+
+💾 Saving progress... (20 processed)
+
+[21/443] Processing: MCA-Notification-19022020.pdf
+  ✓ Extracted 4584 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[22/443] Processing: companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf
+  ✓ Extracted 8887 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[23/443] Processing: MCA-Registration-of-Office-Second-Amendment-Rules.pdf
+  ✓ Extracted 1930 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 888 (char 889)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[24/443] Processing: gSR-1049E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[24/443] Processing: 18.-NotificationComapniesAct_23012018.pdf
+  ✓ Extracted 1019 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has appointed January 26, 2018 as the effective date for the provisions of se...
+
+[25/443] Processing: SO-902E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[25/443] Processing: Exemption-to-Govt-Companies-G.S.R.-463E.pdf
+  ✓ Extracted 8732 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 516 (char 517)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[26/443] Processing: GSR-9.pdf
+  ✓ Extracted 23793 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[27/443] Processing: GSR-8.pdf
+  ✓ Extracted 14556 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has issued a notification under the Companies Act, 2013 (18 of 2013), to exem...
+
+[28/443] Processing: ExemptionGovernmentCompanies_14062017.pdf
+  ✓ Extracted 5820 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 239 (char 240)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[29/443] Processing: Notification-to-amend-Mega-Exemption-Notification-02032020.pdf
+  ✓ Extracted 2836 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 430 (char 431)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[30/443] Processing: MCA-Notification_19.01.2023-Incorporation-rules.pdf
+  ✓ Extracted 280425 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[31/443] Processing: delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf
+  ✓ Extracted 1776 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has delegated certain powers and functions under the Companies Act, 2013 to t...
+
+[32/443] Processing: 181439.pdf
+  ✓ Extracted 82718 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Companies (Amendment) Act, 2017, amends certain sections of the Companies Act, 2013. It will com...
+
+[33/443] Processing: 4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf
+  ✓ Extracted 44357 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting property name enclosed in double quotes: line 3 column 327 (char 4092)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[34/443] Processing: incorp.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[34/443] Processing: RUN.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[34/443] Processing: 2.-Fees.pdf
+  ✓ Extracted 10573 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 4 of Companies Act 2013...
+
+[35/443] Processing: General_Circular_2_2014.pdf
+  ✓ Extracted 1246 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs has issued a circular stating that companies and limited liability...
+
+[36/443] Processing: General-Circular-No.-11-20141.pdf
+  ✓ Extracted 1445 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The circular extends the validity of reservation of names for companies incorporated under the Compa...
+
+[37/443] Processing: General-Circular-13-20142.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[37/443] Processing: General-Circular-No.-26-20141.pdf
+  ✓ Extracted 1098 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs has clarified that the term 'Commodity Exchange' can be used only ...
+
+[38/443] Processing: General-Circular-No.-29-20141.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[38/443] Processing: General-Circular-No.-31-20141.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[38/443] Processing: MCA-Notification-19022020-Return.pdf
+  ✓ Extracted 3927 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs has issued a notification amending the Companies (Registration Off...
+
+[39/443] Processing: Form-INC-33.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[39/443] Processing: Spice.pdf
+  ✓ Extracted 17737 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a simplified form for incorporating a company electronically, including details on type of c...
+
+[40/443] Processing: INC-1.pdf
+  ✓ Extracted 738 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This form is for reserving a company's name. It includes fields for CIN, proposed name, comments, an...
+
+💾 Saving progress... (40 processed)
+
+[41/443] Processing: Form-INC-13.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[41/443] Processing: INC-35.pdf
+  ✓ Extracted 5114 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1406 (char 1407)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[42/443] Processing: Form_GNL-2.pdf
+  ✓ Extracted 3138 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a legal document submission form for filing documents with the Registrar. It includes inform...
+
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+  ⚠ Insufficient text extracted (0 chars)
+
+[41/443] Processing: INC-35.pdf
+  ✓ Extracted 5114 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1406 (char 1407)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[42/443] Processing: Form_GNL-2.pdf
+  ✓ Extracted 3138 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a legal document submission form for filing documents with the Registrar. It includes inform...
+
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[42/443] Processing: Form_GNL-2.pdf
+  ✓ Extracted 3138 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a legal document submission form for filing documents with the Registrar. It includes inform...
+
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a legal document submission form for filing documents with the Registrar. It includes inform...
+
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+It includes inform...
+
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+[43/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+  ✓ Extracted 19257 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[44/443] Processing: GNL-1.pdf
+  ✓ Extracted 3641 characters
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[44/443] Processing: GNL-1.pdf
+  ✓ Extracted 3641 characters
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[44/443] Processing: GNL-1.pdf
+  ✓ Extracted 3641 characters
+
+[44/443] Processing: GNL-1.pdf
+  ✓ Extracted 3641 characters
+  ✓ Extracted 3641 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1113 (char 1114)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[45/443] Processing: inc-32.pdf
+  ✓ Extracted 2414 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ':' delimiter: line 2 column 3210 (char 3211)
+  ✓ Enhanced with summary: Legal form document for Section 4 of Companies Act 2013...
+
+[46/443] Processing: INC-1-27-01-2016.pdf
+  ✓ Extracted 8641 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This document outlines the process for incorporating a new company in India under Section 4(4) of th...
+
+[47/443] Processing: Form-INC-3.pdf
+  ✓ Extracted 4146 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a nominee consent form for One Person Companies in India. It includes details such as name, ...
+
+[48/443] Processing: Form-RUN.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[48/443] Processing: RUN-form.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[48/443] Processing: RUN-Form.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[48/443] Processing: SPICe-Part-A.pdf
+  ⚠ Insufficient text extracted (0 chars)
+  ✗ Missing: raw\section_004\return\Incorporation-Rules-24122020.pdf
+
+[48/443] Processing: Commencement-Notification-Section-56-CA-2020.pdf
+  ✓ Extracted 1499 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[49/443] Processing: Commencement-Notification-Section-80-CA-2020.pdf
+  ✓ Extracted 1577 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has appointed July 1st, 2022, as the date on which certain provisions of a Co...
+
+[50/443] Processing: 5th_Amendment_Rules_29122016.pdf
+  ✓ Extracted 10637 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1449 (char 1450)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[51/443] Processing: Notification-MCA-06.02.2020.pdf
+  ✓ Extracted 27092 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has issued new rules under Section 469 of the Companies Act, 2013, to amend t...
+
+[52/443] Processing: MCA-Notification-19022020.pdf
+  ✓ Extracted 4584 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 2887 (char 2888)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[53/443] Processing: Companies-Fees-Rules-2022.pdf
+  ✓ Extracted 3472 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs has issued a notification amending the Companies (Registration Off...
+
+[54/443] Processing: companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf
+  ✓ Extracted 8887 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has made amendments to the companies Registration offices and Fees Rules, 201...
+
+[55/443] Processing: MCA-Registration-of-Office-Second-Amendment-Rules.pdf
+  ✓ Extracted 1930 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 884 (char 885)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[56/443] Processing: gSR-1049E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[56/443] Processing: SO-902E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[56/443] Processing: MCA-Notification_19.01.2023-Incorporation-rules.pdf
+  ✓ Extracted 280425 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[57/443] Processing: Schedule-I.pdf
+  ✓ Extracted 3043 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: Legal notification for Section 5...
+
+[58/443] Processing: 4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf
+  ✓ Extracted 44357 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 3 column 14 (char 3967)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[59/443] Processing: 2.-Fees.pdf
+  ✓ Extracted 10573 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 5 of Companies Act 2013...
+
+[60/443] Processing: MCA-Notification-19022020-Return.pdf
+  ✓ Extracted 3927 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: Legal form for Section 5...
+
+💾 Saving progress... (60 processed)
+
+[61/443] Processing: Form-INC-33.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[61/443] Processing: Spice.pdf
+  ✓ Extracted 17737 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This document outlines the incorporation process for a company, including details on type, class, ca...
+
+[62/443] Processing: Form-INC-31.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[62/443] Processing: Form-INC-34.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[62/443] Processing: Form_GNL-2.pdf
+  ✓ Extracted 3138 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This is a form for submitting documents with the Registrar. It requires information about the docume...
+
+[63/443] Processing: gnl-3.pdf
+  ✓ Extracted 19257 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The form is for filing a company registration under the Companies Act, 2013. It requires filling det...
+
+[64/443] Processing: GNL-1.pdf
+  ✓ Extracted 3641 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 1113 (char 1114)
+  ✓ Enhanced with summary: Legal form document for Section 5 of Companies Act 2013...
+
+[65/443] Processing: Form_INC-2-09-12-2015.pdf
+  ✓ Extracted 7079 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The text describes a form for incorporation of a One Person Company, including details such as name,...
+
+[66/443] Processing: Form_INC-7-02.12.2015.pdf
+  ✓ Extracted 8200 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal form document for Section 5 of Companies Act 2013...
+
+[67/443] Processing: Form_MGT-14-02.12.2015.pdf
+  ✓ Extracted 4873 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 3 column 14 (char 3921)
+  ✓ Enhanced with summary: Legal form document for Section 5 of Companies Act 2013...
+
+[68/443] Processing: INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf
+  ✓ Extracted 1652 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: Legal form for Section 5...
+
+[69/443] Processing: SO-902E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+  ✗ Missing: raw\section_007\rules\MCA-Notification_20.05.2022.pdf
+  ✗ Missing: raw\section_007\rules\MCA-Notification_20.05.2022_INC-9.pdf
+
+[69/443] Processing: Commencement-Notification-dated-27.07.2018.pdf
+  ✓ Extracted 1852 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has appointed July 27, 2018 as the date on which certain provisions of the Co...
+
+[70/443] Processing: Commencement-Notification-Section-56-CA-2020.pdf
+  ✓ Extracted 1499 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: 中央政府在《公司法（修正案）》第1条的条款（2）下，于2022年7月1日宣布，自2022年3月1日起，将《公司法》第56条的规定生效。...
+
+[71/443] Processing: Commencement-Notification-Section-80-CA-2020.pdf
+  ✓ Extracted 1577 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 3 column 14 (char 1587)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[72/443] Processing: inc-138-228.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[72/443] Processing: Amendement_Rules_220120161.pdf
+  ✓ Extracted 22015 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has issued new rules to amend the Companies (Incorporation) Rules, 2014. The ...
+
+[73/443] Processing: 5th_Amendment_Rules_29122016.pdf
+  ✓ Extracted 10637 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[74/443] Processing: Rules_31052015_3.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[74/443] Processing: MCA-Notification_20.05.2022.pdf
+  ✓ Extracted 20669 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The company's name and registration number have been updated to reflect the changes in its details....
+
+[75/443] Processing: incor.pdf
+  ✓ Extracted 40982 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[76/443] Processing: Notification-MCA-06.02.2020.pdf
+  ✓ Extracted 27092 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies Incorporation Rules, 2014. The rules are effective ...
+
+[77/443] Processing: MCA-Notification-19022020.pdf
+  ✓ Extracted 4584 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[78/443] Processing: Companies-Fees-Rules-2022.pdf
+  ✓ Extracted 3472 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Ministry of Corporate Affairs has issued a notification to amend the Companies (Registration Off...
+
+[79/443] Processing: companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf
+  ✓ Extracted 8887 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has made amendments to the companies Registration offices and Fees Rules, 201...
+
+[80/443] Processing: MCA-Registration-of-Office-Second-Amendment-Rules.pdf
+  ✓ Extracted 1930 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 880 (char 881)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+💾 Saving progress... (80 processed)
+
+[81/443] Processing: gSR-1049E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[81/443] Processing: ii-50-107.pdf
+  ✓ Extracted 103402 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies Act, 2013, through a notification that introduces n...
+
+[82/443] Processing: merged_document_3-1.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[82/443] Processing: Commencement-Notification-07.12.2016.pdf
+  ✓ Extracted 2663 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[83/443] Processing: SO-902E.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[83/443] Processing: MCA-Notification_19.01.2023-Incorporation-rules.pdf
+  ✓ Extracted 280425 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[84/443] Processing: MCA-Notification_20.01.2023_Appointment-and-Qualification-of-Directors.pdf
+  ✓ Extracted 113246 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 113 (char 114)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[85/443] Processing: Notification_23032016.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[85/443] Processing: 181439.pdf
+  ✓ Extracted 82718 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting ',' delimiter: line 2 column 907 (char 908)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[86/443] Processing: IncorporatinRules_27012017.pdf
+  ✓ Extracted 70090 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has issued new rules to amend the Companies (Incorporation) Rules, 2014, furt...
+
+[87/443] Processing: 4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf
+  ✓ Extracted 44357 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 4 column 38 (char 4164)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[88/443] Processing: rule_22022020.pdf
+  ✓ Extracted 44601 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[89/443] Processing: Incorp.pdf
+  ✓ Extracted 2138 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The Central Government has amended the Companies (Incorporation) Rules, 2014 by making rules further...
+
+[90/443] Processing: Incorporation-rules.pdf
+  ✓ Extracted 9227 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[91/443] Processing: 2.-Fees.pdf
+  ✓ Extracted 10573 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal notification document for Section 7 of Companies Act 2013...
+
+[92/443] Processing: General-circular-No.-12-20141.pdf
+  ✓ Extracted 1981 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The circular clarifies that foreign nationals filing incorporation forms must provide either their P...
+
+[93/443] Processing: General-Circular-No.-16-20141.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[93/443] Processing: Extension_22042020-21052020.pdf
+  ✓ Extracted 2551 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This circular provides extensions for the period during which names reserved for new company incorpo...
+
+[94/443] Processing: Extension_22042020.pdf
+  ✓ Extracted 1762 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This document outlines the extensions and resubmission periods for names reserved in various corpora...
+
+[95/443] Processing: Extension_22042020_23062020.pdf
+  ✓ Extracted 2557 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This document outlines the extension periods for names reserved in various corporate filings under S...
+
+[96/443] Processing: Extension_22042020_29062020.pdf
+  ✓ Extracted 2554 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: This circular provides extensions for the resubmission and extension periods of names reserved for c...
+
+[97/443] Processing: DIR-12.pdf
+  ⚠ Insufficient text extracted (0 chars)
+
+[97/443] Processing: Form_DIR-12-02.12.2015.pdf
+  ✓ Extracted 5071 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Expecting value: line 4 column 69 (char 4293)
+  ✓ Enhanced with summary: Legal form document for Section 7 of Companies Act 2013...
+
+[98/443] Processing: D-I-R-2.pdf
+  ⚠ Insufficient text extracted (0 chars)
+[98/443] Processing: MCA-Notification-19022020-Return.pdf
+  ✓ Extracted 3927 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The central Government has issued a notification to amend the Companies Act, 2013 by making rules fo...
+
+[99/443] Processing: Form-INC-11.pdf
+  ✓ Extracted 1829 characters
+  → Processing with Ollama...
+  ✓ Enhanced with summary: The principal rules have been amended to omit Form No. INC-10 and substitute Form No. INC-11 with a ...
+
+[100/443] Processing: INC-32.pdf
+  ✓ Extracted 16378 characters
+  → Processing with Ollama...
+  ⚠ Ollama error: Unterminated string starting at: line 2 column 19 (char 20)
+  ✓ Enhanced with summary: Legal form document for Section 7 of Companies Act 2013...
+
+💾 Saving progress... (100 processed)
+
+[101/443] Processing: Spice.pdf
+  ✓ Extracted 17737 characters
+  → Processing with Ollama...

@@ -1,0 +1,23 @@
+(1) A proposing to make an offer of may issue a red herring prospectus prior to the issue of a . (2) A company proposing to issue a red herring prospectus under sub-section (1) shall file it with the at least three days prior to the opening of the subscription list and the offer. (3) A red herring prospectus shall carry the same obligations as are applicable to a prospectus and any variation between the red herring prospectus and a prospectus shall be highlighted as variations in the prospectus. (4) Upon the closing of the offer of securities under this section, the prospectus stating therein the total capital raised, whether by way of debt or capital, and the closing price of the securities and any other details as are not included in the red herring prospectus shall be filed with the Registrar and the . Explanation.— For the purposes of this section, the expression “red herring prospectus” means a prospectus which does not include complete particulars of the quantum or price of the securities included therein. Company means a company incorporated under this Act or under any previous company law 2(81) Securities means the securities as defined in clause ( h ) of section 2 of the Securities Contracts (Regulation) Act, 1956 (42 of 1956) 2(70) Prospectus means any document described or issued as a prospectus and includes a red herring prospectus referred to in section 32 or shelf prospectus referred to in section 31 or any notice, circular, advertisement or other document inviting offers from the public for the subscription or purchase of any securities of a body corporate 2(75) Registrar means a Registrar, an Additional Registrar, a Joint Registrar, a Deputy Registrar or an Assistant Registrar, having the duty of registering companies and discharging various functions under this Act 2(84) Share means a share in the share capital of a company and includes stock 2(82) Securities and Exchange Board means the Securities and Exchange Board of India established under section 3 of the Securities and Exchange Board of India Act, 1992 (15 of 1992)
+
+(1) A proposing to make an offer of may issue a red herring prospectus prior to the issue of a .
+
+(2) A company proposing to issue a red herring prospectus under sub-section (1) shall file it with the at least three days prior to the opening of the subscription list and the offer.
+
+(3) A red herring prospectus shall carry the same obligations as are applicable to a prospectus and any variation between the red herring prospectus and a prospectus shall be highlighted as variations in the prospectus.
+
+(4) Upon the closing of the offer of securities under this section, the prospectus stating therein the total capital raised, whether by way of debt or capital, and the closing price of the securities and any other details as are not included in the red herring prospectus shall be filed with the Registrar and the .
+
+Explanation.— For the purposes of this section, the expression “red herring prospectus” means a prospectus which does not include complete particulars of the quantum or price of the securities included therein.
+
+Company means a company incorporated under this Act or under any previous company law
+
+2(81) Securities means the securities as defined in clause ( h ) of section 2 of the Securities Contracts (Regulation) Act, 1956 (42 of 1956)
+
+2(70) Prospectus means any document described or issued as a prospectus and includes a red herring prospectus referred to in section 32 or shelf prospectus referred to in section 31 or any notice, circular, advertisement or other document inviting offers from the public for the subscription or purchase of any securities of a body corporate
+
+2(75) Registrar means a Registrar, an Additional Registrar, a Joint Registrar, a Deputy Registrar or an Assistant Registrar, having the duty of registering companies and discharging various functions under this Act
+
+2(84) Share means a share in the share capital of a company and includes stock
+
+2(82) Securities and Exchange Board means the Securities and Exchange Board of India established under section 3 of the Securities and Exchange Board of India Act, 1992 (15 of 1992)

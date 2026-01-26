@@ -1,0 +1,15 @@
+requests
+beautifulsoup4
+lxml
+pypdf
+ollama
+sentence-transformers
+langchain
+langchain-community
+langchain-ollama
+faiss-cpu
+llama-index
+llama-index-vector-stores-faiss
+llama-index-embeddings-huggingface
+llama-index-embeddings-ollama
+llama-index-llms-ollama
