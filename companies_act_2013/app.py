@@ -1,31 +1,22 @@
-"""
-Flask Web Server for Simple Legal RAG
-Companies Act 2013 Retrieval System
-"""
-
 from flask import Flask, render_template, request, jsonify
 from retrieval_pipeline_simple import GovernanceRetriever
 import traceback
 
 app = Flask(__name__)
-
-# Initialize retriever on startup
 print("Initializing retrieval system...")
 try:
     retriever = GovernanceRetriever()
-    print("✓ Retrieval system ready")
+    print("Retrieval system ready")
 except Exception as e:
-    print(f"✗ Failed to initialize retriever: {e}")
+    print(f"Failed to initialize retriever: {e}")
     retriever = None
 
 @app.route('/')
 def index():
-    """Serve the main page."""
     return render_template('index.html')
 
 @app.route('/api/query', methods=['POST'])
 def query():
-    """Handle query requests."""
     if not retriever:
         return jsonify({
             'error': 'Retrieval system not initialized'
@@ -40,10 +31,8 @@ def query():
                 'error': 'Query cannot be empty'
             }), 400
         
-        # Perform retrieval (includes LLM explanation)
         result = retriever.retrieve(query_text)
         
-        # Format for frontend
         result['synthesized_answer'] = result.get('answer', 'No answer generated')
         result['answer_citations'] = result.get('citations', [])
         

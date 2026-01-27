@@ -1,217 +1,301 @@
-"""
-Web Scraper for Companies Act 2013
-Scrapes the full text of the Companies Act from official sources
-"""
-
+import requests
+from bs4 import BeautifulSoup
 import json
 import re
 import time
 from pathlib import Path
-from typing import List, Dict, Any
-import requests
-from bs4 import BeautifulSoup
+from typing import Dict, List, Any, Optional
+from urllib.parse import urljoin
+import logging
 
-
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+logger = logging.getLogger(__name__)
 class CompaniesActScraper:
-    def __init__(self):
-        self.base_url = "https://www.mca.gov.in"
+    BASE_URL = "https://ca2013.com"
+    SECTIONS_URL = f"{BASE_URL}/sections/"
+    TABS = {
+        "1": {"name": "act", "type": "html"},
+        "2": {"name": "rules", "type": "pdf"},
+        "3": {"name": "orders", "type": "pdf"},
+        "4": {"name": "notifications", "type": "pdf"},
+        "5": {"name": "circulars", "type": "pdf"},
+        "6": {"name": "register", "type": "pdf"},
+        "7": {"name": "return", "type": "pdf"},
+        "8": {"name": "schedule", "type": "mixed"}
+    }
+    
+    def __init__(self, output_dir: str = "raw"):
+        self.output_dir = Path(output_dir)
+        self.output_dir.mkdir(exist_ok=True)
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         })
         
-    def scrape_act(self) -> List[Dict[str, Any]]:
-        """
-        Scrape the Companies Act 2013
-        Returns list of sections with metadata
-        """
-        print("Scraping Companies Act 2013...")
-        
-        # Note: This is a template - actual URL may vary
-        # The MCA website structure may change, so this would need updating
-        act_url = "https://www.mca.gov.in/content/mca/global/en/acts-rules/ebooks/acts.html"
+    def get_section_listing(self, chapter_num: int) -> List[Dict[str, str]]:
+        chapter_url = f"{self.SECTIONS_URL}{chapter_num}/"
         
         try:
-            response = self.session.get(act_url, timeout=30)
+            logger.info(f"Fetching chapter {chapter_num} listing from {chapter_url}")
+            response = self.session.get(chapter_url, timeout=10)
             response.raise_for_status()
-            soup = BeautifulSoup(response.text, 'html.parser')
-            
-            sections = self._parse_act_sections(soup)
-            print(f"Scraped {len(sections)} sections")
+            soup = BeautifulSoup(response.content, 'html.parser')
+            sections = []
+            ol = soup.find('ol')
+            if ol:
+                items = ol.find_all('li')
+                logger.info(f"Found {len(items)} sections in chapter {chapter_num}")
+                
+                for li in items:
+                    link = li.find('a')
+                    if link:
+                        href = link.get('href')
+                        title = link.get_text(strip=True)
+                        detail_url = urljoin(self.BASE_URL, href)
+                        sections.append({
+                            'title': title,
+                            'url': detail_url
+                        })
             
             return sections
             
         except Exception as e:
-            print(f"Error scraping: {e}")
-            print("\nAlternative: Manual data entry or PDF parsing")
-            return self._create_sample_sections()
+            logger.error(f"Error getting chapter {chapter_num} listing: {e}")
+            return []
     
-    def _parse_act_sections(self, soup: BeautifulSoup) -> List[Dict[str, Any]]:
-        """Parse sections from the Act HTML"""
-        sections = []
-        
-        # Find all section elements (adjust selectors based on actual HTML)
-        section_elements = soup.find_all(['div', 'section'], class_=re.compile(r'section|chapter'))
-        
-        for element in section_elements:
-            section_data = self._extract_section_data(element)
-            if section_data:
-                sections.append(section_data)
-        
-        return sections
+    def extract_html_content(self, soup: BeautifulSoup) -> str:
+        for script in soup(['script', 'style', 'nav', 'header', 'footer']):
+            script.decompose()
+        text = soup.get_text(separator='\n', strip=True)
+        lines = [line.strip() for line in text.splitlines() if line.strip()]
+        text = '\n'.join(lines)
+        return text
     
-    def _extract_section_data(self, element) -> Dict[str, Any]:
-        """Extract data from a section element"""
-        # This is a template - actual implementation depends on HTML structure
-        
-        # Look for section number
-        section_num_match = re.search(r'Section\s+(\d+)', element.get_text())
-        if not section_num_match:
-            return None
-        
-        section_num = section_num_match.group(1)
-        
-        # Extract title and text
-        title = ""
-        text = ""
-        
-        # Find heading
-        heading = element.find(['h1', 'h2', 'h3', 'h4'])
-        if heading:
-            title = heading.get_text().strip()
-        
-        # Get section text
-        paragraphs = element.find_all('p')
-        text = '\n'.join([p.get_text().strip() for p in paragraphs])
-        
-        # Extract sub-sections
-        sub_sections = self._extract_sub_sections(element)
-        
-        return {
-            "section": section_num,
-            "title": title,
-            "text": text,
-            "sub_sections": sub_sections,
-            "chapter": None,  # Would extract from structure
-            "part": None      # Would extract from structure
-        }
-    
-    def _extract_sub_sections(self, element) -> List[Dict[str, Any]]:
-        """Extract sub-sections from a section"""
-        sub_sections = []
-        
-        # Look for numbered sub-sections (1), (2), (3), etc.
-        text = element.get_text()
-        sub_pattern = r'\((\d+)\)\s*([^\(]+?)(?=\(\d+\)|$)'
-        
-        for match in re.finditer(sub_pattern, text):
-            sub_num = match.group(1)
-            sub_text = match.group(2).strip()
-            
-            if sub_text:
-                sub_sections.append({
-                    "number": sub_num,
-                    "text": sub_text
-                })
-        
-        return sub_sections
-    
-    def _create_sample_sections(self) -> List[Dict[str, Any]]:
-        """
-        Create sample sections for testing
-        In practice, you would manually input or parse from PDF
-        """
-        print("Creating sample sections...")
-        
-        sample_sections = [
-            {
-                "section": "1",
-                "title": "Short title, extent and commencement",
-                "text": "This Act may be called the Companies Act, 2013. It extends to the whole of India. It shall come into force on such date as the Central Government may, by notification in the Official Gazette, appoint.",
-                "sub_sections": [
-                    {"number": "1", "text": "This Act may be called the Companies Act, 2013."},
-                    {"number": "2", "text": "It extends to the whole of India."},
-                    {"number": "3", "text": "It shall come into force on such date as the Central Government may notify."}
-                ],
-                "chapter": "I",
-                "part": "I"
-            },
-            {
-                "section": "2",
-                "title": "Definitions",
-                "text": "In this Act, unless the context otherwise requires, various terms are defined including 'company', 'director', 'financial year', and others.",
-                "sub_sections": [
-                    {"number": "20", "text": "Company means a company incorporated under this Act or under any previous company law."},
-                    {"number": "34", "text": "Director means a director appointed to the Board of a company."}
-                ],
-                "chapter": "I",
-                "part": "I"
-            }
-        ]
-        
-        return sample_sections
-    
-    def scrape_mca_notifications(self) -> List[Dict[str, Any]]:
-        """Scrape MCA notifications and circulars"""
-        print("Scraping MCA notifications...")
-        
-        notifications = []
-        
-        # MCA circulars page
-        circulars_url = "https://www.mca.gov.in/content/mca/global/en/mca/master-data/circulars.html"
-        
+    def download_pdf(self, pdf_url: str, save_path: Path) -> bool:
         try:
-            response = self.session.get(circulars_url, timeout=30)
-            soup = BeautifulSoup(response.text, 'html.parser')
+            logger.info(f"Downloading PDF: {pdf_url}")
+            response = self.session.get(pdf_url, timeout=30, stream=True)
+            response.raise_for_status()
+            save_path.parent.mkdir(exist_ok=True, parents=True)
             
-            # Find notification links
-            links = soup.find_all('a', href=re.compile(r'\.pdf$'))
+            with open(save_path, 'wb') as f:
+                for chunk in response.iter_content(chunk_size=8192):
+                    f.write(chunk)
             
-            for link in links[:10]:  # Limit to first 10 for testing
-                pdf_url = link.get('href')
-                if not pdf_url.startswith('http'):
-                    pdf_url = self.base_url + pdf_url
-                
-                notifications.append({
-                    "title": link.get_text().strip(),
-                    "url": pdf_url,
-                    "type": "notification"
-                })
-                
-                time.sleep(1)  # Be respectful
+            logger.info(f" Saved: {save_path.name}")
+            return True
             
         except Exception as e:
-            print(f"Error scraping notifications: {e}")
-        
-        return notifications
+            logger.error(f"Error downloading {pdf_url}: {e}")
+            return False
     
-    def save_to_json(self, data: List[Dict], filename: str):
-        """Save scraped data to JSON"""
-        output_file = Path(filename)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
-        print(f"Saved data to {output_file}")
+    def scrape_tab(self, detail_url: str, tab_num: str, section_dir: Path) -> Dict[str, Any]:
+        tab_info = self.TABS[tab_num]
+        tab_name = tab_info['name']
+        tab_type = tab_info['type']
+        
+        tab_dir = section_dir / tab_name
+        tab_dir.mkdir(exist_ok=True, parents=True)
+        
+        result = {
+            'tab': tab_num,
+            'name': tab_name,
+            'type': tab_type,
+            'items': []
+        }
+        
+        try:
+            logger.info(f"  Scraping tab {tab_num} ({tab_name})...")
+            response = self.session.get(detail_url, timeout=10)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+            
+            tab_content = soup.find('div', id=f'tab-{tab_num}')
+            
+            if not tab_content:
+                logger.warning(f"  Tab {tab_num} ({tab_name}) not found")
+                return result
+            
+            if tab_type == 'html':
+                section_num = section_dir.name.split('_')[1]
+                
+                html_path = tab_dir / f"section_{section_num}_act.html"
+                with open(html_path, 'w', encoding='utf-8') as f:
+                    f.write(str(tab_content))
+                
+                text_content = self.extract_html_content(tab_content)
+                txt_path = tab_dir / f"section_{section_num}_act.txt"
+                with open(txt_path, 'w', encoding='utf-8') as f:
+                    f.write(text_content)
+                
+                result['items'].append({
+                    'type': 'html',
+                    'files': [html_path.name, txt_path.name]
+                })
+                logger.info(f" Saved HTML and text")
+                
+            elif tab_type == 'pdf' or tab_type == 'mixed':
+
+                pdf_links = tab_content.find_all('a', href=re.compile(r'\.pdf$', re.I))
+                
+                iframes = tab_content.find_all('iframe', class_='pdfjs-viewer')
+                
+                pdf_sources = []
+                
+                for link in pdf_links:
+                    pdf_url = urljoin(self.BASE_URL, link.get('href'))
+                    title = link.get_text(strip=True)
+                    pdf_sources.append({'url': pdf_url, 'title': title})
+                
+                for iframe in iframes:
+                    src = iframe.get('src', '')
+                    if 'file=' in src:
+                        pdf_url = src.split('file=')[-1]
+                        title = ''
+                        prev_h2 = iframe.find_previous('h2')
+                        if prev_h2:
+                            title = prev_h2.get_text(strip=True)
+                        pdf_sources.append({'url': pdf_url, 'title': title})
+                
+                if not pdf_sources:
+                    logger.info(f"  No PDFs found in {tab_name}")
+                    
+                    if tab_type == 'mixed':
+                        text_content = self.extract_html_content(tab_content)
+                        if text_content.strip():
+                            section_num = section_dir.name.split('_')[1]
+                            txt_path = tab_dir / f"section_{section_num}_{tab_name}.txt"
+                            with open(txt_path, 'w', encoding='utf-8') as f:
+                                f.write(text_content)
+                            result['items'].append({
+                                'type': 'html',
+                                'files': [txt_path.name]
+                            })
+                            logger.info(f"  Saved text content")
+                else:
+                    logger.info(f"  Found {len(pdf_sources)} PDFs")
+                
+                for idx, pdf_info in enumerate(pdf_sources, 1):
+                    pdf_url = pdf_info['url']
+                    pdf_title = pdf_info['title'] or f"document_{idx}"
+                    
+                    safe_filename = re.sub(r'[^\w\s-]', '', pdf_title)
+                    safe_filename = re.sub(r'[-\s]+', '_', safe_filename)
+                    safe_filename = safe_filename[:100]  
+                    
+                    if not safe_filename:
+                        safe_filename = f"document_{idx}"
+                    
+                    pdf_path = tab_dir / f"{safe_filename}.pdf"
+                    
+                    counter = 1
+                    while pdf_path.exists():
+                        pdf_path = tab_dir / f"{safe_filename}_{counter}.pdf"
+                        counter += 1
+                    
+                    if self.download_pdf(pdf_url, pdf_path):
+                        result['items'].append({
+                            'type': 'pdf',
+                            'title': pdf_title,
+                            'url': pdf_url,
+                            'file': pdf_path.name
+                        })
+                    
+                    time.sleep(0.5) 
+            
+            logger.info(f"  Tab {tab_num} ({tab_name}): {len(result['items'])} items")
+            
+        except Exception as e:
+            logger.error(f"  Error scraping tab {tab_num} ({tab_name}): {e}")
+        
+        return result
+    
+    def scrape_section(self, section_num: int, section_title: str, detail_url: str) -> Dict[str, Any]:
+        logger.info(f"\n{'='*80}")
+        logger.info(f"SCRAPING SECTION {section_num}: {section_title}")
+        logger.info(f"{'='*80}")
+        logger.info(f"URL: {detail_url}")
+        
+        section_dir = self.output_dir / f"section_{section_num:03d}"
+        section_dir.mkdir(exist_ok=True, parents=True)
+        
+        section_metadata = {
+            'section_number': section_num,
+            'title': section_title,
+            'url': detail_url,
+            'tabs': {}
+        }
+        
+        for tab_num in self.TABS.keys():
+            tab_result = self.scrape_tab(detail_url, tab_num, section_dir)
+            section_metadata['tabs'][tab_num] = tab_result
+            time.sleep(1) 
+        
+        metadata_path = section_dir / 'section_metadata.json'
+        with open(metadata_path, 'w', encoding='utf-8') as f:
+            json.dump(section_metadata, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Section {section_num} complete\n")
+        
+        return section_metadata
+    
+    def scrape_chapter_4(self, start_section: int = 43, end_section: int = 72):
+
+        logger.info(f"\n{'#'*80}")
+        logger.info("SHARE CAPITAL AND DEBENTURES")
+        logger.info(f"Scraping Sections {start_section}-{end_section}")
+        logger.info(f"{'#'*80}\n")
+        
+        mapping_path = self.output_dir / 'chapter_mapping.json'
+        if not mapping_path.exists():
+            logger.error(f"chapter_mapping.json not found at {mapping_path}")
+            logger.error("Please ensure the chapter mapping file exists")
+            return
+        
+        with open(mapping_path, 'r', encoding='utf-8') as f:
+            chapter_mapping = json.load(f)
+        
+        chapter_4 = chapter_mapping.get('4')
+        if not chapter_4:
+            logger.error("Chapter 4 not found in chapter_mapping.json")
+            return
+        
+        sections_list = chapter_4.get('sections', [])
+        logger.info(f"Loaded {len(sections_list)} sections from chapter_mapping.json\n")
+        
+        scraped_sections = []
+        for section_info in sections_list:
+            section_num = section_info['number']
+            section_title = section_info['name']
+            section_url = section_info['url']
+            
+            if section_num < start_section or section_num > end_section:
+                continue
+            
+            section_metadata = self.scrape_section(
+                section_num,
+                section_title,
+                section_url
+            )
+            
+            if section_metadata:
+                scraped_sections.append(section_metadata)
+            time.sleep(2) 
+        
+        logger.info(f"\n{'#'*80}")
+        logger.info("SCRAPING COMPLETE")
+        logger.info(f"Total sections scraped: {len(scraped_sections)}")
+        logger.info(f"Output directory: {self.output_dir.absolute()}")
+        logger.info(f"Sections scraped: {start_section}-{end_section}")
+        logger.info(f"{'#'*80}\n")
 
 
 def main():
-    """Main execution"""
-    scraper = CompaniesActScraper()
-    
-    # Scrape the Act
-    sections = scraper.scrape_act()
-    scraper.save_to_json(sections, "companies_act_sections.json")
-    
-    # Scrape notifications
-    notifications = scraper.scrape_mca_notifications()
-    scraper.save_to_json(notifications, "mca_notifications.json")
-    
-    print("\n=== Scraping Complete ===")
-    print(f"Sections: {len(sections)}")
-    print(f"Notifications: {len(notifications)}")
-    print("\nNote: For production use, consider:")
-    print("1. Manual PDF parsing of official Act PDF")
-    print("2. Respecting robots.txt and rate limits")
-    print("3. Caching responses to avoid repeated requests")
+    scraper = CompaniesActScraper(output_dir="raw")
+    scraper.scrape_chapter_4(start_section=43, end_section=72)
 
 
 if __name__ == "__main__":

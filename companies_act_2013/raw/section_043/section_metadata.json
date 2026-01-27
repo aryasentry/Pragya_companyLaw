@@ -1,0 +1,113 @@
+{
+  "section_number": 43,
+  "title": "Kinds of share capital",
+  "url": "https://ca2013.com/kinds-of-share-capital/",
+  "tabs": {
+    "1": {
+      "tab": "1",
+      "name": "act",
+      "type": "html",
+      "items": [
+        {
+          "type": "html",
+          "files": [
+            "section_043_act.html",
+            "section_043_act.txt"
+          ]
+        }
+      ]
+    },
+    "2": {
+      "tab": "2",
+      "name": "rules",
+      "type": "pdf",
+      "items": [
+        {
+          "type": "pdf",
+          "title": "Companies (Share Capital and Debentures) Amendment Rules, 2015",
+          "url": "https://ca2013.com/wp-content/uploads/2015/07/GSR-210-E.pdf",
+          "file": "Companies_Share_Capital_and_Debentures_Amendment_Rules_2015.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "GSR 413 E",
+          "url": "https://ca2013.com/wp-content/uploads/2015/07/G-S-R-413-E.pdf",
+          "file": "GSR_413_E.pdf"
+        }
+      ]
+    },
+    "3": {
+      "tab": "3",
+      "name": "orders",
+      "type": "pdf",
+      "items": []
+    },
+    "4": {
+      "tab": "4",
+      "name": "notifications",
+      "type": "pdf",
+      "items": [
+        {
+          "type": "pdf",
+          "title": "Companies (Share Capital and Debentures) Third Amendment Rules, 2016 [GSR 704(E)] dated 19/07/2016",
+          "url": "https://ca2013.com/wp-content/uploads/2016/07/sh-cp-deb.pdf",
+          "file": "Companies_Share_Capital_and_Debentures_Third_Amendment_Rules_2016_GSR_704E_dated_19072016.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "Enforcement Notification S.O. 902(E) dated 26/03/2014",
+          "url": "https://ca2013.com/wp-content/uploads/2015/06/SO-902E.pdf",
+          "file": "Enforcement_Notification_SO_902E_dated_26032014.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "Exemption to Specified IFSC Public company [GSR 08(E)] dated 04/01/2017",
+          "url": "https://ca2013.com/wp-content/uploads/2016/12/GSR-8.pdf",
+          "file": "Exemption_to_Specified_IFSC_Public_company_GSR_08E_dated_04012017.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "Exemptions to Private Companies [Amendment to GSR 464(E)] dated 13/06/2017",
+          "url": "https://ca2013.com/wp-content/uploads/2017/06/ExemptionPrivateCompanies.pdf",
+          "file": "Exemptions_to_Private_Companies_Amendment_to_GSR_464E_dated_13062017.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "Exemptions to private companies [GSR 464 (E)] dated 05/06/2015",
+          "url": "https://ca2013.com/wp-content/uploads/2015/09/GSR-464-E.pdf",
+          "file": "Exemptions_to_private_companies_GSR_464_E_dated_05062015.pdf"
+        },
+        {
+          "type": "pdf",
+          "title": "The Companies (Share Capital and Debentures) Amendment Rules, 2019 dated 16.08.2019",
+          "url": "https://ca2013.com/wp-content/uploads/2019/08/Share-capital-and-debenture-rules.pdf",
+          "file": "The_Companies_Share_Capital_and_Debentures_Amendment_Rules_2019_dated_16082019.pdf"
+        }
+      ]
+    },
+    "5": {
+      "tab": "5",
+      "name": "circulars",
+      "type": "pdf",
+      "items": []
+    },
+    "6": {
+      "tab": "6",
+      "name": "register",
+      "type": "pdf",
+      "items": []
+    },
+    "7": {
+      "tab": "7",
+      "name": "return",
+      "type": "pdf",
+      "items": []
+    },
+    "8": {
+      "tab": "8",
+      "name": "schedule",
+      "type": "mixed",
+      "items": []
+    }
+  }
+}

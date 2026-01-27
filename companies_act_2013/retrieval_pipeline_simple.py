@@ -1,8 +1,3 @@
-"""
-SIMPLE RETRIEVAL PIPELINE
-Companies Act 2013 - Just retrieve and explain with LLM
-"""
-
 import json
 from pathlib import Path
 from typing import List, Dict, Any
@@ -10,7 +5,6 @@ import numpy as np
 import faiss
 from langchain_ollama import OllamaEmbeddings, OllamaLLM
 
-# Configuration
 VECTOR_STORE_DIR = Path("vector_store")
 FAISS_INDEX_FILE = VECTOR_STORE_DIR / "faiss_index.bin"
 METADATA_FILE = VECTOR_STORE_DIR / "embedding_metadata.json"
@@ -21,30 +15,23 @@ LLM_MODEL = "qwen2.5:1.5b"
 
 TOP_K = 20
 
-
 class GovernanceRetriever:
-    """Simple retrieval with detailed LLM explanations."""
-    
+ 
     def __init__(self):
-        """Initialize retriever."""
         print(f"\n{'='*80}")
         print("SIMPLE LEGAL RAG - RETRIEVAL PIPELINE")
         print(f"{'='*80}\n")
-        
-        # Load embeddings
         print(f"[1/5] Initializing embeddings ({EMBEDDING_MODEL})...")
         self.embeddings = OllamaEmbeddings(
             model=EMBEDDING_MODEL,
             base_url="http://localhost:11434"
         )
-        print("✓ Embeddings initialized")
+        print(" Embeddings initialized")
         
-        # Load FAISS index
         print(f"\n[2/5] Loading FAISS index from {FAISS_INDEX_FILE}...")
         self.faiss_index = faiss.read_index(str(FAISS_INDEX_FILE))
-        print(f"✓ FAISS index loaded ({self.faiss_index.ntotal} vectors)")
+        print(f"FAISS index loaded ({self.faiss_index.ntotal} vectors)")
         
-        # Load metadata
         print(f"\n[3/5] Loading metadata from {METADATA_FILE}...")
         with open(METADATA_FILE, 'r', encoding='utf-8') as f:
             metadata_data = json.load(f)
@@ -53,27 +40,25 @@ class GovernanceRetriever:
         self.metadata_list = metadata_data['metadata']
         self.embedding_dim = metadata_data['embedding_dimension']
         
-        print(f"✓ Loaded metadata for {len(self.metadata_list)} chunks")
+        print(f" Loaded metadata for {len(self.metadata_list)} chunks")
         
-        # Load source chunks
         print(f"\n[4/5] Loading source chunks from {CHUNKS_FILE}...")
         with open(CHUNKS_FILE, 'r', encoding='utf-8') as f:
             chunks_data = json.load(f)
         
         self.chunks = {c['chunk_id']: c for c in chunks_data.get('chunks', [])}
-        print(f"✓ Loaded {len(self.chunks)} source chunks")
+        print(f" Loaded {len(self.chunks)} source chunks")
         
-        # Initialize LLM
         print(f"\n[5/5] Initializing LLM ({LLM_MODEL})...")
         self.llm = OllamaLLM(
             model=LLM_MODEL,
             base_url="http://localhost:11434",
             temperature=0.3
         )
-        print("✓ LLM initialized")
+        print(" LLM initialized")
         
         print(f"\n{'='*80}")
-        print("✓ RETRIEVAL PIPELINE READY")
+        print("RETRIEVAL PIPELINE READY")
         print(f"{'='*80}\n")
     
     def retrieve(self, query: str) -> Dict[str, Any]:
@@ -82,14 +67,12 @@ class GovernanceRetriever:
         print(f"QUERY: {query}")
         print(f"{'='*80}\n")
         
-        # Step 1: FAISS search
         print(f"[1/3] FAISS similarity search...")
         query_embedding = np.array(self.embeddings.embed_query(query), dtype=np.float32)
         query_embedding = query_embedding.reshape(1, -1)
         distances, indices = self.faiss_index.search(query_embedding, TOP_K)
-        print(f"✓ Retrieved {len(indices[0])} candidates")
+        print(f" Retrieved {len(indices[0])} candidates")
         
-        # Step 2: Map to chunks
         print(f"\n[2/3] Mapping to chunks...")
         all_chunks = []
         
@@ -116,15 +99,13 @@ class GovernanceRetriever:
                 'metadata': metadata
             })
         
-        print(f"✓ Found {len(all_chunks)} chunks")
+        print(f" Found {len(all_chunks)} chunks")
         print(f"  Document types: {', '.join(set(c['document_type'] for c in all_chunks))}")
         
-        # Step 3: Generate explanation
         print(f"\n[3/3] Generating detailed explanation...")
         answer, citations = self._generate_explanation(query, all_chunks)
-        print(f"✓ Generated answer ({len(answer)} chars)")
+        print(f" Generated answer ({len(answer)} chars)")
         
-        # Group chunks by section for display
         sections = self._group_for_display(all_chunks)
         
         output = {
@@ -141,11 +122,8 @@ class GovernanceRetriever:
         return output
     
     def _generate_explanation(self, query: str, chunks: List[Dict]) -> tuple:
-        """Generate detailed explanation using all retrieved documents."""
         if not chunks:
             return "No relevant information found.", []
-        
-        # Build context from ALL documents
         context_parts = []
         citations = []
         
@@ -196,13 +174,12 @@ WELL-FORMATTED MARKDOWN ANSWER:
         try:
             answer = self.llm.invoke(prompt).strip()
         except Exception as e:
-            print(f"  ⚠ LLM failed: {e}")
+            print(f" LLM failed: {e}")
             answer = "Error generating explanation."
         
         return answer, list(set(citations))
     
     def _group_for_display(self, chunks: List[Dict]) -> List[Dict]:
-        """Group chunks by section for UI display."""
         grouped = {}
         
         for chunk in chunks:
@@ -230,12 +207,10 @@ WELL-FORMATTED MARKDOWN ANSWER:
                     'text': chunk['text']
                 })
         
-        # Filter sections with primary chunks
         return [v for v in grouped.values() if v['primary_chunk']]
 
 
 def main():
-    """Interactive demo."""
     retriever = GovernanceRetriever()
     
     print("\nExample queries:")
