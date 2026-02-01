@@ -13,3 +13,9 @@ llama-index-vector-stores-faiss
 llama-index-embeddings-huggingface
 llama-index-embeddings-ollama
 llama-index-llms-ollama
+psycopg2-binary
+python-dotenv 
+flask
+flask-cors
+numpy
+

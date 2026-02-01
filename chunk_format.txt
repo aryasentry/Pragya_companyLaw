@@ -1,0 +1,238 @@
+Parent chunk
+
+{
+  "chunk_id": "ca2013_circular_2024_01_22_135",
+
+  "chunk_role": "parent",
+  "parent_chunk_id": null,
+  "child_chunk_ids": [
+    "ca2013_circular_2024_01_22_135_c01",
+    "ca2013_circular_2024_01_22_135_c02"
+  ],
+
+  "document_type": "circular",
+  "page_number: number/null,
+
+  "authority_level": "interpretive",
+  "binding": false,
+
+  "act": "Companies Act, 2013",
+  "section": "135",
+  "sub_section": null,
+
+  "title": "CSR General Circular – Clarification on Schedule VII",
+
+  "compliance_area": "Corporate Social Responsibility",
+
+  "text": "FULL extracted circular text (optional but allowed)",
+ 
+  "legal_anchors": [
+   "135",
+   "135(1)",
+   "135(5)",
+   "135(5)(a)"
+  ],
+
+
+  "summary": "Clarifies interpretation of Schedule VII for CSR expenditure.",
+
+  "relationships": {
+    "clarifies": ["ca2013_act_s135"],
+    "proceduralises": [],
+    "proceduralised_by": [],
+    "implements": [],
+    "implemented_by": [],
+    "amends": [],
+    "amended_by": [],
+    "supersedes": [],
+    "superseded_by": []
+  },
+
+  "retrieval": {
+    "priority": 2,
+    "allowed_query_types": ["interpretation"],
+    "requires_parent_law": true
+  },
+
+
+  "refusal_policy": {
+    "can_answer_standalone": false,
+    "must_reference_parent_law": true,
+    "refuse_if_parent_missing": true
+  },
+
+  "temporal": {
+    "date_issued": "2024-01-22",
+    "effective_from": "2024-01-22",
+    "effective_to": null
+  },
+
+  "lifecycle": {
+    "status": "ACTIVE",
+    "retired_on": null,
+    "retired_reason": null
+  },
+
+  "versioning": {
+    "version": "v1.0",
+    "supersedes_chunk_id": null,
+    "superseded_by_chunk_id": null
+  },
+
+  "embedding": {
+    "enabled": false,
+    "reason": "parent_chunk"
+  },
+
+  "lineage": {
+    "parent_document_id": "csr_gc_02_2024",
+    "checksum": "sha256:abc123...",
+    "source_hash_verified": true
+  },
+
+  "administrative": {
+    "issued_by": "Ministry of Corporate Affairs",
+    "notification_number": "General Circular No. 02/2024",
+    "source_type": "Gazette",
+    "document_language": "en"
+  },
+
+  "audit": {
+    "uploaded_by": "admin_arya",
+    "uploaded_at": "2026-01-30T14:20:00",
+    "approved_by": "sme_law",
+    "approved_at": "2026-01-30T16:05:00"
+  },
+
+  "citation": "MCA General Circular No. 02/2024 dated 22-01-2024",
+
+  "source": {
+    "path": "raw/companies_act/section_135/circulars/csr_gc_02_2024.pdf",
+    "url": "https://mca.gov.in/..."
+  }
+}
+
+
+child chunk
+
+{
+  "chunk_id": "ca2013_circular_2024_01_22_135_c01",
+
+  "chunk_role": "child",
+  "parent_chunk_id": "ca2013_circular_2024_01_22_135",
+  "child_chunk_ids": null,
+
+  "document_type": "circular",
+  "page_number: number/null,
+
+  "authority_level": "interpretive",
+  "binding": false,
+
+  "act": "Companies Act, 2013",
+  "section": "135",
+  "sub_section": "135(5)",
+
+  "title": "Clarification on eligible CSR expenditure",
+
+  "compliance_area": "Corporate Social Responsibility",
+
+  "text": "Only expenditures directly linked to Schedule VII activities qualify as CSR expenditure...",
+
+  "legal_anchors": [
+   "135",
+   "135(1)",
+   "135(5)",
+   "135(5)(a)"
+  ],
+
+  "summary": null,
+
+  "keywords": [
+    "CSR expenditure",
+    "Schedule VII",
+    "eligibility"
+  ],
+
+  "relationships": {
+    "clarifies": ["ca2013_act_s135"],
+    "proceduralises": [],
+    "proceduralised_by": [],
+    "implements": [],
+    "implemented_by": [],
+    "amends": [],
+    "amended_by": [],
+    "supersedes": [],
+    "superseded_by": []
+  },
+
+  "retrieval": {
+    "priority": 2,
+    "allowed_query_types": ["interpretation"],
+    "requires_parent_law": true
+  },
+
+
+  "refusal_policy": {
+    "can_answer_standalone": false,
+    "must_reference_parent_law": true
+  },
+
+  "embedding": {
+    "enabled": true,
+    "model": "qwen3-embedding",
+    "vector_id": "faiss_92384"
+  },
+
+  "audit": {
+    "uploaded_by": "admin_arya",
+    "uploaded_at": "2026-01-30T14:20:00",
+    "approved_by": "sme_law",
+    "approved_at": "2026-01-30T16:05:00"
+  },
+
+  "citation": "MCA General Circular No. 02/2024 dated 22-01-2024",
+
+  "source": {
+    "path": "raw/companies_act/section_135/circulars/csr_gc_02_2024.pdf",
+    "url": "https://mca.gov.in/..."
+  }
+}
+
+
+
+
+
+
+| priority | Behavior                        |
+| -------- | ------------------------------- |
+|   1      | Can answer standalone           |
+|   2      | Can answer only with parent law |
+|   3      | Only procedural explanation     |
+|   4      | Contextual / learning only      |
+
+| Priority | Document Type                 | Meaning                           |
+| -------- | ----------------------------- | --------------------------------- |
+| 1        | Act, Rules                    | Primary law – can answer directly |
+| 2        | Circulars, Notifications      | Interpret law – only with Act     |
+| 3        | SOPs, Forms, Procedures       | How-to only                       |
+| 4        | Commentary, Guides, Q&A books | Explanatory, non-authoritative    |
+
+| Document Type             | binding                                                                 | Why                               |
+| ------------------------- | ----------------------------------------------------------------------- | --------------------------------- |
+| **Act**                   | ✅ `true`                                                                | Primary law passed by Parliament  |
+| **Rules**                 | ✅ `true`                                                                | Delegated legislation under Act   |
+| **Regulations**           | ✅ `true`                                                                | Statutory if issued under Act     |
+| **Orders (Statutory)**    | ✅ `true`                                                                | If issued under Act               |
+| **Notifications**         | ⚠️ `true` **only if** they bring provisions into force / amend / exempt |                                   |
+| **Circulars**             | ❌ `false`                                                               | Interpretive / clarificatory only |
+| **Clarifications / FAQs** | ❌ `false`                                                               | No legal force                    |
+| **SOPs**                  | ❌ `false`                                                               | Internal procedures               |
+| **Forms**                 | ❌ `false`                                                               | Procedural instruments            |
+| **Guidelines**            | ❌ `false`                                                               | Persuasive, not mandatory         |
+| **Practice Notes**        | ❌ `false`                                                               | Commentary                        |
+| **Textbooks / Q&A**       | ❌ `false`                                                               | Educational                       |
+
+
+
+
+

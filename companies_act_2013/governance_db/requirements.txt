@@ -1,0 +1,15 @@
+# Governance RAG System - PostgreSQL Requirements
+
+# Database
+psycopg2-binary
+python-dotenv 
+
+# Ollama API client
+requests
+
+# Flask API
+flask
+flask-cors
+
+# Utilities
+numpy

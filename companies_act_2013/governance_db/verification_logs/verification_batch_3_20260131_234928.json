@@ -1,0 +1,58 @@
+{
+  "batch_number": 3,
+  "sections": [
+    "021",
+    "022",
+    "023",
+    "024",
+    "025"
+  ],
+  "ingestion_stats": {
+    "total": 25,
+    "successful": 22,
+    "failed": 0,
+    "skipped": 3,
+    "elapsed_seconds": 8.265498638153076,
+    "rate_docs_per_sec": 2.661666399465513,
+    "failed_files": []
+  },
+  "database_stats": {
+    "section_range": "021 to 025",
+    "timestamp": "2026-01-31T23:49:28.679566",
+    "tables": {
+      "chunks_identity": 8006,
+      "chunks_content": 8006,
+      "chunk_legal_anchors": 0,
+      "chunk_keywords": 17,
+      "chunk_relationships": 14864,
+      "chunk_retrieval_rules": 8006,
+      "chunk_refusal_policy": 8006,
+      "chunk_temporal": 8006,
+      "chunk_lifecycle": 8006,
+      "chunk_versioning": 8006,
+      "chunk_embeddings": 8006,
+      "chunk_lineage": 8006,
+      "chunk_administrative": 8006,
+      "chunk_audit": 8006,
+      "chunk_source": 8006
+    },
+    "parent_chunks": 389,
+    "child_chunks": 7617,
+    "total_chunks": 8006,
+    "id_clashes": 0,
+    "recent_parent_ids": [
+      "ca2013_schedule_s005_txt",
+      "ca2013_schedule_s004_txt",
+      "ca2013_rule_s018_pdf1",
+      "ca2013_rule_s008_pdf1",
+      "ca2013_return_s018_pdf9"
+    ],
+    "recent_child_ids": [
+      "ca2013_schedule_s005_txt_c99",
+      "ca2013_schedule_s005_txt_c98",
+      "ca2013_schedule_s005_txt_c97",
+      "ca2013_schedule_s005_txt_c96",
+      "ca2013_schedule_s005_txt_c95"
+    ]
+  }
+}

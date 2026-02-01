@@ -50,7 +50,6 @@ def query():
 
 @app.route('/api/health', methods=['GET'])
 def health():
-    """Health check endpoint."""
     return jsonify({
         'status': 'ok',
         'retriever_ready': retriever is not None

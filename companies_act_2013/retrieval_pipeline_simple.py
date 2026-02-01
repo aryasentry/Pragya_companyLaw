@@ -13,7 +13,7 @@ CHUNKS_FILE = Path("chunks/chunks_final.json")
 EMBEDDING_MODEL = "qwen3-embedding:0.6b"
 LLM_MODEL = "qwen2.5:1.5b"
 
-TOP_K = 20
+TOP_K = 30
 
 class GovernanceRetriever:
  
