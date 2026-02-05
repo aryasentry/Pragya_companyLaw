@@ -26,3 +26,10 @@ CONTAINER ID   IMAGE            COMMAND                  CREATED         STATUS 
 d4dc786fae71   dpage/pgadmin4   "/entrypoint.sh"         4 seconds ago   Up 3 seconds   0.0.0.0:5050->80/tcp, [::]:5050->80/tcp       pgadmin
 506c4d15705d   postgres:16      "docker-entrypoint.s…"   7 seconds ago   Up 6 seconds   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   pg-db
 aryavarmma@Aryaditi2005:~$
+
+
+
+cd C:\Users\kalid\OneDrive\Documents\RAG\companies_act_2013; C:\Users\kalid\OneDrive\Documents\RAG\.venv\Scripts\python.exe app_faiss.py
+
+
+cd C:\Users\kalid\OneDrive\Documents\RAG\companies_act_2013; C:\Users\kalid\OneDrive\Documents\RAG\.venv\Scripts\python.exe app_faiss.py

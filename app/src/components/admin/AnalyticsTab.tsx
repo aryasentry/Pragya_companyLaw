@@ -106,7 +106,7 @@ export default function AnalyticsTab() {
 
       {/* Metrics Cards */}
       <div className="grid md:grid-cols-4 gap-4">
-        {analytics.metrics.map((metric) => (
+        {(analytics.metrics ?? []).map((metric) => (
           <div key={metric.label} className="bg-white rounded-xl border border-gray-200 p-6">
             <div className="flex items-center justify-between mb-2">
               <span className="text-sm text-gray-500">{metric.label}</span>
@@ -163,7 +163,7 @@ export default function AnalyticsTab() {
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-200">
-            {analytics.models.map((model) => (
+            {(analytics.models ?? []).map((model) => (
               <tr key={model.name} className="hover:bg-gray-50">
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-2">
@@ -171,11 +171,11 @@ export default function AnalyticsTab() {
                     <span className="font-medium text-gray-900">{model.name}</span>
                   </div>
                 </td>
-                <td className="px-6 py-4 text-sm text-gray-600">{model.cost.toFixed(3)}</td>
-                <td className="px-6 py-4 text-sm text-gray-600">{model.tokens.toLocaleString()}</td>
-                <td className="px-6 py-4 text-sm text-gray-600">{model.input.toLocaleString()}</td>
-                <td className="px-6 py-4 text-sm text-gray-600">{model.output.toLocaleString()}</td>
-                <td className="px-6 py-4 text-sm text-gray-600">{model.speed.toLocaleString()}</td>
+                <td className="px-6 py-4 text-sm text-gray-600">{(model.cost ?? 0).toFixed(3)}</td>
+                <td className="px-6 py-4 text-sm text-gray-600">{(model.tokens ?? 0).toLocaleString()}</td>
+                <td className="px-6 py-4 text-sm text-gray-600">{(model.input ?? 0).toLocaleString()}</td>
+                <td className="px-6 py-4 text-sm text-gray-600">{(model.output ?? 0).toLocaleString()}</td>
+                <td className="px-6 py-4 text-sm text-gray-600">{(model.speed ?? 0).toLocaleString()}</td>
               </tr>
             ))}
           </tbody>

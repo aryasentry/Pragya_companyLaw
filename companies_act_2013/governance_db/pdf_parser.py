@@ -35,7 +35,7 @@ def extract_text_from_pdf(pdf_path: str, min_text_length: int = 100) -> Optional
                 return None
                 
     except Exception as e:
-        print(f"✗ Error parsing PDF {pdf_path}: {e}")
+        print(f"Error parsing PDF {pdf_path}: {e}")
         return None
 
 def parse_pdf_with_ocr_fallback(
@@ -60,10 +60,10 @@ def parse_pdf_with_ocr_fallback(
     if not force_ocr:
         text = extract_text_from_pdf(pdf_path)
         if text:
-            print(f"✓ Parsed (pypdf): {pdf_name}")
+            print(f"Parsed (pypdf): {pdf_name}")
             return text
         else:
-            print(f"⚠ Low/no text in {pdf_name}, trying OCR...")
+            print(f"Low/no text in {pdf_name}, trying OCR...")
     
     # Fall back to OCR
     ocred_path = ocr_pdf(pdf_path, ocr_output_dir)
@@ -72,13 +72,13 @@ def parse_pdf_with_ocr_fallback(
         # Extract text from OCRed PDF
         text = extract_text_from_pdf(ocred_path)
         if text:
-            print(f"✓ Parsed (OCR): {pdf_name}")
+            print(f"Parsed (OCR): {pdf_name}")
             return text
         else:
-            print(f"✗ OCR failed to extract text from {pdf_name}")
+            print(f"OCR failed to extract text from {pdf_name}")
             return None
     else:
-        print(f"✗ OCR process failed for {pdf_name}")
+        print(f"OCR process failed for {pdf_name}")
         return None
 
 def parse_text_file(file_path: str) -> Optional[str]:
@@ -95,11 +95,11 @@ def parse_text_file(file_path: str) -> Optional[str]:
         with open(file_path, 'r', encoding='utf-8') as f:
             text = f.read().strip()
             if text:
-                print(f"✓ Parsed (text): {Path(file_path).name}")
+                print(f"Parsed (text): {Path(file_path).name}")
                 return text
             return None
     except Exception as e:
-        print(f"✗ Error reading text file {file_path}: {e}")
+        print(f"Error reading text file {file_path}: {e}")
         return None
 
 def parse_html_file(file_path: str) -> Optional[str]:
@@ -126,15 +126,15 @@ def parse_html_file(file_path: str) -> Optional[str]:
             text = soup.get_text(separator='\n', strip=True)
             
             if text:
-                print(f"✓ Parsed (html): {Path(file_path).name}")
+                print(f"Parsed (html): {Path(file_path).name}")
                 return text
             return None
             
     except ImportError:
-        print("⚠ BeautifulSoup not installed, treating HTML as text")
+        print("BeautifulSoup not installed, treating HTML as text")
         return parse_text_file(file_path)
     except Exception as e:
-        print(f"✗ Error parsing HTML file {file_path}: {e}")
+        print(f"Error parsing HTML file {file_path}: {e}")
         return None
 
 def parse_document(file_path: str, ocr_output_dir: str = "ocr_temp") -> Dict[str, Optional[str]]:
@@ -160,7 +160,7 @@ def parse_document(file_path: str, ocr_output_dir: str = "ocr_temp") -> Dict[str
         text = parse_html_file(file_path)
         method = 'html'
     else:
-        print(f"⚠ Unsupported file type: {ext}")
+        print(f"Unsupported file type: {ext}")
         return {'text': None, 'parse_method': None}
     
     return {'text': text, 'parse_method': method if text else None}
@@ -175,6 +175,6 @@ if __name__ == "__main__":
             print(f"\nExtracted {len(result['text'])} characters using {result['parse_method']}")
             print(f"Preview: {result['text'][:200]}...")
         else:
-            print("✗ Failed to extract text")
+            print("Failed to extract text")
     else:
         print(f"Test file not found: {test_pdf}")

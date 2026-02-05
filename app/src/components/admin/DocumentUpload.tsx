@@ -55,7 +55,8 @@ export default function DocumentUpload({
         if (prev === null) return 0;
         if (prev >= 100) {
           clearInterval(interval);
-          onFileSelect(file);
+          // Defer the callback to avoid updating parent during render
+          setTimeout(() => onFileSelect(file), 0);
           return 100;
         }
         return prev + 10;

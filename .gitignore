@@ -1,2 +1,21 @@
 .venv/
 
+.gemini/
+
+**/useless_files/
+
+__pycache__/
+*.pyc
+*.pyo
+
+.env
+
+*.db
+*.sqlite
+
+*.log
+logs/
+
+*.tmp
+temp/
+ocr_temp/

@@ -21,7 +21,7 @@ export default function ChatTab() {
   ]);
   const [input, setInput] = useState('');
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!input.trim()) return;
 
     const userMessage: Message = {
@@ -32,18 +32,50 @@ export default function ChatTab() {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    const query = input;
     setInput('');
 
-    // Simulate AI response
-    setTimeout(() => {
+    // Call RAG API
+    try {
+      const response = await fetch('/api/query', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ query }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Query failed');
+      }
+
+      const answer = data.result?.synthesized_answer || 'No answer found.';
+      const citations = data.result?.answer_citations || [];
+      
+      let answerText = answer;
+      if (citations.length > 0) {
+        answerText += '\n\n**References:** ' + citations.join(', ');
+      }
+
       const assistantMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: 'I understand you\'re asking about the Companies Act 2013. Let me search our knowledge base to find the relevant information for you. This feature will be fully functional once the backend integration is complete.',
+        content: answerText,
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
       };
+      
       setMessages(prev => [...prev, assistantMessage]);
-    }, 1000);
+    } catch (error) {
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        role: 'assistant',
+        content: '⚠️ Sorry, I encountered an error processing your request. Please try again.',
+        timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    }
   };
 
   return (

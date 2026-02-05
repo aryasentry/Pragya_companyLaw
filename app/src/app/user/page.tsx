@@ -10,24 +10,23 @@ import SectionResults from '@/components/SectionResults';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 interface RetrievedSection {
+  chunk_id: string;
   section: string;
-  primary_chunk: {
-    sub_section?: string;
-    citation: string;
-    text: string;
-  };
-  supporting_chunks: Array<{
-    document_type: string;
-    citation: string;
-    llm_summary?: string;
-    text: string;
-  }>;
+  document_type: string;
+  text: string;
+  title?: string;
+  compliance_area?: string;
+  priority?: number;
+  authority_level?: string;
+  citation?: string;
+  similarity_score?: number;
 }
 
 interface QueryResult {
   synthesized_answer?: string;
   answer_citations?: string[];
-  retrieved_sections: RetrievedSection[];
+  retrieved_sections?: RetrievedSection[];
+  retrieved_chunks?: RetrievedSection[]; // New FAISS format
 }
 
 export default function UserPage() {
@@ -115,13 +114,14 @@ export default function UserPage() {
                 />
               )}
 
-              {result.retrieved_sections && result.retrieved_sections.length > 0 ? (
+              {((result.retrieved_sections && result.retrieved_sections.length > 0) || 
+                (result.retrieved_chunks && result.retrieved_chunks.length > 0)) ? (
                 <>
                   <h2 className="text-2xl font-semibold text-gray-700 mt-8 mb-5 pb-3 border-b-2 border-gray-300 flex items-center gap-2">
                     <FaBook className="text-2xl" />
                     Source Documents
                   </h2>
-                  <SectionResults sections={result.retrieved_sections} />
+                  <SectionResults sections={result.retrieved_sections || result.retrieved_chunks || []} />
                 </>
               ) : (
                 <div className="text-center py-16 text-gray-500">

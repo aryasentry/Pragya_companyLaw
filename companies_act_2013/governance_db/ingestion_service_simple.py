@@ -101,12 +101,17 @@ def create_parent_chunk_simple(
     
     with get_db_connection() as conn:
         with conn.cursor() as cursor:
-            # 1. Insert into chunks_identity
+            # 1. Insert or update chunks_identity (UPSERT)
             cursor.execute("""
                 INSERT INTO chunks_identity (
                     chunk_id, chunk_role, parent_chunk_id, document_type,
                     authority_level, binding, section
                 ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    document_type = EXCLUDED.document_type,
+                    authority_level = EXCLUDED.authority_level,
+                    binding = EXCLUDED.binding,
+                    section = EXCLUDED.section
             """, (
                 chunk_id,
                 'parent',
@@ -117,35 +122,46 @@ def create_parent_chunk_simple(
                 section_number
             ))
             
-            # 2. Insert into chunks_content
+            # 2. Insert or update chunks_content (UPSERT)
             cursor.execute("""
                 INSERT INTO chunks_content (
                     chunk_id, title, compliance_area, citation
                 ) VALUES (%s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    title = EXCLUDED.title,
+                    compliance_area = EXCLUDED.compliance_area,
+                    citation = EXCLUDED.citation
             """, (
                 chunk_id,
-                title,
-                compliance_area,
+                title or f"{document_type} - {section_number}" if section_number else document_type,
+                compliance_area or "General Compliance",
                 citation
             ))
             
-            # 3. Insert into chunk_retrieval_rules
+            # 3. Insert or update chunk_retrieval_rules (UPSERT)
             cursor.execute("""
                 INSERT INTO chunk_retrieval_rules (
                     chunk_id, priority, requires_parent_law
                 ) VALUES (%s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    priority = EXCLUDED.priority,
+                    requires_parent_law = EXCLUDED.requires_parent_law
             """, (
                 chunk_id,
                 priority,
                 requires_parent
             ))
             
-            # 4. Insert into chunk_refusal_policy
+            # 4. Insert or update chunk_refusal_policy (UPSERT)
             cursor.execute("""
                 INSERT INTO chunk_refusal_policy (
                     chunk_id, can_answer_standalone, must_reference_parent_law,
                     refuse_if_parent_missing
                 ) VALUES (%s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    can_answer_standalone = EXCLUDED.can_answer_standalone,
+                    must_reference_parent_law = EXCLUDED.must_reference_parent_law,
+                    refuse_if_parent_missing = EXCLUDED.refuse_if_parent_missing
             """, (
                 chunk_id,
                 not requires_parent,
@@ -153,11 +169,13 @@ def create_parent_chunk_simple(
                 refusal_policy['refuse_if_parent_missing']
             ))
             
-            # 5. Insert into chunk_lifecycle
+            # 5. Insert or update chunk_lifecycle (UPSERT)
             cursor.execute("""
                 INSERT INTO chunk_lifecycle (
                     chunk_id, status
                 ) VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    status = EXCLUDED.status
             """, (chunk_id, 'ACTIVE'))
             
             # 6. Insert into chunk_versioning
@@ -165,30 +183,36 @@ def create_parent_chunk_simple(
                 INSERT INTO chunk_versioning (
                     chunk_id, version
                 ) VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    version = EXCLUDED.version
             """, (chunk_id, '1.0'))
             
             # 7. Insert into chunk_lineage
             cursor.execute("""
                 INSERT INTO chunk_lineage (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (chunk_id,))
             
             # 8. Insert into chunk_administrative
             cursor.execute("""
                 INSERT INTO chunk_administrative (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (chunk_id,))
             
             # 9. Insert into chunk_audit
             cursor.execute("""
                 INSERT INTO chunk_audit (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (chunk_id,))
             
             # 10. Insert into chunk_source
             cursor.execute("""
                 INSERT INTO chunk_source (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (chunk_id,))
             
             # 11. Insert into chunk_temporal
@@ -196,6 +220,7 @@ def create_parent_chunk_simple(
                 INSERT INTO chunk_temporal (
                     chunk_id
                 ) VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (chunk_id,))
             
             # 12. Insert into chunk_embeddings (embedding disabled for parent)
@@ -203,6 +228,8 @@ def create_parent_chunk_simple(
                 INSERT INTO chunk_embeddings (
                     chunk_id, enabled
                 ) VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    enabled = EXCLUDED.enabled
             """, (chunk_id, False))
             
             conn.commit()

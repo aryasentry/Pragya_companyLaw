@@ -4,6 +4,7 @@ import { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import AdminSidebar from '@/components/admin/AdminSidebar';
 import IngestionForm from '@/components/admin/IngestionForm';
+import PipelineStatus from '@/components/admin/PipelineStatus';
 import AuditTab from '@/components/admin/AuditTab';
 import NotificationsTab from '@/components/admin/NotificationsTab';
 import DashboardTab from '@/components/admin/DashboardTab';
@@ -42,39 +43,29 @@ function AdminPageContent() {
       // Create FormData for file upload
       const formData = new FormData();
       
-      // Add all fields
-      formData.append('documentType', data.documentType);
-      formData.append('isBinding', String(data.isBinding));
-      formData.append('inputType', data.inputType);
-      formData.append('dateIssued', data.dateIssued);
+      // Create metadata object
+      const metadata = {
+        documentType: data.documentType,
+        isBinding: data.isBinding,
+        inputType: data.inputType,
+        dateIssued: data.dateIssued,
+        complianceArea: data.complianceArea,
+        documentLanguage: data.documentLanguage,
+        ...(data.section && { section: data.section }),
+        ...(data.title && { title: data.title }),
+        ...(data.effectiveDateFrom && { effectiveDateFrom: data.effectiveDateFrom }),
+        ...(data.effectiveDateTo && { effectiveDateTo: data.effectiveDateTo }),
+        ...(data.notificationNumber && { notificationNumber: data.notificationNumber }),
+        ...(data.issuedBy && { issuedBy: data.issuedBy }),
+        ...(data.textContent && { textContent: data.textContent }),
+      };
       
-      if (data.section) {
-        formData.append('section', data.section);
-      }
-      if (data.effectiveDateFrom) {
-        formData.append('effectiveDateFrom', data.effectiveDateFrom);
-      }
-      if (data.effectiveDateTo) {
-        formData.append('effectiveDateTo', data.effectiveDateTo);
-      }
-      if (data.complianceArea) {
-        formData.append('complianceArea', data.complianceArea);
-      }
-      if (data.documentLanguage) {
-        formData.append('documentLanguage', data.documentLanguage);
-      }
-      if (data.notificationNumber) {
-        formData.append('notificationNumber', data.notificationNumber);
-      }
-      if (data.issuedBy) {
-        formData.append('issuedBy', data.issuedBy);
-      }
+      // Add metadata as JSON string
+      formData.append('metadata', JSON.stringify(metadata));
       
-      // Add file or text content
+      // Add file if present
       if (data.inputType === 'pdf' && data.pdfFile) {
-        formData.append('pdfFile', data.pdfFile);
-      } else if (data.inputType === 'text' && data.textContent) {
-        formData.append('textContent', data.textContent);
+        formData.append('file', data.pdfFile);
       }
       
       const response = await fetch('/api/admin/ingest', {
@@ -118,6 +109,11 @@ function AdminPageContent() {
                 </p>
               </div>
             </div>
+            
+            {/* Pipeline Status - Shows real-time progress */}
+            <PipelineStatus />
+            
+            {/* Ingestion Form */}
             <IngestionForm onSubmit={handleIngestionSubmit} isSubmitting={isSubmitting} />
           </div>
         );

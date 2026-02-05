@@ -164,6 +164,13 @@ def create_child_chunk(
                     chunk_id, chunk_role, parent_chunk_id, document_type,
                     authority_level, binding, section
                 ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    chunk_role = EXCLUDED.chunk_role,
+                    parent_chunk_id = EXCLUDED.parent_chunk_id,
+                    document_type = EXCLUDED.document_type,
+                    authority_level = EXCLUDED.authority_level,
+                    binding = EXCLUDED.binding,
+                    section = EXCLUDED.section
             """, (
                 child_id,
                 'child',
@@ -179,6 +186,10 @@ def create_child_chunk(
                 INSERT INTO chunks_content (
                     chunk_id, title, compliance_area, text
                 ) VALUES (%s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    title = EXCLUDED.title,
+                    compliance_area = EXCLUDED.compliance_area,
+                    text = EXCLUDED.text
             """, (
                 child_id,
                 parent_metadata.get('title'),
@@ -191,6 +202,9 @@ def create_child_chunk(
                 INSERT INTO chunk_retrieval_rules (
                     chunk_id, priority, requires_parent_law
                 ) VALUES (%s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    priority = EXCLUDED.priority,
+                    requires_parent_law = EXCLUDED.requires_parent_law
             """, (
                 child_id,
                 parent_metadata['priority'],
@@ -203,6 +217,10 @@ def create_child_chunk(
                     chunk_id, can_answer_standalone, must_reference_parent_law,
                     refuse_if_parent_missing
                 ) VALUES (%s, %s, %s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    can_answer_standalone = EXCLUDED.can_answer_standalone,
+                    must_reference_parent_law = EXCLUDED.must_reference_parent_law,
+                    refuse_if_parent_missing = EXCLUDED.refuse_if_parent_missing
             """, (
                 child_id,
                 parent_metadata['can_answer_standalone'],
@@ -214,6 +232,8 @@ def create_child_chunk(
             cursor.execute("""
                 INSERT INTO chunk_lifecycle (chunk_id, status)
                 VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    status = EXCLUDED.status
             """, (child_id, 'ACTIVE'))
             
             # 6. chunk_versioning
@@ -221,36 +241,43 @@ def create_child_chunk(
                 INSERT INTO chunk_versioning (
                     chunk_id, version
                 ) VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    version = EXCLUDED.version
             """, (child_id, '1.0'))
             
             # 7. chunk_lineage
             cursor.execute("""
                 INSERT INTO chunk_lineage (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (child_id,))
             
             # 8. chunk_administrative
             cursor.execute("""
                 INSERT INTO chunk_administrative (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (child_id,))
             
             # 9. chunk_audit
             cursor.execute("""
                 INSERT INTO chunk_audit (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (child_id,))
             
             # 10. chunk_source
             cursor.execute("""
                 INSERT INTO chunk_source (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (child_id,))
             
             # 11. chunk_temporal
             cursor.execute("""
                 INSERT INTO chunk_temporal (chunk_id)
                 VALUES (%s)
+                ON CONFLICT (chunk_id) DO NOTHING
             """, (child_id,))
             
             # 12. chunk_embeddings (enabled for children)
@@ -258,6 +285,8 @@ def create_child_chunk(
                 INSERT INTO chunk_embeddings (
                     chunk_id, enabled
                 ) VALUES (%s, %s)
+                ON CONFLICT (chunk_id) DO UPDATE SET
+                    enabled = EXCLUDED.enabled
             """, (child_id, True))
             
             conn.commit()
@@ -272,6 +301,8 @@ def create_relationship(from_chunk_id: str, to_chunk_id: str, relationship_type:
                 INSERT INTO chunk_relationships (
                     from_chunk_id, to_chunk_id, relationship, created_at
                 ) VALUES (%s, %s, %s, %s)
+                ON CONFLICT (from_chunk_id, relationship, to_chunk_id) DO UPDATE SET
+                    created_at = EXCLUDED.created_at
             """, (from_chunk_id, to_chunk_id, relationship_type, datetime.now()))
             
             conn.commit()

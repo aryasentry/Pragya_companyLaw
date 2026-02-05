@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
 
-// Audit log data - will be replaced with database queries
 const auditLogs = [
   {
     id: 'audit-001',

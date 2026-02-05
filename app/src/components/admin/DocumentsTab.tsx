@@ -12,7 +12,10 @@ import {
   FaEye,
   FaFilter,
   FaSync,
+  FaUpload,
 } from 'react-icons/fa';
+import UploadModal from './UploadModal';
+import PipelineStatus from './PipelineStatus';
 
 interface FolderNode {
   name: string;
@@ -49,7 +52,7 @@ function FolderTree({ nodes, level = 0 }: FolderTreeProps) {
 
   return (
     <div className="space-y-1">
-      {nodes.map((node) => (
+      {(Array.isArray(nodes) ? nodes : []).map((node) => (
         <div key={node.name}>
           <div
             className={`flex items-center gap-2 px-3 py-2 rounded-lg cursor-pointer transition-colors hover:bg-gray-100 ${
@@ -104,6 +107,7 @@ export default function DocumentsTab() {
   const [stats, setStats] = useState<DocumentStats | null>(null);
   const [recentDocs, setRecentDocs] = useState<RecentDocument[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showUploadModal, setShowUploadModal] = useState(false);
 
   const fetchDocuments = useCallback(async () => {
     setLoading(true);
@@ -139,6 +143,10 @@ export default function DocumentsTab() {
     fetchDocuments();
   }, [fetchDocuments]);
 
+  const handleUploadSuccess = () => {
+    fetchDocuments();
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center py-20">
@@ -158,11 +166,17 @@ export default function DocumentsTab() {
           <h2 className="text-2xl font-bold text-gray-900">Documents</h2>
           <p className="text-gray-600">Browse and manage document repository</p>
         </div>
-        <button className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors">
-          <FaDownload />
-          Export All
+        <button 
+          onClick={() => setShowUploadModal(true)}
+          className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors"
+        >
+          <FaUpload />
+          Upload Document
         </button>
       </div>
+
+      {/* Pipeline Status */}
+      <PipelineStatus />
 
       <div className="grid lg:grid-cols-3 gap-6">
         {/* Folder Tree */}
@@ -231,6 +245,13 @@ export default function DocumentsTab() {
           </div>
         </div>
       </div>
+
+      {/* Upload Modal */}
+      <UploadModal
+        isOpen={showUploadModal}
+        onClose={() => setShowUploadModal(false)}
+        onUploadSuccess={handleUploadSuccess}
+      />
     </div>
   );
 }

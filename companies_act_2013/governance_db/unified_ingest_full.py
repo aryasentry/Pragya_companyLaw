@@ -9,6 +9,7 @@ import os
 import sys
 import time
 import json
+import logging
 import requests
 from pathlib import Path
 from datetime import datetime
@@ -17,10 +18,19 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 from tqdm import tqdm
 
+# Setup logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s [%(levelname)s] %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+)
+logger = logging.getLogger(__name__)
+
 from folder_analyzer import scan_raw_directory, DocumentMetadata
 from ingestion_service_simple import create_parent_chunk_simple, update_chunk_text_simple
 from chunking_engine_simple import hierarchical_chunk
 from db_config import get_db_connection
+from reference_extractor import extract_and_create_relationships
 
 # Ollama configuration
 OLLAMA_BASE_URL = "http://localhost:11434"
@@ -313,20 +323,27 @@ def ingest_single_document_unified(
 ) -> bool:
     """Ingest a single document with full processing"""
     try:
+        logger.info(f"Starting ingestion for: {metadata.file_path}")
+        
         # Skip HTML files if requested
         if skip_html and metadata.file_path.lower().endswith('.html'):
+            logger.info("Skipping HTML file")
             stats.increment_skip(is_html=True)
             return False
         
         from pdf_parser import parse_document
         
         # Parse document
+        logger.info("Parsing document...")
         result = parse_document(metadata.file_path)
         text = result.get('text') if isinstance(result, dict) else result
         
         if not text or len(text.strip()) < 10:
+            logger.warning(f"Text too short or empty: {len(text) if text else 0} chars")
             stats.increment_skip()
             return False
+        
+        logger.info(f"Parsed {len(text)} characters")
         
         # Determine file extension for unique ID
         file_ext = Path(metadata.file_path).suffix.lower().replace('.', '')
@@ -340,6 +357,7 @@ def ingest_single_document_unified(
             file_ext = f"pdf{pdf_counter}"
         
         # Create parent chunk
+        logger.info(f"Creating parent chunk with type={metadata.document_type}, section={metadata.section_number}")
         parent_id = create_parent_chunk_simple(
             document_type=metadata.document_type,
             title=metadata.title,
@@ -350,14 +368,19 @@ def ingest_single_document_unified(
             binding=metadata.is_binding
         )
         
+        logger.info(f"Parent chunk created: {parent_id}")
+        
         # Update parent with full text
+        logger.info("Updating parent chunk with text...")
         update_chunk_text_simple(parent_id, text)
         
         # Generate summary and keywords for parent chunk
         if generate_summaries:
+            logger.info("Generating summary and keywords...")
             process_summary_and_keywords(parent_id, text, stats)
         
         # Create relationships based on document type
+        logger.info("Creating relationships...")
         create_relationships_for_chunk(
             parent_id, 
             metadata.section_number, 
@@ -365,7 +388,19 @@ def ingest_single_document_unified(
             stats
         )
         
+        # Extract cross-references from text and create relationships
+        logger.info("Extracting cross-references...")
+        ref_stats = extract_and_create_relationships(
+            chunk_id=parent_id,
+            text=text,
+            document_type=metadata.document_type,
+            current_section=metadata.section_number,
+            min_confidence=0.5
+        )
+        stats.increment_relationships(ref_stats['created'])
+        
         # Create child chunks
+        logger.info("Creating child chunks...")
         child_ids = hierarchical_chunk(
             parent_chunk_id=parent_id,
             text=text,
@@ -373,10 +408,14 @@ def ingest_single_document_unified(
             overlap_chars=100
         )
         
+        logger.info(f"Ingestion successful! Created {len(child_ids)} child chunks")
         stats.increment_success()
         return True
         
     except Exception as e:
+        import traceback
+        logger.error(f"Ingestion failed for {metadata.file_path}: {str(e)}")
+        logger.error(traceback.format_exc())
         stats.increment_failure(metadata.file_path, str(e))
         return False
 
