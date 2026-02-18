@@ -65,7 +65,7 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
   const handleChange = (field: keyof IngestionFormData, value: unknown) => {
     setFormData(prev => {
       const updated = { ...prev, [field]: value };
-      
+
       // Auto-set binding status based on document type
       if (field === 'documentType') {
         const docType = ALL_DOCUMENT_TYPES.find(d => d.value === value);
@@ -76,10 +76,10 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
           }
         }
       }
-      
+
       return updated;
     });
-    
+
     // Clear error for this field
     if (errors[field]) {
       setErrors(prev => {
@@ -127,7 +127,7 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    
+
     if (validateForm()) {
       onSubmit(formData as IngestionFormData);
       setShowSuccess(true);
@@ -166,9 +166,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
             <select
               value={formData.documentType || ''}
               onChange={(e) => handleChange('documentType', e.target.value)}
-              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
-                errors.documentType ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${errors.documentType ? 'border-red-500' : 'border-gray-300'
+                }`}
             >
               <option value="">Select document type...</option>
               <optgroup label="Binding Documents">
@@ -197,11 +196,10 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               Binding Status
             </label>
             <div className="flex gap-4">
-              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${
-                formData.isBinding 
-                  ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500' 
-                  : 'border-gray-300 hover:border-gray-400'
-              }`}>
+              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${formData.isBinding
+                ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500'
+                : 'border-gray-300 hover:border-gray-400'
+                }`}>
                 <input
                   type="radio"
                   name="binding"
@@ -209,18 +207,16 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
                   onChange={() => handleChange('isBinding', true)}
                   className="sr-only"
                 />
-                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                  formData.isBinding ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
-                }`}>
+                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${formData.isBinding ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
+                  }`}>
                   {formData.isBinding && <div className="w-2 h-2 bg-white rounded-full" />}
                 </div>
                 <span className="font-medium text-gray-900">Binding</span>
               </label>
-              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${
-                formData.isBinding === false
-                  ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500' 
-                  : 'border-gray-300 hover:border-gray-400'
-              }`}>
+              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${formData.isBinding === false
+                ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500'
+                : 'border-gray-300 hover:border-gray-400'
+                }`}>
                 <input
                   type="radio"
                   name="binding"
@@ -228,9 +224,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
                   onChange={() => handleChange('isBinding', false)}
                   className="sr-only"
                 />
-                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${
-                  !formData.isBinding ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
-                }`}>
+                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${!formData.isBinding ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
+                  }`}>
                   {!formData.isBinding && <div className="w-2 h-2 bg-white rounded-full" />}
                 </div>
                 <span className="font-medium text-gray-900">Non-Binding</span>
@@ -253,9 +248,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               <select
                 value={formData.section || ''}
                 onChange={(e) => handleChange('section', e.target.value)}
-                className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
-                  errors.section ? 'border-red-500' : 'border-gray-300'
-                }`}
+                className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${errors.section ? 'border-red-500' : 'border-gray-300'
+                  }`}
               >
                 <option value="">Select section...</option>
                 {COMPANIES_ACT_SECTIONS.slice(0, 100).map(section => (
@@ -279,7 +273,7 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               <div>
                 <p className="font-medium text-blue-800">Non-Binding Document</p>
                 <p className="text-sm text-blue-700">
-                  This document will be stored in the non-binding folder (raw/non-binding) and categorized 
+                  This document will be stored in the non-binding folder (raw/non-binding) and categorized
                   based on its type (qa, textbooks, etc.)
                 </p>
               </div>
@@ -302,11 +296,10 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
           <button
             type="button"
             onClick={() => handleChange('inputType', 'pdf')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
-              formData.inputType === 'pdf'
-                ? 'bg-orange-500 text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${formData.inputType === 'pdf'
+              ? 'bg-orange-500 text-white'
+              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
           >
             <FaFilePdf />
             Upload PDF
@@ -314,11 +307,10 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
           <button
             type="button"
             onClick={() => handleChange('inputType', 'text')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
-              formData.inputType === 'text'
-                ? 'bg-orange-500 text-white'
-                : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
-            }`}
+            className={`flex items-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${formData.inputType === 'text'
+              ? 'bg-orange-500 text-white'
+              : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
+              }`}
           >
             <FaFileAlt />
             Enter Text
@@ -349,9 +341,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               onChange={(e) => handleChange('textContent', e.target.value)}
               placeholder="Paste or type the document content here..."
               rows={10}
-              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none ${
-                errors.textContent ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all resize-none ${errors.textContent ? 'border-red-500' : 'border-gray-300'
+                }`}
             />
             {errors.textContent && (
               <p className="text-red-500 text-sm mt-1">{errors.textContent}</p>
@@ -396,9 +387,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               type="date"
               value={formData.dateIssued || ''}
               onChange={(e) => handleChange('dateIssued', e.target.value)}
-              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
-                errors.dateIssued ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${errors.dateIssued ? 'border-red-500' : 'border-gray-300'
+                }`}
             />
             {errors.dateIssued && (
               <p className="text-red-500 text-sm mt-1">{errors.dateIssued}</p>
@@ -449,9 +439,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
             <select
               value={formData.complianceArea || ''}
               onChange={(e) => handleChange('complianceArea', e.target.value)}
-              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
-                errors.complianceArea ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${errors.complianceArea ? 'border-red-500' : 'border-gray-300'
+                }`}
             >
               <option value="">Select compliance area...</option>
               {COMPLIANCE_AREAS.map(area => (
@@ -471,9 +460,8 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
             <select
               value={formData.documentLanguage || ''}
               onChange={(e) => handleChange('documentLanguage', e.target.value)}
-              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${
-                errors.documentLanguage ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-3 border rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all ${errors.documentLanguage ? 'border-red-500' : 'border-gray-300'
+                }`}
             >
               <option value="">Select language...</option>
               {DOCUMENT_LANGUAGES.map(lang => (
@@ -510,6 +498,104 @@ export default function IngestionForm({ onSubmit, isSubmitting = false }: Ingest
               className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
             />
           </div>
+        </div>
+      </div>
+
+      {/* Section 5: Copyright Attribution */}
+      <div className="bg-white rounded-xl border border-gray-200 p-6">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          <span className="w-6 h-6 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-sm font-bold">
+            5
+          </span>
+          Copyright Attribution
+        </h3>
+
+        <div className="space-y-6">
+          {/* Copyright Status */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">
+              Copyright Status
+            </label>
+            <div className="flex gap-4">
+              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${formData.copyrightStatus === 'copyrighted'
+                ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500'
+                : 'border-gray-300 hover:border-gray-400'
+                }`}>
+                <input
+                  type="radio"
+                  name="copyrightStatus"
+                  checked={formData.copyrightStatus === 'copyrighted'}
+                  onChange={() => {
+                    handleChange('copyrightStatus', 'copyrighted');
+                    // Auto-fill placeholder text
+                    if (!formData.copyrightAttribution) {
+                      handleChange('copyrightAttribution', 'Courtesy by ');
+                    }
+                  }}
+                  className="sr-only"
+                />
+                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${formData.copyrightStatus === 'copyrighted' ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
+                  }`}>
+                  {formData.copyrightStatus === 'copyrighted' && <div className="w-2 h-2 bg-white rounded-full" />}
+                </div>
+                <div>
+                  <span className="font-medium text-gray-900">Copyrighted</span>
+                  <p className="text-xs text-gray-500">Requires attribution</p>
+                </div>
+              </label>
+              <label className={`flex-1 flex items-center gap-3 px-4 py-3 border rounded-lg cursor-pointer transition-all ${formData.copyrightStatus === 'public_domain'
+                ? 'border-orange-500 bg-orange-50 ring-2 ring-orange-500'
+                : 'border-gray-300 hover:border-gray-400'
+                }`}>
+                <input
+                  type="radio"
+                  name="copyrightStatus"
+                  checked={formData.copyrightStatus === 'public_domain'}
+                  onChange={() => {
+                    handleChange('copyrightStatus', 'public_domain');
+                    handleChange('copyrightAttribution', 'General Public');
+                  }}
+                  className="sr-only"
+                />
+                <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center ${formData.copyrightStatus === 'public_domain' ? 'border-orange-500 bg-orange-500' : 'border-gray-300'
+                  }`}>
+                  {formData.copyrightStatus === 'public_domain' && <div className="w-2 h-2 bg-white rounded-full" />}
+                </div>
+                <div>
+                  <span className="font-medium text-gray-900">Public Domain</span>
+                  <p className="text-xs text-gray-500">Open access</p>
+                </div>
+              </label>
+            </div>
+          </div>
+
+          {/* Copyright Attribution Text */}
+          {formData.copyrightStatus && (
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">
+                Attribution Text
+              </label>
+              <input
+                type="text"
+                value={formData.copyrightAttribution || ''}
+                onChange={(e) => handleChange('copyrightAttribution', e.target.value)}
+                placeholder={
+                  formData.copyrightStatus === 'copyrighted'
+                    ? 'e.g., Courtesy by Ministry of Corporate Affairs'
+                    : 'General Public'
+                }
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-900 focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all"
+                readOnly={formData.copyrightStatus === 'public_domain'}
+              />
+              <p className="text-sm text-gray-500 mt-1">
+                {formData.copyrightStatus === 'copyrighted'
+                  ? 'Enter the source or publisher name for attribution'
+                  : 'This document is in the public domain and freely accessible'}
+              </p>
+            </div>
+          )}
+
+
         </div>
       </div>
 

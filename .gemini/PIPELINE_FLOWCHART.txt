@@ -1,0 +1,249 @@
+# Query-to-Answer Pipeline - Visual Flowchart
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                         USER ENTERS QUERY                            │
+│                  "What is memorandum definition?"                    │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                    PHASE 1: API ROUTING (~100ms)                     │
+├─────────────────────────────────────────────────────────────────────┤
+│  Next.js Frontend → /api/query → Flask Backend (port 5000)          │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                  PHASE 2: QUERY ANALYSIS (~10ms)                     │
+├─────────────────────────────────────────────────────────────────────┤
+│  • Log query                                                         │
+│  • Detect query type                                                 │
+│  • Extract keywords/patterns                                         │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                ┌────────────────┴────────────────┐
+                │                                  │
+                ▼                                  ▼
+    ┌───────────────────┐              ┌───────────────────┐
+    │ Is DEFINITION     │              │ Is SECTION        │
+    │ query?            │              │ query?            │
+    │ (definition,      │              │ (section \d+)     │
+    │  define, meaning) │              │                   │
+    └─────┬─────────────┘              └─────┬─────────────┘
+          │                                   │
+     YES  │  NO                          YES  │  NO
+          │                                   │
+          ▼                                   ▼
+┌──────────────────────┐          ┌──────────────────────┐
+│   PATH A: DEFINITION │          │   PATH B: SECTION    │
+│      (~200ms)        │          │      (~300ms)        │
+├──────────────────────┤          ├──────────────────────┤
+│ 1. Extract term      │          │ 1. Extract section # │
+│    "memorandum"      │          │    "017"             │
+│                      │          │                      │
+│ 2. Direct DB query   │          │ 2. Direct DB lookup  │
+│    Section 002 ONLY  │          │    WHERE section=X   │
+│    LIKE '%term%'     │          │                      │
+│                      │          │ 3. ALSO vector search│
+│ 3. Get chunk details │          │    (hybrid)          │
+│                      │          │                      │
+│ 4. Skip vector search│          │ 4. Combine results   │
+└──────────┬───────────┘          └──────────┬───────────┘
+           │                                  │
+           │                                  │
+           └──────────────┬───────────────────┘
+                          │
+                          │              ┌──────────────────────┐
+                          │              │   PATH C: GENERAL    │
+                          │◄─────────────┤      (~500ms)        │
+                          │              ├──────────────────────┤
+                          │              │ 1. Generate embedding│
+                          │              │    via Ollama        │
+                          │              │                      │
+                          │              │ 2. FAISS search      │
+                          │              │    top-k vectors     │
+                          │              │                      │
+                          │              │ 3. Get chunk details │
+                          │              │                      │
+                          │              │ 4. Optional: Get     │
+                          │              │    relationships     │
+                          │              └──────────────────────┘
+                          │
+                          ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│              PHASE 3: CONTEXT BUILDING (~50ms)                       │
+├─────────────────────────────────────────────────────────────────────┤
+│  For each chunk:                                                     │
+│    • Format: [DOC_TYPE] Section X: Title\nText                       │
+│    • Extract citations                                               │
+│    • Combine with separators                                         │
+│    • Limit to 8000 chars                                             │
+│                                                                       │
+│  Example:                                                            │
+│  [ACT] Section 002: Definitions                                      │
+│  (56) "memorandum" means the memorandum of association...            │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│              PHASE 4: PROMPT BUILDING (~10ms)                        │
+├─────────────────────────────────────────────────────────────────────┤
+│  Build governance-grade prompt:                                      │
+│                                                                       │
+│  CRITICAL RULES:                                                     │
+│  1. ONLY use source documents                                        │
+│  2. NEVER hallucinate                                                │
+│  3. CITE exact sections                                              │
+│  4. Definition ≠ Procedure                                           │
+│  5. Scope control                                                    │
+│                                                                       │
+│  USER QUESTION: {query}                                              │
+│  SOURCE DOCUMENTS: {context}                                         │
+│                                                                       │
+│  ANSWER STRUCTURE: [template]                                        │
+│  VALIDATION CHECKLIST: [rules]                                       │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│           PHASE 5: LLM GENERATION (2-60s) ⚠️ BOTTLENECK             │
+├─────────────────────────────────────────────────────────────────────┤
+│  POST http://localhost:11434/api/generate                            │
+│                                                                       │
+│  {                                                                    │
+│    "model": "qwen2.5:1.5b",                                          │
+│    "prompt": "[governance-grade prompt]",                            │
+│    "stream": false,                                                  │
+│    "options": {                                                      │
+│      "temperature": 0.5,      // Balanced                            │
+│      "top_p": 0.9,            // Nucleus sampling                    │
+│      "num_predict": 1024      // Max tokens                          │
+│    }                                                                  │
+│  }                                                                    │
+│                                                                       │
+│  Timeout: 60 seconds                                                 │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│            PHASE 6: RESPONSE FORMATTING (~50ms)                      │
+├─────────────────────────────────────────────────────────────────────┤
+│  Extract:                                                            │
+│    • Answer text (markdown)                                          │
+│    • Citations (Section X, Section Y)                                │
+│                                                                       │
+│  Build JSON response:                                                │
+│  {                                                                    │
+│    "answer": "**Definition of Memorandum**\n\n...",                  │
+│    "citations": ["Section 2(56)"],                                   │
+│    "retrieved_chunks": [                                             │
+│      {                                                                │
+│        "chunk_id": "002_act_056",                                    │
+│        "section": "002",                                             │
+│        "document_type": "act",                                       │
+│        "text": "...",                                                │
+│        "similarity_score": 1.0                                       │
+│      }                                                                │
+│    ]                                                                  │
+│  }                                                                    │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│              PHASE 7: RESPONSE DELIVERY (~100ms)                     │
+├─────────────────────────────────────────────────────────────────────┤
+│  Flask → Next.js API → Frontend                                      │
+└────────────────────────────────┬────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│                      USER SEES ANSWER                                │
+├─────────────────────────────────────────────────────────────────────┤
+│  Synthesized Answer:                                                 │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │ **Definition of Memorandum**                                │    │
+│  │                                                              │    │
+│  │ Under **Section 2(56)** of the Companies Act, 2013:         │    │
+│  │                                                              │    │
+│  │ "Memorandum" means the memorandum of association of a       │    │
+│  │ company as originally framed or as altered from time to     │    │
+│  │ time in pursuance of any previous company law or of this    │    │
+│  │ Act.                                                         │    │
+│  │                                                              │    │
+│  │ **Legal Reference:**                                         │    │
+│  │ - Section 2(56): Statutory definition                       │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+│                                                                       │
+│  Source Documents:                                                   │
+│  ┌─────────────────────────────────────────────────────────────┐    │
+│  │ Section 002 - ACT - Priority 1 - Match: 100%                │    │
+│  │ (56) "memorandum" means the memorandum of association...    │    │
+│  └─────────────────────────────────────────────────────────────┘    │
+└─────────────────────────────────────────────────────────────────────┘
+
+
+═══════════════════════════════════════════════════════════════════════
+                          PERFORMANCE SUMMARY
+═══════════════════════════════════════════════════════════════════════
+
+Total Time Breakdown:
+┌──────────────────────┬──────────────┬─────────────┐
+│ Phase                │ Time         │ Bottleneck? │
+├──────────────────────┼──────────────┼─────────────┤
+│ API Routing          │ ~100ms       │ No          │
+│ Query Analysis       │ ~10ms        │ No          │
+│ Retrieval            │ 200-500ms    │ Sometimes   │
+│ Context Building     │ ~50ms        │ No          │
+│ Prompt Building      │ ~10ms        │ No          │
+│ LLM Generation       │ 2-60s        │ ⚠️ YES      │
+│ Response Formatting  │ ~50ms        │ No          │
+│ Response Delivery    │ ~100ms       │ No          │
+├──────────────────────┼──────────────┼─────────────┤
+│ TOTAL                │ 2-60 seconds │             │
+└──────────────────────┴──────────────┴─────────────┘
+
+Optimization Shortcuts:
+• Definition queries: Skip vector search → Save ~300ms
+• Section queries: Direct lookup first → Save ~200ms
+• Cached embeddings: Incremental indexing → Save ~10min on rebuild
+
+
+═══════════════════════════════════════════════════════════════════════
+                        KEY DECISION POINTS
+═══════════════════════════════════════════════════════════════════════
+
+1. Is Definition Query?
+   Keywords: definition, define, meaning, means, what is, what does
+   → YES: Search Section 002 only (definitions)
+   → NO: Continue to next check
+
+2. Is Section Query?
+   Pattern: section \d+ (e.g., "section 17", "section 2")
+   → YES: Direct section lookup + vector search (hybrid)
+   → NO: General vector search
+
+3. Section 2 Found?
+   → YES: Return definition immediately
+   → NO: Fall back to vector search
+
+4. LLM Response Valid?
+   → YES: Return to user
+   → NO: Return error message
+
+
+═══════════════════════════════════════════════════════════════════════
+                      GOVERNANCE CONTROLS
+═══════════════════════════════════════════════════════════════════════
+
+✓ Source-only responses (no hallucination)
+✓ Exact citation matching
+✓ Scope control (definition ≠ procedure)
+✓ Validation checklist in prompt
+✓ Timeout protection (60s)
+✓ Error handling at each phase
+✓ Logging for debugging
+
+
+═══════════════════════════════════════════════════════════════════════
+```

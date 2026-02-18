@@ -38,8 +38,6 @@ const mainNavItems: SidebarItem[] = [
 ];
 
 const systemNavItems: SidebarItem[] = [
-  { id: 'analytics', label: 'Analytics', icon: <FaChartBar /> },
-  { id: 'health', label: 'System Health', icon: <FaHeartbeat /> },
   { id: 'chat', label: 'Chat', icon: <FaComments /> },
   { id: 'documents', label: 'Documents', icon: <FaFolder /> },
   { id: 'settings', label: 'Settings', icon: <FaCog /> },

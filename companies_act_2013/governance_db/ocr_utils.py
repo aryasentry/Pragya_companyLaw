@@ -1,4 +1,3 @@
-"""OCR utilities using Docker and jbarlow83/ocrmypdf-alpine"""
 import os
 import subprocess
 import glob
@@ -8,20 +7,19 @@ from typing import List, Optional
 
 def ocr_pdf(input_path: str, output_dir: str, image_tag: str = "jbarlow83/ocrmypdf-alpine") -> Optional[str]:
     """
-    OCR a single PDF via Docker.
+    OCR a PDF using Docker and ocrmypdf
     
     Args:
-        input_path: Path to input PDF file
-        output_dir: Directory to save OCRed PDF
-        image_tag: Docker image to use for OCR
-        
+        input_path: Path to input PDF
+        output_dir: Directory for OCR output
+        image_tag: Docker image to use
+    
     Returns:
         Path to OCRed PDF or None if failed
     """
     input_file = Path(input_path)
     output_path = Path(output_dir) / input_file.with_suffix('.ocr.pdf').name
     
-    # Ensure output directory exists
     os.makedirs(output_dir, exist_ok=True)
     
     cmd = [
@@ -30,30 +28,38 @@ def ocr_pdf(input_path: str, output_dir: str, image_tag: str = "jbarlow83/ocrmyp
         image_tag,
         "/data/" + input_file.name,
         "/data/" + output_path.name,
-        "--skip-text",  # Skip if text exists
-        "-j", "2"  # Threads per PDF; tune to CPU cores
+        "--skip-text",  # Skip existing text, only OCR images
+        "-j", "2"  # Use 2 parallel jobs
     ]
     
     try:
-        result = subprocess.run(cmd, check=True, capture_output=True, text=True)
+        print(f"🔍 OCRing: {input_file.name}...")
+        result = subprocess.run(
+            cmd, 
+            check=True, 
+            capture_output=True, 
+            text=True,
+            timeout=300  # 5 minute timeout
+        )
         print(f"✓ OCRed: {input_file.name}")
         return str(output_path)
+    except subprocess.TimeoutExpired:
+        print(f"✗ OCR timeout for {input_path} (exceeded 5 minutes)")
+        return None
     except subprocess.CalledProcessError as e:
-        print(f"✗ Error OCRing {input_path}: {e.stderr}")
+        error_msg = e.stderr if e.stderr else str(e)
+        print(f"✗ Error OCRing {input_path}:")
+        print(f"  {error_msg}")
+        return None
+    except FileNotFoundError:
+        print(f"✗ Docker not found. Please install Docker Desktop.")
+        print(f"  Download from: https://www.docker.com/products/docker-desktop")
+        return None
+    except Exception as e:
+        print(f"✗ Unexpected error OCRing {input_path}: {e}")
         return None
 
 def batch_ocr_pdfs(pdf_dir: str, output_dir: str = "ocred_pdfs", max_workers: int = 4) -> List[str]:
-    """
-    Batch OCR all PDFs in directory.
-    
-    Args:
-        pdf_dir: Directory containing PDFs to OCR
-        output_dir: Directory to save OCRed PDFs
-        max_workers: Number of parallel OCR processes
-        
-    Returns:
-        List of successfully OCRed PDF paths
-    """
     pdf_paths = glob.glob(os.path.join(pdf_dir, "*.pdf"))
     
     if not pdf_paths:
@@ -71,11 +77,10 @@ def batch_ocr_pdfs(pdf_dir: str, output_dir: str = "ocred_pdfs", max_workers: in
         ))
     
     success_paths = [p for p in results if p]
-    print(f"\n✓ Successfully OCRed {len(success_paths)}/{len(pdf_paths)} PDFs")
+    print(f"\n Successfully OCRed {len(success_paths)}/{len(pdf_paths)} PDFs")
     return success_paths
 
 def check_docker_available() -> bool:
-    """Check if Docker is available and running."""
     try:
         subprocess.run(
             ["docker", "--version"], 
@@ -87,7 +92,6 @@ def check_docker_available() -> bool:
         return False
 
 def pull_ocr_image(image_tag: str = "jbarlow83/ocrmypdf-alpine") -> bool:
-    """Pull OCR Docker image if not present."""
     try:
         print(f"Checking for Docker image: {image_tag}")
         subprocess.run(
@@ -95,23 +99,22 @@ def pull_ocr_image(image_tag: str = "jbarlow83/ocrmypdf-alpine") -> bool:
             check=True,
             capture_output=True
         )
-        print(f"✓ Image {image_tag} ready")
+        print(f" Image {image_tag} ready")
         return True
     except subprocess.CalledProcessError as e:
-        print(f"✗ Failed to pull image: {e}")
+        print(f" Failed to pull image: {e}")
         return False
 
 if __name__ == "__main__":
-    # Test OCR setup
+
     if not check_docker_available():
-        print("✗ Docker is not available. Please install Docker Desktop.")
+        print(" Docker is not available. Please install Docker Desktop.")
         exit(1)
     
-    print("✓ Docker is available")
+    print(" Docker is available")
     
-    # Pull OCR image
     if not pull_ocr_image():
-        print("✗ Failed to pull OCR image")
+        print(" Failed to pull OCR image")
         exit(1)
     
-    print("\n✓ OCR utilities ready")
+    print("\n OCR utilities ready")

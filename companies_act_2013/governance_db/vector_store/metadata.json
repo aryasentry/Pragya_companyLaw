@@ -5542,5 +5542,27 @@
     "binding": false,
     "title": "qa_book",
     "compliance_area": "General Compliance"
+  },
+  {
+    "chunk_id": "ca2013_act_s052_txt_c1",
+    "idx": 504,
+    "parent_id": "ca2013_act_s052_txt",
+    "section": "052",
+    "document_type": "act",
+    "authority_level": "statutory",
+    "binding": true,
+    "title": "section_052_act",
+    "compliance_area": "Company Incorporation"
+  },
+  {
+    "chunk_id": "ca2013_act_s052_txt_c2",
+    "idx": 505,
+    "parent_id": "ca2013_act_s052_txt",
+    "section": "052",
+    "document_type": "act",
+    "authority_level": "statutory",
+    "binding": true,
+    "title": "section_052_act",
+    "compliance_area": "Company Incorporation"
   }
 ]

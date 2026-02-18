@@ -1,7 +1,4 @@
--- 🧱 PRAGYA — GOVERNANCE-GRADE POSTGRES SCHEMA
--- Authoritative Version
 
--- 0️⃣ ENUMS (STRICT CONTROL)
 
 CREATE TYPE chunk_role_enum AS ENUM ('parent', 'child');
 
@@ -174,7 +171,9 @@ CREATE TABLE chunk_administrative (
   issued_by TEXT,
   notification_number TEXT,
   source_type TEXT,
-  document_language TEXT
+  document_language TEXT,
+  copyright_status TEXT CHECK (copyright_status IN ('copyrighted', 'public_domain', NULL)),
+  copyright_attribution TEXT
 );
 
 -- 1️⃣4️⃣ AUDIT LOG

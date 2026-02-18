@@ -1,0 +1,45 @@
+{
+  "batch_number": 1,
+  "sections": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+  ],
+  "ingestion_stats": {
+    "total": 141,
+    "successful": 119,
+    "failed": 0,
+    "skipped": 22,
+    "html_skipped": 0,
+    "summaries_generated": 116,
+    "keywords_extracted": 1065,
+    "summary_failures": 0,
+    "relationships_created": 183,
+    "relationship_errors": 0,
+    "elapsed_seconds": 1449.3312203884125,
+    "rate_docs_per_sec": 0.0821068354327651,
+    "failed_files": []
+  },
+  "database_stats": {
+    "section_range": "001 to 005",
+    "timestamp": "2026-02-03T11:41:34.951352",
+    "tables": {},
+    "parent_chunks": 119,
+    "child_chunks": 2656,
+    "total_chunks": 2775,
+    "chunks_with_summaries": 116,
+    "chunks_with_keywords": 114,
+    "total_keywords": 1056,
+    "total_relationships": 5386,
+    "id_clashes": 0,
+    "recent_parent_ids": [
+      "ca2013_schedule_s005_txt",
+      "ca2013_schedule_s004_txt",
+      "ca2013_return_s005_pdf9",
+      "ca2013_return_s005_pdf8",
+      "ca2013_return_s005_pdf7"
+    ]
+  }
+}

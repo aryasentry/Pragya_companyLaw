@@ -48,7 +48,7 @@ class GovernanceRetriever:
             response = requests.post(
                 f"{OLLAMA_BASE_URL}/api/embeddings",
                 json={'model': EMBEDDING_MODEL, 'prompt': text},
-                timeout=30
+                timeout=10  # Reduced from 30s - embeddings are fast with local Ollama
             )
             
             if response.status_code == 200:
@@ -174,41 +174,37 @@ class GovernanceRetriever:
             context_parts.append(f"[{doc_type}] {citation}: {title}\n{text}")
             citations.append(citation)
         
-        context = "\n\n---\n\n".join(context_parts)[:8000]
+        # Reduced context size for faster generation (8000 -> 6000 chars)
+        context = "\n\n---\n\n".join(context_parts)[:6000]
         
-        # Stricter prompt based on old working system
-        prompt = f"""You are a legal information assistant for the Companies Act, 2013 (India).
+        # Simplified prompt for faster, clearer answers
+        prompt = f"""You are a legal assistant answering strictly from the provided source documents 
+related to the Companies Act, 2013 (India).
 
-QUESTION:
+Rules:
+- Use ONLY the provided sources.
+- Do NOT add outside knowledge.
+- Always cite the exact Section number.
+- If answer is not in the sources, say:
+  "The provided sources do not contain information about this topic."
+
+User Question:
 {query}
 
-RELEVANT SOURCES:
+Source Documents:
 {context}
 
-INSTRUCTIONS:
-Answer the question clearly and concisely. DO NOT copy statutory text verbatim.
+Answer Format:
 
-Format your response using Markdown:
-- Use **bold** for important terms and section references
-- Use proper paragraphs with blank lines between them
-- Use bullet points (- or *) for lists
-- Use numbered lists (1., 2., 3.) for steps/procedures
-- Use > for important notes or quotes if needed
+## Answer
 
-Content guidelines:
-- Summarize key points in plain language
-- Answer the specific question asked
-- Keep it brief (2-4 paragraphs maximum)
-- Reference section numbers like **Section 1** or **Section 2(20)**
-- If there are forms/procedures, list them clearly with numbers
+Provide a clear explanation based ONLY on the sources.
+Explain in simple, structured language.
+You may summarize but do not invent.
 
-DO NOT:
-- Quote long statutory provisions verbatim
-- Copy-paste entire sections
-- Include irrelevant details
-- Repeat yourself
-
-WELL-FORMATTED MARKDOWN ANSWER:"""
+## Legal References
+- Section X: short supporting reference from source
+"""
         
         try:
             response = requests.post(
@@ -218,11 +214,13 @@ WELL-FORMATTED MARKDOWN ANSWER:"""
                     'prompt': prompt,
                     'stream': False,
                     'options': {
-                        'temperature': 0.3,
-                        'top_p': 0.9
+                        'temperature': 0.3,  # Reduced from 0.5 for faster, more deterministic answers
+                        'top_p': 0.9,
+                        'num_predict': 768,  # Balanced: more than 512, less than 1024
+                        'num_ctx': 4096  # Context window size
                     }
                 },
-                timeout=45
+                timeout=45  # Balanced: faster than 60s, safer than 30s
             )
             
             if response.status_code == 200:
@@ -287,8 +285,80 @@ WELL-FORMATTED MARKDOWN ANSWER:"""
         
         logger.info(f"Query: {user_query}")
         
+        # Check if query is asking for a definition
+        is_definition_query = any(keyword in user_query.lower() for keyword in [
+            'definition', 'define', 'meaning', 'means', 'what is', 'what does'
+        ])
+        
         # Check if query is asking about a specific section number
         section_match = re.search(r'section\s+(\d+)', user_query.lower())
+        
+        # Special handling for definition queries
+        if is_definition_query and not section_match:
+            logger.info("Detected definition query - prioritizing Section 2")
+            
+            # Extract the term being defined
+            term_patterns = [
+                r'definition\s+of\s+(["\']?)(\w+(?:\s+\w+)*)\1',
+                r'define\s+(["\']?)(\w+(?:\s+\w+)*)\1',
+                r'what\s+is\s+(?:a\s+|an\s+)?(["\']?)(\w+(?:\s+\w+)*)\1',
+                r'meaning\s+of\s+(["\']?)(\w+(?:\s+\w+)*)\1'
+            ]
+            
+            term = None
+            for pattern in term_patterns:
+                match = re.search(pattern, user_query.lower())
+                if match:
+                    term = match.group(2) if match.lastindex >= 2 else match.group(1)
+                    break
+            
+            if term:
+                logger.info(f"Searching for definition of: {term}")
+                
+                # Search in Section 2 (definitions) first
+                with get_db_connection() as conn:
+                    cur = conn.cursor()
+                    cur.execute("""
+                        SELECT ci.chunk_id
+                        FROM chunks_identity ci
+                        JOIN chunks_content cc ON ci.chunk_id = cc.chunk_id
+                        WHERE ci.section = '002'
+                        AND ci.document_type = 'act'
+                        AND LOWER(cc.text) LIKE %s
+                        ORDER BY 
+                            CASE WHEN ci.chunk_role = 'parent' THEN 0 ELSE 1 END,
+                            ci.chunk_id
+                        LIMIT 5
+                    """, (f'%{term.lower()}%',))
+                    
+                    definition_chunks = [row['chunk_id'] for row in cur.fetchall()]
+                    cur.close()
+                
+                if definition_chunks:
+                    logger.info(f"Found {len(definition_chunks)} definition chunks in Section 2")
+                    chunk_details = self.get_chunk_details(definition_chunks)
+                    answer_result = self.generate_answer(user_query, chunk_details)
+                    
+                    return {
+                        'answer': answer_result['answer'],
+                        'citations': answer_result['citations'],
+                        'retrieved_chunks': [
+                            {
+                                'chunk_id': chunk['chunk_id'],
+                                'section': chunk['section'],
+                                'document_type': chunk['document_type'],
+                                'text': chunk['text'][:500] + '...' if len(chunk['text']) > 500 else chunk['text'],
+                                'title': chunk['title'],
+                                'compliance_area': chunk['compliance_area'],
+                                'priority': chunk['priority'],
+                                'authority_level': chunk['authority_level'],
+                                'citation': chunk['citation'],
+                                'similarity_score': 1.0  
+                            }
+                            for chunk in chunk_details
+                        ],
+                        'relationships': []
+                    }
         
         if section_match:
             # Direct section lookup
@@ -315,7 +385,7 @@ WELL-FORMATTED MARKDOWN ANSWER:"""
                 logger.info(f"Found {len(chunk_ids)} chunks for Section {section_num} (direct lookup)")
                 chunk_details = self.get_chunk_details(chunk_ids)
                 
-                # Generate answer
+                # Generate answer from direct lookup ONLY
                 answer_result = self.generate_answer(user_query, chunk_details)
                 logger.info(f"Generated answer ({len(answer_result['answer'])} chars)")
                 
@@ -331,24 +401,26 @@ WELL-FORMATTED MARKDOWN ANSWER:"""
                         'priority': chunk['priority'],
                         'authority_level': chunk['authority_level'],
                         'citation': chunk['citation'],
-                        'similarity_score': 1.0  # Direct match
+                        'similarity_score': 1.0,  # Direct match
+                        'source_type': 'direct_lookup'  # Mark as primary source
                     }
                     for chunk in chunk_details
                 ]
                 
                 # ALSO do vector search to find non-binding documents (FAQ, textbooks, etc.)
-                logger.info(f"Also performing vector search for non-binding documents...")
+                logger.info(f"Also performing vector search for supplementary non-binding documents...")
                 vector_results = self.search_vectors(user_query, top_k)
                 
                 # Get vector search chunks (excluding duplicates from direct lookup)
                 direct_chunk_ids = {c['chunk_id'] for c in direct_chunks}
                 vector_chunk_ids = [r['chunk_id'] for r in vector_results if r['chunk_id'] not in direct_chunk_ids]
                 
+                supplementary_chunks = []
                 if vector_chunk_ids:
                     score_map = {r['chunk_id']: r['similarity_score'] for r in vector_results}
                     vector_chunk_details = self.get_chunk_details(vector_chunk_ids)
                     
-                    vector_chunks = [
+                    supplementary_chunks = [
                         {
                             'chunk_id': chunk['chunk_id'],
                             'section': chunk['section'],
@@ -359,34 +431,27 @@ WELL-FORMATTED MARKDOWN ANSWER:"""
                             'priority': chunk['priority'],
                             'authority_level': chunk['authority_level'],
                             'citation': chunk['citation'],
-                            'similarity_score': score_map.get(chunk['chunk_id'], 0)
+                            'similarity_score': score_map.get(chunk['chunk_id'], 0),
+                            'source_type': 'supplementary'  # Mark as supplementary
                         }
                         for chunk in vector_chunk_details
                     ]
                     
-                    # Combine: Direct lookup first, then vector search results
-                    all_chunks = direct_chunks + vector_chunks[:top_k - len(direct_chunks)]
-                    
-                    # Generate answer from ALL chunks (binding + non-binding)
-                    all_chunk_details = chunk_details + vector_chunk_details[:top_k - len(chunk_details)]
-                    combined_answer = self.generate_answer(user_query, all_chunk_details)
-                    
-                    logger.info(f"Combined results: {len(direct_chunks)} direct + {len(vector_chunks)} vector")
-                    
-                    return {
-                        'answer': combined_answer['answer'],
-                        'citations': combined_answer['citations'],
-                        'retrieved_chunks': all_chunks,
-                        'relationships': []
-                    }
-                else:
-                    # No additional vector results, return direct lookup only
-                    return {
-                        'answer': answer_result['answer'],
-                        'citations': answer_result['citations'],
-                        'retrieved_chunks': direct_chunks,
-                        'relationships': []
-                    }
+                    logger.info(f"Found {len(supplementary_chunks)} supplementary chunks from vector search")
+                
+                # Return: Answer from direct lookup + all chunks (direct + supplementary)
+                all_chunks = direct_chunks + supplementary_chunks[:top_k - len(direct_chunks)]
+                
+                logger.info(f"Returning: {len(direct_chunks)} direct chunks + {len(supplementary_chunks)} supplementary chunks")
+                
+                return {
+                    'answer': answer_result['answer'],  # Answer ONLY from direct lookup
+                    'citations': answer_result['citations'],
+                    'retrieved_chunks': all_chunks,
+                    'direct_lookup_count': len(direct_chunks),
+                    'supplementary_count': len(supplementary_chunks),
+                    'relationships': []
+                }
         
         # Vector search for queries without section numbers
         # Step 1: Vector search

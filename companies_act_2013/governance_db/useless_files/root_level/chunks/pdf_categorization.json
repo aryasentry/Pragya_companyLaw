@@ -1,0 +1,2587 @@
+{
+  "total_pdfs": 428,
+  "statistics": {
+    "total_pdfs": 428,
+    "parseable": 335,
+    "ocr_needed": 93,
+    "empty": 0,
+    "error": 0
+  },
+  "categories": {
+    "parseable": [
+      {
+        "file": "section_001\\circulars\\General-Circular-No.-16-20131.pdf",
+        "section": "section_001",
+        "text_length": 1072,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_001\\circulars\\General-Circular-No.-32-20141.pdf",
+        "section": "section_001",
+        "text_length": 2018,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_002\\notifications\\S.O.2754-E.pdf",
+        "section": "section_002",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\181439.pdf",
+        "section": "section_003",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\Commencementnotification.pdf",
+        "section": "section_003",
+        "text_length": 1090,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\GSR-8.pdf",
+        "section": "section_003",
+        "text_length": 8912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\GSR-9.pdf",
+        "section": "section_003",
+        "text_length": 9645,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\Inc-Rules-02022021.pdf",
+        "section": "section_003",
+        "text_length": 6026,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\incor.pdf",
+        "section": "section_003",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_003",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\return\\Form-INC-3.pdf",
+        "section": "section_003",
+        "text_length": 4145,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\return\\Form_INC-2-09-12-2015.pdf",
+        "section": "section_003",
+        "text_length": 3713,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_003\\return\\INC-6.pdf",
+        "section": "section_003",
+        "text_length": 4514,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\circulars\\General-Circular-No.-11-20141.pdf",
+        "section": "section_004",
+        "text_length": 1445,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\circulars\\General-Circular-No.-26-20141.pdf",
+        "section": "section_004",
+        "text_length": 1098,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\circulars\\General_Circular_2_2014.pdf",
+        "section": "section_004",
+        "text_length": 1246,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\18.-NotificationComapniesAct_23012018.pdf",
+        "section": "section_004",
+        "text_length": 1018,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\181439.pdf",
+        "section": "section_004",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\2.-Fees.pdf",
+        "section": "section_004",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+        "section": "section_004",
+        "text_length": 4003,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\5th_Amendment_Rules_29122016.pdf",
+        "section": "section_004",
+        "text_length": 4805,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Amendement_Rules_220120161.pdf",
+        "section": "section_004",
+        "text_length": 3316,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Companies-Incorporation-Amendment-Rules-2024_16.07.2024.pdf",
+        "section": "section_004",
+        "text_length": 2778,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_004",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\CompaniesIncorporationFifthAmendmentRules_12052019.pdf",
+        "section": "section_004",
+        "text_length": 3819,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+        "section": "section_004",
+        "text_length": 1776,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Exemption-to-Govt-Companies-G.S.R.-463E.pdf",
+        "section": "section_004",
+        "text_length": 5138,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\ExemptionGovernmentCompanies_14062017.pdf",
+        "section": "section_004",
+        "text_length": 4387,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\GSR-8.pdf",
+        "section": "section_004",
+        "text_length": 8912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\GSR-9.pdf",
+        "section": "section_004",
+        "text_length": 9645,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\incor.pdf",
+        "section": "section_004",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Incorporation-Rules-24122020.pdf",
+        "section": "section_004",
+        "text_length": 3219,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_004",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_004",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_004",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Notification-MCA-06.02.2020.pdf",
+        "section": "section_004",
+        "text_length": 3859,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\notifications\\Notification-to-amend-Mega-Exemption-Notification-02032020.pdf",
+        "section": "section_004",
+        "text_length": 2835,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\Form-INC-3.pdf",
+        "section": "section_004",
+        "text_length": 4145,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\Form_GNL-2.pdf",
+        "section": "section_004",
+        "text_length": 3136,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\GNL-1.pdf",
+        "section": "section_004",
+        "text_length": 1112,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\gnl-3.pdf",
+        "section": "section_004",
+        "text_length": 3684,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\INC-1-27-01-2016.pdf",
+        "section": "section_004",
+        "text_length": 4662,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\INC-1.pdf",
+        "section": "section_004",
+        "text_length": 738,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\inc-32.pdf",
+        "section": "section_004",
+        "text_length": 877,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\INC-35.pdf",
+        "section": "section_004",
+        "text_length": 3103,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_004",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_004\\return\\Spice.pdf",
+        "section": "section_004",
+        "text_length": 2641,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\2.-Fees.pdf",
+        "section": "section_005",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+        "section": "section_005",
+        "text_length": 4003,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\5th_Amendment_Rules_29122016.pdf",
+        "section": "section_005",
+        "text_length": 4805,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\Commencement-Notification-Section-56-CA-2020.pdf",
+        "section": "section_005",
+        "text_length": 1499,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\Commencement-Notification-Section-80-CA-2020.pdf",
+        "section": "section_005",
+        "text_length": 1577,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\Companies-Fees-Rules-2022.pdf",
+        "section": "section_005",
+        "text_length": 3434,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_005",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_005",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_005",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_005",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\Notification-MCA-06.02.2020.pdf",
+        "section": "section_005",
+        "text_length": 3859,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\notifications\\Schedule-I.pdf",
+        "section": "section_005",
+        "text_length": 3043,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\Form_GNL-2.pdf",
+        "section": "section_005",
+        "text_length": 3136,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\Form_INC-2-09-12-2015.pdf",
+        "section": "section_005",
+        "text_length": 3713,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\Form_INC-7-02.12.2015.pdf",
+        "section": "section_005",
+        "text_length": 4370,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\Form_MGT-14-02.12.2015.pdf",
+        "section": "section_005",
+        "text_length": 4871,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\GNL-1.pdf",
+        "section": "section_005",
+        "text_length": 1112,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\gnl-3.pdf",
+        "section": "section_005",
+        "text_length": 3684,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf",
+        "section": "section_005",
+        "text_length": 659,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_005",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_005\\return\\Spice.pdf",
+        "section": "section_005",
+        "text_length": 2641,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\circulars\\Extension_22042020-21052020.pdf",
+        "section": "section_007",
+        "text_length": 2545,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\circulars\\Extension_22042020.pdf",
+        "section": "section_007",
+        "text_length": 1762,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\circulars\\Extension_22042020_23062020.pdf",
+        "section": "section_007",
+        "text_length": 2556,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\circulars\\Extension_22042020_29062020.pdf",
+        "section": "section_007",
+        "text_length": 2548,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\circulars\\General-circular-No.-12-20141.pdf",
+        "section": "section_007",
+        "text_length": 1980,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\181439.pdf",
+        "section": "section_007",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\2.-Fees.pdf",
+        "section": "section_007",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\4.-CompaniesIncorporationAmendmentRules2018_25012018.pdf",
+        "section": "section_007",
+        "text_length": 4003,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\5th_Amendment_Rules_29122016.pdf",
+        "section": "section_007",
+        "text_length": 4805,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Amendement_Rules_220120161.pdf",
+        "section": "section_007",
+        "text_length": 3316,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Commencement-Notification-07.12.2016.pdf",
+        "section": "section_007",
+        "text_length": 2662,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Commencement-Notification-dated-27.07.2018.pdf",
+        "section": "section_007",
+        "text_length": 1841,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Commencement-Notification-Section-56-CA-2020.pdf",
+        "section": "section_007",
+        "text_length": 1499,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Commencement-Notification-Section-80-CA-2020.pdf",
+        "section": "section_007",
+        "text_length": 1577,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Companies-Fees-Rules-2022.pdf",
+        "section": "section_007",
+        "text_length": 3434,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_007",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\ii-50-107.pdf",
+        "section": "section_007",
+        "text_length": 7084,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\incor.pdf",
+        "section": "section_007",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Incorp.pdf",
+        "section": "section_007",
+        "text_length": 2138,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\IncorporatinRules_27012017.pdf",
+        "section": "section_007",
+        "text_length": 5146,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Incorporation-rules.pdf",
+        "section": "section_007",
+        "text_length": 4954,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_007",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_007",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\MCA-Notification_20.01.2023_Appointment-and-Qualification-of-Directors.pdf",
+        "section": "section_007",
+        "text_length": 4440,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\MCA-Notification_20.05.2022.pdf",
+        "section": "section_007",
+        "text_length": 5807,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_007",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\Notification-MCA-06.02.2020.pdf",
+        "section": "section_007",
+        "text_length": 3859,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\notifications\\rule_22022020.pdf",
+        "section": "section_007",
+        "text_length": 5148,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\CHG-8.pdf",
+        "section": "section_007",
+        "text_length": 4835,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form-INC-11.pdf",
+        "section": "section_007",
+        "text_length": 1829,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_DIR-12-02.12.2015.pdf",
+        "section": "section_007",
+        "text_length": 2709,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_GNL-2.pdf",
+        "section": "section_007",
+        "text_length": 3136,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_INC-2-09-12-2015.pdf",
+        "section": "section_007",
+        "text_length": 3713,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_INC-22-02.12.2015.pdf",
+        "section": "section_007",
+        "text_length": 5528,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_INC-29-02.12.2015.pdf",
+        "section": "section_007",
+        "text_length": 4508,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Form_INC-7-02.12.2015.pdf",
+        "section": "section_007",
+        "text_length": 4370,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\GNL-1.pdf",
+        "section": "section_007",
+        "text_length": 1112,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\gnl-3.pdf",
+        "section": "section_007",
+        "text_length": 3684,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\INC-11-w.e.f-01.01.2017.pdf",
+        "section": "section_007",
+        "text_length": 1731,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\inc-13.pdf",
+        "section": "section_007",
+        "text_length": 6069,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\inc-14.pdf",
+        "section": "section_007",
+        "text_length": 1082,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\INC-32.pdf",
+        "section": "section_007",
+        "text_length": 5810,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\inc-33.pdf",
+        "section": "section_007",
+        "text_length": 1206,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\inc-34.pdf",
+        "section": "section_007",
+        "text_length": 2497,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf",
+        "section": "section_007",
+        "text_length": 659,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\INC-8.pdf",
+        "section": "section_007",
+        "text_length": 912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_007",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\MCA-Notification_20.05.2022_INC-9.pdf",
+        "section": "section_007",
+        "text_length": 7143,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\NCLT-1.pdf",
+        "section": "section_007",
+        "text_length": 1710,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_007\\return\\Spice.pdf",
+        "section": "section_007",
+        "text_length": 2641,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\173166.pdf",
+        "section": "section_008",
+        "text_length": 4438,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\2.-Fees.pdf",
+        "section": "section_008",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Commencement-Notification-07.12.2016.pdf",
+        "section": "section_008",
+        "text_length": 2662,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Commencement-Notification-CA-2020.pdf",
+        "section": "section_008",
+        "text_length": 1563,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Commencement-Notification-Section-56-CA-2020.pdf",
+        "section": "section_008",
+        "text_length": 1499,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Commencement-Notification-Section-80-CA-2020.pdf",
+        "section": "section_008",
+        "text_length": 1577,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Companies-Amendment-Act-2020-28092020.pdf",
+        "section": "section_008",
+        "text_length": 7575,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Companies-Fees-Rules-2022.pdf",
+        "section": "section_008",
+        "text_length": 3434,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_008",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+        "section": "section_008",
+        "text_length": 1776,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Incorporation-rules.pdf",
+        "section": "section_008",
+        "text_length": 4954,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_008",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_008",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\notifications\\Notification-MCA-06.02.2020.pdf",
+        "section": "section_008",
+        "text_length": 3859,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\Form_MGT-14-02.12.2015.pdf",
+        "section": "section_008",
+        "text_length": 4871,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\INC-12.pdf",
+        "section": "section_008",
+        "text_length": 4332,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-13.pdf",
+        "section": "section_008",
+        "text_length": 6069,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-14.pdf",
+        "section": "section_008",
+        "text_length": 1082,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-15.pdf",
+        "section": "section_008",
+        "text_length": 947,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-16.pdf",
+        "section": "section_008",
+        "text_length": 3727,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-17.pdf",
+        "section": "section_008",
+        "text_length": 3663,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-18.pdf",
+        "section": "section_008",
+        "text_length": 7758,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-19.pdf",
+        "section": "section_008",
+        "text_length": 1636,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-20.pdf",
+        "section": "section_008",
+        "text_length": 2990,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\inc-26.pdf",
+        "section": "section_008",
+        "text_length": 3250,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_008\\return\\Spice.pdf",
+        "section": "section_008",
+        "text_length": 2641,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_009\\notifications\\201521.pdf",
+        "section": "section_009",
+        "text_length": 8507,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_009\\notifications\\Notification_31052015.pdf",
+        "section": "section_009",
+        "text_length": 1327,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\circulars\\Relaxation-Circular-24032020.pdf",
+        "section": "section_010",
+        "text_length": 3755,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\notifications\\5th_Amendment_Rules_29122016.pdf",
+        "section": "section_010",
+        "text_length": 4805,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_010",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\notifications\\CompaniesFourthAmendmentRules_19122018.pdf",
+        "section": "section_010",
+        "text_length": 8244,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_010",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\notifications\\Ordinance-2019.pdf",
+        "section": "section_010",
+        "text_length": 837,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\return\\INC-20A.pdf",
+        "section": "section_010",
+        "text_length": 3084,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\return\\inc-32.pdf",
+        "section": "section_010",
+        "text_length": 877,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_010\\return\\Return-INC-20-A-Nidhi.pdf",
+        "section": "section_010",
+        "text_length": 5417,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_011\\notifications\\201521.pdf",
+        "section": "section_011",
+        "text_length": 8507,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_011\\notifications\\Notification_31052015.pdf",
+        "section": "section_011",
+        "text_length": 1327,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_011\\return\\inc-21.pdf",
+        "section": "section_011",
+        "text_length": 3357,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\181439.pdf",
+        "section": "section_012",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\201521.pdf",
+        "section": "section_012",
+        "text_length": 8507,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_012",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Commencement-Notification-dated-27.07.2018.pdf",
+        "section": "section_012",
+        "text_length": 1841,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\CompaniesIncorporationSecondAmendmentRules2017.pdf",
+        "section": "section_012",
+        "text_length": 5819,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\GSR-8.pdf",
+        "section": "section_012",
+        "text_length": 8912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\GSR-9.pdf",
+        "section": "section_012",
+        "text_length": 9645,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\incor.pdf",
+        "section": "section_012",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Incorporation-Rules.pdf",
+        "section": "section_012",
+        "text_length": 3051,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_012",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Notification_31052015.pdf",
+        "section": "section_012",
+        "text_length": 1327,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Ordinance-2019.pdf",
+        "section": "section_012",
+        "text_length": 837,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\notifications\\Registration-Rules.pdf",
+        "section": "section_012",
+        "text_length": 2169,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\return\\Form_INC-22-02.12.2015.pdf",
+        "section": "section_012",
+        "text_length": 5528,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_012\\return\\inc-23.pdf",
+        "section": "section_012",
+        "text_length": 4957,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\173166.pdf",
+        "section": "section_013",
+        "text_length": 4438,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\CompaniesIncorporationSecondAmendmentRules2017.pdf",
+        "section": "section_013",
+        "text_length": 5819,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\delegation-of-powers-under-section-458-of-CA-2013-to-ROCs..pdf",
+        "section": "section_013",
+        "text_length": 1776,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\incor.pdf",
+        "section": "section_013",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\MCA-Companies-Incorporation-Second-Amendment-Rules-2020.pdf",
+        "section": "section_013",
+        "text_length": 1249,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_013",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\return\\Form_INC-28-09-12-2015.pdf",
+        "section": "section_013",
+        "text_length": 4230,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\return\\inc-23.pdf",
+        "section": "section_013",
+        "text_length": 4957,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\return\\inc-24.pdf",
+        "section": "section_013",
+        "text_length": 3025,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\return\\inc-25.pdf",
+        "section": "section_013",
+        "text_length": 899,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_013\\return\\inc-26.pdf",
+        "section": "section_013",
+        "text_length": 2258,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\circulars\\GeneralCircularNo3-rd1_11032019.pdf",
+        "section": "section_014",
+        "text_length": 1527,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\173200.pdf",
+        "section": "section_014",
+        "text_length": 7069,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\228419.pdf",
+        "section": "section_014",
+        "text_length": 6574,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_014",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\CompaniesFourthAmendmentRules_19122018.pdf",
+        "section": "section_014",
+        "text_length": 8244,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\ii-50-107.pdf",
+        "section": "section_014",
+        "text_length": 7084,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\Incorporation-Amendment-Rules-25012021.pdf",
+        "section": "section_014",
+        "text_length": 4424,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_014",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\Notification-on-RD.pdf",
+        "section": "section_014",
+        "text_length": 2331,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\Ordinance-2019.pdf",
+        "section": "section_014",
+        "text_length": 837,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\notifications\\SeventhAmendmentRules.pdf",
+        "section": "section_014",
+        "text_length": 3413,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\228419-4.pdf",
+        "section": "section_014",
+        "text_length": 2167,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\Form-GNL-5.pdf",
+        "section": "section_014",
+        "text_length": 2017,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\Form-RD-1.pdf",
+        "section": "section_014",
+        "text_length": 2543,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\GNL-5.pdf",
+        "section": "section_014",
+        "text_length": 3589,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\INC-25A.pdf",
+        "section": "section_014",
+        "text_length": 1569,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\inc-27.pdf",
+        "section": "section_014",
+        "text_length": 2690,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\NCLT-1.pdf",
+        "section": "section_014",
+        "text_length": 1710,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\NCLT-3B.pdf",
+        "section": "section_014",
+        "text_length": 1290,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_014\\return\\RD-1.pdf",
+        "section": "section_014",
+        "text_length": 2616,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\circulars\\Circular04_2017_17052017.pdf",
+        "section": "section_016",
+        "text_length": 1595,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\notifications\\173166.pdf",
+        "section": "section_016",
+        "text_length": 4438,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\notifications\\228417.pdf",
+        "section": "section_016",
+        "text_length": 1482,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\notifications\\Companies-Amendment-Act-2020-28092020.pdf",
+        "section": "section_016",
+        "text_length": 7575,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_016",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\notifications\\MCA_Notification-02.08.2023.pdf",
+        "section": "section_016",
+        "text_length": 4167,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_016\\return\\Form-RD-1_02.08.2023.pdf",
+        "section": "section_016",
+        "text_length": 4921,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\notifications\\2.-Fees.pdf",
+        "section": "section_017",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_017",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_017",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_017",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\return\\Form_GNL-2.pdf",
+        "section": "section_017",
+        "text_length": 3136,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\return\\GNL-1.pdf",
+        "section": "section_017",
+        "text_length": 1112,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\return\\gnl-3.pdf",
+        "section": "section_017",
+        "text_length": 3684,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_017\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_017",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\2.-Fees.pdf",
+        "section": "section_018",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\Commencement-Notification-Section-56-CA-2020.pdf",
+        "section": "section_018",
+        "text_length": 1499,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\Commencement-Notification-Section-80-CA-2020.pdf",
+        "section": "section_018",
+        "text_length": 1577,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\Companies-Fees-Rules-2022.pdf",
+        "section": "section_018",
+        "text_length": 3434,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_018",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\ii-50-107.pdf",
+        "section": "section_018",
+        "text_length": 7084,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\Inc-Rules-02022021.pdf",
+        "section": "section_018",
+        "text_length": 6026,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\incor.pdf",
+        "section": "section_018",
+        "text_length": 7014,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_018",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\MCA-Notification_19.01.2023-Incorporation-rules.pdf",
+        "section": "section_018",
+        "text_length": 10518,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_018",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\Form-INC-11A.pdf",
+        "section": "section_018",
+        "text_length": 800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\form-inc-5.pdf",
+        "section": "section_018",
+        "text_length": 3018,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\Form-RD-1_02.08.2023.pdf",
+        "section": "section_018",
+        "text_length": 4921,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\Form_GNL-2.pdf",
+        "section": "section_018",
+        "text_length": 3136,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\Form_MGT-14-02.12.2015.pdf",
+        "section": "section_018",
+        "text_length": 4871,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\GNL-1.pdf",
+        "section": "section_018",
+        "text_length": 1112,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\gnl-3.pdf",
+        "section": "section_018",
+        "text_length": 3684,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\INC-11-B.pdf",
+        "section": "section_018",
+        "text_length": 816,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\inc-27.pdf",
+        "section": "section_018",
+        "text_length": 2690,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\INC-27A.pdf",
+        "section": "section_018",
+        "text_length": 1486,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\INC-6.pdf",
+        "section": "section_018",
+        "text_length": 4514,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_018",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_018\\rules\\CompaniesIncorporationFourthAmendmentRules_01102016.pdf",
+        "section": "section_018",
+        "text_length": 4468,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_019\\notifications\\S.O.2754-E.pdf",
+        "section": "section_019",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_020\\notifications\\Exemption-to-Nidhi-Companies-G.S.R-465E.pdf",
+        "section": "section_020",
+        "text_length": 4208,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_021\\notifications\\181439.pdf",
+        "section": "section_021",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_021\\notifications\\Commencementnotification.pdf",
+        "section": "section_021",
+        "text_length": 1090,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_021\\notifications\\GSR-8.pdf",
+        "section": "section_021",
+        "text_length": 8912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_021\\notifications\\GSR-9.pdf",
+        "section": "section_021",
+        "text_length": 9645,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_021\\notifications\\S.O.2754-E.pdf",
+        "section": "section_021",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_022\\notifications\\201521.pdf",
+        "section": "section_022",
+        "text_length": 8507,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_022\\notifications\\Notification_31052015.pdf",
+        "section": "section_022",
+        "text_length": 1327,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_022\\notifications\\S.O.2754-E.pdf",
+        "section": "section_022",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_023\\circulars\\General-Circular-No.-43-2014.pdf",
+        "section": "section_023",
+        "text_length": 1812,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_023\\notifications\\Companies-Amendment-Act-2020-28092020.pdf",
+        "section": "section_023",
+        "text_length": 7575,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_023\\notifications\\MCA-Notification2_30.10.2023.pdf",
+        "section": "section_023",
+        "text_length": 1526,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_023\\notifications\\S.O.2754-E.pdf",
+        "section": "section_023",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_024\\notifications\\S.O.2754-E.pdf",
+        "section": "section_024",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_025\\notifications\\S.O.2754-E.pdf",
+        "section": "section_025",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\181439.pdf",
+        "section": "section_026",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_026",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\Commencement-Notification-CA-2020.pdf",
+        "section": "section_026",
+        "text_length": 1563,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\CommencemntNotification_14082019.pdf",
+        "section": "section_026",
+        "text_length": 702,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\Companies-Amendment-Act-2020-28092020.pdf",
+        "section": "section_026",
+        "text_length": 7575,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_026",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\CompaniesAmendmentNoti_07052018.pdf",
+        "section": "section_026",
+        "text_length": 1376,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_026",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_026\\notifications\\Prospectus-and-Allotment.pdf",
+        "section": "section_026",
+        "text_length": 2764,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_027\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_027",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_027\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_027",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_027\\return\\pas-1.pdf",
+        "section": "section_027",
+        "text_length": 1920,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_028\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_028",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_028\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_028",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\circulars\\FormPAS6_28112019.pdf",
+        "section": "section_029",
+        "text_length": 1025,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\circulars\\MCA-Circular_06.07.2024.pdf",
+        "section": "section_029",
+        "text_length": 1544,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_029",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\CommencemntNotification_14082019.pdf",
+        "section": "section_029",
+        "text_length": 702,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_029",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\CompaniesProspectus3amdRule_10092018.pdf",
+        "section": "section_029",
+        "text_length": 4181,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_029",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\Prospectus-rules.pdf",
+        "section": "section_029",
+        "text_length": 7479,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\notifications\\S.O.2754-E.pdf",
+        "section": "section_029",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_029\\return\\PAS-6.pdf",
+        "section": "section_029",
+        "text_length": 7032,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_030\\notifications\\S.O.2754-E.pdf",
+        "section": "section_030",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_031\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_031",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_031\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_031",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_031\\notifications\\MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf",
+        "section": "section_031",
+        "text_length": 3111,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_031\\notifications\\S.O.2754-E.pdf",
+        "section": "section_031",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_031\\return\\pas-2.pdf",
+        "section": "section_031",
+        "text_length": 2717,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_032\\notifications\\S.O.2754-E.pdf",
+        "section": "section_032",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_033\\notifications\\S.O.2754-E.pdf",
+        "section": "section_033",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_034\\notifications\\S.O.2754-E.pdf",
+        "section": "section_034",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_035\\notifications\\181439.pdf",
+        "section": "section_035",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_035\\notifications\\Amendment-Act-2019.pdf",
+        "section": "section_035",
+        "text_length": 8325,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_035\\notifications\\Commencementnotification.pdf",
+        "section": "section_035",
+        "text_length": 1090,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_035\\notifications\\CommencemntNotification_14082019.pdf",
+        "section": "section_035",
+        "text_length": 702,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_035\\notifications\\S.O.2754-E.pdf",
+        "section": "section_035",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_036\\notifications\\S.O.2754-E.pdf",
+        "section": "section_036",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_037\\notifications\\S.O.2754-E.pdf",
+        "section": "section_037",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_038\\notifications\\S.O.2754-E.pdf",
+        "section": "section_038",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\2.-Fees.pdf",
+        "section": "section_039",
+        "text_length": 9803,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\Commencement-Notification-Section-56-CA-2020.pdf",
+        "section": "section_039",
+        "text_length": 1499,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\Commencement-Notification-Section-80-CA-2020.pdf",
+        "section": "section_039",
+        "text_length": 1577,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\Companies-Fees-Rules-2022.pdf",
+        "section": "section_039",
+        "text_length": 3434,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_039",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\companies-Registration-offices-and-Fees-Second-Amendment-Rules-2018..pdf",
+        "section": "section_039",
+        "text_length": 4047,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\MCA-Notification-19022020.pdf",
+        "section": "section_039",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_039",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\MCA-Notification_20.01.2023_Prospectus-and-Allotment-of-Securities.pdf",
+        "section": "section_039",
+        "text_length": 3111,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\MCA-Registration-of-Office-Second-Amendment-Rules.pdf",
+        "section": "section_039",
+        "text_length": 1929,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\notifications\\S.O.2754-E.pdf",
+        "section": "section_039",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\return\\MCA-Notification-19022020-Return.pdf",
+        "section": "section_039",
+        "text_length": 3925,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_039\\return\\pas-3.pdf",
+        "section": "section_039",
+        "text_length": 4314,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_040\\notifications\\Commencement-Notification-CA-2020.pdf",
+        "section": "section_040",
+        "text_length": 1563,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_040\\notifications\\Companies-Amendment-Act-2020-28092020.pdf",
+        "section": "section_040",
+        "text_length": 7575,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_040\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_040",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_040\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_040",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_040\\notifications\\S.O.2754-E.pdf",
+        "section": "section_040",
+        "text_length": 2585,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_041\\notifications\\SEBI-_-Framework-for-issue-of-Depository-Receipts.pdf",
+        "section": "section_041",
+        "text_length": 3011,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_041\\notifications\\SEBI-_-Framework-for-issue-of-Depository-Receipts10102019.pdf",
+        "section": "section_041",
+        "text_length": 7590,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\181439.pdf",
+        "section": "section_042",
+        "text_length": 7897,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\CommencementNoti07_08082018.pdf",
+        "section": "section_042",
+        "text_length": 1008,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\Companies-Prospectus-and-Allotment-of-Securities-Amendment-Rules-2024.pdf",
+        "section": "section_042",
+        "text_length": 3471,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\Exemption-to-Nidhi-Companies-G.S.R-465E.pdf",
+        "section": "section_042",
+        "text_length": 4208,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\G-S-R-424-E.pdf",
+        "section": "section_042",
+        "text_length": 1581,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\GSR-8.pdf",
+        "section": "section_042",
+        "text_length": 8912,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\GSR-9.pdf",
+        "section": "section_042",
+        "text_length": 9645,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\MCA-Notification_12.02.2025.pdf",
+        "section": "section_042",
+        "text_length": 3800,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\PAS-Notification.pdf",
+        "section": "section_042",
+        "text_length": 4901,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\notifications\\Prospectus-Rules.pdf",
+        "section": "section_042",
+        "text_length": 2964,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\return\\Form_PAS-4.pdf",
+        "section": "section_042",
+        "text_length": 5101,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\return\\pas-3.pdf",
+        "section": "section_042",
+        "text_length": 4314,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\return\\PAS-4-Subsituted-w.e.f.-05.05.2022.pdf",
+        "section": "section_042",
+        "text_length": 4980,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\return\\PAS-4.pdf",
+        "section": "section_042",
+        "text_length": 4086,
+        "reason": "Has extractable text"
+      },
+      {
+        "file": "section_042\\return\\PAS-5.pdf",
+        "section": "section_042",
+        "text_length": 912,
+        "reason": "Has extractable text"
+      }
+    ],
+    "ocr_needed": [
+      {
+        "file": "section_003\\notifications\\inc-138-228.pdf",
+        "section": "section_003",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_003\\notifications\\SO-902E.pdf",
+        "section": "section_003",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_003\\return\\Form-INC-4.pdf",
+        "section": "section_003",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_003\\return\\Form-RUN.pdf",
+        "section": "section_003",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\circulars\\General-Circular-13-20142.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\circulars\\General-Circular-No.-29-20141.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\circulars\\General-Circular-No.-31-20141.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\notifications\\gSR-1049E.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\notifications\\inc-138-228.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\notifications\\incorp.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\notifications\\RUN.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\notifications\\SO-902E.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\return\\Form-INC-13.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\return\\Form-INC-33.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\return\\Form-RUN.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\return\\RUN-form.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_004\\return\\SPICe-Part-A.pdf",
+        "section": "section_004",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_005\\notifications\\gSR-1049E.pdf",
+        "section": "section_005",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_005\\notifications\\SO-902E.pdf",
+        "section": "section_005",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_005\\return\\Form-INC-31.pdf",
+        "section": "section_005",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_005\\return\\Form-INC-33.pdf",
+        "section": "section_005",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_005\\return\\Form-INC-34.pdf",
+        "section": "section_005",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_006\\notifications\\SO-902E.pdf",
+        "section": "section_006",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\circulars\\General-Circular-No.-16-20141.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\gSR-1049E.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\inc-138-228.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\merged_document_3-1.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\Notification_23032016.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\Rules_31052015_3.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\notifications\\SO-902E.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\return\\D-I-R-2.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\return\\DIR-12.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\return\\Form-INC-9.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\return\\INC-31-e-AOA.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_007\\return\\INC-9-w.e.f.-23-02-2020.pdf",
+        "section": "section_007",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\notifications\\gSR-1049E.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\notifications\\Notification_23032016.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\notifications\\SO-1352-E1.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\notifications\\SO-902E.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\return\\Form-INC-12.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\return\\Form-INC-13.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\return\\Form-INC-18.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\return\\Form-INC-20.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_008\\rules\\AmendmentRules_01052015.pdf",
+        "section": "section_008",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_009\\notifications\\SO-902E.pdf",
+        "section": "section_009",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_010\\notifications\\CA-ordinance.pdf",
+        "section": "section_010",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_010\\notifications\\Nidhi-Companies.pdf",
+        "section": "section_010",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_010\\notifications\\SO-902E.pdf",
+        "section": "section_010",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_010\\return\\Form-INC-20A.pdf",
+        "section": "section_010",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_011\\notifications\\SO-902E.pdf",
+        "section": "section_011",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_011\\rules\\Rules_31052015_3.pdf",
+        "section": "section_011",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\notifications\\CA-ordinance.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\notifications\\incorp.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\notifications\\SO-902E.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\return\\Form-INC-22.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\return\\Form-INC-23.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_012\\return\\Form-INC-28.pdf",
+        "section": "section_012",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\notifications\\SO-1352-E1.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\notifications\\SO-902E.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\return\\Form-INC-23.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\return\\Form-INC-24.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\return\\Form-INC-28.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_013\\return\\Form-RUN.pdf",
+        "section": "section_013",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_014\\circulars\\General-Circular-No.-18-20141.pdf",
+        "section": "section_014",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_014\\notifications\\CA-ordinance.pdf",
+        "section": "section_014",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_014\\notifications\\merged_document_3-1.pdf",
+        "section": "section_014",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_014\\notifications\\SO-902E.pdf",
+        "section": "section_014",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_014\\return\\Form-INC-27.pdf",
+        "section": "section_014",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_015\\notifications\\SO-902E.pdf",
+        "section": "section_015",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_016\\notifications\\SO-1352-E1.pdf",
+        "section": "section_016",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_016\\notifications\\SO-902E.pdf",
+        "section": "section_016",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_016\\return\\Form-RD-1.pdf",
+        "section": "section_016",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_017\\notifications\\gSR-1049E.pdf",
+        "section": "section_017",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_017\\notifications\\SO-902E.pdf",
+        "section": "section_017",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\notifications\\gSR-1049E.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\notifications\\inc-138-228.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\notifications\\SO-902E.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\return\\Form-INC-27.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\return\\Form-INC-6.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_018\\return\\Form-RD-1.pdf",
+        "section": "section_018",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_020\\notifications\\SO-902E.pdf",
+        "section": "section_020",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_023\\notifications\\SO-902E.pdf",
+        "section": "section_023",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_024\\notifications\\SO-1459-E.pdf",
+        "section": "section_024",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_025\\notifications\\SO-902E.pdf",
+        "section": "section_025",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_027\\notifications\\SO-902E.pdf",
+        "section": "section_027",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_028\\notifications\\SO-902E.pdf",
+        "section": "section_028",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_033\\notifications\\SO-902E.pdf",
+        "section": "section_033",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_035\\notifications\\SO-902E.pdf",
+        "section": "section_035",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_039\\notifications\\gSR-1049E.pdf",
+        "section": "section_039",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_039\\notifications\\SO-902E.pdf",
+        "section": "section_039",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_040\\notifications\\SO-902E.pdf",
+        "section": "section_040",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_041\\notifications\\SO-902E.pdf",
+        "section": "section_041",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      },
+      {
+        "file": "section_042\\notifications\\SO-902E.pdf",
+        "section": "section_042",
+        "text_length": 0,
+        "reason": "No text found (scanned/image-based)"
+      }
+    ],
+    "empty": [],
+    "error": []
+  },
+  "generated_at": "2026-01-26"
+}

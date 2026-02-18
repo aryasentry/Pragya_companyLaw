@@ -1,8 +1,3 @@
-"""
-Flask API Server for Companies Act 2013 RAG System
-Uses FAISS + PostgreSQL retrieval
-Handles all operations: Query, Upload, Ingest, Pipeline Management
-"""
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import sys
@@ -14,7 +9,6 @@ from pathlib import Path
 from datetime import datetime
 from werkzeug.utils import secure_filename
 
-# Add governance_db to path
 sys.path.insert(0, str(Path(__file__).parent / 'governance_db'))
 
 from retrieval_service_faiss import GovernanceRetriever
@@ -22,7 +16,6 @@ from retrieval_service_faiss import GovernanceRetriever
 app = Flask(__name__)
 CORS(app)
 
-# Initialize retriever
 import logging
 logging.basicConfig(
     level=logging.INFO,
@@ -39,10 +32,8 @@ except Exception as e:
     logger.error(f"Failed to initialize retriever: {e}")
     retriever = None
 
-
 @app.route('/api/health', methods=['GET'])
 def health():
-    """Health check endpoint"""
     if retriever is None:
         return jsonify({
             'status': 'error',
@@ -57,19 +48,8 @@ def health():
         'llm_model': 'qwen2.5:1.5b'
     })
 
-
 @app.route('/api/query', methods=['POST'])
 def query():
-    """
-    Query endpoint for RAG system
-    
-    Request body:
-    {
-        "query": "user question",
-        "top_k": 5,  // optional
-        "include_relationships": false  // optional
-    }
-    """
     if retriever is None:
         return jsonify({
             'success': False,
@@ -91,7 +71,6 @@ def query():
         
         logger.info(f"Query received: '{user_query}' (top_k={top_k})")
         
-        # Perform retrieval
         result = retriever.query(
             user_query, 
             top_k=top_k,
@@ -118,8 +97,6 @@ def query():
             'error': error_msg
         }), 500
 
-
-# Pipeline status tracking
 pipeline_status = {
     'running': False,
     'current_file': None,
@@ -130,18 +107,14 @@ pipeline_status = {
 
 @app.route('/api/pipeline/status', methods=['GET'])
 def get_pipeline_status():
-    """Get current pipeline processing status"""
     return jsonify(pipeline_status)
-
 
 @app.route('/api/pipeline/update', methods=['POST'])
 def update_pipeline_status():
-    """Update pipeline status (called by upload route)"""
     global pipeline_status
     try:
         data = request.get_json()
         
-        # Update status
         if 'running' in data:
             pipeline_status['running'] = data['running']
         if 'current_file' in data:
@@ -160,14 +133,12 @@ def update_pipeline_status():
         logger.error(f"Error updating pipeline status: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
-
 @app.route('/api/admin/upload', methods=['POST'])
 def upload_document():
-    """Upload document and run full processing pipeline"""
     global pipeline_status
     
     try:
-        # Get file and metadata
+
         if 'file' not in request.files:
             return jsonify({'success': False, 'error': 'No file provided'}), 400
         
@@ -177,12 +148,10 @@ def upload_document():
         import json
         metadata = json.loads(metadata_str)
         
-        # Extract metadata
         doc_type = metadata.get('documentType', 'other')
         category = metadata.get('category', 'non_binding')
         section = metadata.get('section', '')
         
-        # Save file to data folder
         base_path = Path(__file__).parent / 'data'
         
         if category == 'companies_act' and section:
@@ -201,7 +170,6 @@ def upload_document():
         
         logger.info(f"File saved: {file_path}")
         
-        # Update pipeline status
         pipeline_status.update({
             'running': True,
             'current_file': filename,
@@ -210,7 +178,6 @@ def upload_document():
             'logs': []
         })
         
-        # Run pipeline
         python_exe = sys.executable
         pipeline_script = Path(__file__).parent / 'governance_db' / 'pipeline_full.py'
         
@@ -225,10 +192,8 @@ def upload_document():
         if section:
             cmd.extend(['--section', section.zfill(3)])
 
-                
         logger.info(f"Running pipeline: {' '.join(cmd)}")
         
-        # Execute pipeline with real-time output streaming
         import subprocess as sp
         process = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.STDOUT, text=True, encoding='utf-8', errors='replace', bufsize=1)
         
@@ -237,7 +202,6 @@ def upload_document():
             line = line.strip()
             output_lines.append(line)
             
-            # Parse stage updates
             if line.startswith('STAGE:'):
                 stage = line.split(':', 1)[1]
                 pipeline_status.update({
@@ -249,7 +213,6 @@ def upload_document():
                 })
                 logger.info(f"Pipeline stage: {stage}")
             
-            # Parse progress updates for embeddings
             elif line.startswith('PROGRESS:Embeddings:'):
                 try:
                     progress = int(line.split(':')[2])
@@ -301,29 +264,24 @@ def upload_document():
         logger.error(f"Upload error: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
-
 @app.route('/api/admin/ingest', methods=['POST'])
 def ingest_document():
-    """Ingest document from form data or text content"""
     global pipeline_status
     
     try:
-        # Parse multipart form data
+
         metadata_str = request.form.get('metadata', '{}')
         import json
         metadata = json.loads(metadata_str)
         
-        # Extract metadata
         doc_type = metadata.get('documentType', 'other')
-        is_binding = metadata.get('isBinding', False)
+        is_binding = metadata.get('isBinding', True)
         section = metadata.get('section', '')
         input_type = metadata.get('inputType', 'text')
         text_content = metadata.get('textContent', '')
         
-        # Determine category
         category = 'companies_act' if is_binding else 'non_binding'
         
-        # Save file to data folder
         base_path = Path(__file__).parent / 'data'
         
         if category == 'companies_act' and section:
@@ -336,14 +294,13 @@ def ingest_document():
         
         save_path.mkdir(parents=True, exist_ok=True)
         
-        # Save file
         if input_type == 'pdf' and 'file' in request.files:
             file = request.files['file']
             filename = secure_filename(file.filename)
             file_path = save_path / filename
             file.save(str(file_path))
         else:
-            # Text content
+
             filename = f"section_{section.zfill(3) if section else '000'}_{doc_type}.txt"
             file_path = save_path / filename
             with open(file_path, 'w', encoding='utf-8') as f:
@@ -351,7 +308,6 @@ def ingest_document():
         
         logger.info(f"File saved: {file_path}")
         
-        # Update pipeline status
         pipeline_status.update({
             'running': True,
             'current_file': filename,
@@ -360,7 +316,6 @@ def ingest_document():
             'logs': []
         })
         
-        # Run pipeline
         python_exe = sys.executable
         pipeline_script = Path(__file__).parent / 'governance_db' / 'pipeline_full.py'
         
@@ -377,7 +332,6 @@ def ingest_document():
         
         logger.info(f"Running pipeline: {' '.join(cmd)}")
         
-        # Execute pipeline with real-time output streaming
         import subprocess as sp
         process = sp.Popen(cmd, stdout=sp.PIPE, stderr=sp.STDOUT, text=True, encoding='utf-8', errors='replace', bufsize=1)
         
@@ -386,7 +340,6 @@ def ingest_document():
             line = line.strip()
             output_lines.append(line)
             
-            # Parse stage updates
             if line.startswith('STAGE:'):
                 stage = line.split(':', 1)[1]
                 pipeline_status.update({
@@ -398,7 +351,6 @@ def ingest_document():
                 })
                 logger.info(f"Pipeline stage: {stage}")
             
-            # Parse progress updates for embeddings
             elif line.startswith('PROGRESS:Embeddings:'):
                 try:
                     progress = int(line.split(':')[2])
@@ -450,10 +402,8 @@ def ingest_document():
         logger.error(f"Ingest error: {e}")
         return jsonify({'success': False, 'error': str(e)}), 500
 
-
 @app.route('/api/chunk/<chunk_id>', methods=['GET'])
 def get_chunk(chunk_id):
-    """Get full chunk details by ID"""
     if retriever is None:
         return jsonify({
             'success': False,
@@ -497,10 +447,8 @@ def get_chunk(chunk_id):
             'error': str(e)
         }), 500
 
-
 @app.route('/api/relationships/<chunk_id>', methods=['GET'])
 def get_relationships(chunk_id):
-    """Get relationships for a chunk"""
     if retriever is None:
         return jsonify({
             'success': False,
@@ -531,7 +479,6 @@ def get_relationships(chunk_id):
             'success': False,
             'error': str(e)
         }), 500
-
 
 if __name__ == '__main__':
     print("\n" + "="*70)

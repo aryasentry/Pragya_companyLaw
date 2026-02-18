@@ -1,6 +1,6 @@
 // Admin Types - Based on governance_db schema.sql
 
-export type DocumentType = 
+export type DocumentType =
   | 'act'
   | 'rule'
   | 'regulation'
@@ -20,7 +20,7 @@ export type DocumentType =
   | 'qa'
   | 'other';
 
-export type AuthorityLevel = 
+export type AuthorityLevel =
   | 'statutory'
   | 'interpretive'
   | 'procedural'
@@ -58,30 +58,36 @@ export const NON_BINDING_DOCUMENT_TYPES: DocumentType[] = [
   'other',
 ];
 
+export type CopyrightStatus = 'copyrighted' | 'public_domain';
+
 export interface IngestionFormData {
   // Document Classification
   documentType: DocumentType;
   isBinding: boolean;
   section?: string; // Companies Act section (e.g., "001", "042")
-  
+
   // Content Input
   inputType: InputType;
   textContent?: string;
   pdfFile?: File;
-  
+
   // Temporal Information
   dateIssued: string; // ISO date string
   effectiveDateFrom?: string;
   effectiveDateTo?: string;
-  
+
   // Metadata
   complianceArea: string;
   documentLanguage: string;
   title?: string;
-  
+
   // Administrative
   notificationNumber?: string;
   issuedBy?: string;
+
+  // Copyright Attribution
+  copyrightStatus?: CopyrightStatus;
+  copyrightAttribution?: string; // e.g., "Courtesy by [Publisher Name]" or "General Public"
 }
 
 export interface AuditLogEntry {
@@ -116,7 +122,7 @@ export interface SystemHealthMetrics {
 }
 
 // Available sections for the Companies Act 2013
-export const COMPANIES_ACT_SECTIONS = Array.from({ length: 470 }, (_, i) => 
+export const COMPANIES_ACT_SECTIONS = Array.from({ length: 470 }, (_, i) =>
   String(i + 1).padStart(3, '0')
 );
 

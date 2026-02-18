@@ -1,4 +1,3 @@
-"""Verify database structure and chunk IDs"""
 from db_config import get_db_connection
 
 def verify_chunks():

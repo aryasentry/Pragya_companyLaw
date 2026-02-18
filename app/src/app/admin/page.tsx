@@ -8,8 +8,6 @@ import PipelineStatus from '@/components/admin/PipelineStatus';
 import AuditTab from '@/components/admin/AuditTab';
 import NotificationsTab from '@/components/admin/NotificationsTab';
 import DashboardTab from '@/components/admin/DashboardTab';
-import AnalyticsTab from '@/components/admin/AnalyticsTab';
-import SystemHealthTab from '@/components/admin/SystemHealthTab';
 import ChatTab from '@/components/admin/ChatTab';
 import DocumentsTab from '@/components/admin/DocumentsTab';
 import SettingsTab from '@/components/admin/SettingsTab';
@@ -38,11 +36,11 @@ function AdminPageContent() {
 
   const handleIngestionSubmit = async (data: IngestionFormData) => {
     setIsSubmitting(true);
-    
+
     try {
       // Create FormData for file upload
       const formData = new FormData();
-      
+
       // Create metadata object
       const metadata = {
         documentType: data.documentType,
@@ -58,23 +56,25 @@ function AdminPageContent() {
         ...(data.notificationNumber && { notificationNumber: data.notificationNumber }),
         ...(data.issuedBy && { issuedBy: data.issuedBy }),
         ...(data.textContent && { textContent: data.textContent }),
+        ...(data.copyrightStatus && { copyrightStatus: data.copyrightStatus }),
+        ...(data.copyrightAttribution && { copyrightAttribution: data.copyrightAttribution }),
       };
-      
+
       // Add metadata as JSON string
       formData.append('metadata', JSON.stringify(metadata));
-      
+
       // Add file if present
       if (data.inputType === 'pdf' && data.pdfFile) {
         formData.append('file', data.pdfFile);
       }
-      
+
       const response = await fetch('/api/admin/ingest', {
         method: 'POST',
         body: formData,
       });
-      
+
       const result = await response.json();
-      
+
       if (result.success) {
         console.log('Ingestion job created:', result.data.jobId);
         // Could show success toast or redirect to audit tab
@@ -92,7 +92,7 @@ function AdminPageContent() {
     switch (activeTab) {
       case 'dashboard':
         return <DashboardTab />;
-      
+
       case 'ingestion':
         return (
           <div className="space-y-6">
@@ -109,36 +109,30 @@ function AdminPageContent() {
                 </p>
               </div>
             </div>
-            
+
             {/* Pipeline Status - Shows real-time progress */}
             <PipelineStatus />
-            
+
             {/* Ingestion Form */}
             <IngestionForm onSubmit={handleIngestionSubmit} isSubmitting={isSubmitting} />
           </div>
         );
-      
+
       case 'audit':
         return <AuditTab />;
-      
+
       case 'notifications':
         return <NotificationsTab />;
-      
-      case 'analytics':
-        return <AnalyticsTab />;
-      
-      case 'health':
-        return <SystemHealthTab />;
-      
+
       case 'chat':
         return <ChatTab />;
-      
+
       case 'documents':
         return <DocumentsTab />;
-      
+
       case 'settings':
         return <SettingsTab />;
-      
+
       default:
         return <DashboardTab />;
     }
@@ -162,11 +156,11 @@ function AdminPageContent() {
               {activeTab === 'health' ? 'System Health' : activeTab}
             </h1>
             <p className="text-sm text-gray-500">
-              {new Date().toLocaleDateString('en-IN', { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric' 
+              {new Date().toLocaleDateString('en-IN', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
               })}
             </p>
           </div>

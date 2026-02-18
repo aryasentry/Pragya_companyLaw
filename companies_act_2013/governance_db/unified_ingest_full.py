@@ -1,10 +1,3 @@
-"""
-Unified Ingestion Pipeline with Relationship Handling & Summarization
-- Chunks documents (skip HTML)
-- Handles relationships with validation
-- Generates summaries and keywords
-- Monitors progress with verification
-"""
 import os
 import sys
 import time
@@ -18,7 +11,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from threading import Lock
 from tqdm import tqdm
 
-# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -26,54 +18,50 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-from folder_analyzer import scan_raw_directory, DocumentMetadata
+# Note: DocumentMetadata is now defined in pipeline_full.py
 from ingestion_service_simple import create_parent_chunk_simple, update_chunk_text_simple
 from chunking_engine_simple import hierarchical_chunk
 from db_config import get_db_connection
 from reference_extractor import extract_and_create_relationships
 
-# Ollama configuration
 OLLAMA_BASE_URL = "http://localhost:11434"
 LLM_MODEL = "qwen2.5:1.5b"
 
-# Allowed relationship types (validation whitelist)
 ALLOWED_RELATIONSHIPS = {
     "clarifies", "proceduralises", "implements",
     "amends", "supersedes", "part_of", "precedes"
 }
 
-# Document type to relationship mapping (governance rules)
 RELATIONSHIP_RULES = {
-    'rule': 'implements',           # Rules implement Acts
-    'regulation': 'implements',     # Regulations implement Acts
-    'notification': 'implements',   # Notifications implement Acts
-    'circular': 'clarifies',        # Circulars clarify Acts
-    'order': 'implements',          # Orders implement Acts
-    'guideline': 'clarifies',       # Guidelines clarify Acts
-    'sop': 'proceduralises',        # SOPs proceduralise Acts
-    'form': 'proceduralises',       # Forms proceduralise Acts
-    'schedule': 'proceduralises',   # Schedules proceduralise Acts
+    'rule': 'implements',
+    'regulation': 'implements',
+    'notification': 'implements',
+    'circular': 'clarifies',
+    'order': 'implements',
+    'guideline': 'clarifies',
+    'sop': 'proceduralises',
+    'form': 'proceduralises',
+    'schedule': 'proceduralises',
 }
 
 class UnifiedStats:
-    """Thread-safe statistics tracking"""
     def __init__(self):
         self.lock = Lock()
-        # Ingestion stats
+
         self.total_documents = 0
         self.successful_ingestions = 0
         self.failed_ingestions = 0
         self.skipped_documents = 0
         self.html_skipped = 0
         self.failed_files = []
-        # Summary stats
+
         self.summaries_generated = 0
         self.keywords_extracted = 0
         self.summary_failures = 0
-        # Relationship stats
+
         self.relationships_created = 0
         self.relationship_errors = 0
-        # Timing
+
         self.start_time = None
         self.end_time = None
     
@@ -113,7 +101,6 @@ class UnifiedStats:
             self.relationship_errors += 1
 
 def call_ollama_generate(prompt: str, model: str = LLM_MODEL) -> Optional[str]:
-    """Call Ollama API to generate text"""
     try:
         response = requests.post(
             f"{OLLAMA_BASE_URL}/api/generate",
@@ -137,7 +124,6 @@ def call_ollama_generate(prompt: str, model: str = LLM_MODEL) -> Optional[str]:
         return None
 
 def generate_summary(text: str) -> Optional[str]:
-    """Generate a concise summary of the text"""
     if not text or len(text) < 50:
         return None
     
@@ -153,7 +139,6 @@ Summary:"""
     return call_ollama_generate(prompt)
 
 def extract_keywords(text: str) -> List[str]:
-    """Extract relevant keywords from the text"""
     if not text or len(text) < 20:
         return []
     
@@ -177,16 +162,13 @@ Keywords:"""
     return keywords[:10]
 
 def validate_relationship_rules(chunk_id: str, document_type: str, relationships: Dict) -> List[str]:
-    """Validate chunk against relationship rules"""
     errors = []
     
-    # Rule 1: Child chunks MUST NOT have legal relationships
     if '_c' in chunk_id and any(chunk_id.endswith(f'_c{i}') for i in range(1, 10)):
         if any(relationships.values()):
             errors.append(f"Child chunk {chunk_id} has relationships")
-        return errors  # Skip other validations for child chunks
+        return errors
     
-    # Rule 2: Document-type enforcement
     if document_type == 'act':
         if relationships.get('clarifies') or relationships.get('proceduralises') or relationships.get('implements'):
             errors.append(f"Act chunk {chunk_id} should not have forward clarifies/proceduralises/implements")
@@ -211,7 +193,6 @@ def validate_relationship_rules(chunk_id: str, document_type: str, relationships
         if any(relationships.values()):
             errors.append(f"Commentary chunk {chunk_id} should have no relationships")
     
-    # Rule 3: Validate relationship types against whitelist
     for rel_type in relationships.keys():
         if rel_type not in ALLOWED_RELATIONSHIPS:
             errors.append(f"Unknown relationship type '{rel_type}' in {chunk_id}")
@@ -219,31 +200,25 @@ def validate_relationship_rules(chunk_id: str, document_type: str, relationships
     return errors
 
 def process_summary_and_keywords(chunk_id: str, text: str, stats: UnifiedStats):
-    """Generate and save summary + keywords for a chunk"""
     try:
-        # Generate summary
+
         summary = generate_summary(text)
         
-        # Extract keywords
         keywords = extract_keywords(text)
         
-        # Update database
         with get_db_connection() as conn:
             cur = conn.cursor()
             
-            # Update summary
             if summary:
                 cur.execute("""
                     UPDATE chunks_content
                     SET summary = %s, updated_at = now()
                     WHERE chunk_id = %s
                 """, (summary, chunk_id))
+                
                 stats.increment_summaries()
             
-            # Insert keywords
             if keywords:
-                cur.execute("DELETE FROM chunk_keywords WHERE chunk_id = %s", (chunk_id,))
-                
                 for keyword in keywords:
                     cur.execute("""
                         INSERT INTO chunk_keywords (chunk_id, keyword)
@@ -264,20 +239,18 @@ def process_summary_and_keywords(chunk_id: str, text: str, stats: UnifiedStats):
 def create_relationships_for_chunk(chunk_id: str, section_number: str, document_type: str, stats: UnifiedStats):
     """Create relationships for a chunk based on document type and section"""
     try:
-        # Only create relationships for non-Act documents
+
         if document_type == 'act':
             return True
         
-        # Get relationship type for this document type
         relationship = RELATIONSHIP_RULES.get(document_type)
         if not relationship:
-            return True  # Unknown document type, skip
+            return True
         
-        # Find Act chunk in same section
         with get_db_connection() as conn:
             cur = conn.cursor()
             
-            # Get Act chunk for this section
+            # Find the parent ACT chunk for this section
             cur.execute("""
                 SELECT chunk_id
                 FROM chunks_identity
@@ -289,20 +262,14 @@ def create_relationships_for_chunk(chunk_id: str, section_number: str, document_
             
             act_chunk = cur.fetchone()
             
-            if not act_chunk:
-                # No Act chunk found, skip relationship creation
-                return True
-            
-            act_chunk_id = act_chunk['chunk_id']
-            
-            # Create relationship: this_chunk -> relationship -> act_chunk
-            cur.execute("""
-                INSERT INTO chunk_relationships (from_chunk_id, to_chunk_id, relationship)
-                VALUES (%s, %s, %s)
-                ON CONFLICT DO NOTHING
-            """, (chunk_id, act_chunk_id, relationship))
-            
-            if cur.rowcount > 0:
+            if act_chunk:
+                # Create relationship from this chunk to the ACT chunk
+                cur.execute("""
+                    INSERT INTO chunk_relationships (source_chunk_id, target_chunk_id, relationship_type, confidence_score)
+                    VALUES (%s, %s, %s, %s)
+                    ON CONFLICT DO NOTHING
+                """, (chunk_id, act_chunk['chunk_id'], relationship, 1.0))
+                
                 stats.increment_relationships()
             
             cur.close()
@@ -310,22 +277,22 @@ def create_relationships_for_chunk(chunk_id: str, section_number: str, document_
         return True
         
     except Exception as e:
+        logger.error(f"Error creating relationships for {chunk_id}: {e}")
         stats.increment_relationship_errors()
         return False
 
 def ingest_single_document_unified(
-    metadata: DocumentMetadata,
-    pdf_counters: Dict[str, int],
+    metadata,
+    pdf_counters: Dict,
     pdf_lock: Lock,
     stats: UnifiedStats,
     skip_html: bool = True,
     generate_summaries: bool = True
 ) -> bool:
-    """Ingest a single document with full processing"""
+    """Ingest a single document with all processing steps"""
     try:
         logger.info(f"Starting ingestion for: {metadata.file_path}")
         
-        # Skip HTML files if requested
         if skip_html and metadata.file_path.lower().endswith('.html'):
             logger.info("Skipping HTML file")
             stats.increment_skip(is_html=True)
@@ -333,22 +300,24 @@ def ingest_single_document_unified(
         
         from pdf_parser import parse_document
         
-        # Parse document
         logger.info("Parsing document...")
         result = parse_document(metadata.file_path)
+        logger.info(f"Parse result type: {type(result)}")
+        
         text = result.get('text') if isinstance(result, dict) else result
         
         if not text or len(text.strip()) < 10:
-            logger.warning(f"Text too short or empty: {len(text) if text else 0} chars")
+            logger.error(f"Text extraction failed!")
+            logger.error(f"  Text is None: {text is None}")
+            logger.error(f"  Text length: {len(text) if text else 0} chars")
+            logger.error(f"  Parse result: {result if not isinstance(result, str) or len(result) < 200 else result[:200]}")
             stats.increment_skip()
             return False
         
         logger.info(f"Parsed {len(text)} characters")
         
-        # Determine file extension for unique ID
         file_ext = Path(metadata.file_path).suffix.lower().replace('.', '')
         
-        # Handle PDF numbering for multiple PDFs
         if file_ext == 'pdf':
             counter_key = f"{metadata.section_number}_{metadata.document_type}"
             with pdf_lock:
@@ -356,13 +325,31 @@ def ingest_single_document_unified(
                 pdf_counter = pdf_counters[counter_key]
             file_ext = f"pdf{pdf_counter}"
         
-        # Create parent chunk
         logger.info(f"Creating parent chunk with type={metadata.document_type}, section={metadata.section_number}")
+        
+        # Generate title from file path
+        title = Path(metadata.file_path).stem
+        
+        # Determine compliance area from document type
+        compliance_map = {
+            'act': 'Company Incorporation',
+            'circular': 'Administrative Guidance',
+            'notification': 'Regulatory Compliance',
+            'order': 'Judicial/Administrative Orders',
+            'rule': 'Procedural Rules',
+            'schedule': 'Annexures & Schedules',
+            'register': 'Company Records',
+            'return': 'Company Filings',
+            'form': 'Statutory Forms',
+            'qa_book': 'FAQ & Guidance'
+        }
+        compliance_area = compliance_map.get(metadata.document_type, 'General Compliance')
+        
         parent_id = create_parent_chunk_simple(
             document_type=metadata.document_type,
-            title=metadata.title,
+            title=title,
             section_number=metadata.section_number,
-            compliance_area=metadata.compliance_area,
+            compliance_area=compliance_area,
             citation=f"Source: {metadata.file_path.replace(chr(92), '/')}",
             file_ext=file_ext,
             binding=metadata.is_binding
@@ -370,16 +357,13 @@ def ingest_single_document_unified(
         
         logger.info(f"Parent chunk created: {parent_id}")
         
-        # Update parent with full text
         logger.info("Updating parent chunk with text...")
         update_chunk_text_simple(parent_id, text)
         
-        # Generate summary and keywords for parent chunk
         if generate_summaries:
             logger.info("Generating summary and keywords...")
             process_summary_and_keywords(parent_id, text, stats)
         
-        # Create relationships based on document type
         logger.info("Creating relationships...")
         create_relationships_for_chunk(
             parent_id, 
@@ -388,7 +372,6 @@ def ingest_single_document_unified(
             stats
         )
         
-        # Extract cross-references from text and create relationships
         logger.info("Extracting cross-references...")
         ref_stats = extract_and_create_relationships(
             chunk_id=parent_id,
@@ -399,7 +382,6 @@ def ingest_single_document_unified(
         )
         stats.increment_relationships(ref_stats['created'])
         
-        # Create child chunks
         logger.info("Creating child chunks...")
         child_ids = hierarchical_chunk(
             parent_chunk_id=parent_id,
@@ -414,13 +396,22 @@ def ingest_single_document_unified(
         
     except Exception as e:
         import traceback
-        logger.error(f"Ingestion failed for {metadata.file_path}: {str(e)}")
-        logger.error(traceback.format_exc())
+        import sys
+        error_msg = f"Ingestion failed for {metadata.file_path}: {str(e)}"
+        error_trace = traceback.format_exc()
+        
+        logger.error(error_msg)
+        logger.error(f"Traceback:\n{error_trace}")
+        
+        # Also print to stdout for subprocess capture
+        print(f"ERROR: {error_msg}", flush=True)
+        print(f"TRACEBACK:\n{error_trace}", flush=True)
+        sys.stdout.flush()
+        
         stats.increment_failure(metadata.file_path, str(e))
         return False
 
 def verify_database_state(section_range: str) -> Dict[str, Any]:
-    """Verify database state and return statistics"""
     with get_db_connection() as conn:
         cur = conn.cursor()
         
@@ -430,7 +421,6 @@ def verify_database_state(section_range: str) -> Dict[str, Any]:
             "tables": {}
         }
         
-        # Count chunks
         cur.execute("SELECT COUNT(*) as count FROM chunks_identity WHERE chunk_role = 'parent'")
         parent_count = cur.fetchone()['count']
         
@@ -441,27 +431,22 @@ def verify_database_state(section_range: str) -> Dict[str, Any]:
         stats["child_chunks"] = child_count
         stats["total_chunks"] = parent_count + child_count
         
-        # Count summaries
         cur.execute("SELECT COUNT(*) as count FROM chunks_content WHERE summary IS NOT NULL AND summary != ''")
         stats["chunks_with_summaries"] = cur.fetchone()['count']
         
-        # Count keywords
         cur.execute("SELECT COUNT(DISTINCT chunk_id) as count FROM chunk_keywords")
         stats["chunks_with_keywords"] = cur.fetchone()['count']
         
         cur.execute("SELECT COUNT(*) as count FROM chunk_keywords")
         stats["total_keywords"] = cur.fetchone()['count']
         
-        # Count relationships
         cur.execute("SELECT COUNT(*) as count FROM chunk_relationships")
         stats["total_relationships"] = cur.fetchone()['count']
         
-        # Check for ID clashes
         cur.execute("SELECT chunk_id, COUNT(*) as count FROM chunks_identity GROUP BY chunk_id HAVING COUNT(*) > 1")
         clashes = cur.fetchall()
         stats["id_clashes"] = len(clashes)
         
-        # Sample recent chunks
         cur.execute("SELECT chunk_id FROM chunks_identity WHERE chunk_role = 'parent' ORDER BY chunk_id DESC LIMIT 5")
         stats["recent_parent_ids"] = [row['chunk_id'] for row in cur.fetchall()]
         
@@ -469,29 +454,28 @@ def verify_database_state(section_range: str) -> Dict[str, Any]:
         return stats
 
 def print_verification_report(stats: Dict[str, Any]):
-    """Print verification report"""
     print("\n" + "="*70)
     print(f"DATABASE VERIFICATION - {stats['section_range']}")
     print("="*70)
-    print(f"\n📊 Chunk Counts:")
+    print(f"\n Chunk Counts:")
     print(f"   Parents:  {stats['parent_chunks']:5}")
     print(f"   Children: {stats['child_chunks']:5}")
     print(f"   Total:    {stats['total_chunks']:5}")
     
-    print(f"\n📝 Content Enrichment:")
+    print(f"\n Content Enrichment:")
     print(f"   With summaries: {stats['chunks_with_summaries']:5}")
     print(f"   With keywords:  {stats['chunks_with_keywords']:5}")
     print(f"   Total keywords: {stats['total_keywords']:5}")
     
-    print(f"\n🔗 Relationships:")
+    print(f"\n Relationships:")
     print(f"   Total: {stats['total_relationships']:5}")
     
     if stats['id_clashes'] > 0:
-        print(f"\n⚠️  ID CLASHES FOUND: {stats['id_clashes']}")
+        print(f"\n  ID CLASHES FOUND: {stats['id_clashes']}")
     else:
-        print(f"\n✓ No ID clashes")
+        print(f"\n No ID clashes")
     
-    print(f"\n🔍 Recent Parent Chunks:")
+    print(f"\n Recent Parent Chunks:")
     for chunk_id in stats['recent_parent_ids']:
         print(f"   {chunk_id}")
     
@@ -504,22 +488,11 @@ def unified_batch_ingest(
     skip_html: bool = True,
     generate_summaries: bool = True
 ):
-    """
-    Unified ingestion with relationships and summaries
-    
-    Args:
-        sections: List of section numbers to process
-        max_workers: Number of parallel workers
-        verification_interval: Verify DB every N sections
-        skip_html: Skip HTML files to avoid duplicates
-        generate_summaries: Generate summaries and keywords
-    """
-    # Scan raw directory
-    print("📁 Scanning raw directory...")
+
+    print(" Scanning raw directory...")
     raw_dir = Path(__file__).parent.parent / "raw"
     all_documents = scan_raw_directory(str(raw_dir), skip_html=skip_html)
     
-    # Filter documents by sections
     if sections:
         documents = [d for d in all_documents if d.section_number in sections]
     else:
@@ -527,14 +500,13 @@ def unified_batch_ingest(
     
     html_count = sum(1 for d in all_documents if d.file_path.lower().endswith('.html'))
     
-    print(f"📄 Found {len(documents)} documents to ingest")
+    print(f" Found {len(documents)} documents to ingest")
     if skip_html and html_count > 0:
-        print(f"⏭️  Skipping {html_count} HTML files (duplicates)")
-    print(f"⚙️  Using {max_workers} parallel workers")
-    print(f"📝 Summary generation: {'ON' if generate_summaries else 'OFF'}")
-    print(f"🔍 Verifying database every {verification_interval} sections\n")
+        print(f"⏭  Skipping {html_count} HTML files (duplicates)")
+    print(f"  Using {max_workers} parallel workers")
+    print(f" Summary generation: {'ON' if generate_summaries else 'OFF'}")
+    print(f" Verifying database every {verification_interval} sections\n")
     
-    # Group documents by section
     sections_dict = {}
     for doc in documents:
         if doc.section_number not in sections_dict:
@@ -543,11 +515,9 @@ def unified_batch_ingest(
     
     section_numbers = sorted(sections_dict.keys())
     
-    # Create log directory
     log_dir = Path("verification_logs")
     log_dir.mkdir(exist_ok=True)
     
-    # Process sections in batches
     all_stats = []
     batch_num = 1
     
@@ -562,16 +532,13 @@ def unified_batch_ingest(
         print(f"{'='*70}")
         print(f"Processing {len(batch_documents)} documents...")
         
-        # Initialize stats
         stats = UnifiedStats()
         stats.total_documents = len(batch_documents)
         stats.start_time = time.time()
         
-        # Shared counters
         pdf_counters = {}
         pdf_lock = Lock()
         
-        # Parallel ingestion
         with ThreadPoolExecutor(max_workers=max_workers) as executor:
             futures = {
                 executor.submit(
@@ -592,8 +559,7 @@ def unified_batch_ingest(
         stats.end_time = time.time()
         elapsed = stats.end_time - stats.start_time
         
-        # Print batch summary
-        print(f"\n✓ Batch {batch_num} Complete:")
+        print(f"\n Batch {batch_num} Complete:")
         print(f"   Successful:  {stats.successful_ingestions}")
         print(f"   Failed:      {stats.failed_ingestions}")
         print(f"   Skipped:     {stats.skipped_documents} (HTML: {stats.html_skipped})")
@@ -605,16 +571,14 @@ def unified_batch_ingest(
         print(f"   Rate:        {stats.successful_ingestions/elapsed:.2f} docs/sec")
         
         if stats.failed_files:
-            print(f"\n⚠️  Failed files:")
+            print(f"\n  Failed files:")
             for fail in stats.failed_files[:5]:
                 print(f"   {fail['file']}: {fail['error']}")
         
-        # Verify database
         section_range = f"{batch_sections[0]} to {batch_sections[-1]}"
         db_stats = verify_database_state(section_range)
         print_verification_report(db_stats)
         
-        # Save verification log
         log_file = log_dir / f"verification_batch_{batch_num}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         log_data = {
             "batch_number": batch_num,
@@ -640,12 +604,11 @@ def unified_batch_ingest(
         with open(log_file, 'w') as f:
             json.dump(log_data, f, indent=2)
         
-        print(f"📝 Verification log saved: {log_file}\n")
+        print(f" Verification log saved: {log_file}\n")
         
         all_stats.append(log_data)
         batch_num += 1
     
-    # Final summary
     print("\n" + "="*70)
     print("UNIFIED INGESTION COMPLETE")
     print("="*70)
@@ -657,7 +620,7 @@ def unified_batch_ingest(
     total_keywords = sum(s['ingestion_stats']['keywords_extracted'] for s in all_stats)
     total_relationships = sum(s['ingestion_stats']['relationships_created'] for s in all_stats)
     
-    print(f"\n📊 Overall Statistics:")
+    print(f"\n Overall Statistics:")
     print(f"   Batches processed:    {len(all_stats)}")
     print(f"   Total successful:     {total_success}")
     print(f"   Total failed:         {total_failed}")
@@ -666,7 +629,6 @@ def unified_batch_ingest(
     print(f"   Keywords extracted:   {total_keywords}")
     print(f"   Relationships created: {total_relationships}")
     
-    # Final DB verification
     final_stats = verify_database_state("ALL SECTIONS")
     print_verification_report(final_stats)
 
@@ -684,7 +646,6 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     
-    # Determine sections to process
     if args.sections:
         sections = args.sections
     elif args.start and args.end:
@@ -695,15 +656,15 @@ if __name__ == "__main__":
         start_num = int(args.start)
         sections = [f"{i:03d}" for i in range(start_num, 44)]
     else:
-        # Process all sections by default
+
         sections = [f"{i:03d}" for i in range(1, 44)]
     
-    print(f"🚀 Starting UNIFIED ingestion pipeline")
-    print(f"📍 Sections: {sections[0]} to {sections[-1]} ({len(sections)} sections)")
-    print(f"⚙️  Workers: {args.workers}")
-    print(f"🔍 Verification interval: every {args.interval} sections")
-    print(f"⏭️  Skip HTML: {args.skip_html}")
-    print(f"📝 Generate summaries: {not args.no_summaries}\n")
+    print(f" Starting UNIFIED ingestion pipeline")
+    print(f" Sections: {sections[0]} to {sections[-1]} ({len(sections)} sections)")
+    print(f"  Workers: {args.workers}")
+    print(f" Verification interval: every {args.interval} sections")
+    print(f"⏭  Skip HTML: {args.skip_html}")
+    print(f" Generate summaries: {not args.no_summaries}\n")
     
     unified_batch_ingest(
         sections=sections,

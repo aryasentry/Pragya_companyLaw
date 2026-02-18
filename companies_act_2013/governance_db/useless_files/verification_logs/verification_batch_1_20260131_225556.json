@@ -1,0 +1,235 @@
+{
+  "batch_number": 1,
+  "sections": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005"
+  ],
+  "ingestion_stats": {
+    "total": 146,
+    "successful": 80,
+    "failed": 44,
+    "skipped": 22,
+    "elapsed_seconds": 277.3370020389557,
+    "rate_docs_per_sec": 0.28845772259686764,
+    "failed_files": [
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form-INC-4.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf1', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form-INC-3.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf2', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form-INC-4_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf3', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form-RUN.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf4', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form-RUN_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf5', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\Form_INC-2-09-12-2015.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf6', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_003\\return\\INC-6.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s003_pdf7', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-INC-13.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf1', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-INC-13_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf2', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-INC-3.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf3', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-INC-33.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf4', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-INC-33_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf5', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-RUN.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf6', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form-RUN_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf7', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Form_GNL-2.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf8', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\GNL-1.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s004_pdf9', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\gnl-3.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf10', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\INC-1-27-01-2016.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf11', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\INC-1.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf12', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\inc-32.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf13', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\INC-35.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf14', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\MCA-Notification-19022020-Return.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf15', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\RUN-form.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf16', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\RUN-form_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf17', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\SPICe-Part-A.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf18', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\SPICe-Part-A_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf19', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\return\\Spice.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s004_pdf20', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_004\\schedule\\section_004_schedule.txt",
+        "error": "invalid input value for enum document_type_enum: \"schedule\"\nLINE 5: ...LUES ('ca2013_schedule_s004_txt', 'parent', NULL, 'schedule'...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-31.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf1', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-31_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf2', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-33.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf3', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-33_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf4', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-34.ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf5', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form-INC-34_ocr.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf6', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form_GNL-2.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf7', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form_INC-2-09-12-2015.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf8', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form_INC-7-02.12.2015.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...ALUES ('ca2013_return_s005_pdf9', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Form_MGT-14-02.12.2015.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf10', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\GNL-1.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf11', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\gnl-3.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf12', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\INC-7-Application-for-Incorporation-of-Company-Part-I-Company-and-company-with-more-than-seven-subscribers.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf13', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\MCA-Notification-19022020-Return.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf14', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\return\\Spice.pdf",
+        "error": "invalid input value for enum document_type_enum: \"return\"\nLINE 5: ...LUES ('ca2013_return_s005_pdf15', 'parent', NULL, 'return', ...\n                                                             ^\n"
+      },
+      {
+        "file": "C:\\Users\\kalid\\OneDrive\\Documents\\RAG\\companies_act_2013\\raw\\companies_act\\section_005\\schedule\\section_005_schedule.txt",
+        "error": "invalid input value for enum document_type_enum: \"schedule\"\nLINE 5: ...LUES ('ca2013_schedule_s005_txt', 'parent', NULL, 'schedule'...\n                                                             ^\n"
+      }
+    ]
+  },
+  "database_stats": {
+    "section_range": "001 to 005",
+    "timestamp": "2026-01-31T22:55:56.579691",
+    "tables": {
+      "chunks_identity": 2136,
+      "chunks_content": 2136,
+      "chunk_legal_anchors": 0,
+      "chunk_keywords": 0,
+      "chunk_relationships": 4036,
+      "chunk_retrieval_rules": 2136,
+      "chunk_refusal_policy": 2136,
+      "chunk_temporal": 2136,
+      "chunk_lifecycle": 2136,
+      "chunk_versioning": 2136,
+      "chunk_embeddings": 2136,
+      "chunk_lineage": 2136,
+      "chunk_administrative": 2136,
+      "chunk_audit": 2136,
+      "chunk_source": 2136
+    },
+    "parent_chunks": 80,
+    "child_chunks": 2056,
+    "total_chunks": 2136,
+    "id_clashes": 0,
+    "recent_parent_ids": [
+      "ca2013_notification_s005_pdf9",
+      "ca2013_notification_s005_pdf8",
+      "ca2013_notification_s005_pdf7",
+      "ca2013_notification_s005_pdf6",
+      "ca2013_notification_s005_pdf5"
+    ],
+    "recent_child_ids": [
+      "ca2013_notification_s005_pdf9_c2",
+      "ca2013_notification_s005_pdf9_c1",
+      "ca2013_notification_s005_pdf8_c2",
+      "ca2013_notification_s005_pdf8_c1",
+      "ca2013_notification_s005_pdf7_c9"
+    ]
+  }
+}

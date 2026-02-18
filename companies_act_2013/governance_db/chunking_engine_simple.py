@@ -141,6 +141,7 @@ def get_parent_metadata(parent_chunk_id: str) -> dict:
                 JOIN chunks_content c ON i.chunk_id = c.chunk_id
                 JOIN chunk_retrieval_rules r ON i.chunk_id = r.chunk_id
                 JOIN chunk_refusal_policy rp ON i.chunk_id = rp.chunk_id
+                LEFT JOIN chunk_administrative a ON i.chunk_id = a.chunk_id
                 WHERE i.chunk_id = %s
             """, (parent_chunk_id,))
             
@@ -253,6 +254,7 @@ def create_child_chunk(
             """, (child_id,))
             
             # 8. chunk_administrative
+            # Copyright fields temporarily disabled for demo
             cursor.execute("""
                 INSERT INTO chunk_administrative (chunk_id)
                 VALUES (%s)

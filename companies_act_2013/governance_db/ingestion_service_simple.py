@@ -195,6 +195,7 @@ def create_parent_chunk_simple(
             """, (chunk_id,))
             
             # 8. Insert into chunk_administrative
+            # Copyright fields temporarily disabled for demo
             cursor.execute("""
                 INSERT INTO chunk_administrative (chunk_id)
                 VALUES (%s)

@@ -1,8 +1,3 @@
-"""
-Full Document Processing Pipeline  
-Upload -> Save to Data folder -> Ingest to DB -> Chunk -> Summarize -> Keywords -> Relationships -> Embed (optional)
-"""
-
 import os
 import sys
 import shutil
@@ -10,15 +5,13 @@ import argparse
 import logging
 from pathlib import Path
 
-# Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent))
 
-from folder_analyzer import DocumentMetadata
+
 from unified_ingest_full import ingest_single_document_unified, UnifiedStats
 from build_faiss_index import build_vector_database as build_embeddings
 from threading import Lock
 
-# Setup logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
@@ -26,19 +19,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Document type to priority mapping (lowercase)
 DOC_TYPE_PRIORITY = {
-    # Priority 1: Primary statutory sources
+
     'act': 1,
     'rule': 1,
     
-    # Priority 2: Secondary statutory sources
     'regulation': 2,
     'order': 2,
     'notification': 2,
     'schedule': 2,
     
-    # Priority 3: Official guidance
     'circular': 3,
     'form': 3,
     'register': 3,
@@ -46,7 +36,6 @@ DOC_TYPE_PRIORITY = {
     'sop': 3,
     'guideline': 3,
     
-    # Priority 4: Informational/reference
     'qa': 4,
     'other': 4,
     'practice_note': 4,
@@ -54,32 +43,58 @@ DOC_TYPE_PRIORITY = {
     'textbook': 4,
 }
 
-
 def ingest_document(file_path: str, doc_type: str, section: str = None, priority: int = 4, skip_embed: bool = False):
-    """
-    Ingest single document: Chunk -> Summarize -> Keywords -> Relationships
-    """
-    # Determine binding status (use lowercase for consistency)
+
+    from dataclasses import dataclass
+    from typing import Optional
+    
+    @dataclass
+    class DocumentMetadata:
+        file_path: str
+        document_type: str
+        section_number: Optional[str]
+        file_type: str
+        is_binding: bool
+        binding_note: Optional[str] = None
+        
+        @property
+        def title(self) -> Optional[str]:
+            """Generate title from file path"""
+            return Path(self.file_path).stem
+        
+        @property
+        def compliance_area(self) -> str:
+            """Determine compliance area from document type"""
+            compliance_map = {
+                'act': 'Company Incorporation',
+                'circular': 'Administrative Guidance',
+                'notification': 'Regulatory Compliance',
+                'order': 'Judicial/Administrative Orders',
+                'rule': 'Procedural Rules',
+                'schedule': 'Annexures & Schedules',
+                'register': 'Company Records',
+                'return': 'Company Filings',
+                'form': 'Statutory Forms'
+            }
+            return compliance_map.get(self.document_type, 'General Compliance')
+    
     is_binding = doc_type.lower() in ['act', 'rule', 'regulation', 'order', 'notification', 'schedule', 'circular', 'form', 'register', 'return']
     binding_note = 'Statutory document' if is_binding else 'Informational/guidance'
     file_type = Path(file_path).suffix.lower().lstrip('.') or 'txt'
     
-    # Create metadata object
     metadata = DocumentMetadata(
         file_path=file_path,
         document_type=doc_type.lower(),
         section_number=section,
+        file_type=file_type,
         is_binding=is_binding,
-        binding_note=binding_note,
-        file_type=file_type
+        binding_note=binding_note
     )
     
-    # Initialize stats and locks for thread-safe processing
     stats = UnifiedStats()
     pdf_counters = {}
     pdf_lock = Lock()
     
-    # Run full ingestion pipeline with progress updates
     print("STAGE:Parsing", flush=True)
     logger.info("Parsing document content...")
     
@@ -104,14 +119,11 @@ def ingest_document(file_path: str, doc_type: str, section: str = None, priority
         
         if success:
             logger.info("Ingestion completed successfully")
-            logger.info(f"Successful ingestions: {stats.successful_ingestions}")
-            logger.info(f"Summaries generated: {stats.summaries_generated}")
-            logger.info(f"Keywords extracted: {stats.keywords_extracted}")
-            logger.info(f"Relationships created: {stats.relationships_created}")
-            
-            print("STAGE:Completed", flush=True)
+            print("STAGE:Complete", flush=True)
+            return True
         else:
-            logger.error("Ingestion returned False - check file content and database connection")
+            logger.error("Ingestion returned False - check logs above for details")
+            print("STAGE:Failed", flush=True)
             raise Exception("Ingestion returned False")
             
     except Exception as e:
@@ -119,7 +131,6 @@ def ingest_document(file_path: str, doc_type: str, section: str = None, priority
         import traceback
         logger.error(traceback.format_exc())
         raise Exception(f"Ingestion failed: {str(e)}")
-
 
 def main():
     parser = argparse.ArgumentParser(description='Full document processing pipeline')
@@ -133,7 +144,6 @@ def main():
     
     args = parser.parse_args()
     
-    # Validate inputs
     if args.category not in ['companies_act', 'non_binding']:
         logger.error(f"Invalid category: {args.category}")
         sys.exit(1)
@@ -145,7 +155,6 @@ def main():
     if args.type not in DOC_TYPE_PRIORITY:
         logger.warning(f"Unknown document type '{args.type}', defaulting to priority 4")
     
-    # Get priority
     priority = DOC_TYPE_PRIORITY.get(args.type, 4)
     
     logger.info("=" * 60)
@@ -157,7 +166,7 @@ def main():
     logger.info("=" * 60)
     
     try:
-        # Step 1: Move file to Data folder structure
+
         logger.info("Step 1: Moving to Data folder...")
         data_dir = Path(__file__).parent.parent / 'data'
         
@@ -173,11 +182,9 @@ def main():
         file_name = Path(args.file).name
         data_path = dest_dir / file_name
         
-        # Move file (not copy, since it's from temp uploads)
         shutil.move(args.file, data_path)
         logger.info(f"Saved to: {data_path}")
         
-        # Step 2: Full ingestion pipeline
         logger.info("Step 2: Full ingestion pipeline...")
         ingest_document(
             file_path=str(data_path),
@@ -187,7 +194,6 @@ def main():
             skip_embed=args.skip_embed
         )
         
-        # Step 3: Build embeddings (optional)
         if not args.skip_embed:
             print("STAGE:Building Embeddings", flush=True)
             logger.info("Step 3: Building FAISS embeddings...")
@@ -218,7 +224,6 @@ def main():
         import traceback
         logger.debug(traceback.format_exc())
         sys.exit(1)
-
 
 if __name__ == '__main__':
     main()
