@@ -101,6 +101,8 @@ This is a legal knowledge management system designed specifically for corporate 
 
 ## Architecture
 
+![RAG Flow Diagram](./pragyaARCH.jpeg)
+
 ```
 ┌─────────────────────────────────────────────────────────────────┐
 │                        Next.js Frontend                         │
