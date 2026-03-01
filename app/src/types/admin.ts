@@ -32,6 +32,16 @@ export type RetrievalPriority = '1' | '2' | '3' | '4';
 
 export type InputType = 'text' | 'pdf';
 
+// Ingestion mode: manual (form) vs vision (batch + AI extraction)
+export type IngestionMode = 'manual' | 'vision';
+
+// Vision model options for document extraction
+export type VisionModelOption = 'ollama_qwen3_vl' | 'gemini_flash';
+export const VISION_MODEL_OPTIONS: { value: VisionModelOption; label: string }[] = [
+  { value: 'ollama_qwen3_vl', label: 'Ollama - qwen3-vl:235b-cloud' },
+  { value: 'gemini_flash', label: 'Gemini 3.0 Flash' },
+];
+
 // Binding document types (belong to Companies Act sections)
 export const BINDING_DOCUMENT_TYPES: DocumentType[] = [
   'act',
@@ -90,15 +100,26 @@ export interface IngestionFormData {
   copyrightAttribution?: string; // e.g., "Courtesy by [Publisher Name]" or "General Public"
 }
 
+export type AuditAction = 'CREATE' | 'UPDATE' | 'DELETE' | 'INGEST' | 'VISION_UPLOADED' | 'VISION_EXTRACTED';
+export type AuditStatus = 'SUCCESS' | 'FAILED' | 'PENDING' | 'PENDING_APPROVAL' | 'REJECTED' | 'PROCESSING' | 'APPROVED';
+
 export interface AuditLogEntry {
   id: string;
-  action: 'CREATE' | 'UPDATE' | 'DELETE' | 'INGEST';
+  action: AuditAction;
   documentId: string;
   documentType: DocumentType;
   performedBy: string;
   performedAt: string;
   details: string;
-  status: 'SUCCESS' | 'FAILED' | 'PENDING';
+  status: AuditStatus;
+  /** Path in uploads folder (vision flow); set when awaiting approval */
+  filePath?: string;
+  /** Extracted metadata from vision (same shape as IngestionFormData); for preview/edit */
+  extractedData?: Partial<IngestionFormData>;
+  /** Batch id to group batch-uploaded documents */
+  batchId?: string;
+  /** Vision model used for extraction */
+  visionModel?: VisionModelOption;
 }
 
 export interface SystemNotification {

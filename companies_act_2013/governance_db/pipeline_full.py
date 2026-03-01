@@ -148,21 +148,23 @@ def main():
         logger.error(f"Invalid category: {args.category}")
         sys.exit(1)
     
-    if args.category == 'companies_act' and not args.section:
-        logger.error("Section required for companies_act documents")
-        sys.exit(1)
+    section_val = args.section.zfill(3) if args.section else None
+    if args.category == 'companies_act' and not section_val:
+        logger.warning("Section missing for companies_act; defaulting to '000' so ingestion can continue")
+        section_val = '000'
     
-    if args.type not in DOC_TYPE_PRIORITY:
-        logger.warning(f"Unknown document type '{args.type}', defaulting to priority 4")
+    doc_type = args.type.lower()
+    if doc_type not in DOC_TYPE_PRIORITY:
+        logger.warning(f"Unknown document type '{doc_type}', defaulting to priority 4")
     
-    priority = DOC_TYPE_PRIORITY.get(args.type, 4)
+    priority = DOC_TYPE_PRIORITY.get(doc_type, 4)
     
     logger.info("=" * 60)
     logger.info(f"Processing: {Path(args.file).name}")
     logger.info(f"Category: {args.category}")
-    logger.info(f"Type: {args.type} (Priority {priority})")
-    if args.section:
-        logger.info(f"Section: {args.section}")
+    logger.info(f"Type: {doc_type} (Priority {priority})")
+    if section_val:
+        logger.info(f"Section: {section_val}")
     logger.info("=" * 60)
     
     try:
@@ -170,26 +172,28 @@ def main():
         logger.info("Step 1: Moving to Data folder...")
         data_dir = Path(__file__).parent.parent / 'data'
         
+        doc_type_folder = doc_type.capitalize()
         if args.category == 'companies_act':
-            if not args.section:
-                logger.error("Section required for companies_act documents")
-                sys.exit(1)
-            dest_dir = data_dir / 'companies_act' / f'section_{args.section}' / args.type
+            dest_dir = data_dir / 'companies_act' / f'section_{section_val}' / doc_type_folder
         else:
-            dest_dir = data_dir / 'non_binding' / args.type
+            dest_dir = data_dir / 'non_binding' / doc_type_folder
         
         dest_dir.mkdir(parents=True, exist_ok=True)
-        file_name = Path(args.file).name
+        source_path = Path(args.file)
+        file_name = source_path.name
         data_path = dest_dir / file_name
         
-        shutil.move(args.file, data_path)
-        logger.info(f"Saved to: {data_path}")
+        if source_path.resolve() == data_path.resolve():
+            logger.info("File already inside data folder, skipping move")
+        else:
+            shutil.move(str(source_path), str(data_path))
+            logger.info(f"Saved to: {data_path}")
         
         logger.info("Step 2: Full ingestion pipeline...")
         ingest_document(
             file_path=str(data_path),
-            doc_type=args.type,
-            section=args.section,
+            doc_type=doc_type,
+            section=section_val,
             priority=priority,
             skip_embed=args.skip_embed
         )

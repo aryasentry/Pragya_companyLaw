@@ -11,14 +11,22 @@ import DashboardTab from '@/components/admin/DashboardTab';
 import ChatTab from '@/components/admin/ChatTab';
 import DocumentsTab from '@/components/admin/DocumentsTab';
 import SettingsTab from '@/components/admin/SettingsTab';
-import { IngestionFormData } from '@/types/admin';
-import { FaUpload } from 'react-icons/fa';
+import { IngestionFormData, IngestionMode, VisionModelOption, VISION_MODEL_OPTIONS } from '@/types/admin';
+import { FaUpload, FaEye, FaCogs } from 'react-icons/fa';
 
 function AdminPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const [activeTab, setActiveTab] = useState('dashboard');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [ingestionMode, setIngestionMode] = useState<IngestionMode>('manual');
+  const [visionModel, setVisionModel] = useState<VisionModelOption>('ollama_qwen3_vl');
+  const [batchFiles, setBatchFiles] = useState<File[]>([]);
+  const [batchUploading, setBatchUploading] = useState(false);
+  const [batchProcessing, setBatchProcessing] = useState(false);
+  const [lastBatchId, setLastBatchId] = useState<string | null>(null);
+  const [batchError, setBatchError] = useState<string | null>(null);
+  const [batchSuccess, setBatchSuccess] = useState<string | null>(null);
 
   // Initialize tab from URL on mount and when searchParams change
   useEffect(() => {
@@ -32,6 +40,56 @@ function AdminPageContent() {
   const handleTabChange = (tab: string) => {
     setActiveTab(tab);
     router.push(`/admin?tab=${tab}`, { scroll: false });
+  };
+
+  const handleBatchUpload = async () => {
+    if (!batchFiles.length) return;
+    setBatchUploading(true);
+    setBatchError(null);
+    setBatchSuccess(null);
+    try {
+      const formData = new FormData();
+      formData.append('visionModel', visionModel);
+      batchFiles.forEach((f) => formData.append('files', f));
+      const res = await fetch('/api/admin/batch-upload', { method: 'POST', body: formData });
+      const result = await res.json();
+      if (!result.success) {
+        setBatchError(result.error || 'Batch upload failed');
+        return;
+      }
+      if (!result.data?.batchId) {
+        setBatchError('No batch ID returned');
+        return;
+      }
+      setLastBatchId(result.data.batchId);
+      const fileCount = result.data?.files?.length ?? batchFiles.length;
+      const processRes = await fetch('/api/admin/process-vision', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ batchId: result.data.batchId }),
+      });
+      const processResult = await processRes.json();
+      if (!processResult.success) {
+        setBatchError(processResult.error || 'Vision processing failed');
+        return;
+      }
+      const processed = processResult.data?.processed ?? 0;
+      const total = processResult.data?.total ?? 0;
+      setBatchSuccess(`Uploaded ${fileCount} file(s). Processed ${processed}/${total} with vision. Check Audit tab to preview and approve.`);
+      setBatchFiles([]);
+      setActiveTab('audit');
+    } catch (e) {
+      setBatchError(e instanceof Error ? e.message : 'Upload or process failed');
+      console.error(e);
+    } finally {
+      setBatchUploading(false);
+    }
+  };
+
+  const handleBatchFilesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const added = e.target.files ? Array.from(e.target.files) : [];
+    if (added.length) setBatchFiles((prev) => [...prev, ...added]);
+    e.target.value = '';
   };
 
   const handleIngestionSubmit = async (data: IngestionFormData) => {
@@ -110,11 +168,113 @@ function AdminPageContent() {
               </div>
             </div>
 
+            {/* Mode: Manual vs Vision */}
+            <div className="bg-white rounded-xl border border-gray-200 p-4">
+              <div className="flex flex-wrap items-center gap-6">
+                <div className="flex items-center gap-2">
+                  <span className="text-sm font-medium text-gray-700">Mode:</span>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="ingestionMode"
+                      checked={ingestionMode === 'manual'}
+                      onChange={() => setIngestionMode('manual')}
+                      className="text-orange-500"
+                    />
+                    <span>Manual</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer">
+                    <input
+                      type="radio"
+                      name="ingestionMode"
+                      checked={ingestionMode === 'vision'}
+                      onChange={() => setIngestionMode('vision')}
+                      className="text-orange-500"
+                    />
+                    <span>Vision</span>
+                  </label>
+                </div>
+                {ingestionMode === 'vision' && (
+                  <div className="flex items-center gap-2">
+                    <FaCogs className="text-gray-400" />
+                    <span className="text-sm font-medium text-gray-700">Vision model:</span>
+                    <select
+                      value={visionModel}
+                      onChange={(e) => setVisionModel(e.target.value as VisionModelOption)}
+                      className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500"
+                    >
+                      {VISION_MODEL_OPTIONS.map((opt) => (
+                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+              </div>
+            </div>
+
             {/* Pipeline Status - Shows real-time progress */}
             <PipelineStatus />
 
-            {/* Ingestion Form */}
-            <IngestionForm onSubmit={handleIngestionSubmit} isSubmitting={isSubmitting} />
+            {ingestionMode === 'manual' && (
+              <IngestionForm onSubmit={handleIngestionSubmit} isSubmitting={isSubmitting} />
+            )}
+
+            {ingestionMode === 'vision' && (
+              <div className="bg-white rounded-xl border border-gray-200 p-6 space-y-4">
+                <h3 className="text-lg font-semibold text-gray-900">Batch upload (Vision)</h3>
+                <p className="text-sm text-gray-600">
+                  Add PDFs or text files (select multiple in one go, or use &quot;Add files&quot; again to add more). They are saved to uploads, then processed with the selected vision model. Review and approve in the Audit tab.
+                </p>
+                <div className="flex flex-wrap items-center gap-4">
+                  <input
+                    type="file"
+                    multiple
+                    accept=".pdf,.txt,.png,.jpg,.jpeg,.webp"
+                    onChange={handleBatchFilesChange}
+                    className="text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border file:border-orange-500 file:bg-orange-50 file:text-orange-700"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setBatchFiles([])}
+                    disabled={batchFiles.length === 0 || batchUploading}
+                    className="px-4 py-2 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 disabled:opacity-50"
+                  >
+                    Clear list
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleBatchUpload}
+                    disabled={batchFiles.length === 0 || batchUploading}
+                    className="flex items-center gap-2 px-4 py-2 bg-orange-500 text-white rounded-lg font-medium hover:bg-orange-600 disabled:opacity-50"
+                  >
+                    {batchUploading ? (
+                      <>
+                        <span className="animate-spin rounded-full h-4 w-4 border-2 border-white border-t-transparent" />
+                        Uploading...
+                      </>
+                    ) : (
+                      <>
+                        <FaUpload />
+                        Upload {batchFiles.length} file(s) & process
+                      </>
+                    )}
+                  </button>
+                </div>
+                {batchFiles.length > 0 && (
+                  <ul className="text-sm text-gray-600 list-disc list-inside">
+                    {batchFiles.map((f, i) => (
+                      <li key={i}>{f.name}</li>
+                    ))}
+                  </ul>
+                )}
+                {batchError && (
+                  <p className="text-sm text-red-600 bg-red-50 p-3 rounded-lg">{batchError}</p>
+                )}
+                {batchSuccess && (
+                  <p className="text-sm text-green-600 bg-green-50 p-3 rounded-lg">{batchSuccess}</p>
+                )}
+              </div>
+            )}
           </div>
         );
 

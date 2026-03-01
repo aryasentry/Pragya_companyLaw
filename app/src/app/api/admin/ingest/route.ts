@@ -9,7 +9,8 @@ export async function POST(req: NextRequest) {
     const formData = await req.formData();
     
     // Forward to Flask backend
-    const response = await fetch('http://localhost:5000/api/admin/ingest', {
+    const FLASK_API_URL = process.env.FLASK_API_URL || 'http://localhost:5000';
+    const response = await fetch(`${FLASK_API_URL}/api/admin/ingest`, {
       method: 'POST',
       body: formData,
     });

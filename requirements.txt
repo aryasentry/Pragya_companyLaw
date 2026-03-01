@@ -18,4 +18,6 @@ python-dotenv
 flask
 flask-cors
 numpy
+PyMuPDF
+google-generativeai
 

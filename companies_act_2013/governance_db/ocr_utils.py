@@ -33,7 +33,8 @@ def ocr_pdf(input_path: str, output_dir: str, image_tag: str = "jbarlow83/ocrmyp
     ]
     
     try:
-        print(f"🔍 OCRing: {input_file.name}...")
+        # ASCII-only logging to avoid Windows codepage issues
+        print(f"[OCR] Starting: {input_file.name}...")
         result = subprocess.run(
             cmd, 
             check=True, 
@@ -41,22 +42,22 @@ def ocr_pdf(input_path: str, output_dir: str, image_tag: str = "jbarlow83/ocrmyp
             text=True,
             timeout=300  # 5 minute timeout
         )
-        print(f"✓ OCRed: {input_file.name}")
+        print(f"[OK] OCRed: {input_file.name}")
         return str(output_path)
     except subprocess.TimeoutExpired:
-        print(f"✗ OCR timeout for {input_path} (exceeded 5 minutes)")
+        print(f"[ERR] OCR timeout for {input_path} (exceeded 5 minutes)")
         return None
     except subprocess.CalledProcessError as e:
         error_msg = e.stderr if e.stderr else str(e)
-        print(f"✗ Error OCRing {input_path}:")
+        print(f"[ERR] Error OCRing {input_path}:")
         print(f"  {error_msg}")
         return None
     except FileNotFoundError:
-        print(f"✗ Docker not found. Please install Docker Desktop.")
+        print(f"[ERR] Docker not found. Please install Docker Desktop.")
         print(f"  Download from: https://www.docker.com/products/docker-desktop")
         return None
     except Exception as e:
-        print(f"✗ Unexpected error OCRing {input_path}: {e}")
+        print(f"[ERR] Unexpected error OCRing {input_path}: {e}")
         return None
 
 def batch_ocr_pdfs(pdf_dir: str, output_dir: str = "ocred_pdfs", max_workers: int = 4) -> List[str]:
